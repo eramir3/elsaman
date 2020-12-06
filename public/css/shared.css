@@ -1,0 +1,117 @@
+@font-face {
+    font-family: NexaLight;
+    src: url(../fonts/NexaLight.otf);
+}
+
+@font-face {
+    font-family: NexaBold;
+    src: url(../fonts/NexaBold.otf);
+}
+
+* {
+    box-sizing: border-box;
+}
+  
+html {
+    font-size: 18pt;
+    font-stretch: 100%;
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+    margin: 0;
+}
+
+main {
+    margin: 0 auto;
+    min-height: calc(100vh - 22rem);
+    overflow-x: hidden;
+    transition: margin-top .5s;
+}
+
+.badge {
+    color: white;
+    width: max-content;
+    text-align: center;
+    padding: 5px 40px;
+    border-radius: 20px;
+}
+
+.badge--pink {
+    background-color: #FE7E7E;
+}
+
+.badge--pink__dark {
+    background-color: #E35272;
+}
+
+.badge--purple {
+    background-color:#624976
+}
+
+.label {
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.125;
+    font-weight: 900;
+    width: max-content;
+    text-align: center;
+    padding: 8px 40px;
+    border-radius: 20px;
+}
+
+.label-pink {
+    background-color: #FE7E7E;
+}
+
+.label-purple {
+    background-color:#624976
+}
+
+.card {
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 0px 4px 1px rgba(156,156,156,0.61);
+    -moz-box-shadow: 0px 0px 4px 1px rgba(156,156,156,0.61);
+    box-shadow: 0px 0px 4px 1px rgba(156,156,156,0.61);
+}
+
+.parent-image {
+    position: relative;
+}
+
+.child-image {
+    position: absolute;
+    z-index: -2;
+}
+
+@media (min-width: 1680px) {
+    html {
+        font-size: 13pt;
+    }
+}
+
+@media (max-width: 1680px) {
+    html {
+        font-size: 13pt;
+    }
+}
+
+@media (max-width: 1280px) {
+    html {
+        font-size: 11pt;
+    }
+}
+
+@media(max-width: 980px) {
+    html {
+        font-size: 9pt;
+    }
+}
+
+@media(max-width: 750px) {
+    html {
+        font-size: 13pt;
+    }
+}
