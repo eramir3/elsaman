@@ -15,18 +15,18 @@
             <nav class="welcome-nav">
                 <ul class="welcome-nav__items">
                     <li class="welcome-nav__item welcome-nav__item--pipe">
-                        <a href="{{ route('about', app()->getLocale()) }}" subject="{{ Str::upper(__('nav-menu.about')) }}">
-                            {{ Str::upper(__('nav-menu.about')) }}
+                        <a href="{{ route('about', app()->getLocale()) }}" subject="{{ Str::upper(__('header.about')) }}">
+                            {{ Str::upper(__('header.about')) }}
                         </a>
                     </li>
                     <li class="welcome-nav__item welcome-nav__item--pipe">
-                        <a href="{{ route('products', app()->getLocale()) }}" subject="{{ Str::upper(__('nav-menu.products')) }}">
-                            {{ Str::upper(__('nav-menu.products')) }}
+                        <a href="{{ route('products', app()->getLocale()) }}" subject="{{ Str::upper(__('header.products')) }}">
+                            {{ Str::upper(__('header.products')) }}
                         </a>
                     </li>
                     <li class="welcome-nav__item">
-                        <a href="{{ route('contact', app()->getLocale()) }}" subject="{{ Str::upper(__('nav-menu.contact')) }}">
-                            {{ Str::upper(__('nav-menu.contact')) }}
+                        <a href="{{ route('contact', app()->getLocale()) }}" subject="{{ Str::upper(__('header.contact')) }}">
+                            {{ Str::upper(__('header.contact')) }}
                         </a>
                     </li>
                 </ul>
@@ -45,7 +45,7 @@
 
     <div class="footer-title">
         <div class="footer-container">
-            <p>{{ __('nav-menu.discover_colombian_flavors') }}</p>
+            <p>{{ __('footer.discover_colombian_flavors') }}</p>
         </div>
         <nav>
             <div class="footer__info">

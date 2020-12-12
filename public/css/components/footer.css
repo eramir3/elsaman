@@ -54,12 +54,18 @@ footer {
     font-family: 'Raleway';
 }
 
+.main-footer__info > p {
+    text-align: center; 
+}
+
 .main-footer__legal > p {
     text-align: center; 
     margin: 0;
     color: #B8B8B8;
     font-family: 'Raleway';
 }
+
+
 
 @media(max-width: 750px) {
 
@@ -73,7 +79,7 @@ footer {
     
     .main-footer nav {
         flex-direction: column;
-        height: 20rem;
+        height: 25rem;
     }
     
     .main-footer__image-container img {
@@ -88,7 +94,12 @@ footer {
 @media(max-width: 520px) {
     .main-footer__image-container img {
         width: 15rem;
-    } 
+    }
+    
+    .main-footer nav {
+        flex-direction: column;
+        height: 20rem;
+    }
 }
 
 @media(max-width: 320px) {

@@ -19,19 +19,19 @@
     <main id="slidable">
         <section id="overview"></section>
         <section class="overview-bottom">
-            <div>Find out more!</div>
+            <div>{{ __('contact.find_out_more') }}</div>
         </section>
         <section class="container__main form">
-            <h3>If you want more information about our products fill this form and we will reach out to you.</h3>
-            <div id="label-success" class="success" style="display: none">Your message was sent successfully</div>
-            <div id="label-failed" class="failed" style="display: none">Your message could not be sent</div>
+            <h3>{{ __('contact.contact_description') }}</h3>
+            <div id="label-success" class="success" style="display: none">{{ __('contact.message_sent_successfully') }}</div>
+            <div id="label-failed" class="failed" style="display: none">{{ __('contact.message_sent_failed') }}</div>
             <form method="post" action="{{ route('contact.mail', app()->getLocale()) }}">
                 @csrf
-                <input type="text" name="name" placeholder="NAME"><br>
-                <input type="text" name="email" placeholder="EMAIL"><br>
-                <input type="text" name="telephone" placeholder="TELEPHONE"><br>
-                <textarea type="text" cols="30" rows="10" name="message" placeholder="MESSAGE"></textarea><br>
-                <input type="submit" name="submit" value="ENVIAR">
+                <input type="text" name="name" placeholder="{{ Str::upper(__('contact.name')) }}"><br>
+                <input type="text" name="email" placeholder="{{ Str::upper(__('contact.email')) }}"><br>
+                <input type="text" name="telephone" placeholder="{{ Str::upper(__('contact.telephone')) }}"><br>
+                <textarea type="text" cols="30" rows="10" name="message" placeholder="{{ Str::upper(__('contact.message')) }}"></textarea><br>
+                <input type="submit" name="submit" value="{{ Str::upper(__('contact.submit')) }}">
                 <div class="loader"></div>
             </form> 
         </section>
@@ -88,10 +88,10 @@
 
 
     $("form").submit(function(e) {
-        e.preventDefault(); // avoid to execute the actual submit of the form.
+        e.preventDefault();
 
-        var form = $(this);
-        var url = form.attr('action');
+        let form = $(this);
+        let url = form.attr('action');
 
         $('#label-success').css('display', 'none');
         $('#label-failed').css('display', 'none');
@@ -107,45 +107,93 @@
 
         $('.loader').css('display', 'block');
         $("input[name='submit']").css('display', 'none');
-        
+
+        // fetch(url, {
+        //     method: 'POST',
+        //     body: form.serialize(),
+        //     headers: {
+        //             "Content-Type": "application/x-www-form-urlencoded",
+        //             "X-Requested-With": "XMLHttpRequest",
+        //             "X-CSRF-Token": $('input[name="_token"]').val()
+        //     }
+        // })
+        // .then((res) => {
+
+        //     if(res.ok) {
+        //         $('#label-success').css('display', 'block');
+        //         $('.loader').css('display', 'none');
+        //         $("input[name='submit']").css('display', 'flex');
+        //     }
+        //     else {
+
+        //         res.json().then(function(result) {
+
+        //             const errors = result.errors;                    
+        //             const fieldNames = Object.keys(errors);
+                    
+        //             $('#label-failed').css('display', 'block');
+        //             $('.loader').css('display', 'none');
+        //             $("input[name='submit']").css('display', 'block');
+                    
+        //             for(index in fieldNames) {
+
+        //                 const fieldName = Object.keys(errors)[index];
+        //                 let field =  null;
+                        
+        //                 if(fieldName === 'message') {
+        //                     field = document.querySelector("textarea[name='"+fieldName+"']");
+        //                 }
+        //                 else {
+        //                     field = document.querySelector("input[name='"+fieldName+"']");
+        //                 }
+
+        //                 const fieldErrorMessage = errors[fieldName];
+        //                 field.insertAdjacentHTML('afterend', `<div class="error">${fieldErrorMessage}</div>`);
+        //                 field.style.borderColor = 'red';
+        //             }
+        //         })
+        //     }
+        // })
+        // .catch(error => {
+        //     console.log('Error' + error);
+        // });
+
         $.ajax({
             type: "POST",
             url: url,
-            data: form.serialize(), // serializes the form's elements.
-            success: function(data)
-            {
-                $('#label-success').css('display', 'block');
-                $('.loader').css('display', 'none');
-                $("input[name='submit']").css('display', 'flex');
-            },
-            error: function(error)
-            {
-                const errors = error.responseJSON.errors;
-                const fieldNames = Object.keys(errors);
+            data: form.serialize(),  
+        })
+        .done(function(data){
+            $('#label-success').css('display', 'block');
+            $('.loader').css('display', 'none');
+            $("input[name='submit']").css('display', 'flex');
+        })
+        .fail(function(error) {
+            const errors = error.responseJSON.errors;
+            const fieldNames = Object.keys(errors);
 
-                $('#label-failed').css('display', 'block');
-                $('.loader').css('display', 'none');
-                $("input[name='submit']").css('display', 'block');
+            $('#label-failed').css('display', 'block');
+            $('.loader').css('display', 'none');
+            $("input[name='submit']").css('display', 'block');
+            
+            for(index in fieldNames) {
+
+                const fieldName = Object.keys(errors)[index];
+                let field =  null;
                 
-
-                for(index in fieldNames) {
-
-                    const fieldName = Object.keys(errors)[index];
-                    let field =  null;
-                    
-                    if(fieldName === 'message') {
-                        field = document.querySelector("textarea[name='"+fieldName+"']");
-                    }
-                    else {
-                        field = document.querySelector("input[name='"+fieldName+"']");
-                    }
-
-                    const fieldErrorMessage = errors[fieldName];
-                    field.insertAdjacentHTML('afterend', `<div class="error">${fieldErrorMessage}</div>`);
-                    field.style.borderColor = 'red';
+                if(fieldName === 'message') {
+                    field = document.querySelector("textarea[name='"+fieldName+"']");
                 }
+                else {
+                    field = document.querySelector("input[name='"+fieldName+"']");
+                }
+
+                const fieldErrorMessage = errors[fieldName];
+                field.insertAdjacentHTML('afterend', `<div class="error">${fieldErrorMessage}</div>`);
+                field.style.borderColor = 'red';
             }
         });
+
     })
 
 </script>

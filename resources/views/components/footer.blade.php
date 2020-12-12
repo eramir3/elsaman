@@ -3,7 +3,9 @@
     <div class="footer__container">            
         <nav>
             <div class="main-footer__image-container">
-                <img src="../images/shared/gray-logo.png" alt="">
+                <a href="{{ route('welcome', app()->getLocale()) }}">
+                    <img src="../images/shared/gray-logo.png" alt="">
+                </a>
             </div>
             <div class="main-footer__info">
                 <ul class="main-footer__links">
@@ -18,7 +20,7 @@
                         </a>
                     </li>
                     <li class="main-footer__link">
-                        <a href="#">
+                        <a href="https://wa.me/33788225586">
                             <img src="{{ asset('images/shared/social/whatsapp-green.svg') }}" alt="" /></i>
                         </a>
                     </li>
@@ -28,12 +30,12 @@
                         </a>
                     </li>
                 </ul>
-                <p>Encuentra los sabores de Colombia en tu casa.</p>
+                <p>{{ __('footer.discover_colombian_flavors') }}</p>
             </div>
         </nav>
         <div class="main-footer__legal">
-            <p><strong>CI RADCO - EL SAMAN PULPA DE FRUTA</strong></p>
-            <p>TODOS LOS DERECHOS RESERVADOS</p>
+            <p><strong>{{ Str::upper(__('footer.ci_radco')) }}</strong></p>
+            <p>{{ Str::upper(__('footer.reserved_rights')) }}</p>
             <p>{{ now()->year }}</p>
         </div>
         <br>

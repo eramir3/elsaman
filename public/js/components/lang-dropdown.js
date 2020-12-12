@@ -29,7 +29,7 @@ $(".lang-dropdown-mobile .lang-dropdown__item a").click(function() {
 
 $(document).bind('click', function(element) {
     let clicked = $(element.target);
-    if (! clicked.parents().hasClass("lang-dropdown"))
+    if (!clicked.parents().hasClass("lang-dropdown"))
         $(".lang-dropdown__items").hide();
 });
             

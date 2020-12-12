@@ -1,0 +1,99 @@
+<?php
+
+return [
+    'our_products_origin' => 'de donde vienen nuestros productos?',
+    'tequendama' => 'region del tequendama',
+    'tequendama_description' => 'Situada en el departamento de Cundinamarca, la región del 
+                                Tequendama está compuesta por 10 municipios, con una población 
+                                aproximada de 160.000 habitantes. La región es famosa por el Salto 
+                                del Tequendama, una cascada natural de 132 metros de alto y ubicada 
+                                a 32 km al suroccidente de Bogotá. Según la mitología muisca, la 
+                                cascada fue creada por Bochica, quien la creó de un único golpe para 
+                                evacuar las aguas que inundaban la sabana de Bogotá.
+                                
+                                Dadas las condiciones climáticas, la pluviosidad y la diversidad de pisos 
+                                térmicos, entre los cuales prima sobre todo los pisos templados, la región del 
+                                Tequendama es un entorno propicio para la producción de frutas tropicales. 
+                                El mango ostenta una posición favorable entre los productos exportable del 
+                                departamento gracias a la demande mundial, la regularidad del cultivo 
+                                y los altos niveles de producción en la región.',
+    'our_products' => 'nuestros productos',
+    'fruit_pulpe' => 'pulpa de Fruta congelada',
+    'fruit_pulpe_description' => 'La pulpa de fruta congelada es un producto no fermentado, ni 
+                                concentrado, ni diluido, obtenido de la parte interna y comestible 
+                                que recubre, en la mayoría de los casos, las semillas de las frutas.
+                                Nuestras frutas son elegidas con los estandares mas altos de calidad 
+                                para asegurar un producto 100% fresco, natural y saludable. 
+                                Haz click en la imagenes para saber mas acerca de nuestro producto.',
+
+    'nutrition_facts' => 'aportes nutricionales',
+    'preparation_tips' => 'consejos de preparacion',
+    
+    'pineapple' => 'piña',
+    'pineapple_facts' => 'Es originaria de América del Sur. Fuente de vitamina A, C y B6, potasio, 
+                        fibra, magnesio , manganeso  y ácido fólico. también es rica en antioxidantes.',
+    
+    'passion_fruit' => 'maracuya',
+    'passion_fruit_facts' => 'También conocida como fruta de la pasión. Es una 
+                            fruta tropical que contiene gran cantidad de vitamina A y C, como también 
+                            potasio, fósforo y magnesio al igual que gran cantidad de hierro. También 
+                            contiene una alta cantidad de fibra.',
+
+    'strawberry' => 'fresa',
+    'strawberry_facts' => 'Es una fruta muy rica en antioxidantes, posee vitaminas C, B2, B3, 
+                        además de magnesio, manganeso y potasio. El 90% de la fresa es agua y 7% 
+                        hidratos de carbono. Se cultiva en Colombia en Cundinamarca, Antioquia y 
+                        Caldas.',
+
+    'mango' => 'mango',
+    'mango_facts' => 'Es una fruta tropical de origen asiático. Su fruta es muy apreciada ya que 
+                    contiene minerales como magnesio, fósforo, calcio y potasio al igual que 
+                    vitaminas  E, C y A.  Es muy rico en fibra.',
+
+    'tamarillo' => 'tomate de arbol',
+    'tamarillo_facts' => 'Se cultiva en zonas tropicales como Colombia y Brasil. Es una fruta muy 
+                        rica en vitamina A,  C, E y B6, al igual que en calcio, magnesio, fósforo y 
+                        hierro. ',
+
+    'guava' => 'guayaba',
+    'guava_facts' => 'Perteneciente a la familia de las mirtáceas, esta fruta es muy utilizada en 
+                    Colombia ya que con ella se preparan además de jugos, mermeladas, sorbetes, 
+                    néctares y bocadillos. Tiene un alto contenido de vitamina C como también A, y 
+                    B1. También tiene altas cantidades de proteína, fibra, y ácido fólico.',
+
+    'lulo' => 'lulo',
+    'lulo_facts' => 'Su fruto es muy rico en vitamina A y C, además de calcio, hierro, y sodio. 
+                    Es una fruta exótica muy común en América Latina, ideal para quienes buscan 
+                    nuevos sabores.',
+
+    'tangerine' => 'mandarina',
+    'tangerine_facts' => 'Este cítrico proviene del Asia, pero se cultiva en grandes cantidades en 
+                        Colombia.  Esta fruta es rica en Vitamina C, B6, B12 y E, y contiene 
+                        propiedades antioxidantes.',
+
+
+    'blackberry' => 'mora',
+    'blackberry_facts' => 'Su arbusto pertenece a la familia de las rosáceas. Es fuente de vitamina
+                         C, calcio, y hierro. También es muy rica en vitamina A, así como en potasio,  y fibra.  Es muy utilizada en gastronomía porque con ella se pueden hacer muchas salsas, dulces y mermeladas.',
+
+    'soursop' => 'guanabana',
+    'soursop_facts' => 'Es un árbol originario de Sudamérica perteneciente a la familia Annonacease 
+                        y es cultivado en países de clima tropical. En Colombia se cultiva 
+                        principalmente en el la región central del Meta. La guanabana es un 
+                        fruto rico en potasio, fósforo, hierro, calcio, lípidos, hidratos de carbono 
+                        y vitaminas C, A y B.',
+
+    'curuba' => 'curuba',
+    'curuba_facts' => 'También se conoce como parcha o taxo. Su fruto proviene de unos arbustos 
+                    trepadores del género Passiflora. Se cultivan desde la época precolombina en 
+                    Colombia, Perú, Bolivia, y Ecuador. En Colombia se cultiva en las cordilleras 
+                    oriental y occidental. Contiene vitamina A, C y riboflavina, potasio, magnesio, 
+                    cloro y hierro entre otras.',
+
+    'feijoa' => 'feijoa',
+    'feijoa_facts' => 'Esta fruta exótica es originaria del sur de  Brasil, Argentina y Uruguay. 
+                    Es cultivada en Colombia en las zonas frías de Boyacá, Caldas, Cundinamarca y 
+                    Antioquia. La feijoa  aporta las vitaminas A, B1, B2, B3, B6, B9, C ,E y K. 
+                    Es de un sabor agradable semiácido.'
+
+];

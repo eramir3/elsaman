@@ -98,6 +98,7 @@ body {
 
     .element__text {
         width: 100%;
+        padding: 1rem
     }
 
     .main-footer__info > p {

@@ -3,6 +3,11 @@
     src: url(../fonts/OrangeJuice.otf);
 }
 
+@font-face {
+    font-family: NexaLight;
+    src: url(../fonts/NexaLight.otf);
+}
+
 body {
     background-image: url('../images/contact/fruits-bg.png');
     background-size: 50%;
@@ -118,22 +123,14 @@ main {
 }
 
 .fruit-badge {
+    font-family: NexaLight;
     text-align: center;
     color: white;
     width: 200px;
-    border-radius: 10px;
+    border-radius: 30px;
     margin: 0 auto;
+    padding-top: 6px
 }
-
-.card-shadow__center {
-    text-align: center;
-}
-
-.modal-title {
-    margin: 0 auto;
-}
-
-
 
 @media (max-width: 1680px) {
     .fruit img {
@@ -153,10 +150,6 @@ main {
     .fruit-badge {
         width: 150px;
     }
-}
-
-@media (max-width: 1280px) {
-    
 }
 
 @media(max-width: 750px) {
@@ -206,8 +199,7 @@ main {
     .section__description {
         width: 100%;
         text-align: center;
-    }
-    
+    }   
 }
 
 @media(max-width: 670px) {
@@ -243,8 +235,10 @@ main {
     }
 
     #fruits {
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 20% 20% 20% 20% 20% 20%;
+        /* grid-template-columns: 50% 50%;
+        grid-template-rows: 20% 20% 20% 20% 20% 20%; */
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr;
         width: 20rem;
         max-width: 20rem;
     }
