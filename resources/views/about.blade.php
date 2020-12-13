@@ -30,29 +30,29 @@
                         <img src="../images/shared/saman-logo.png" alt="" >
                     </div>
                     <div class="element-right__info">
-                        <div class="title">{{ __('about.about') }}</div>
-                        <div class="badge badge--pink element__title">{{ __('about.our_history') }}</div>
-                        <p class="element__text">
-                            {{ __('about.about_description_1') }}
-                        </p>
-                        <p class="element__text">
-                            {{ __('about.about_description_2') }}
-                        </p>
-                    </div>
-                </section>
-                <section class="element element-left">
-                    <div class="element-left__info">
+                        <h1 class="title">{{ __('about.about') }}</h1>
                         <div>
-                            <p class="badge badge--pink element__title">{{ __('about.mission') }}</p>
+                            <h2 class="badge badge--pink element__title">{{ __('about.mission') }}</h2>
                         </div>
                         <p class="element__text">
                             {{ __('about.mission_description') }}
                         </p>
                         <div>
-                            <p class="badge badge--pink element__title">{{ __('about.vision') }}</p>
+                            <h2 class="badge badge--pink element__title">{{ __('about.vision') }}</h2>
                         </div>
                         <p class="element__text">
                             {{ __('about.vision_description') }}
+                        </p>
+                    </div>
+                </section>
+                <section class="element element-left">
+                    <div class="element-left__info">
+                        <h2 class="badge badge--pink element__title">{{ __('about.our_history') }}</h2>
+                        <p class="element__text">
+                            {{ __('about.about_description_1') }}
+                        </p>
+                        <p class="element__text">
+                            {{ __('about.about_description_2') }}
                         </p>
                     </div>
                     <div class="element__image">

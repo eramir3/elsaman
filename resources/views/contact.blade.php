@@ -19,7 +19,7 @@
     <main id="slidable">
         <section id="overview"></section>
         <section class="overview-bottom">
-            <div>{{ __('contact.find_out_more') }}</div>
+            <h1>{{ __('contact.find_out_more') }}</h1>
         </section>
         <section class="container__main form">
             <h3>{{ __('contact.contact_description') }}</h3>
@@ -107,56 +107,6 @@
 
         $('.loader').css('display', 'block');
         $("input[name='submit']").css('display', 'none');
-
-        // fetch(url, {
-        //     method: 'POST',
-        //     body: form.serialize(),
-        //     headers: {
-        //             "Content-Type": "application/x-www-form-urlencoded",
-        //             "X-Requested-With": "XMLHttpRequest",
-        //             "X-CSRF-Token": $('input[name="_token"]').val()
-        //     }
-        // })
-        // .then((res) => {
-
-        //     if(res.ok) {
-        //         $('#label-success').css('display', 'block');
-        //         $('.loader').css('display', 'none');
-        //         $("input[name='submit']").css('display', 'flex');
-        //     }
-        //     else {
-
-        //         res.json().then(function(result) {
-
-        //             const errors = result.errors;                    
-        //             const fieldNames = Object.keys(errors);
-                    
-        //             $('#label-failed').css('display', 'block');
-        //             $('.loader').css('display', 'none');
-        //             $("input[name='submit']").css('display', 'block');
-                    
-        //             for(index in fieldNames) {
-
-        //                 const fieldName = Object.keys(errors)[index];
-        //                 let field =  null;
-                        
-        //                 if(fieldName === 'message') {
-        //                     field = document.querySelector("textarea[name='"+fieldName+"']");
-        //                 }
-        //                 else {
-        //                     field = document.querySelector("input[name='"+fieldName+"']");
-        //                 }
-
-        //                 const fieldErrorMessage = errors[fieldName];
-        //                 field.insertAdjacentHTML('afterend', `<div class="error">${fieldErrorMessage}</div>`);
-        //                 field.style.borderColor = 'red';
-        //             }
-        //         })
-        //     }
-        // })
-        // .catch(error => {
-        //     console.log('Error' + error);
-        // });
 
         $.ajax({
             type: "POST",

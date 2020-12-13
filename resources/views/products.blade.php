@@ -21,18 +21,18 @@
     <main id="slidable">
         <section id="overview">
             <div class="container">
-                <div class="title">{{ __('products.our_products_origin') }}</div>
-                <div class="overview-badge badge badge--pink">{{ __('products.tequendama') }}</div>
+                <h1 class="title">{{ __('products.our_products_origin') }}</h1>
+                <h2 class="overview-badge badge badge--pink">{{ __('products.tequendama') }}</h2>
                 <p class="overview__description">
                     {{ __('products.tequendama_description') }}
                 </p>
             </div>
         </section>
         <section class="overview-bottom">
-            <div>{{ __('products.our_products') }}</div>
+            <h1>{{ __('products.our_products') }}</h1>
         </section>
         <section id="our-fruits" class="container">
-            <div class="our-fruits-badge badge badge--pink__dark">{{ __('products.fruit_pulpe') }}</div>
+            <h2 class="our-fruits-badge badge badge--pink__dark">{{ __('products.fruit_pulpe') }}</h2>
             <p class="section__description">
                 {{ __('products.fruit_pulpe_description') }}
             </p>

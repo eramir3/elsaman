@@ -32,6 +32,8 @@ main {
     font-family: OrangeJuice;
     font-size: 5rem;
     line-height: 1.125;
+    font-weight: 100;
+    margin: 0;
 }
 
 #overview {
@@ -52,20 +54,22 @@ main {
     align-items: center;
 }
 
-.overview-bottom div {
+.overview-bottom h1 {
     margin: 0;
     color: white;
     font-family: OrangeJuice;
     font-size: 4.5rem;
     padding-top: 10px;
+    font-weight: 100;
 }
 
 .overview-badge {
-    margin-top: 4rem;
+    margin-top: 2rem;
     font-family: OrangeJuice;
     font-size: 2.8rem;
     border-radius: 30px;
     padding-top: 10px;
+    font-weight: 100;
 }
 
 .our-fruits-badge {
@@ -73,36 +77,36 @@ main {
     font-size: 2.8rem;
     border-radius: 30px;
     padding-top: 10px;
+    font-weight: 100;
 }
 
 #our-fruits {
     z-index: -1;
     width: 100%;
-    margin-top: 5rem;
+    margin-top: 4rem;
 }
 
 .overview__description {
     color: white;
     font-family: 'Raleway', sans-serif;
     letter-spacing: -0.025rem;
-    width: 90%;
+    width: 75%;
     font-size: 1rem;
     line-height: 1.5;
     font-weight: 400;
-    margin-bottom: 0;
-    text-align: justify;
+    text-align: left;
 }
 
 .section__description {
     color: #555555;
     font-family: 'Raleway', sans-serif;
     letter-spacing: -0.025rem;
-    width: 90%;
+    width: 75%;
     font-size: 1rem;
     line-height: 1.5;
     font-weight: 400;
     margin-bottom: 0;
-    text-align: justify;
+    text-align: left;
 }
 
 #fruits {
@@ -187,8 +191,8 @@ main {
     }
 
     #overview {
-        background-image: url(../images/products/falls.png);
-        background-position: 100% 100%, bottom;
+        background-size: auto;
+        padding-top: 4rem;
     }
 
     .overview__description {

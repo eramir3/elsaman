@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'about' => 'quienes somos?',
+    'about' => '¿quienes somos?',
     'our_history' => 'nuestra historia',
     'about_description_1' => 'En septiembre de 1999, la Asociación 
                             de Fruteros de Anapoima (AFA) fue creada por cuatro campesinos 

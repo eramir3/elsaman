@@ -8,6 +8,11 @@
     src: url(../fonts/OrangeJuice.otf);
 }
 
+@font-face {
+    font-family: NexaLight;
+    src: url(../fonts/NexaLight.otf);
+}
+
 body {
     background-image: url('../images/contact/fruits-bg.png');
     background-size: 50%;
@@ -57,12 +62,13 @@ body {
     align-items: center;
 }
 
-.overview-bottom div {
+.overview-bottom h1 {
     margin: 0;
     color: white;
     font-family: OrangeJuice;
     font-size: 4.5rem;
     padding-top: 10px;
+    font-weight: 100;
 }
 
 .form h3 {
@@ -85,7 +91,7 @@ textarea {
     -webkit-box-shadow: 0px 0px 4px 1px rgba(156,156,156,0.61);
     -moz-box-shadow: 0px 0px 4px 1px rgba(156,156,156,0.61);
     box-shadow: 0px 0px 4px 1px rgba(156,156,156,0.61);
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     resize: none;
 }
   
@@ -94,7 +100,7 @@ input[type=submit] {
     background-color: #FE7E7E;
     width: max-content;
     color: white;
-    padding: 20px 35px 10px 35px;
+    padding: 14px 35px 10px 35px;
     margin: 1rem auto;
     border: none;
     border-radius: 40px;
@@ -138,18 +144,18 @@ input[type=submit]:focus {
     align-items: center;
     border-bottom: 1px solid gray; 
     padding-bottom: 0.7rem; 
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
 }
 
 .whatsapp__bottom {
     display: flex; 
     align-items: center;
     padding-top: 0.7rem;
-    font-family: 'Raleway'; 
+    font-family: 'Raleway', sans-serif;
 }
 
 .envelope {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
 }
 
 .envelope > img {
@@ -177,7 +183,7 @@ input[type=submit]:focus {
     border: 1px solid green;
     padding: 15px;
     color: green;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
 }
 
 .failed {
@@ -188,7 +194,7 @@ input[type=submit]:focus {
     border: 1px solid red;
     padding: 15px;
     color: red;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
 }
 
 .error {
@@ -196,7 +202,7 @@ input[type=submit]:focus {
     color: red;
     font-size: 0.9rem;
     margin-left: 35px;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
 }
 
 .loader {

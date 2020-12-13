@@ -2,21 +2,13 @@
 
 return [
     'our_products_origin' => 'where do our products come from?',
-    'tequendama' => 'tequendama region',
-    'tequendama_description' => 'Located in the department of Cundinamarca, the region of
-                                Tequendama is made up of 10 municipalities, with a population
-                                approximately 160,000 inhabitants. The region is famous for the Salto
-                                del Tequendama, a natural waterfall 132 meters high and located
-                                32 km southwest of Bogotá. According to Muisca mythology,
-                                waterfall was created by Bochica, who created it in a single stroke to
-                                evacuate the waters that flooded the savannah of Bogotá.
-                                
-                                Given the climatic conditions, the rainfall and the diversity of floors
-                                thermals, among which the temperate floors prevail, the region of the
-                                Tequendama is an environment conducive to the production of tropical fruits.
-                                Mango holds a favorable position among the exportable products of the
-                                department thanks to world demand, regularity of cultivation
-                                and the high levels of production in the region.',
+    'tequendama' => 'Tequendama',
+    'tequendama_description' => 'Located in the department of Cundinamarca, the Tequendama region is
+                                famous for its environment conducive to food production in Colombia. Given the
+                                climatic conditions, rainfall and the diversity of thermal floors, can be
+                                grow a wide variety of tropical fruits with high nutritional value and exquisite
+                                flavor which can be used in various gastronomic recipes.',
+
     'our_products' => 'our products',
     'fruit_pulpe' => 'frozen fruit pulpe',
     'fruit_pulpe_description' => 'Frozen fruit pulp is an unfermented product, nor
@@ -24,7 +16,7 @@ return [
                                 that covers, in most cases, the seeds of fruits.
                                 Our fruits are chosen with the highest quality standards
                                 to ensure a 100% fresh, natural and healthy product.
-                                Click on the images to know more about our product.',
+                                Click on the images to know more about our products.',
     'nutrition_facts' => 'nutrition facts',
     'preparation_tips' => 'preparation tips',
     

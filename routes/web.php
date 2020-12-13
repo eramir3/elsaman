@@ -38,10 +38,6 @@ Route::group(['prefix' => '/{locale}'], function() {
         return view('about');
     })->name('about');
     
-    // Route::get('our-fruits', function () {
-    //     return view('our-fruits');
-    // })->name('our-fruits');
-    
     Route::get('products', function () {
         return view('products');
     })->name('products');

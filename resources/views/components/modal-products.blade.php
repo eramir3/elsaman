@@ -2,7 +2,7 @@
 <div id="pineapple" class="modal">
     <div class="modal-content">
         <span class="modal-content__close">&times;</span>
-        <div class="badge badge--pink modal-title">{{ __('products.pineapple') }}</div>
+        <h2 class="badge badge--pink modal-title">{{ __('products.pineapple') }}</h2>
         <section class="fruit-description card">
             <div class="fruit-modal-image">
                 <img id="pineapple-img" src="../images/fruits/pineapple.png" alt="">
@@ -15,7 +15,7 @@
         </section>
         <section class="fruit-info">
             <div class="nutrition-facts">
-                <div class="nutrition-facts__title badge badge--pink">{{ __('products.nutrition_facts') }}</div>
+                <h3 class="nutrition-facts__title badge badge--pink">{{ __('products.nutrition_facts') }}</h3>
                     <table class="nutrition-facts__table">
                         <tr>
                             <td>ENERGY</td>
@@ -52,7 +52,7 @@
                     </table>
             </div>
             <div class="fruit-preparation">
-                <div class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</div>
+                <h3 class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</h3>
                 <div class="fruit-preparation__tip">
                     <div class="fruit-preparation__bullet circle">1</div>
                     <p>
@@ -76,7 +76,7 @@
 <div id="passion_fruit" class="modal">
     <div class="modal-content">
         <span class="modal-content__close">&times;</span>
-        <div class="badge badge--pink modal-title">{{ __('products.passion_fruit') }}</div>
+        <h2 class="badge badge--pink modal-title">{{ __('products.passion_fruit') }}</h2>
         <section class="fruit-description card">
             <div class="fruit-modal-image">
                 <img id="passion_fruit-img" src="../images/fruits/passion_fruit.png" alt="">
@@ -89,7 +89,7 @@
         </section>
         <section class="fruit-info">
             <div class="nutrition-facts">
-                <div class="nutrition-facts__title badge badge--pink">{{ __('products.nutrition_facts') }}</div>
+                <h3 class="nutrition-facts__title badge badge--pink">{{ __('products.nutrition_facts') }}</h3>
                     <table class="nutrition-facts__table">
                         <tr>
                             <td>ENERGY</td>
@@ -126,7 +126,7 @@
                     </table>
             </div>
             <div class="fruit-preparation">
-                <div class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</div>
+                <h3 class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</h3>
                 <div class="fruit-preparation__tip">
                     <div class="fruit-preparation__bullet circle">1</div>
                     <p>
@@ -150,7 +150,7 @@
 <div id="strawberry" class="modal">
     <div class="modal-content">
         <span class="modal-content__close">&times;</span>
-        <div class="badge badge--pink modal-title">{{ __('products.strawberry') }}</div>
+        <h2 class="badge badge--pink modal-title">{{ __('products.strawberry') }}</h2>
         <section class="fruit-description card">
             <div class="fruit-modal-image">
                 <img id="strawberry-img" src="../images/fruits/strawberry.png" alt="">
@@ -163,7 +163,7 @@
         </section>
         <section class="fruit-info">
             <div class="nutrition-facts">
-                <div class="nutrition-facts__title badge badge--pink">{{ __('products.nutrition_facts') }}</div>
+                <h3 class="nutrition-facts__title badge badge--pink">{{ __('products.nutrition_facts') }}</h3>
                     <table class="nutrition-facts__table">
                         <tr>
                             <td>ENERGY</td>
@@ -200,7 +200,7 @@
                     </table>
             </div>
             <div class="fruit-preparation">
-                <div class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</div>
+                <h3 class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</h3>
                 <div class="fruit-preparation__tip">
                     <div class="fruit-preparation__bullet circle">1</div>
                     <p>
@@ -224,7 +224,7 @@
 <div id="mango" class="modal">
     <div class="modal-content">
         <span class="modal-content__close">&times;</span>
-        <div class="badge badge--pink modal-title">{{ __('products.mango') }}</div>
+        <h2 class="badge badge--pink modal-title">{{ __('products.mango') }}</h2>
         <section class="fruit-description card">
             <div class="fruit-modal-image">
                 <img id="mango-img" src="../images/fruits/mango.png" alt="">
@@ -237,7 +237,7 @@
         </section>
         <section class="fruit-info">
             <div class="nutrition-facts">
-                <div class="nutrition-facts__title badge badge--pink">{{ __('products.nutrition_facts') }}</div>
+                <h3 class="nutrition-facts__title badge badge--pink">{{ __('products.nutrition_facts') }}</h3>
                     <table class="nutrition-facts__table">
                         <tr>
                             <td>ENERGY</td>
@@ -274,7 +274,7 @@
                     </table>
             </div>
             <div class="fruit-preparation">
-                <div class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</div>
+                <h3 class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</h3>
                 <div class="fruit-preparation__tip">
                     <div class="fruit-preparation__bullet circle">1</div>
                     <p>
@@ -298,7 +298,7 @@
 <div id="tamarillo" class="modal">
     <div class="modal-content">
         <span class="modal-content__close">&times;</span>
-        <div class="badge badge--pink modal-title">{{ __('products.tamarillo') }}</div>
+        <h2 class="badge badge--pink modal-title">{{ __('products.tamarillo') }}</h2>
         <section class="fruit-description card">
             <div class="fruit-modal-image">
                 <img id="tamarillo-img" src="../images/fruits/tamarillo.png" alt="">
@@ -311,7 +311,7 @@
         </section>
         <section class="fruit-info">
             <div class="nutrition-facts">
-                <div class="nutrition-facts__title badge badge--pink">{{ __('products.nutrition_facts') }}</div>
+                <h3 class="nutrition-facts__title badge badge--pink">{{ __('products.nutrition_facts') }}</h3>
                     <table class="nutrition-facts__table">
                         <tr>
                             <td>ENERGY</td>
@@ -348,7 +348,7 @@
                     </table>
             </div>
             <div class="fruit-preparation">
-                <div class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</div>
+                <h3 class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</h3>
                 <div class="fruit-preparation__tip">
                     <div class="fruit-preparation__bullet circle">1</div>
                     <p>
@@ -372,7 +372,7 @@
 <div id="guava" class="modal">
     <div class="modal-content">
         <span class="modal-content__close">&times;</span>
-        <div class="badge badge--pink modal-title">{{ __('products.guava') }}</div>
+        <h2 class="badge badge--pink modal-title">{{ __('products.guava') }}</h2>
         <section class="fruit-description card">
             <div class="fruit-modal-image">
                 <img id="guava-img" src="../images/fruits/guava.png" alt="">
@@ -385,7 +385,7 @@
         </section>
         <section class="fruit-info">
             <div class="nutrition-facts">
-                <div class="nutrition-facts__title badge badge--pink">{{ __('products.nutrition_facts') }}</div>
+                <h3 class="nutrition-facts__title badge badge--pink">{{ __('products.nutrition_facts') }}</h3>
                     <table class="nutrition-facts__table">
                         <tr>
                             <td>ENERGY</td>
@@ -422,7 +422,7 @@
                     </table>
             </div>
             <div class="fruit-preparation">
-                <div class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</div>
+                <h3 class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</h3>
                 <div class="fruit-preparation__tip">
                     <div class="fruit-preparation__bullet circle">1</div>
                     <p>
@@ -446,7 +446,7 @@
 <div id="lulo" class="modal">
     <div class="modal-content">
         <span class="modal-content__close">&times;</span>
-        <div class="badge badge--pink modal-title">{{ __('products.lulo') }}</div>
+        <h2 class="badge badge--pink modal-title">{{ __('products.lulo') }}</h2>
         <section class="fruit-description card">
             <div class="fruit-modal-image">
                 <img id="lulo-img" src="../images/fruits/lulo.png" alt="">
@@ -459,7 +459,7 @@
         </section>
         <section class="fruit-info">
             <div class="nutrition-facts">
-                <div class="nutrition-facts__title badge badge--pink">{{ __('products.nutrition_facts') }}</div>
+                <h3 class="nutrition-facts__title badge badge--pink">{{ __('products.nutrition_facts') }}</h3>
                     <table class="nutrition-facts__table">
                         <tr>
                             <td>ENERGY</td>
@@ -496,7 +496,7 @@
                     </table>
             </div>
             <div class="fruit-preparation">
-                <div class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</div>
+                <h3 class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</h3>
                 <div class="fruit-preparation__tip">
                     <div class="fruit-preparation__bullet circle">1</div>
                     <p>
@@ -520,7 +520,7 @@
 <div id="tangerine" class="modal">
     <div class="modal-content">
         <span class="modal-content__close">&times;</span>
-        <div class="badge badge--pink modal-title">{{ __('products.tangerine') }}</div>
+        <h2 class="badge badge--pink modal-title">{{ __('products.tangerine') }}</h2>
         <section class="fruit-description card">
             <div class="fruit-modal-image">
                 <img id="tangerine-img" src="../images/fruits/tangerine.png" alt="">
@@ -533,7 +533,7 @@
         </section>
         <section class="fruit-info">
             <div class="nutrition-facts">
-                <div class="nutrition-facts__title badge badge--pink">{{ __('products.nutrition_facts') }}</div>
+                <h3 class="nutrition-facts__title badge badge--pink">{{ __('products.nutrition_facts') }}</h3>
                     <table class="nutrition-facts__table">
                         <tr>
                             <td>ENERGY</td>
@@ -570,7 +570,7 @@
                     </table>
             </div>
             <div class="fruit-preparation">
-                <div class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</div>
+                <h3 class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</h3>
                 <div class="fruit-preparation__tip">
                     <div class="fruit-preparation__bullet circle">1</div>
                     <p>
@@ -594,7 +594,7 @@
 <div id="blackberry" class="modal">
     <div class="modal-content">
         <span class="modal-content__close">&times;</span>
-        <div class="badge badge--pink modal-title">{{ __('products.blackberry') }}</div>
+        <h2 class="badge badge--pink modal-title">{{ __('products.blackberry') }}</h2>
         <section class="fruit-description card">
             <div class="fruit-modal-image">
                 <img id="blackberry-img" src="../images/fruits/blackberry.png" alt="">
@@ -607,7 +607,7 @@
         </section>
         <section class="fruit-info">
             <div class="nutrition-facts">
-                <div class="nutrition-facts__title badge badge--pink">{{ __('products.nutrition_facts') }}</div>
+                <h3 class="nutrition-facts__title badge badge--pink">{{ __('products.nutrition_facts') }}</h3>
                     <table class="nutrition-facts__table">
                         <tr>
                             <td>ENERGY</td>
@@ -644,7 +644,7 @@
                     </table>
             </div>
             <div class="fruit-preparation">
-                <div class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</div>
+                <h3 class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</h3>
                 <div class="fruit-preparation__tip">
                     <div class="fruit-preparation__bullet circle">1</div>
                     <p>
@@ -668,7 +668,7 @@
 <div id="soursop" class="modal">
     <div class="modal-content">
         <span class="modal-content__close">&times;</span>
-        <div class="badge badge--pink modal-title">{{ __('products.soursop') }}</div>
+        <h2 class="badge badge--pink modal-title">{{ __('products.soursop') }}</h2>
         <section class="fruit-description card">
             <div class="fruit-modal-image">
                 <img id="soursop-img" src="../images/fruits/soursop.png" alt="">
@@ -681,7 +681,7 @@
         </section>
         <section class="fruit-info">
             <div class="nutrition-facts">
-                <div class="nutrition-facts__title badge badge--pink">{{ __('products.nutrition_facts') }}</div>
+                <h3 class="nutrition-facts__title badge badge--pink">{{ __('products.nutrition_facts') }}</h3>
                     <table class="nutrition-facts__table">
                         <tr>
                             <td>ENERGY</td>
@@ -718,7 +718,7 @@
                     </table>
             </div>
             <div class="fruit-preparation">
-                <div class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</div>
+                <h3 class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</h3>
                 <div class="fruit-preparation__tip">
                     <div class="fruit-preparation__bullet circle">1</div>
                     <p>
@@ -742,7 +742,7 @@
 <div id="curuba" class="modal">
     <div class="modal-content">
         <span class="modal-content__close">&times;</span>
-        <div class="badge badge--pink modal-title">{{ __('products.curuba') }}</div>
+        <h2 class="badge badge--pink modal-title">{{ __('products.curuba') }}</h2>
         <section class="fruit-description card">
             <div class="fruit-modal-image">
                 <img id="curuba-img" src="../images/fruits/curuba.png" alt="">
@@ -755,7 +755,7 @@
         </section>
         <section class="fruit-info">
             <div class="nutrition-facts">
-                <div class="nutrition-facts__title badge badge--pink">{{ __('products.nutrition_facts') }}</div>
+                <h3 class="nutrition-facts__title badge badge--pink">{{ __('products.nutrition_facts') }}</h3>
                     <table class="nutrition-facts__table">
                         <tr>
                             <td>ENERGY</td>
@@ -792,7 +792,7 @@
                     </table>
             </div>
             <div class="fruit-preparation">
-                <div class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</div>
+                <h3 class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</h3>
                 <div class="fruit-preparation__tip">
                     <div class="fruit-preparation__bullet circle">1</div>
                     <p>
@@ -816,7 +816,7 @@
 <div id="feijoa" class="modal">
     <div class="modal-content">
         <span class="modal-content__close">&times;</span>
-        <div class="badge badge--pink modal-title">{{ __('products.feijoa') }}</div>
+        <h2 class="badge badge--pink modal-title">{{ __('products.feijoa') }}</h2>
         <section class="fruit-description card">
             <div class="fruit-modal-image">
                 <img id="feijoa-img" src="../images/fruits/feijoa.png" alt="">
@@ -829,7 +829,7 @@
         </section>
         <section class="fruit-info">
             <div class="nutrition-facts">
-                <div class="nutrition-facts__title badge badge--pink">{{ __('products.nutrition_facts') }}</div>
+                <h3 class="nutrition-facts__title badge badge--pink">{{ __('products.nutrition_facts') }}</h3>
                     <table class="nutrition-facts__table">
                         <tr>
                             <td>ENERGY</td>
@@ -866,7 +866,7 @@
                     </table>
             </div>
             <div class="fruit-preparation">
-                <div class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</div>
+                <h3 class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</h3>
                 <div class="fruit-preparation__tip">
                     <div class="fruit-preparation__bullet circle">1</div>
                     <p>

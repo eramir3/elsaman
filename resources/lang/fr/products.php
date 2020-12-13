@@ -2,32 +2,22 @@
 
 return [
     'our_products_origin' => "d'où viennent nos produits?",
-    'tequendama' => 'la région de Tequendama',
-    'tequendama_description' => "Située dans le département de Cundinamarca, la région de Tequendama 
-                                est composée de 10 communes, avec une population d'environ 160,000 
-                                habitants. La région est célèbre pour le Salto del Tequendama, une 
-                                cascade naturelle de 132 mètres de haut et située à 32 km au 
-                                sud-ouest de Bogotá. Selon la mythologie de Muisca, la cascade a 
-                                été créée par Bochica, qui l'a créée d'un seul coup pour évacuer 
-                                les eaux qui ont inondé la savane de Bogotá.
-                                
-                                Compte tenu des conditions climatiques, de la pluviométrie et de la 
-                                diversité des planchers thermiques, parmi lesquels prédominent les 
-                                planchers tempérés, la région du Tequendama est un région propice à 
-                                la production de fruits tropicaux. La mangue occupe une position 
-                                favorable parmi les produits exportables du département grâce à la 
-                                demande mondiale, la régularité de la culture et les hauts niveaux 
-                                de production dans la région.",
+    'tequendama' => 'Tequendama',
+    'tequendama_description' => "Située dans le département de Cundinamarca, la région de Tequendama est
+                                célèbre pour son environnement propice à la production alimentaire en Colombie. Compte tenu du
+                                les conditions climatiques, les précipitations et la diversité des planchers thermiques, peuvent être
+                                cultiver une grande variété de fruits tropicaux à haute valeur nutritive et exquis
+                                saveur qui peuvent être utilisée dans diverses recettes gastronomiques.",
 
-    'our_products' => 'notre produits',
-    'fruit_pulpe' => 'pulpe de fruit surgelée',
+    'our_products' => 'nos produits',
+    'fruit_pulpe' => 'pulpe de fruit',
 
     'fruit_pulpe_description' => 'La pulpe de fruit congelée est un produit non fermenté, ni 
                                 concentré ni dilué, obtenu à partir de la partie interne et 
                                 comestible qui recouvre, dans la plupart des cas, les graines des fruits.
                                 Nos fruits sont choisis avec les plus hauts standards de qualité
                                 pour garantir un produit 100% frais, naturel et sain.
-                                Cliquez sur les images pour en savoir plus sur notre produit.',
+                                Cliquez sur les images pour en savoir plus sur nos produits.',
 
     'nutrition_facts' => 'faits nutritionnels',
     'preparation_tips' => 'conseils de préparation',

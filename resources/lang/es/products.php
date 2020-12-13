@@ -1,30 +1,22 @@
 <?php
 
 return [
-    'our_products_origin' => 'de donde vienen nuestros productos?',
-    'tequendama' => 'region del tequendama',
-    'tequendama_description' => 'Situada en el departamento de Cundinamarca, la región del 
-                                Tequendama está compuesta por 10 municipios, con una población 
-                                aproximada de 160.000 habitantes. La región es famosa por el Salto 
-                                del Tequendama, una cascada natural de 132 metros de alto y ubicada 
-                                a 32 km al suroccidente de Bogotá. Según la mitología muisca, la 
-                                cascada fue creada por Bochica, quien la creó de un único golpe para 
-                                evacuar las aguas que inundaban la sabana de Bogotá.
-                                
-                                Dadas las condiciones climáticas, la pluviosidad y la diversidad de pisos 
-                                térmicos, entre los cuales prima sobre todo los pisos templados, la región del 
-                                Tequendama es un entorno propicio para la producción de frutas tropicales. 
-                                El mango ostenta una posición favorable entre los productos exportable del 
-                                departamento gracias a la demande mundial, la regularidad del cultivo 
-                                y los altos niveles de producción en la región.',
-    'our_products' => 'nuestros productos',
-    'fruit_pulpe' => 'pulpa de Fruta congelada',
+    'our_products_origin' => '¿de donde vienen nuestros productos?',
+    'tequendama' => 'Tequendama',
+    'tequendama_description' => 'Situada en el departamento de Cundinamarca, la región del Tequendama es 
+                                famosa por su entorno propicio para la producción de alimentos en Colombia. Dadas las 
+                                condiciones climáticas, la pluviosidad y la diversidad de pisos térmicos, se pueden 
+                                cultivar una gran variedad de frutas tropicales con un alto valor nutricional y exquisito
+                                sabor, las cuales pueden ser utilizadas en diversas de recetas gastronómicas.'
+                                ,
+    'our_products' => 'productos',
+    'fruit_pulpe' => 'pulpa de fruta',
     'fruit_pulpe_description' => 'La pulpa de fruta congelada es un producto no fermentado, ni 
                                 concentrado, ni diluido, obtenido de la parte interna y comestible 
                                 que recubre, en la mayoría de los casos, las semillas de las frutas.
                                 Nuestras frutas son elegidas con los estandares mas altos de calidad 
                                 para asegurar un producto 100% fresco, natural y saludable. 
-                                Haz click en la imagenes para saber mas acerca de nuestro producto.',
+                                Haz click en la imagenes para saber mas acerca de nuestros productos.',
 
     'nutrition_facts' => 'aportes nutricionales',
     'preparation_tips' => 'consejos de preparacion',

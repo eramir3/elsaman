@@ -12,6 +12,7 @@
     font-size: 3rem;
     margin: 0 auto;
     padding-top: 10px;
+    font-weight: 100;
 }
 
 .fruit-description {
@@ -47,6 +48,7 @@
     font-size: 2rem;
     margin: 0 auto 1rem auto;
     padding: 5px 30px 0 30px;
+    font-weight: 100;
 }
 
 .nutrition-facts__table {
@@ -82,6 +84,7 @@
     font-size: 2rem;
     margin: 0 auto 1rem auto;
     padding: 5px 30px 0 30px;
+    font-weight: 100;
 }
 
 .fruit-preparation__tip {
@@ -128,7 +131,7 @@
         font-family: OrangeJuice;
         font-size: 3rem;
         margin: 2rem auto;
-        
+        max-width: 15rem;
         padding-top: 10px;
     }
 
@@ -159,10 +162,17 @@
 
     .nutrition-facts {
         width: 100%;
+        margin: 0;
         margin-bottom: 3rem;
+    }
+
+    .nutrition-facts__table {
+        width: 100%;
+        border-spacing: 0;
     }
 
     .fruit-preparation {
         width: 100%;
+        margin: 0;
     }
 }
