@@ -2,7 +2,7 @@
 
 return [
     'our_products_origin' => 'where do our products come from?',
-    'tequendama' => 'Tequendama',
+    'tequendama' => 'tequendama',
     'tequendama_description' => 'Located in the department of Cundinamarca, the Tequendama region is
                                 famous for its environment conducive to food production in Colombia. Given the
                                 climatic conditions, rainfall and the diversity of thermal floors, can be

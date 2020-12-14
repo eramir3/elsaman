@@ -127,13 +127,15 @@ main {
 }
 
 .fruit-badge {
-    font-family: NexaLight;
+    font-family: OrangeJuice;
     text-align: center;
     color: white;
     width: 11rem;
     border-radius: 30px;
     margin: 0 auto;
-    padding-top: 6px
+    padding-top: 6px;
+    font-size: 1.5rem;
+    font-weight: 100;
 }
 
 @media (max-width: 1680px) {

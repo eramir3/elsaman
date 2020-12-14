@@ -2,7 +2,7 @@
 
 return [
     'our_products_origin' => '¿de donde vienen nuestros productos?',
-    'tequendama' => 'Tequendama',
+    'tequendama' => 'tequendama',
     'tequendama_description' => 'Situada en el departamento de Cundinamarca, la región del Tequendama es 
                                 famosa por su entorno propicio para la producción de alimentos en Colombia. Dadas las 
                                 condiciones climáticas, la pluviosidad y la diversidad de pisos térmicos, se pueden 
