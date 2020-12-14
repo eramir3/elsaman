@@ -73,7 +73,7 @@
 }
 
 .lang-dropdown__text {
-    margin-top: 6px;
+    margin-top: 0.4rem;
 }
 
 @media (max-width: 1680px) {

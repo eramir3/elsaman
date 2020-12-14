@@ -286,3 +286,42 @@ input[type=submit]:focus {
         font-size: 1.2rem;
     }
 }
+
+@media(max-width: 320px) {
+
+    .whatsapp__top {
+        font-size: 1.2rem;
+    }
+
+    .whatsapp__bottom {
+        font-size: 1.2rem;
+    }
+
+    .envelope {
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width: 300px) {
+
+    .overview-bottom h1 {
+        margin: 0;
+        color: white;
+        font-family: OrangeJuice;
+        font-size: 3.8rem;
+        padding-top: 10px;
+        font-weight: 100;
+    }
+
+    .whatsapp__top {
+        font-size: 1rem;
+    }
+
+    .whatsapp__bottom {
+        font-size: 1rem;
+    }
+
+    .envelope {
+        font-size: 1rem;
+    }
+}

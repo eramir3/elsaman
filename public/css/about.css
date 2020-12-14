@@ -64,7 +64,7 @@ body {
     line-height: 1.5;
     font-weight: 450;
     margin-bottom: 0;
-    text-align: left;
+    text-align: justify;
 }
 
 .footer-top {
@@ -75,7 +75,7 @@ body {
 
     .element-right__info,
     .element-left__info {
-        padding: 0rem 1rem; 
+        padding: 0rem 4rem; 
     }    
 }
 
@@ -102,6 +102,11 @@ body {
         margin: 0 auto;
         margin-top: 2rem;
     }
+
+    .element-right__info,
+    .element-left__info {
+        padding: 0rem 1rem; 
+    }   
 
     .element__text {
         width: 100%;
