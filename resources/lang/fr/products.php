@@ -28,18 +28,18 @@ return [
                         riche en antioxydants.",
 
     'passion_fruit' => 'fruit de la passion',
-    'passion_fruit_facts' => "C'est un fruit tropical qui contient une grande quantité de vitamines A
-                            et C, ainsi que du potassium, du phosphore et du magnésium, ainsi qu'une 
+    'passion_fruit_facts' => "C'est un fruit tropical qui contient une grande quantité de vitamines A 
+                            et C, ainsi que du potassium, du phosphore et du magnésium, et une 
                             grande quantité de fer. Il contient également une grande quantité de 
                             fibres.",
 
     'strawberry' => 'fraise',
-    'strawberry_facts' => "C'est un fruit très riche en antioxydants, il contient des vitamines C, 
+    'strawberry_facts' => "C'est un fruit très riche en antioxydants. Elle contient des vitamines C, 
                         B2, B3, ainsi que du magnésium, du manganèse et du potassium. 90% de la 
-                        fraise est de l'eau et 7% de glucides. Il est cultivé en Colombie à 
-                        Cundinamarca, Antioquia et Caldas.",
+                        fraise est de l'eau et 7% de glucides. En Colombie, la fraise est cultivée 
+                        dans les régions de Cundinamarca, d’Antioquia et du Caldas.",
 
-    'mango' => 'mango',
+    'mango' => 'mangue',
     'mango_facts' => "C'est un fruit tropical d'origine asiatique. Son fruit est très apprécié 
                     car il contient des minéraux tels que le magnésium, le phosphore, le calcium et 
                     le potassium ainsi que les vitamines E, C et A. Il est très riche en fibres.",
@@ -50,14 +50,13 @@ return [
                         calcium, magnésium, phosphore et fer.",
 
     'guava' => 'goyave',
-    'guava_facts' => "Appartenant à la famille des myrtacées, ce fruit est largement utilisé en 
-                    Colombie puisqu'il est également utilisé pour préparer des jus, confitures, 
-                    sorbets, nectars et sandwichs. Il est riche en vitamine C ainsi qu'en A et B1. 
-                    Il contient également de grandes quantités de protéines, de fibres et d'acide 
-                    folique.",
+    'guava_facts' => " Appartenant à la famille des myrtacées, ce fruit est largement utilisé en 
+                    Colombie puisqu'il sert à préparer des jus, confitures et sorbets. Il est riche 
+                    en vitamine C ainsi qu'en A et B1. Il contient également des grandes quantités 
+                    de protéines, de fibres et d'acide folique.",
 
     'lulo' => 'lulo',
-    'lulo_facts' => "Son fruit est très riche en vitamines A et C, ainsi qu'en calcium, fer et sodium. 
+    'lulo_facts' => "Fruit très riche en vitamines A et C, ainsi qu'en calcium, fer et sodium. 
                     C'est un fruit exotique très courant en Amérique latine, idéal pour ceux qui 
                     recherchent de nouvelles saveurs.",
 
@@ -84,7 +83,7 @@ return [
     'curuba_facts' => "Il est également connu sous le nom de patcha ou taxo. Son fruit provient 
                     d'arbustes grimpants du genre Passiflora. Ils sont cultivés depuis l'époque 
                     précolombienne en Colombie, au Pérou, en Bolivie et en Équateur. En Colombie, 
-                    il est cultivé dans les chaînes de montagnes de l'est et de l'ouest. Contient 
+                    il est cultivé dans les chaînes de montagnes de l'est et de l'ouest. Il contient 
                     de la vitamine A, C et de la riboflavine, du potassium, du magnésium, du chlore 
                     et du fer, entre autres.",
 

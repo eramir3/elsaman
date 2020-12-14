@@ -26,10 +26,9 @@ return [
                         fibra, magnesio , manganeso  y ácido fólico. también es rica en antioxidantes.',
     
     'passion_fruit' => 'maracuya',
-    'passion_fruit_facts' => 'También conocida como fruta de la pasión. Es una 
-                            fruta tropical que contiene gran cantidad de vitamina A y C, como también 
-                            potasio, fósforo y magnesio al igual que gran cantidad de hierro. También 
-                            contiene una alta cantidad de fibra.',
+    'passion_fruit_facts' => 'También conocida como “fruta de la pasión”. Es una fruta tropical que 
+                            contiene gran cantidad de vitamina A y C, además de potasio, fósforo y 
+                            magnesio. Es rica en fibra y hierro. ',
 
     'strawberry' => 'fresa',
     'strawberry_facts' => 'Es una fruta muy rica en antioxidantes, posee vitaminas C, B2, B3, 

@@ -9,7 +9,7 @@
 }
 
 body {
-    background-image: url('../images/contact/fruits-bg.png');
+    background-image: url('../images/shared/fruits-bg.png');
     background-size: 50%;
 }
 
@@ -130,19 +130,16 @@ main {
     font-family: NexaLight;
     text-align: center;
     color: white;
-    width: 200px;
+    width: 11rem;
     border-radius: 30px;
     margin: 0 auto;
     padding-top: 6px
 }
 
 @media (max-width: 1680px) {
+    
     .fruit img {
         width: 180px;
-    }
-
-    .fruit-badge {
-        width: 190px;
     }
 }
 
@@ -150,11 +147,14 @@ main {
     .fruit img {
         width: 150px;
     }
+}
 
-    .fruit-badge {
-        width: 150px;
+@media(max-width: 1024px) {
+    .container {
+        max-width: 60rem;
     }
 }
+
 
 @media(max-width: 750px) {
     .container {
@@ -186,7 +186,6 @@ main {
     }
 
     .fruit-badge {
-        width: 150px;
         font-size: 0.8rem;
     }
 
@@ -249,11 +248,6 @@ main {
 
     .fruit img {
         width: 100px;
-    }
-
-    .fruit-badge {
-        width: 150px;
-        font-size: 0.8rem;
     }
 }
 

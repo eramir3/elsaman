@@ -15,9 +15,10 @@ footer {
     display: flex;
     justify-content: center;
     background-image: linear-gradient(to top, rgba(0,0,0,0.341), rgba(0,0,0,0.341)), url(../../images/shared/footer.png);
-    background-position: 0%;
-    background-repeat: repeat repeat;
-    background-size: auto, cover; 
+    background-size: 50%;
+    /* background-position: 0%; */
+    /* background-repeat: repeat repeat; */
+    /* background-size: cover;  */
 }
 
 .main-footer nav {

@@ -25,9 +25,9 @@ return [
                         fiber, magnesium, manganese and folic acid. it is also rich in antioxidants.',
     
     'passion_fruit' => 'passion fruit',
-    'passion_fruit_facts' => 'Also known as passion fruit. It is a tropical fruit that contains a large amount of vitamin A 
-                            and C, as well as potassium, phosphorus and magnesium, as well as a 
-                            large amount of iron. It also contains a high amount of fiber.',
+    'passion_fruit_facts' => 'It is a tropical fruit that contains a large amount of vitamin A and 
+                            C, as well as potassium, phosphorus and magnesium, as well as a large 
+                            amount of iron. It also contains a high amount of fiber.',
 
     'strawberry' => 'strawberry',
     'strawberry_facts' => 'It is a fruit very rich in antioxidants, it has vitamins C, B2, B3, as 

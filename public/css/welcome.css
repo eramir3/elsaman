@@ -108,7 +108,6 @@ main {
 }
 
 .main-container {
-    text-align: center;
     width: 100%;
     text-align: center;
 }
@@ -243,10 +242,6 @@ footer {
         border-right: none;
     }
 
-    main {
-        min-height: calc(100vh - 30rem);
-    }
-
     .main-container {
         
         margin-bottom: 8rem;
@@ -264,8 +259,18 @@ footer {
     }
 }
 
-@media(max-width: 360px) {
+@media(max-width: 320px) {
     .welcome-logo img {
         width: 20rem;
+    }
+
+    main {
+        min-height: calc(100vh - 30rem);
+    }
+}
+
+@media(max-width: 290px) {
+    .welcome-logo img {
+        width: 15rem;
     }
 }
