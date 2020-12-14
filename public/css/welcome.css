@@ -196,10 +196,6 @@ footer {
         font-size: 11pt;
     }
 
-    .welcome-nav {
-        margin-left: 0;
-    }
-
     .welcome-logo img {
         width: 20rem;
     }
@@ -213,6 +209,10 @@ footer {
 
     .welcome-header__container {
         justify-content: center;
+    }
+
+    .welcome-nav {
+        margin-left: 0;
     }
 
     .welcome-nav__items {
