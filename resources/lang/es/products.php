@@ -7,23 +7,23 @@ return [
                                 famosa por su entorno propicio para la producción de alimentos en Colombia. Dadas las 
                                 condiciones climáticas, la pluviosidad y la diversidad de pisos térmicos, se pueden 
                                 cultivar una gran variedad de frutas tropicales con un alto valor nutricional y exquisito
-                                sabor, las cuales pueden ser utilizadas en diversas de recetas gastronómicas.'
+                                sabor, las cuales pueden ser utilizadas en diversas recetas gastronómicas.'
                                 ,
     'our_products' => 'productos',
     'fruit_pulpe' => 'pulpa de fruta',
     'fruit_pulpe_description' => 'La pulpa de fruta congelada es un producto no fermentado, ni 
                                 concentrado, ni diluido, obtenido de la parte interna y comestible 
                                 que recubre, en la mayoría de los casos, las semillas de las frutas.
-                                Nuestras frutas son elegidas con los estandares mas altos de calidad 
+                                Nuestras frutas son elegidas con los estandares más altos de calidad 
                                 para asegurar un producto 100% fresco, natural y saludable. 
-                                Haz click en la imagenes para saber mas acerca de nuestros productos.',
+                                Haz click en las imágenes para saber más acerca de nuestros productos.',
 
     'nutrition_facts' => 'aportes nutricionales',
     'preparation_tips' => 'consejos de preparacion',
     
     'pineapple' => 'piña',
     'pineapple_facts' => 'Es originaria de América del Sur. Fuente de vitamina A, C y B6, potasio, 
-                        fibra, magnesio , manganeso  y ácido fólico. también es rica en antioxidantes.',
+                        fibra, magnesio , manganeso  y ácido fólico. También es rica en antioxidantes.',
     
     'passion_fruit' => 'maracuya',
     'passion_fruit_facts' => 'También conocida como “fruta de la pasión”. Es una fruta tropical que 

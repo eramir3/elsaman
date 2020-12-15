@@ -15,7 +15,7 @@ return [
                             ciudades de Francia.  Por un lado, trabajamos mano a mano con los 
                             campesinos de la región para producir nuestros productos. 
                             Buscamos promover los valores del comercio justo, 
-                            pagándoles un precio legitimo por su cosecha, 
+                            pagándoles un precio legítimo por su cosecha, 
                             sin importar la temporada. De esta forma, los campesinos se preocupan 
                             únicamente por cosechar las frutas de la más alta calidad sin tener 
                             la angustia constante por venderlas.  Por otro lado, buscamos enseñarles 
