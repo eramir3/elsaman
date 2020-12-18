@@ -27,7 +27,7 @@ Route::group(['prefix' => '/{locale}'], function() {
         Config::get('constants.es'),
         $emptyLocale
     ])) {
-        abort(404, 'Page not found');
+        abort(404);
     }
 
     Route::get('/', function () {

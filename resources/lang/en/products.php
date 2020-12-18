@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'our_products_origin' => 'where do our products come from?',
+    'our_products_origin' => 'WHERE DO OUR PRODUCTS COME FROM?',
     'tequendama' => 'tequendama',
     'tequendama_description' => 'Located in the department of Cundinamarca, the Tequendama region is
                                 famous for its environment conducive to food production in Colombia. Given the
@@ -10,7 +10,7 @@ return [
                                 flavor which can be used in various gastronomic recipes.',
 
     'our_products' => 'our products',
-    'fruit_pulpe' => 'frozen fruit pulpe',
+    'fruit_pulpe' => 'fruit pulpe',
     'fruit_pulpe_description' => 'Frozen fruit pulp is an unfermented product, nor
                                 concentrated, nor diluted, obtained from the internal and edible part
                                 that covers, in most cases, the seeds of fruits.
@@ -18,7 +18,7 @@ return [
                                 to ensure a 100% fresh, natural and healthy product.
                                 Click on the images to know more about our products.',
     'nutrition_facts' => 'nutrition facts',
-    'preparation_tips' => 'preparation tips',
+    'preparation_tips' => 'PREPARATION TIPS',
     
     'pineapple' => 'pineapple',
     'pineapple_facts' => 'It is native to South America. Source of vitamin A, C and B6, potassium, 

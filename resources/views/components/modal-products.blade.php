@@ -5,7 +5,7 @@
         <h2 class="badge badge--pink modal-title">{{ __('products.pineapple') }}</h2>
         <section class="fruit-description card">
             <div class="fruit-modal-image">
-                <img id="pineapple-img" src="../images/fruits/pineapple.png" alt="">
+                <img id="pineapple-img" src="{{ asset('images/fruits/pineapple.png') }}" alt="">
             </div>
             <div class="fruit-description__text">
                 <p>
@@ -79,7 +79,7 @@
         <h2 class="badge badge--pink modal-title">{{ __('products.passion_fruit') }}</h2>
         <section class="fruit-description card">
             <div class="fruit-modal-image">
-                <img id="passion_fruit-img" src="../images/fruits/passion_fruit.png" alt="">
+                <img id="passion_fruit-img" src="{{ asset('images/fruits/passion_fruit.png') }}" alt="">
             </div>
             <div class="fruit-description__text">
                 <p>
@@ -153,7 +153,7 @@
         <h2 class="badge badge--pink modal-title">{{ __('products.strawberry') }}</h2>
         <section class="fruit-description card">
             <div class="fruit-modal-image">
-                <img id="strawberry-img" src="../images/fruits/strawberry.png" alt="">
+                <img id="strawberry-img" src="{{ asset('images/fruits/strawberry.png') }}" alt="">
             </div>
             <div class="fruit-description__text">
                 <p>
@@ -227,7 +227,7 @@
         <h2 class="badge badge--pink modal-title">{{ __('products.mango') }}</h2>
         <section class="fruit-description card">
             <div class="fruit-modal-image">
-                <img id="mango-img" src="../images/fruits/mango.png" alt="">
+                <img id="mango-img" src="{{ asset('images/fruits/mango.png') }}" alt="">
             </div>
             <div class="fruit-description__text">
                 <p>
@@ -301,7 +301,7 @@
         <h2 class="badge badge--pink modal-title">{{ __('products.tamarillo') }}</h2>
         <section class="fruit-description card">
             <div class="fruit-modal-image">
-                <img id="tamarillo-img" src="../images/fruits/tamarillo.png" alt="">
+                <img id="tamarillo-img" src="{{ asset('images/fruits/tamarillo.png') }}" alt="">
             </div>
             <div class="fruit-description__text">
                 <p>
@@ -375,7 +375,7 @@
         <h2 class="badge badge--pink modal-title">{{ __('products.guava') }}</h2>
         <section class="fruit-description card">
             <div class="fruit-modal-image">
-                <img id="guava-img" src="../images/fruits/guava.png" alt="">
+                <img id="guava-img" src="{{ asset('images/fruits/guava.png') }}" alt="">
             </div>
             <div class="fruit-description__text">
                 <p>
@@ -449,7 +449,7 @@
         <h2 class="badge badge--pink modal-title">{{ __('products.lulo') }}</h2>
         <section class="fruit-description card">
             <div class="fruit-modal-image">
-                <img id="lulo-img" src="../images/fruits/lulo.png" alt="">
+                <img id="lulo-img" src="{{ asset('images/fruits/lulo.png') }}" alt="">
             </div>
             <div class="fruit-description__text">
                 <p>
@@ -523,7 +523,7 @@
         <h2 class="badge badge--pink modal-title">{{ __('products.tangerine') }}</h2>
         <section class="fruit-description card">
             <div class="fruit-modal-image">
-                <img id="tangerine-img" src="../images/fruits/tangerine.png" alt="">
+                <img id="tangerine-img" src="{{ asset('images/fruits/tangerine.png') }}" alt="">
             </div>
             <div class="fruit-description__text">
                 <p>
@@ -597,7 +597,7 @@
         <h2 class="badge badge--pink modal-title">{{ __('products.blackberry') }}</h2>
         <section class="fruit-description card">
             <div class="fruit-modal-image">
-                <img id="blackberry-img" src="../images/fruits/blackberry.png" alt="">
+                <img id="blackberry-img" src="{{ asset('images/fruits/blackberry.png') }}" alt="">
             </div>
             <div class="fruit-description__text">
                 <p>
@@ -671,7 +671,7 @@
         <h2 class="badge badge--pink modal-title">{{ __('products.soursop') }}</h2>
         <section class="fruit-description card">
             <div class="fruit-modal-image">
-                <img id="soursop-img" src="../images/fruits/soursop.png" alt="">
+                <img id="soursop-img" src="{{ asset('images/fruits/soursop.png') }}" alt="">
             </div>
             <div class="fruit-description__text">
                 <p>
@@ -745,7 +745,7 @@
         <h2 class="badge badge--pink modal-title">{{ __('products.curuba') }}</h2>
         <section class="fruit-description card">
             <div class="fruit-modal-image">
-                <img id="curuba-img" src="../images/fruits/curuba.png" alt="">
+                <img id="curuba-img" src="{{ asset('images/fruits/curuba.png') }}" alt="">
             </div>
             <div class="fruit-description__text">
                 <p>
@@ -819,7 +819,7 @@
         <h2 class="badge badge--pink modal-title">{{ __('products.feijoa') }}</h2>
         <section class="fruit-description card">
             <div class="fruit-modal-image">
-                <img id="feijoa-img" src="../images/fruits/feijoa.png" alt="">
+                <img id="feijoa-img" src="{{ asset('images/fruits/feijoa.png') }}" alt="">
             </div>
             <div class="fruit-description__text">
                 <p>

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{config('app.name', 'El Saman')}}</title>
+    <title>{{config('app.name')}}</title>
+    <link rel="icon" type="image/png" href="{{ asset('images/shared/favicon.png') }}">
     <link rel="stylesheet" href="{{ asset('css/components/lang-dropdown.css') }}">
     <link rel="stylesheet" href="{{ asset('css/welcome.css') }}">
 </head>
@@ -37,7 +38,7 @@
     <main>
         <div class="main-container">
             <div class="welcome-logo">
-                <img src="../images/shared/white-logo.png" alt="">
+                <img src="{{ asset('images/shared/white-logo.png') }}" alt="">
             </div>
             <div id="mobile-dropdown"></div>
         </div>

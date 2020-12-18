@@ -16,17 +16,17 @@
     <dd>
         <ul class="lang-dropdown__items">
             <li class="lang-dropdown__item">
-                <a href="{{ route(Route::currentRouteName(), 'en') }}">
+                <a href="{{ route(Route::currentRouteName(), Config::get('constants.en')) }}">
                     <img class="lang-dropdown__flag" src="{{ asset('images/flags/en.svg') }}" alt="" /><span class="lang-dropdown__value">{{ Config::get('constants.en') }}</span>{{ Str::upper(Config::get('constants.english')) }}
                 </a>
             </li>
             <li class="lang-dropdown__item">
-                <a href="{{ route(Route::currentRouteName(), 'fr') }}">
+                <a href="{{ route(Route::currentRouteName(), Config::get('constants.fr')) }}">
                     <img class="lang-dropdown__flag" src="{{ asset('images/flags/fr.svg') }}" alt="" /><span class="lang-dropdown__value">{{ Config::get('constants.fr') }}</span>{{ Str::upper(Config::get('constants.french')) }}
                 </a>
             </li>
             <li class="lang-dropdown__item">
-                <a href="{{ route(Route::currentRouteName(), 'es') }}">
+                <a href="{{ route(Route::currentRouteName(), Config::get('constants.es')) }}">
                     <img class="lang-dropdown__flag" src="{{ asset('images/flags/es.svg') }}" alt="" /><span class="lang-dropdown__value">{{ Config::get('constants.es') }}</span>{{ Str::upper(Config::get('constants.spanish')) }}
                 </a>
             </li>

@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'our_products_origin' => "d'où viennent nos produits?",
+    'our_products_origin' => "D'OÙ VIENENET NOS PRODUITS?",
     'tequendama' => 'tequendama',
     'tequendama_description' => "Située dans le département de Cundinamarca, la région de Tequendama est
                                 célèbre pour son environnement propice à la production alimentaire en Colombie. Compte tenu du
@@ -20,7 +20,7 @@ return [
                                 Cliquez sur les images pour en savoir plus sur nos produits.',
 
     'nutrition_facts' => 'faits nutritionnels',
-    'preparation_tips' => 'conseils de préparation',
+    'preparation_tips' => 'CONSEILS DE PRÉPARATION',
 
     'pineapple' => 'ananas',
     'pineapple_facts' => "Il est originaire d'Amérique du Sud. Source de vitamine A, C et B6, 
@@ -66,7 +66,7 @@ return [
                         antioxydantes.",
 
 
-    'blackberry' => 'mûr',
+    'blackberry' => 'MÛR',
     'blackberry_facts' => "Son arbuste appartient à la famille des rosacées. C'est une source de 
                         vitamine C, de calcium et de fer. Il est également très riche en vitamine A, 
                         ainsi qu'en potassium et en fibres. Il est largement utilisé en gastronomie 

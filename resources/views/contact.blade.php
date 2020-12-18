@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{config('app.name', 'El Saman')}}</title>
-    <!-- <link rel="icon" type="image/png" href="images/favicon.png"> -->
+    <title>{{config('app.name')}}</title>
+    <link rel="icon" type="image/png" href="{{ asset('images/shared/favicon.png') }}">
     <link rel="stylesheet" href="{{ asset('css/shared.css') }}" >
     <link rel="stylesheet" href="{{ asset('css/components/lang-dropdown.css') }}">
     <link rel="stylesheet" href="{{ asset('css/components/header.css') }}">
@@ -38,18 +38,18 @@
         <section class="container__main">
             <div id="contact">
                 <div class="card card__contact whatsapp">
-                    <img src="../images/contact/phone-call.svg" class="" alt="">
+                    <img src="{{ asset('images/contact/phone-call.svg') }}" class="" alt="">
                     <div>
                         <div class="whatsapp__top">
-                            <img src="../images/flags/fr.svg" class="card-flag" alt=""> +33 7 88 22 55 86
+                            <img src="{{ asset('images/flags/fr.svg') }}" class="card-flag" alt=""> +33 7 88 22 55 86
                         </div>
                         <div class="whatsapp__bottom">
-                            <img src="../images/flags/col.svg" class="card-flag" alt=""> +57 1 305 3095120
+                            <img src="{{ asset('images/flags/col.svg') }}" class="card-flag" alt=""> +57 1 305 3095120
                         </div>
                     </div>
                 </div>
                 <div class="card card__contact envelope" >
-                    <img src="../images/contact/email.svg" alt=""> radcofr@ciradco.com
+                    <img src="{{ asset('images/contact/email.svg') }}" alt=""> radcofr@ciradco.com
                 </div>
             </div>
         </section>
@@ -57,7 +57,7 @@
 
     <div class="container">
         <div class="parent-image leave">
-            <img class="child-image" src="../images/contact/leave.png" alt="">
+            <img class="child-image" src="{{ asset('images/contact/leave.png') }}" alt="">
         </div>
     </div>
     

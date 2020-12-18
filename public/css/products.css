@@ -9,8 +9,8 @@
 }
 
 body {
-    background-image: url('../images/shared/fruits-bg.png');
-    background-size: 50%;
+    background: linear-gradient(rgba(255,255,255,.95), rgba(255,255,255,.95)), url('../images/shared/fruits-bg.png');
+    background-size: 65%;
 }
 
 main {
@@ -30,7 +30,7 @@ main {
 .title {
     color: white;
     font-family: OrangeJuice;
-    font-size: 5rem;
+    font-size: 4.5rem;
     line-height: 1.125;
     font-weight: 100;
     margin: 0;

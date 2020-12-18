@@ -1,3 +1,18 @@
+@font-face {
+    font-family: NexaLight;
+    src: url(../../fonts/NexaLight.otf);
+}
+
+@font-face {
+    font-family: NexaRegular;
+    src: url(../../fonts/NexaLight.otf);
+}
+
+@font-face {
+    font-family: NexaBold;
+    src: url(../../fonts/NexaBold.otf);
+}
+
 .footer-top {
     background-image: url('../../images/shared/color-line.png');
     width: 100%;
@@ -52,18 +67,19 @@ footer {
 
 .main-footer__info > p {
     color: #B8B8B8;
-    font-family: 'Raleway', sans-serif;
-}
-
-.main-footer__info > p {
     text-align: center; 
+    font-family: NexaLight, sans-serif;
 }
 
 .main-footer__legal > p {
     text-align: center; 
     margin: 0;
     color: #B8B8B8;
-    font-family: 'Raleway', sans-serif;
+    font-family: NexaRegular, sans-serif;
+}
+
+.main-footer__legal > p:nth-child(1) {
+    font-family: NexaBold, sans-serif;
 }
 
 @media(max-width: 750px) {

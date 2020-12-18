@@ -34,7 +34,7 @@
             </div>
         </nav>
         <div class="main-footer__legal">
-            <p><strong>{{ Str::upper(__('footer.ci_radco')) }}</strong></p>
+            <p>{{ Str::upper(__('footer.ci_radco')) }}</p>
             <p>{{ Str::upper(__('footer.reserved_rights')) }}</p>
             <p>{{ now()->year }}</p>
         </div>

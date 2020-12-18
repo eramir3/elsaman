@@ -14,8 +14,8 @@
 }
 
 body {
-    background-image: url('../images/shared/fruits-bg.png');
-    background-size: 50%;
+    background: linear-gradient(rgba(255,255,255,.95), rgba(255,255,255,.95)), url('../images/shared/fruits-bg.png');
+    background-size: 65%;
 }
 
 .container {

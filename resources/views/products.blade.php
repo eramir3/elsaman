@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{config('app.name', 'El Saman')}}</title>
-    <!-- <link rel="icon" type="image/png" href="images/favicon.png"> -->
+    <title>{{config('app.name')}}</title>
+    <link rel="icon" type="image/png" href="{{ asset('images/shared/favicon.png') }}">
     <link rel="stylesheet" href="{{ asset('css/shared.css') }}">
     <link rel="stylesheet" href="{{ asset('css/components/lang-dropdown.css') }}">
     <link rel="stylesheet" href="{{ asset('css/components/modal.css') }}">
@@ -39,53 +39,53 @@
         </section>
         <section id="fruits" class="container">
             <div class="fruit">
-                <img id="pineapple-img" src="../images/fruits/pineapple.png" alt="" onclick="fruitImageClick('pineapple')">
+                <img id="pineapple-img" src="{{ asset('images/fruits/pineapple.png') }}" alt="" onclick="fruitImageClick('pineapple')">
                 <h3 class="fruit-badge badge--pink__dark">{{ Str::upper(__('products.pineapple')) }}</h3>
             </div>
             <div class="fruit">
-                <img src="../images/fruits/passion_fruit.png" alt="" onclick="fruitImageClick('passion_fruit')">
+                <img src="{{ asset('images/fruits/passion_fruit.png') }}" alt="" onclick="fruitImageClick('passion_fruit')">
                 <h3 class="fruit-badge badge--pink__dark">{{ Str::upper(__('products.passion_fruit')) }}</h3>
             </div>
             <div class="fruit">
-                <img src="../images/fruits/strawberry.png" alt="" onclick="fruitImageClick('strawberry')">
+                <img src="{{ asset('images/fruits/strawberry.png') }}" alt="" onclick="fruitImageClick('strawberry')">
                 <h3 class="fruit-badge badge--pink__dark">{{ Str::upper(__('products.strawberry')) }}</h3>
             </div>
             <div class="fruit">
-                <img src="../images/fruits/mango.png" alt="" onclick="fruitImageClick('mango')">
+                <img src="{{ asset('images/fruits/mango.png') }}" alt="" onclick="fruitImageClick('mango')">
                 <h3 class="fruit-badge badge--pink__dark">{{ Str::upper(__('products.mango')) }}</h3>
             </div>
 
             <div class="fruit">
-                <img src="../images/fruits/tamarillo.png" alt="" onclick="fruitImageClick('tamarillo')">
+                <img src="{{ asset('images/fruits/tamarillo.png') }}" alt="" onclick="fruitImageClick('tamarillo')">
                 <h3 class="fruit-badge badge--pink__dark">{{ Str::upper(__('products.tamarillo')) }}</h3>
             </div>
             <div class="fruit">
-                <img src="../images/fruits/guava.png" alt="" onclick="fruitImageClick('guava')">
+                <img src="{{ asset('images/fruits/guava.png') }}" alt="" onclick="fruitImageClick('guava')">
                 <h3 class="fruit-badge badge--pink__dark">{{ Str::upper(__('products.guava')) }}</h3>
             </div>
             <div class="fruit">
-                <img src="../images/fruits/lulo.png" alt="" onclick="fruitImageClick('lulo')">
+                <img src="{{ asset('images/fruits/lulo.png') }}" alt="" onclick="fruitImageClick('lulo')">
                 <h3 class="fruit-badge badge--pink__dark">{{ Str::upper(__('products.lulo')) }}</h3>
             </div>
             <div class="fruit">
-                <img src="../images/fruits/tangerine.png" alt="" onclick="fruitImageClick('tangerine')">
+                <img src="{{ asset('images/fruits/tangerine.png') }}" alt="" onclick="fruitImageClick('tangerine')">
                 <h3 class="fruit-badge badge--pink__dark">{{ Str::upper(__('products.tangerine')) }}</h3>
             </div>
 
             <div class="fruit">
-                <img src="../images/fruits/blackberry.png" alt="" onclick="fruitImageClick('blackberry')">
+                <img src="{{ asset('images/fruits/blackberry.png') }}" alt="" onclick="fruitImageClick('blackberry')">
                 <h3 class="fruit-badge badge--pink__dark">{{ Str::upper(__('products.blackberry')) }}</h3>
             </div>
             <div class="fruit">
-                <img src="../images/fruits/soursop.png" alt="" onclick="fruitImageClick('soursop')">
+                <img src="{{ asset('images/fruits/soursop.png') }}" alt="" onclick="fruitImageClick('soursop')">
                 <h3 class="fruit-badge badge--pink__dark">{{ Str::upper(__('products.soursop')) }}</h3>
             </div>
             <div class="fruit">
-                <img src="../images/fruits/curuba.png" alt="" onclick="fruitImageClick('curuba')">
+                <img src="{{ asset('images/fruits/curuba.png') }}" alt="" onclick="fruitImageClick('curuba')">
                 <h3 class="fruit-badge badge--pink__dark">{{ Str::upper(__('products.curuba')) }}</h3>
             </div>
             <div class="fruit">
-                <img src="../images/fruits/feijoa.png" alt="" onclick="fruitImageClick('feijoa')">
+                <img src="{{ asset('images/fruits/feijoa.png') }}" alt="" onclick="fruitImageClick('feijoa')">
                 <h3 class="fruit-badge badge--pink__dark">{{ Str::upper(__('products.feijoa')) }}</h3>
             </div>
         </section>

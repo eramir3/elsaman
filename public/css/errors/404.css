@@ -1,0 +1,46 @@
+@font-face {
+    font-family: NexaBold;
+    src: url(../../fonts/NexaBold.otf);
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(rgba(255,255,255,.95), rgba(255,255,255,.95)), url('../../images/shared/fruits-bg.png');
+    background-size: 65%;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} 
+
+a {
+    margin-top: 2rem;
+    text-decoration: none;
+    color: #FE7E7E;
+    padding: 0 1rem;
+    font-family: NexaBold;
+    font-size: 1.5rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 20rem;
+}
+
+span {
+    margin-top: 2rem;
+}
+

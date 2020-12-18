@@ -83,14 +83,13 @@
     }
 }
 
-
 @media(max-width: 750px) {
 
     .lang-dropdown .lang-dropdown__flag-mobile { 
         border:none; 
         vertical-align:middle; 
         margin-right: 10px;
-        margin-bottom: 4px;
+        margin-bottom: 2px;
         width: 30px;
     }
 
@@ -100,9 +99,14 @@
 
     .lang-dropdown__items {
         min-width: 80px;
+        margin-top: 0;
     }
 
     .lang-dropdown__selected {
         width: 3rem;
+    }
+
+    .lang-dropdown-mobile {
+        margin-bottom: 10px;
     }
 }

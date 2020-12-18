@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'our_products_origin' => '¿de donde vienen nuestros productos?',
+    'our_products_origin' => '¿DE DONDE VIENEN NUESTROS PRODUCTOS?',
     'tequendama' => 'tequendama',
     'tequendama_description' => 'Situada en el departamento de Cundinamarca, la región del Tequendama es 
                                 famosa por su entorno propicio para la producción de alimentos en Colombia. Dadas las 
@@ -19,9 +19,9 @@ return [
                                 Haz click en las imágenes para saber más acerca de nuestros productos.',
 
     'nutrition_facts' => 'aportes nutricionales',
-    'preparation_tips' => 'consejos de preparacion',
+    'preparation_tips' => 'CONSEJOS DE PREPARACION',
     
-    'pineapple' => 'piña',
+    'pineapple' => 'PIÑA',
     'pineapple_facts' => 'Es originaria de América del Sur. Fuente de vitamina A, C y B6, potasio, 
                         fibra, magnesio , manganeso  y ácido fólico. También es rica en antioxidantes.',
     
