@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{config('app.name')}}</title>
+    <title>{{config('app.name', 'El Saman')}}</title>
     <link rel="icon" type="image/png" href="{{ asset('images/shared/favicon.png') }}">
     <link rel="stylesheet" href="{{ asset('css/components/lang-dropdown.css') }}">
     <link rel="stylesheet" href="{{ asset('css/welcome.css') }}">
@@ -79,27 +79,6 @@
 
 <script src="{{ asset('js/jquery-3.5.1.min.js') }}"></script>
 <script src="{{ asset('js/components/lang-dropdown.js') }}" type="text/javascript"></script>
-
-<script>
-
-function changeLangDropdownPosition(screenWidth) {
-    
-    let dropdownMenu = document.getElementById('lang-dropdown-web');
-    
-    if (screenWidth.matches) { 
-        let mobileDropdown = document.getElementById('mobile-dropdown');
-        mobileDropdown.appendChild(dropdownMenu);
-    } 
-    else {
-        let webDropdown = document.getElementById('web-dropdown');
-        webDropdown.appendChild(dropdownMenu);
-    }
-}
-
-let screenWidth = window.matchMedia("(max-width: 750px)")
-changeLangDropdownPosition(screenWidth) // Call listener function at run time
-screenWidth.addListener(changeLangDropdownPosition) // Attach listener function on state
-
-</script>
+<script src="{{ asset('js/welcome.js') }}" type="text/javascript"></script>
 </body>
 </html>

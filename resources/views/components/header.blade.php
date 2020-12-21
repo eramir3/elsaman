@@ -25,7 +25,6 @@
 </section>
 
 <header class="mobile-header">
-    <div></div>
     <nav class="mobile-nav">
         <button type="button" class="toggle-button" onclick="openNav()">
             <span class="toggle-button__bar"></span>
@@ -35,7 +34,7 @@
         <a href="{{ route('welcome', app()->getLocale()) }}" class="mobile-header__brand">
             <img src="../images/shared/saman-logo-bg-white.png" alt="">
         </a>
-        <x-lang-dropdown-mobile></x-lang-dropdown-mobile>
+        <x-lang-dropdown></x-lang-dropdown>
     </nav>
     <section class="nav-bottom__line"></section>
     <div class="mobile-nav__items" id="mobile-nav__menu">

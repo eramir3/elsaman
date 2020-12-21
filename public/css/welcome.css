@@ -104,7 +104,7 @@ header {
 }
 
 main {
-    min-height: calc(100vh - 13.2rem);
+    min-height: calc(100vh - 11rem);
 }
 
 .main-container {
@@ -159,7 +159,6 @@ footer {
 
 .footer-title {
     color: white;
-    margin-bottom: 3.1rem;
     text-align: center;
 }
 
@@ -257,6 +256,18 @@ footer {
     .lang-dropdown dd {
         right: 0;
     }
+
+    .lang-dropdown__selected span .lang-dropdown__text {
+        display: block;
+    }
+
+    .lang-fullname {
+        display: inline-block;
+    }
+
+    .lang-abbreviation {
+        display: none;
+    }
 }
 
 @media(max-width: 320px) {
@@ -265,7 +276,7 @@ footer {
     }
 
     main {
-        min-height: calc(100vh - 30rem);
+        min-height: calc(100vh - 5rem);
     }
 }
 

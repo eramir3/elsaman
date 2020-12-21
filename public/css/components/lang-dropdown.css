@@ -52,7 +52,8 @@
     list-style: none; 
 }
 
-.lang-dropdown .lang-dropdown__value { 
+.lang-dropdown 
+.lang-dropdown__value { 
     display: none;
 }
 
@@ -65,7 +66,8 @@
     background-color:lightgray;
 }
 
-.lang-dropdown .lang-dropdown__flag { 
+.lang-dropdown 
+.lang-dropdown__flag { 
     border:none; 
     vertical-align:middle; 
     margin-right: 10px;
@@ -74,6 +76,10 @@
 
 .lang-dropdown__text {
     margin-top: 0.4rem;
+}
+
+.lang-abbreviation {
+    display: none;
 }
 
 @media (max-width: 1680px) {
@@ -85,7 +91,8 @@
 
 @media(max-width: 750px) {
 
-    .lang-dropdown .lang-dropdown__flag-mobile { 
+    .lang-dropdown 
+    .lang-dropdown__flag { 
         border:none; 
         vertical-align:middle; 
         margin-right: 10px;
@@ -106,7 +113,19 @@
         width: 3rem;
     }
 
-    .lang-dropdown-mobile {
+    .lang-dropdown {
         margin-bottom: 10px;
+    }
+
+    .lang-dropdown__selected span .lang-dropdown__text {
+        display: none;
+    }
+
+    .lang-fullname {
+        display: none;
+    }
+
+    .lang-abbreviation {
+        display: inline-block;
     }
 }
