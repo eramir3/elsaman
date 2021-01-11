@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="{{ asset('css/saman/components/lang-dropdown.css') }}">
     <link rel="stylesheet" href="{{ asset('css/saman/components/header.css') }}">
     <link rel="stylesheet" href="{{ asset('css/saman/components/footer.css') }}">
-    @yield('assets-css')
+    @yield('styles')
 </head>
 <body>
 
@@ -25,5 +25,5 @@
 <script src="{{ asset('js/app.js') }}"></script>
 <script src="{{ asset('js/saman/components/header.js') }}" type="text/javascript"></script>
 <script src="{{ asset('js/saman/components/lang-dropdown.js') }}" type="text/javascript"></script>
-@yield('assets-js')
+@yield('scripts')
 </html>

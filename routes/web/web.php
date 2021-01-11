@@ -1,10 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\PostController;
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ContactController;
+
+use App\Http\Controllers\HomeController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -23,18 +25,15 @@ Route::redirect('/', '/en');
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
-Route::get('/admin', [AdminController::class, 'index'])->name('admin.index');
+Route::get('/blog', [BlogController::class, 'index'])->name('saman.blog.index');
 
-Route::get('post', [PostController::class, 'show'])->name('saman.post');
+Route::get('/blog/post/{post}', [BlogController::class, 'show'])->name('saman.blog.post.show');
 
-
-// Route::get('/admin', function () {
-//     return view('admin/index');
-// })->name('admin.index');
+Route::middleware('auth')->group(function() {
+    Route::get('/admin', [AdminController::class, 'index'])->name('admin.index');
+});
 
 Route::group(['prefix' => '/{locale}'], function() {
-
-    
 
     $locale = Request::segment(1);
     $emptyLocale = '';
@@ -65,9 +64,5 @@ Route::group(['prefix' => '/{locale}'], function() {
     })->name('saman.contact');
 
     Route::post('contact', [ContactController::class, 'mail'])->name('contact.mail');
-
-
-    
-
 });
 

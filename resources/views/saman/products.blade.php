@@ -1,4 +1,4 @@
-@section('assets-css')
+@section('styles')
     <link rel="stylesheet" href="{{ asset('css/saman/components/modal.css') }}">
     <link rel="stylesheet" href="{{ asset('css/saman/components/modal-products.css') }}">
     <link rel="stylesheet" href="{{ asset('css/saman/products.css') }}">
@@ -83,7 +83,7 @@
         <x-saman.modal-products></x-saman.modal-products>
     @endsection
 
-    @section('assets-js')
+    @section('scripts')
         <script src="{{ asset('js/saman/components/modal.js') }}" type="text/javascript"></script>
     @endsection
 

@@ -12,7 +12,7 @@
                     <a href="{{ route('saman.products', app()->getLocale()) }}" class="{{ (request()->segment(2) == 'products') ? 'active' : '' }}">{{ Str::upper(__('header.products')) }}</a>
                 </li>
                 <li class="web-nav__item web-nav__items--pipe">
-                    <a href="/" class="{{ (request()->segment(2) == 'contact') ? 'active' : '' }}">BLOG</a>
+                    <a href="{{ route('saman.blog.index', app()->getLocale()) }}" class="{{ (request()->segment(2) == 'contact') ? 'active' : '' }}">BLOG</a>
                 </li>
                 <li class="web-nav__item web-nav__items--pipe">
                     <a href="{{ route('admin.index', app()->getLocale()) }}" class="{{ (request()->segment(2) == 'contact') ? 'active' : '' }}">ACCOUNT</a>

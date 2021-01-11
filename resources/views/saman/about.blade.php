@@ -1,4 +1,4 @@
-@section('assets-css')
+@section('styles')
     <link rel="stylesheet" href="{{ asset('css/saman/about.css') }}">
 @endsection
 

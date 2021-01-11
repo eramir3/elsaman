@@ -1,4 +1,4 @@
-@section('assets-css')
+@section('styles')
     <link rel="stylesheet" href="{{ asset('css/saman/contact.css') }}">
 @endsection
 
@@ -52,7 +52,7 @@
 
     @endsection
 
-    @section('assets-js')
+    @section('scripts')
         <script src="{{ asset('js/saman/contact.js') }}" type="text/javascript"></script>
     @endsection
 
