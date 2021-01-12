@@ -14,37 +14,61 @@ use App\Http\Controllers\ContactController;
 |
 */
 
-Route::redirect('/', '/en');
+// Route::redirect('/', '/en');
 
-Route::group(['prefix' => '/{locale}'], function() {
+// Route::group(['prefix' => '/{locale}'], function() {
 
-    $locale = Request::segment(1);
-    $emptyLocale = '';
+//     $locale = Request::segment(1);
+//     $emptyLocale = '';
 
-    if (!in_array($locale, [
-        Config::get('constants.en'), 
-        Config::get('constants.fr'), 
-        Config::get('constants.es'),
-        $emptyLocale
-    ])) {
-        abort(404);
-    }
+//     // if (!in_array($locale, [
+//     //     Config::get('constants.en'), 
+//     //     Config::get('constants.fr'), 
+//     //     Config::get('constants.es'),
+//     //     $emptyLocale
+//     // ])) {
+//     //     abort(404);
+//     // }
 
-    Route::get('/', function () {
-        return view('welcome');
-    })->name('welcome');
+//     Route::get('/', function () {
+//         return view('saman/welcome');
+//     })->name('saman.welcome');
     
-    Route::get('about', function () {
-        return view('about');
-    })->name('about');
+//     Route::get('about', function () {
+//         return view('saman/about');
+//     })->name('saman.about');
     
-    Route::get('products', function () {
-        return view('products');
-    })->name('products');
+//     Route::get('products', function () {
+//         return view('saman/products');
+//     })->name('saman.products');
     
-    Route::get('contact', function () {
-        return view('contact');
-    })->name('contact');
+//     Route::get('contact', function () {
+//         return view('saman/contact');
+//     })->name('saman.contact');
 
-    Route::post('contact', [ContactController::class, 'mail'])->name('contact.mail');
-});
+//     Route::post('contact', [ContactController::class, 'mail'])->name('contact.mail');
+// });
+
+Route::get('/', function () {
+    return view('saman/welcome');
+})->name('saman.welcome');
+
+Route::get('about', function () {
+    return view('saman/about');
+})->name('saman.about');
+
+Route::get('products', function () {
+    return view('saman/products');
+})->name('saman.products');
+
+Route::get('contact', function () {
+    return view('saman/contact');
+})->name('saman.contact');
+
+Route::post('contact', [ContactController::class, 'mail'])->name('contact.mail');
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+require __DIR__.'/auth.php';
