@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ContactController;
 
 /*
@@ -67,8 +68,63 @@ Route::get('contact', function () {
 
 Route::post('contact', [ContactController::class, 'mail'])->name('contact.mail');
 
-Route::get('/dashboard', function () {
+// Route::get('/dashboard', function () {
+//     return view('dashboard');
+// })->middleware(['auth'])->name('dashboard');
+
+// Route::group(['middleware'=>'auth:admin'], function(){
+//     // routes under the admin
+// });
+
+Route::group(['prefix'=>'admin', 'middleware'=>'admin:admin'], function(){
+    Route::get('/login', [AdminController::class, 'loginForm']);
+    //Route::get('/login', [AdminController::class, 'loginForm'])->name('admin.login.form');
+    //Route::post('/login', [AdminController::class, 'store'])->name('admin.login');
+    Route::post('/login', [AdminController::class, 'store'])
+                ->middleware('admin');
+
+    // Route::middleware(['auth:admin','verified'])->get('/admin-dashboard', function() {
+    //     return view('admin-dashboard');
+    // })->name('admin.dashboard');
+
+    // Route::post('/logout', [AdminController::class, 'destroy'])
+    //             ->middleware('admin')
+    //             ->name('admin.logout');
+});
+
+Route::group(['prefix'=>'admin'], function(){
+    Route::post('/logout', [AdminController::class, 'destroy'])
+                ->middleware('admin')
+                ->name('admin.logout');
+});
+
+Route::middleware(['auth:admin','verified'])->get('/admin/dashboard', function() {
+    return view('admin-dashboard');
+})->name('admin.dashboard');
+
+// Route::middleware(['auth:admin','verified'])->post('/logout', function() {
+//     return view('admin-dashboard');
+// })->name('admin.dashboard');
+
+// Route::middleware(['auth:admin','verified'])->post('/logout', [AdminController::class, 'destroy'])
+// ->middleware('admin')
+// ->name('admin.logout');
+
+Route::middleware(['auth:web','verified'])->get('/dashboard', function() {
     return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+})->name('dashboard');
+
+
+
+// Route::prefix('admin')->group(function () {
+
+//     Route::get('/login', [AdminController::class, 'loginForm']);
+//     //Route::get('/login', [AdminController::class, 'loginForm'])->name('admin.login.form');
+//     Route::post('/login', [AdminController::class, 'store'])->name('admin.login');
+
+// 	Route::middleware(['auth:admin'])->group(function () {
+//         Route::get('/admin-dashboard', [AdminController::class, 'testMethod']);
+// 	});
+// });
 
 require __DIR__.'/auth.php';

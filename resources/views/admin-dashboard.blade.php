@@ -2,7 +2,7 @@
 
 @section('content')
     <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-        {{ __('Dashboard') }}
+        Admin Dashboard
     </h2>
 
     <div class="py-12">
@@ -15,3 +15,4 @@
         </div>
     </div>
 @EndSection
+
