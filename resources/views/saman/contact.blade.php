@@ -2,7 +2,7 @@
     <link rel="stylesheet" href="{{ asset('css/saman/contact.css') }}">
 @endsection
 
-<x-saman-template>
+<x-saman.saman-master>
 
     @section('content')
         <main id="slidable">
@@ -56,4 +56,4 @@
         <script src="{{ asset('js/saman/contact.js') }}" type="text/javascript"></script>
     @endsection
 
-</x-saman-template>
+</x-saman.saman-master>

@@ -99,7 +99,7 @@ Route::group(['prefix'=>'admin'], function(){
 });
 
 Route::middleware(['auth:admin','verified'])->get('/admin/dashboard', function() {
-    return view('admin-dashboard');
+    return view('admin/index');
 })->name('admin.dashboard');
 
 // Route::middleware(['auth:admin','verified'])->post('/logout', function() {
@@ -111,7 +111,7 @@ Route::middleware(['auth:admin','verified'])->get('/admin/dashboard', function()
 // ->name('admin.logout');
 
 Route::middleware(['auth:web','verified'])->get('/dashboard', function() {
-    return view('dashboard');
+    return view('user/index');
 })->name('dashboard');
 
 

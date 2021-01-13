@@ -3,7 +3,7 @@
     <link rel="stylesheet" href="{{ asset('css/saman/about.css') }}">
 @endsection
 
-<x-saman-template>
+<x-saman.saman-master>
 
     @section('content')
 
@@ -56,4 +56,4 @@
 
     @endsection
 
-</x-saman-template>
+</x-saman.saman-master>
