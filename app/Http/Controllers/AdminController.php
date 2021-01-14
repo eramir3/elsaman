@@ -12,7 +12,7 @@ class AdminController extends Controller
     public function show() 
     {
         $user = Auth::user();
-        return view('admin.profile', ['user' => $user]);
+        return view('panels.admin.profile', ['user' => $user]);
     }
 
     public function update(Admin $user) 
@@ -32,8 +32,8 @@ class AdminController extends Controller
         return back()->with($notification);
     }
 
-    public function editPassword() {
-        return view('admin.password');
+    public function changePassword() {
+        return view('panels.admin.change-password');
     }
 
     public function updatePassword(Request $request)

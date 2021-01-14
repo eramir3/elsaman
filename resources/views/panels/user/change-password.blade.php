@@ -1,11 +1,11 @@
-<x-admin.admin-master>
+<x-panels.shared.panel-master>
     @section('content')
 
-    <h4>Change Password Admin</h4>
+    <h4>Change Password</h4>
     <br>
     <div class="row">
         <div class="col-sm-6">
-            <form method="post" action="{{route('admin.password.update', Auth::user())}}">
+            <form method="post" action="{{route('user.password.change.update', Auth::user())}}">
                 @csrf
                 @method('PUT')
                 <div class="form-group row">
@@ -48,4 +48,4 @@
     </div>
 
     @endsection
-</x-admin.admin-master>
+</x-panels.shared.panel-master>

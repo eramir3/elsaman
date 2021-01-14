@@ -1,4 +1,4 @@
-<x-user.user-master>
+<x-panels.shared.panel-master>
     @section('content')
 
     <h4>Profile</h4>
@@ -47,4 +47,4 @@
     </div>
 
     @endsection
-</x-user.user-master>
+</x-panels.shared.panel-master>

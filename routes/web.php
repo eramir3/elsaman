@@ -80,26 +80,26 @@ Route::group(['prefix'=>'admin'], function(){
 });
 
 Route::middleware(['auth:admin','verified'])->get('/admin/dashboard', function() {
-    return view('admin/index');
+    return view('panels/admin/index');
 })->name('admin.dashboard');
 
 Route::middleware(['auth:web','verified'])->get('/dashboard', function() {
-    return view('user/index');
+    return view('panels/user/index');
 })->name('dashboard');
 
 
 Route::middleware(['auth:web','verified'])->group(function() {
     Route::get('/user/profile', [UserController::class, 'show'])->name('user.profile');
     Route::put('/user/{user}/update', [UserController::class, 'update'])->name('user.profile.update');
-    Route::get('/user/password', [UserController::class, 'editPassword'])->name('user.password');
-    Route::put('/user/{user}/password/update', [UserController::class, 'updatePassword'])->name('user.password.update');
+    Route::get('/user/change-password', [UserController::class, 'changePassword'])->name('user.password.change');
+    Route::put('/user/{user}/change-password/update', [UserController::class, 'updatePassword'])->name('user.password.change.update');
 });
 
 Route::middleware(['auth:admin','verified'])->group(function() {
     Route::get('admin/profile', [AdminController::class, 'show'])->name('admin.profile');
     Route::put('admin/{user}/update', [AdminController::class, 'update'])->name('admin.profile.update');
-    Route::get('admin/password', [AdminController::class, 'editPassword'])->name('admin.password');
-    Route::put('admin/{user}/password/update', [AdminController::class, 'updatePassword'])->name('admin.password.update');
+    Route::get('admin/change-password', [AdminController::class, 'changePassword'])->name('admin.password.change');
+    Route::put('admin/{user}/change-password/update', [AdminController::class, 'updatePassword'])->name('admin.password.change.update');
 });
 
 

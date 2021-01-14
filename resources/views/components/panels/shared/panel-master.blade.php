@@ -15,7 +15,7 @@
     <link href="{{asset('vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <!-- Custom styles for this template-->
-    <link href="{{asset('css/admin/sb-admin-2.min.css')}}" rel="stylesheet">
+    <link href="{{asset('css/panels/sb-admin-2.min.css')}}" rel="stylesheet">
     <!-- Toastr -->
     <link href="{{asset('css/tools/toastr.min.css')}}" rel="stylesheet">
     <link href="{{asset('css/tools/toastr.css')}}" rel="stylesheet">
@@ -27,7 +27,11 @@
     <!-- Page Wrapper -->
     <div id="wrapper">
 
-        <x-admin.sidebar></x-admin.sidebar>
+        @if(Auth::guard('admin')->check())
+            <x-panels.admin.sidebar></x-panels.admin.sidebar>
+        @else
+            <x-panels.user.sidebar></x-panels.user.sidebar>
+        @endif
 
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
@@ -35,7 +39,7 @@
             <!-- Main Content -->
             <div id="content">
 
-                <x-admin.header></x-admin.header>
+                <x-panels.shared.header></x-panels.shared.header>
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
@@ -49,7 +53,7 @@
             </div>
             <!-- End of Main Content -->
 
-            <x-admin.footer></x-admin.footer>
+            <x-panels.shared.footer></x-panels.shared.footer>
 
         </div>
         <!-- End of Content Wrapper -->
@@ -67,7 +71,7 @@
     <!-- Core plugin JavaScript-->
     <script src="{{ asset('vendor/jquery-easing/jquery.easing.min.js') }}"></script>
     <!-- Custom scripts for all pages-->
-    <script src="{{ asset('js/admin/sb-admin-2.min.js') }}"></script>
+    <script src="{{ asset('js/panels/sb-admin-2.min.js') }}"></script>
     <script src="{{ asset('js/tools/toastr.min.js') }}"></script>
     <script src="{{ asset('js/tools/toastr.js') }}"></script>
 

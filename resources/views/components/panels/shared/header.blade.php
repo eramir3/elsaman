@@ -41,11 +41,12 @@
             <!-- Dropdown - User Information -->
             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                 aria-labelledby="userDropdown">
-                <a class="dropdown-item" href="{{route('user.profile')}}">
+                <!-- {{route('admin.profile')}} -->
+                <a class="dropdown-item" href="{{ Auth::getDefaultDriver() === 'admin' ? url(Auth::getDefaultDriver().'/profile') : route('user.profile')}}">
                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                     Profile
                 </a>
-                <a class="dropdown-item" href="{{route('user.password')}}">
+                <a class="dropdown-item" href="{{ Auth::getDefaultDriver() === 'admin' ? url(Auth::getDefaultDriver().'/change-password') : route('user.password.change')}}">
                     <i class="fas fa-key fa-sm fa-fw mr-2 text-gray-400"></i>
                     Change Password
                 </a>
@@ -72,11 +73,11 @@
             <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
             <div class="modal-footer">
                 <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                <a class="btn btn-primary" href="{{ route('logout') }}"
+                <a class="btn btn-primary" href="#"
                     onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                     {{ __('Logout') }}
                 </a>
-                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                <form id="logout-form" action="{{ Auth::getDefaultDriver() === 'admin' ? url(Auth::getDefaultDriver().'/logout') : route('logout')}}" method="POST" class="d-none">
                     @csrf
                 </form>
             </div>

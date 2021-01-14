@@ -12,7 +12,7 @@ class UserController extends Controller
     public function show() 
     {
         $user = Auth::user();
-        return view('user.profile', ['user' => $user]);
+        return view('panels.user.profile', ['user' => $user]);
     }
 
     public function update(User $user) 
@@ -32,8 +32,8 @@ class UserController extends Controller
         return back()->with($notification);
     }
 
-    public function editPassword() {
-        return view('user.password');
+    public function changePassword() {
+        return view('panels.user.change-password');
     }
 
     public function updatePassword(Request $request)

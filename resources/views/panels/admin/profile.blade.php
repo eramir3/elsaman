@@ -1,4 +1,4 @@
-<x-admin.admin-master>
+<x-panels.shared.panel-master>
     @section('content')
 
     <h4>Admin</h4>
@@ -47,4 +47,4 @@
     </div>
 
     @endsection
-</x-admin.admin-master>
+</x-panels.shared.panel-master>

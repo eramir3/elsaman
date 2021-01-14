@@ -1,7 +1,7 @@
-<x-admin.admin-master>
+<x-panels.shared.panel-master>
     @section('content')
 
         <h4>Dashboard</h4>
 
     @endsection
-</x-admin.admin-master>
+</x-panels.shared.panel-master>
