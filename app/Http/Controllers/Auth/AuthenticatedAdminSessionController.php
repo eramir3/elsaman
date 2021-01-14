@@ -44,6 +44,6 @@ class AuthenticatedAdminSessionController extends Controller
 
         $request->session()->regenerateToken();
 
-        return view('auth.login', ['guard' => 'admin']);
+        return redirect('/admin/login');
     }
 }
