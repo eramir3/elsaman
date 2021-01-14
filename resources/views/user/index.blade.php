@@ -1,7 +1,7 @@
 <x-user.user-master>
     @section('content')
 
-        <h1>Dashboard</h1>
+        <h4>Dashboard</h4>
 
     @endsection
 </x-user.user-master>

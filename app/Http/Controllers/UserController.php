@@ -2,20 +2,20 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Admin;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
 
-class AdminController extends Controller
+class UserController extends Controller
 {
     public function show() 
     {
         $user = Auth::user();
-        return view('admin.profile', ['user' => $user]);
+        return view('user.profile', ['user' => $user]);
     }
 
-    public function update(Admin $user) 
+    public function update(User $user) 
     {
         $data = request()->validate([
             'name'=>['required', 'string', 'max:255'],
@@ -33,7 +33,7 @@ class AdminController extends Controller
     }
 
     public function editPassword() {
-        return view('admin.password');
+        return view('user.password');
     }
 
     public function updatePassword(Request $request)
@@ -47,13 +47,13 @@ class AdminController extends Controller
 
         if (Hash::check($request->current_password, $hashedPassword)) 
         {
-            $user = Admin::findOrFail(Auth::id());
+            $user = User::findOrFail(Auth::id());
             $user->password = Hash::make($request->password);
             $user->save();
-
+           
             $notification = array(
                 'message' => 'Password Update Successfully',
-                'alert-type' => 'success'
+                'alert-type' => 'error'
             );
 
             return back()->with($notification);

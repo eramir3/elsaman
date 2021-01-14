@@ -1,7 +1,7 @@
 <x-admin.admin-master>
     @section('content')
 
-        <h1>Dashboard</h1>
+        <h4>Dashboard</h4>
 
     @endsection
 </x-admin.admin-master>

@@ -23,31 +23,6 @@
 
     <!-- Heading -->
     <div class="sidebar-heading">
-        Account
-    </div>
-
-    <!-- User -->
-    <li class="nav-item">
-        <a class="nav-link" href="">
-            <i class="fas fa-fw fa-user"></i>
-            <span>My Profile</span>
-        </a>
-    </li>
-    
-    <!-- Users -->
-    <li class="nav-item">
-        <a class="nav-link" href="">
-            <i class="fas fa-fw fa-users"></i>
-            <span>Users</span>
-        </a>
-    </li>
-    
-
-    <!-- Divider -->
-    <hr class="sidebar-divider">
-
-    <!-- Heading -->
-    <div class="sidebar-heading">
         Blog
     </div>
 
