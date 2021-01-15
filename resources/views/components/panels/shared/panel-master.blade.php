@@ -55,6 +55,8 @@
 
             <x-panels.shared.footer></x-panels.shared.footer>
 
+            <x-panels.shared.modals.logout></x-panels.shared.modals.logout> 
+
         </div>
         <!-- End of Content Wrapper -->
 
@@ -74,6 +76,8 @@
     <script src="{{ asset('js/panels/sb-admin-2.min.js') }}"></script>
     <script src="{{ asset('js/tools/toastr.min.js') }}"></script>
     <script src="{{ asset('js/tools/toastr.js') }}"></script>
+
+    @yield('scripts')
 
     <script>
     

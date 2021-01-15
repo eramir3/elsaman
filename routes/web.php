@@ -1,9 +1,16 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+
+//Panels
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\CategoryController;
+
+//Saman 
 use App\Http\Controllers\ContactController;
+
+// Auth
 use App\Http\Controllers\Auth\AuthenticatedAdminSessionController;
 
 /*
@@ -96,10 +103,15 @@ Route::middleware(['auth:web','verified'])->group(function() {
 });
 
 Route::middleware(['auth:admin','verified'])->group(function() {
+    
+    // Account
     Route::get('admin/profile', [AdminController::class, 'show'])->name('admin.profile');
     Route::put('admin/{user}/update', [AdminController::class, 'update'])->name('admin.profile.update');
     Route::get('admin/change-password', [AdminController::class, 'changePassword'])->name('admin.password.change');
     Route::put('admin/{user}/change-password/update', [AdminController::class, 'updatePassword'])->name('admin.password.change.update');
+    
+    // Categories
+    Route::get('admin/categories', [CategoryController::class, 'index'])->name('category.index');
 });
 
 
