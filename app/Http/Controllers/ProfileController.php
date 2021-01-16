@@ -3,13 +3,22 @@
 namespace App\Http\Controllers;
 
 use App\Models\Admin;
+use App\Enums\NotificationEnum;
 use App\Http\Requests\UserRequest;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
+use App\Services\NotificationService;
 use App\Http\Requests\Auth\PasswordRequest;
 
 class ProfileController extends Controller
 {
+    private $notificationService; 
+
+    public function __construct(NotificationService $notificationService)
+    {
+        $this->notificationService = $notificationService;
+    }
+
     /**
      * Show the form for editing the specified resource.
      *
@@ -25,7 +34,6 @@ class ProfileController extends Controller
      * Update the specified resource in storage.
      *
      * @param  App\Http\Requests\UserRequest  $request
-     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function update(UserRequest $request) 
@@ -34,21 +42,13 @@ class ProfileController extends Controller
         {
             $user = Auth::user();
             $user->update($request->validated());
-
-            $notification = array(
-                'message' => 'Profile Updated Successfully',
-                'alert-type' => 'success'
-            );
-
-            return back()->with($notification);
+            $reponse = $this->notificationService->success('Profile', NotificationEnum::Update);
+            return back()->with($reponse);
         }
         catch(\Exception $e)
         {
-            $notification = array(
-                'message' => 'Profile Update Failed',
-                'alert-type' => 'error'
-            );
-            return back()->with($notification);
+            $reponse = $this->notificationService->error('Profile', NotificationEnum::UpdateError);
+            return back()->with($reponse);
         }
         
     }
@@ -80,21 +80,18 @@ class ProfileController extends Controller
             {
                 $user->password = Hash::make($request->password);
                 $user->save();
-
-                $notification = array(
-                    'message' => 'Password Update Successfully',
-                    'alert-type' => 'success'
-                );
-                return back()->with($notification);
+                $reponse = $this->notificationService->success('Password', NotificationEnum::Update);
+                return back()->with($reponse);
             }
+
+            $reponse = $this->notificationService
+                            ->custom('Invalid Current Password', NotificationEnum::Error);
+            return back()->with($reponse);
         }
         catch(\Exception $e)
         {
-            $notification = array(
-                'message' => 'Category Deletion Failed',
-                'alert-type' => 'error'
-            );
-            return back()->with($notification);
+            $reponse = $this->notificationService->error('Password', NotificationEnum::UpdateError);
+            return back()->with($reponse);
         }
     }
 }

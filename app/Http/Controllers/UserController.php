@@ -4,14 +4,23 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use App\Enums\NotificationEnum;
 use App\Services\HasherService;
 use App\Http\Requests\UserRequest;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
+use App\Services\NotificationService;
 use App\Http\Requests\Auth\PasswordRequest;
 
 class UserController extends Controller
 {
+    private $notificationService; 
+
+    public function __construct(NotificationService $notificationService)
+    {
+        $this->notificationService = $notificationService;
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -36,27 +45,20 @@ class UserController extends Controller
         {
             $user = User::findOrFail($id);
             $user->update($request->validated());
-
-            $notification = array(
-                'message' => 'User Updated Successfully',
-                'alert-type' => 'success'
-            );
-            return back()->with($notification);
+            $reponse = $this->notificationService->success('Profile', NotificationEnum::Update);
+            return back()->with($reponse);
         }
         catch(\Exception $e)
         {
-            $notification = array(
-                'message' => 'User Update Failed',
-                'alert-type' => 'error'
-            );
-            return back()->with($notification);
+            $reponse = $this->notificationService->error('Profile', NotificationEnum::UpdateError);
+            return back()->with($reponse);
         }
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Modles\id  $category
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
@@ -65,19 +67,13 @@ class UserController extends Controller
         {
             $user = User::findOrFail($id);
             $user->delete();
-            $notification = array(
-                'message' => 'User Deleted Successfully',
-                'alert-type' => 'success'
-            );
-            return back()->with($notification);
+            $reponse = $this->notificationService->success('User', NotificationEnum::Delete);
+            return back()->with($reponse);
         }
         catch(\Exception $e)
         {
-            $notification = array(
-                'message' => 'User Deletion Failed',
-                'alert-type' => 'error'
-            );
-            return back()->with($notification);
+            $reponse = $this->notificationService->error('User', NotificationEnum::DeleteError);
+            return back()->with($reponse);
         }
     }
 

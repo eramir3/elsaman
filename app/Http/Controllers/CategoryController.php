@@ -3,11 +3,20 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
-use Illuminate\Support\Facades\Crypt;
+use App\Enums\NotificationEnum;
+use App\Services\NotificationService;
 use App\Http\Requests\CategoryRequest;
+
 
 class CategoryController extends Controller
 {
+    private $notificationService; 
+
+    public function __construct(NotificationService $notificationService)
+    {
+        $this->notificationService = $notificationService;
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -31,28 +40,20 @@ class CategoryController extends Controller
         {
             $category = new Category;
             $category->create($request->validated());
-
-            $notification = array(
-                'message' => 'Category Created Successfully',
-                'alert-type' => 'success'
-            );
-
-            return back()->with($notification);
+            $reponse = $this->notificationService->success('Category', NotificationEnum::Create);
+            return back()->with($reponse);
         }
         catch(\Exception $e)
         {
-            $notification = array(
-                'message' => 'Category Creation Failed',
-                'alert-type' => 'error'
-            );
-            return back()->with($notification);
+            $reponse = $this->notificationService->error('Category', NotificationEnum::CreateError);
+            return back()->with($reponse);
         }
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Modles\CategoryRequest $request
+     * @param  \App\Http\Requests\CategoryRequest $request
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
@@ -62,21 +63,13 @@ class CategoryController extends Controller
         {
             $category = Category::findOrFail($id);
             $category->update($request->validated());
-
-            $notification = array(
-                'message' => 'Category Updated Successfully',
-                'alert-type' => 'success'
-            );
-
-            return back()->with($notification);
+            $reponse = $this->notificationService->success('Category', NotificationEnum::Update);
+            return back()->with($reponse);
         }
         catch(\Exception $e)
         {
-            $notification = array(
-                'message' => $e->getMessage(),
-                'alert-type' => 'error'
-            );
-            return back()->with($notification);
+            $reponse = $this->notificationService->error('Category', NotificationEnum::UpdateError);
+            return back()->with($reponse);
         }
     }
 
@@ -92,19 +85,13 @@ class CategoryController extends Controller
         {
             $category = Category::findOrFail($id);
             $category->delete();
-            $notification = array(
-                'message' => 'Category Deleted Successfully',
-                'alert-type' => 'success'
-            );
-            return back()->with($notification);
+            $reponse = $this->notificationService->success('Category', NotificationEnum::Delete);
+            return back()->with($reponse);
         }
         catch(\Exception $e)
         {
-            $notification = array(
-                'message' => 'Category Deletion Failed',
-                'alert-type' => 'error'
-            );
-            return back()->with($notification);
+            $reponse = $this->notificationService->error('Category', NotificationEnum::DeleteError);
+            return back()->with($reponse);
         }
     }
 }

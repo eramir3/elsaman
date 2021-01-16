@@ -83,9 +83,11 @@
 
   <script>
   
-  @if(Session::has('message'))
-      let type = "{{Session::get('alert-type', 'info')}}"
-      switch(type) {
+    @if(Session::has('message'))
+        let type = "{{Session::get('alert_type')}}"
+        console.log('afdas');
+        switch(type) 
+        {
           case 'info':
               toastr.info("{{Session::get('message')}}");
           break;
@@ -98,8 +100,15 @@
           case 'error':
               toastr.error("{{Session::get('message')}}");
           break;
-      }
-  @endif
+        }
+    @endif
+
+    @if(count($errors) > 0)
+      @foreach($errors->all() as $error)
+          toastr.error("{{ $error }}");
+      @endforeach
+    @endif
+  
 
   </script>
 
