@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 //Panels
 use App\Http\Controllers\UserController;
-use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\CategoryController;
 
 //Saman 
@@ -12,6 +12,8 @@ use App\Http\Controllers\ContactController;
 
 // Auth
 use App\Http\Controllers\Auth\AuthenticatedAdminSessionController;
+
+use App\Services\HasherService;
 
 /*
 |--------------------------------------------------------------------------
@@ -59,6 +61,8 @@ use App\Http\Controllers\Auth\AuthenticatedAdminSessionController;
 //     Route::post('contact', [ContactController::class, 'mail'])->name('contact.mail');
 // });
 
+
+
 Route::get('/', function () {
     return view('saman/welcome');
 })->name('saman.welcome');
@@ -87,31 +91,56 @@ Route::group(['prefix'=>'admin'], function(){
 });
 
 Route::middleware(['auth:admin','verified'])->get('/admin/dashboard', function() {
-    return view('panels/admin/index');
+    // \Auth::logout();
+    // \Session::flush();
+    return view('panels/admin/dashboard');
 })->name('admin.dashboard');
 
 Route::middleware(['auth:web','verified'])->get('/dashboard', function() {
-    return view('panels/user/index');
+    // \Auth::logout();
+    // \Session::flush();
+    return view('panels/user/dashboard');
 })->name('dashboard');
 
 
 Route::middleware(['auth:web','verified'])->group(function() {
-    Route::get('/user/profile', [UserController::class, 'show'])->name('user.profile');
-    Route::put('/user/{user}/update', [UserController::class, 'update'])->name('user.profile.update');
-    Route::get('/user/change-password', [UserController::class, 'changePassword'])->name('user.password.change');
-    Route::put('/user/{user}/change-password/update', [UserController::class, 'updatePassword'])->name('user.password.change.update');
+//     \Auth::logout();
+// \Session::flush();
+    
+});
+
+
+Route::middleware(['auth:web,admin','verified'])->group(function() {
+    //     \Auth::logout();
+    // \Session::flush();
+    Route::get('profile', [ProfileController::class, 'edit'])->name('profile');
+    Route::put('profile/update', [ProfileController::class, 'update'])->name('profile.update');
+    Route::get('profile/password', [ProfileController::class, 'editPassword'])->name('profile.password');
+    Route::put('profile/password/update', [ProfileController::class, 'updatePassword'])->name('profile.password.update');
+    
 });
 
 Route::middleware(['auth:admin','verified'])->group(function() {
+    // \Auth::logout();
+    // \Session::flush();
     
-    // Account
-    Route::get('admin/profile', [AdminController::class, 'show'])->name('admin.profile');
-    Route::put('admin/{user}/update', [AdminController::class, 'update'])->name('admin.profile.update');
-    Route::get('admin/change-password', [AdminController::class, 'changePassword'])->name('admin.password.change');
-    Route::put('admin/{user}/change-password/update', [AdminController::class, 'updatePassword'])->name('admin.password.change.update');
+    // !Poner el prefix de admin!!!
+
+    // Users
+    Route::get('admin/users', [UserController::class, 'index'])->name('users.index');
+    Route::put('admin/users/{user}/update', [UserController::class, 'update'])->name('users.update');
+    Route::delete('admin/users/{user}/delete', [UserController::class, 'destroy'])->name('users.delete');
     
     // Categories
-    Route::get('admin/categories', [CategoryController::class, 'index'])->name('category.index');
+    Route::get('admin/categories', [CategoryController::class, 'index'])->name('categories.index');
+    Route::post('admin/categories/store', [CategoryController::class, 'store'])->name('categories.store');
+    Route::put('admin/categories/{id}/update', [CategoryController::class, 'update'])->name('categories.update');
+    Route::delete('admin/categories/{id}/delete', [CategoryController::class, 'destroy'])->name('categories.delete');
+});
+
+// Hashids
+Route::bind('id', function ($id) {
+    return HasherService::decode($id);
 });
 
 

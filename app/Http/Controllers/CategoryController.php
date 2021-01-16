@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
-use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Crypt;
+use App\Http\Requests\CategoryRequest;
 
 class CategoryController extends Controller
 {
@@ -15,62 +16,68 @@ class CategoryController extends Controller
     public function index()
     {
         $categories = Category::all();
-        return view('panels.admin.category.index', compact('categories'));
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
+        return view('panels.category.index', compact('categories'));
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  App\Http\Requests\CategoryRequest $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(CategoryRequest $request)
     {
-        //
-    }
+        try
+        {
+            $category = new Category;
+            $category->create($request->validated());
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
+            $notification = array(
+                'message' => 'Category Created Successfully',
+                'alert-type' => 'success'
+            );
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
+            return back()->with($notification);
+        }
+        catch(\Exception $e)
+        {
+            $notification = array(
+                'message' => 'Category Creation Failed',
+                'alert-type' => 'error'
+            );
+            return back()->with($notification);
+        }
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Modles\CategoryRequest $request
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(CategoryRequest $request, $id)
     {
-        //
+        try
+        {
+            $category = Category::findOrFail($id);
+            $category->update($request->validated());
+
+            $notification = array(
+                'message' => 'Category Updated Successfully',
+                'alert-type' => 'success'
+            );
+
+            return back()->with($notification);
+        }
+        catch(\Exception $e)
+        {
+            $notification = array(
+                'message' => $e->getMessage(),
+                'alert-type' => 'error'
+            );
+            return back()->with($notification);
+        }
     }
 
     /**
@@ -81,6 +88,23 @@ class CategoryController extends Controller
      */
     public function destroy($id)
     {
-        //
+        try
+        {
+            $category = Category::findOrFail($id);
+            $category->delete();
+            $notification = array(
+                'message' => 'Category Deleted Successfully',
+                'alert-type' => 'success'
+            );
+            return back()->with($notification);
+        }
+        catch(\Exception $e)
+        {
+            $notification = array(
+                'message' => 'Category Deletion Failed',
+                'alert-type' => 'error'
+            );
+            return back()->with($notification);
+        }
     }
 }

@@ -4,66 +4,81 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use App\Services\HasherService;
+use App\Http\Requests\UserRequest;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Requests\Auth\PasswordRequest;
 
 class UserController extends Controller
 {
-    public function show() 
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
     {
-        $user = Auth::user();
-        return view('panels.user.profile', ['user' => $user]);
+        $users = User::all();
+        return view('panels.user.index', compact('users'));
     }
 
-    public function update(User $user) 
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  App\Http\Requests\UserRequest  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(UserRequest $request, $id) 
     {
-        $data = request()->validate([
-            'name'=>['required', 'string', 'max:255'],
-            'email'=>['required', 'email', 'max:255'],
-        ]);
-
-        $user->update($data);
-
-        $notification = array(
-            'message' => 'Profile Updated Successfully',
-            'alert-type' => 'success'
-        );
-
-        return back()->with($notification);
-    }
-
-    public function changePassword() {
-        return view('panels.user.change-password');
-    }
-
-    public function updatePassword(Request $request)
-    {
-        $data = $request->validate([
-            'current_password' => 'required',
-            'password' => 'required|string|confirmed|min:8',
-        ]);
-
-        $hashedPassword = Auth::user()->password;
-
-        if (Hash::check($request->current_password, $hashedPassword)) 
+        try
         {
-            $user = User::findOrFail(Auth::id());
-            $user->password = Hash::make($request->password);
-            $user->save();
-           
-            $notification = array(
-                'message' => 'Password Update Successfully',
-                'alert-type' => 'error'
-            );
+            $user = User::findOrFail($id);
+            $user->update($request->validated());
 
+            $notification = array(
+                'message' => 'User Updated Successfully',
+                'alert-type' => 'success'
+            );
             return back()->with($notification);
         }
-
-        $notification = array(
-            'message' => 'Password Update Failed',
-            'alert-type' => 'error'
-        );
-
-        return back()->with($notification);
+        catch(\Exception $e)
+        {
+            $notification = array(
+                'message' => 'User Update Failed',
+                'alert-type' => 'error'
+            );
+            return back()->with($notification);
+        }
     }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  \App\Modles\id  $category
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
+    {
+        try
+        {
+            $user = User::findOrFail($id);
+            $user->delete();
+            $notification = array(
+                'message' => 'User Deleted Successfully',
+                'alert-type' => 'success'
+            );
+            return back()->with($notification);
+        }
+        catch(\Exception $e)
+        {
+            $notification = array(
+                'message' => 'User Deletion Failed',
+                'alert-type' => 'error'
+            );
+            return back()->with($notification);
+        }
+    }
+
 }

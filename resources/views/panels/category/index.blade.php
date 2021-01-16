@@ -1,13 +1,16 @@
 <x-panels.panel-master>
 
   @section('content')
-    <h4>Users</h4>
+    <h4>Categories</h4>
     <br>
     <div class="row">
 			<div class="col-sm-6">
 				<div class="card shadow mb-4">
 					<div class="card-header py-3">
-						<h6 class="d-inline m-0 font-weight-bold text-primary">Customers List</h6>
+						<h6 class="d-inline m-0 font-weight-bold text-primary">Categories List</h6>
+						<a class="d-inline font-weight-bold btn btn-primary btn-sm float-right" href="#" data-toggle="modal" data-target="#createCategoryModal">
+								Create
+						</a>
 					</div>
 					<div class="card-body">
 						<div class="table-responsive">
@@ -16,7 +19,6 @@
 									<tr>
 										<th>Id</th>
 										<th>Name</th>
-                    <th>Email</th>
 										<th>Action</th>
 									</tr>
 								</thead>
@@ -24,30 +26,27 @@
 									<tr>
 										<th>Id</th>
 										<th>Name</th>
-                    <th>Email</th>
 										<th>Action</th>
 									</tr>
 								</tfoot>
 								<tbody>
-									@foreach($users as $key => $user)
+									@foreach($categories as $key => $category)
 										<tr>
 											<td>{{$key + 1}}</td>
-											<td>{{$user->name}}</td>
-                      <td>{{$user->email}}</td>
+											<td>{{$category->name}}</td>
 											<td class="d-flex">
-												<a href="{{route('users.update', $user->id)}}" 
-													data-name="{{$user->name}}"
-                          data-email="{{$user->email}}"
+												<a href="{{route('categories.update', $category->id)}}" 
+													data-name="{{$category->name}}"
 													class="btn btn-primary btn-sm mr-2 btn-update" 
 													data-toggle="modal" 
-													data-target="#updateUserModal">
+													data-target="#updateCategoryModal">
 													<i class="fas fa-edit"></i>
 												</a>
-												<a href="{{route('users.delete', $user->id)}}" 
-													data-name="{{$user->name}}" 
+												<a href="{{route('categories.delete', $category->id)}}" 
+													data-name="{{$category->name}}" 
 													class="btn btn-danger btn-sm btn-delete" 
 													data-toggle="modal" 
-													data-target="#deleteUserModal">
+													data-target="#deleteCategoryModal">
 													<i class="fas fa-trash-alt"></i>
 												</a>
 											</td>
@@ -62,9 +61,11 @@
     </div>
   @endsection
 
+
   @section('modal')
-    <x-panels.user.update></x-panels.user.update>
-    <x-panels.user.delete></x-panels.user.delete>
+    <x-panels.category.create></x-panels.category.create>
+    <x-panels.category.update></x-panels.category.update>
+    <x-panels.category.delete></x-panels.category.delete>
   @endsection
      
 
@@ -77,19 +78,17 @@
       $(document).on("click", ".btn-update", function(e) {
           e.preventDefault();
           let link = $(this).attr("href");
-          let userName = $(this).attr("data-name");
-          let userEmail = $(this).attr("data-email");
-          $('#update-user-form').attr('action', link);
-          $('#update-name').val(userName);
-          $('#update-email').val(userEmail);
+          let categoryName = $(this).attr("data-name");
+          $('#update-category-form').attr('action', link);
+          $('#update-name').val(categoryName);
       });
 
       $(document).on("click", ".btn-delete", function(e) {
           e.preventDefault();
           let link = $(this).attr("href");
-          let userName = $(this).attr("data-name");
-          $('#delete-user-form').attr('action', link);
-          $('#delete-user-form .modal-body span').text(userName);
+          let categoryName = $(this).attr("data-name");
+          $('#delete-category-form').attr('action', link);
+          $('#delete-category-form .modal-body span').text(categoryName);
       });
     </script>
   @endsection
