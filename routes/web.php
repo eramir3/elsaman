@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 //Panels
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\CouponController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\CategoryController;
 
@@ -136,6 +137,12 @@ Route::middleware(['auth:admin','verified'])->group(function() {
     Route::post('admin/categories/store', [CategoryController::class, 'store'])->name('categories.store');
     Route::put('admin/categories/{id}/update', [CategoryController::class, 'update'])->name('categories.update');
     Route::delete('admin/categories/{id}/delete', [CategoryController::class, 'destroy'])->name('categories.delete');
+
+    // Coupons
+    Route::get('admin/coupons', [CouponController::class, 'index'])->name('coupons.index');
+    Route::post('admin/coupons/store', [CouponController::class, 'store'])->name('coupons.store');
+    Route::put('admin/coupons/{id}/update', [CouponController::class, 'update'])->name('coupons.update');
+    Route::delete('admin/coupons/{id}/delete', [CouponController::class, 'destroy'])->name('coupons.delete');
 });
 
 // Hashids

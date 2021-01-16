@@ -43,6 +43,14 @@
     </a>
   </li>
 
+  <!-- Nav Item - Coupons -->
+  <li class="nav-item">
+    <a class="nav-link" href="{{ route('coupons.index') }}">
+      <i class="fas fa-tags"></i>
+      <span>Coupons</span>
+    </a>
+  </li>
+
   <!-- Posts -->
   <li class="nav-item">
     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePost"
