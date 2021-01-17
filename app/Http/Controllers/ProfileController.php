@@ -5,10 +5,10 @@ namespace App\Http\Controllers;
 use App\Models\Admin;
 use App\Enums\NotificationEnum;
 use App\Http\Requests\UserRequest;
-use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
 use App\Services\NotificationService;
 use App\Http\Requests\Auth\PasswordRequest;
+use App\Exceptions\InvalidCurrentPasswordException;
 
 class ProfileController extends Controller
 {
@@ -71,21 +71,15 @@ class ProfileController extends Controller
      */
     public function updatePassword(PasswordRequest $request)
     {
-        $user = Auth::user();
-        $hashedPassword = $user->password;
-
         try
         {
-            if (Hash::check($request->current_password, $hashedPassword)) 
-            {
-                $user->password = Hash::make($request->password);
-                $user->save();
-                $reponse = $this->notificationService->success('Password', NotificationEnum::Update);
-                return back()->with($reponse);
-            }
-
-            $reponse = $this->notificationService
-                            ->custom('Invalid Current Password', NotificationEnum::Error);
+            Admin::updatePassword(Auth::user(), $request);
+            $reponse = $this->notificationService->success('Password', NotificationEnum::Update);
+            return back()->with($reponse);
+        }
+        catch(InvalidCurrentPasswordException $e)
+        {
+            $reponse = $this->notificationService->custom($e->getMessage(), NotificationEnum::Error);
             return back()->with($reponse);
         }
         catch(\Exception $e)

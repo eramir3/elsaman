@@ -3,7 +3,9 @@
 namespace App\Models;
 
 use App\Traits\HashableId;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
+use App\Exceptions\InvalidCurrentPasswordException;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -41,4 +43,18 @@ class Admin extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public static function updatePassword($user, $request)
+    {
+        $hashedPassword = $user->password;
+
+        if (Hash::check($request->current_password, $hashedPassword)) 
+        {
+            $user->password = Hash::make($request->password);
+            $user->save();
+        }
+        else {
+            throw new InvalidCurrentPasswordException('Invalid Current Password');
+        }
+    }
 }
