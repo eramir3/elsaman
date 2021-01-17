@@ -44,6 +44,14 @@ class Admin extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+    /**
+     * Update password if current password is valid
+     *
+     * @param  \Illuminate\Support\Facades\Auth  $user
+     * @param  \App\Http\Requests\PasswordRequest  $request
+     * 
+     * @throws \App\Exceptions\InvalidCurrentPasswordException
+     */
     public static function updatePassword($user, $request)
     {
         $hashedPassword = $user->password;
