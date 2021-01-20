@@ -2,16 +2,12 @@
 
 namespace App\Traits;
 
-use Hashids\Hashids;
-use Illuminate\Support\Facades\Crypt;
 use App\Services\HasherService;
-
 
 trait HashableId 
 {
-    public function getIdAttribute($id)
+    public function gethashIdAttribute()
     {
-        $hashid = HasherService::encode($id);
-        return $hashid;
+        return HasherService::encode($this->attributes['id']);
     }
 }

@@ -36,7 +36,7 @@
 										<td>{{$coupon->name}}</td>
 										<td>{{$coupon->discount}}</td>
 										<td class="d-flex">
-											<a href="{{route('coupons.update', $coupon->id)}}" 
+											<a href="{{route('coupons.update', $coupon->hashId)}}" 
 												data-name="{{$coupon->name}}"
 												data-discount="{{$coupon->discount}}" 
 												class="btn btn-primary btn-sm mr-2 btn-update" 
@@ -44,7 +44,7 @@
 												data-target="#updateCouponModal">
 												<i class="fas fa-edit"></i>
 											</a>
-											<a href="{{route('coupons.delete', $coupon->id)}}" 
+											<a href="{{route('coupons.delete', $coupon->hashId)}}" 
 												data-name="{{$coupon->name}}" 
 												class="btn btn-danger btn-sm btn-delete" 
 												data-toggle="modal" 

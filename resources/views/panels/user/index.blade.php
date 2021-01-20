@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="row">
-		<div class="col-sm-6">
+		<div class="col-sm-8">
 			<div class="card shadow mb-4">
 				<div class="card-header py-3">
 					<h6 class="d-inline m-0 font-weight-bold text-primary">Customers List</h6>
@@ -33,7 +33,7 @@
 										<td>{{$user->name}}</td>
 											<td>{{$user->email}}</td>
 										<td class="d-flex">
-											<a href="{{route('users.update', $user->id)}}" 
+											<a href="{{route('users.update', $user->hashId)}}" 
 												data-name="{{$user->name}}"
 												data-email="{{$user->email}}"
 												class="btn btn-primary btn-sm mr-2 btn-update" 
@@ -41,7 +41,7 @@
 												data-target="#updateUserModal">
 												<i class="fas fa-edit"></i>
 											</a>
-											<a href="{{route('users.delete', $user->id)}}" 
+											<a href="{{route('users.delete', $user->hashId)}}" 
 												data-name="{{$user->name}}" 
 												class="btn btn-danger btn-sm btn-delete" 
 												data-toggle="modal" 

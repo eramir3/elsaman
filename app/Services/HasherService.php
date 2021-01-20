@@ -3,12 +3,14 @@
 namespace App\Services;
 
 use Hashids\Hashids;
+use Illuminate\Database\Eloquent\Model;
 
 class HasherService
 {
-    public static function encode(...$args)
+    public static function encode($object)
     {
-        return app(Hashids::class)->encode(...$args);
+        $object = app(Hashids::class)->encode($object);
+        return $object;
     }
 
     public static function decode($enc)

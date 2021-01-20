@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Http\Resources\CategoryResource;
 use App\Enums\NotificationEnum;
 use App\Services\NotificationService;
 use App\Http\Requests\CategoryRequest;
-
 
 class CategoryController extends Controller
 {
