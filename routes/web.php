@@ -28,60 +28,45 @@ use App\Services\HasherService;
 |
 */
 
-// Route::redirect('/', '/en');
+Route::redirect('/', '/en');
 
-// Route::group(['prefix' => '/{locale}'], function() {
+Route::group(['prefix' => '/{locale}'], function() {
 
-//     $locale = Request::segment(1);
-//     $emptyLocale = '';
+    $locale = Request::segment(1);
+    $emptyLocale = '';
 
-//     // if (!in_array($locale, [
-//     //     Config::get('constants.en'), 
-//     //     Config::get('constants.fr'), 
-//     //     Config::get('constants.es'),
-//     //     $emptyLocale
-//     // ])) {
-//     //     abort(404);
-//     // }
+    $languages = [
+        Config::get('constants.en'), 
+        Config::get('constants.fr'), 
+        Config::get('constants.es'),
+        $emptyLocale
+    ];
 
-//     Route::get('/', function () {
-//         return view('saman/welcome');
-//     })->name('saman.welcome');
+    if (in_array($locale, $languages)) {
+        
+        Route::get('/', function () {
+            return view('saman/welcome');
+        })->name('saman.welcome');
+        
+        Route::get('about', function () {
+            return view('saman/about');
+        })->name('saman.about');
+        
+        Route::get('products', function () {
+            return view('saman/products');
+        })->name('saman.products');
+        
+        Route::get('contact', function () {
+            return view('saman/contact');
+        })->name('saman.contact');
     
-//     Route::get('about', function () {
-//         return view('saman/about');
-//     })->name('saman.about');
+        Route::post('contact', [ContactController::class, 'mail'])->name('contact.mail');
+    }
+
     
-//     Route::get('products', function () {
-//         return view('saman/products');
-//     })->name('saman.products');
-    
-//     Route::get('contact', function () {
-//         return view('saman/contact');
-//     })->name('saman.contact');
-
-//     Route::post('contact', [ContactController::class, 'mail'])->name('contact.mail');
-// });
+});
 
 
-
-Route::get('/', function () {
-    return view('saman/welcome');
-})->name('saman.welcome');
-
-Route::get('about', function () {
-    return view('saman/about');
-})->name('saman.about');
-
-Route::get('products', function () {
-    return view('saman/products');
-})->name('saman.products');
-
-Route::get('contact', function () {
-    return view('saman/contact');
-})->name('saman.contact');
-
-Route::post('contact', [ContactController::class, 'mail'])->name('contact.mail');
 
 Route::group(['prefix'=>'admin', 'middleware'=>'admin:admin'], function(){
     // \Auth::logout();

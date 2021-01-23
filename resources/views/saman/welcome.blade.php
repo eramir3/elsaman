@@ -32,7 +32,7 @@
                     </li>
                 </ul>
             </nav>
-            <!-- <x-saman.lang-dropdown></x-saman.lang-dropdown> -->
+            <x-saman.lang-dropdown></x-saman.lang-dropdown>
         </div>
     </header>
     <main>

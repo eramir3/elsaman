@@ -17,7 +17,7 @@
                 </li>
             </ul>
         </nav>
-        <!-- <x-saman.lang-dropdown></x-saman.lang-dropdown> -->
+        <x-saman.lang-dropdown></x-saman.lang-dropdown>
     </div>
 </header>
 
@@ -35,7 +35,7 @@
         <a href="{{ route('saman.welcome', app()->getLocale()) }}" class="mobile-header__brand">
             <img src="../images/saman/shared/saman-logo-bg-white.png" alt="">
         </a>
-        <!-- <x-saman.lang-dropdown></x-saman.lang-dropdown> -->
+        <x-saman.lang-dropdown></x-saman.lang-dropdown>
     </nav>
     <section class="nav-bottom__line"></section>
     <div class="mobile-nav__items" id="mobile-nav__menu">
