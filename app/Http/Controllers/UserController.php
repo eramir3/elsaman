@@ -45,13 +45,13 @@ class UserController extends Controller
         {
             $user = User::findOrFail($id);
             $user->update($request->validated());
-            $reponse = $this->notificationService->success('Profile', NotificationEnum::Update);
-            return back()->with($reponse);
+            $response = $this->notificationService->success('Profile', NotificationEnum::Update);
+            return back()->with($response);
         }
         catch(\Exception $e)
         {
-            $reponse = $this->notificationService->error('Profile', NotificationEnum::UpdateError);
-            return back()->with($reponse);
+            $response = $this->notificationService->error('Profile', NotificationEnum::UpdateError);
+            return back()->with($response);
         }
     }
 
@@ -67,13 +67,13 @@ class UserController extends Controller
         {
             $user = User::findOrFail($id);
             $user->delete();
-            $reponse = $this->notificationService->success('User', NotificationEnum::Delete);
-            return back()->with($reponse);
+            $response = $this->notificationService->success('User', NotificationEnum::Delete);
+            return back()->with($response);
         }
         catch(\Exception $e)
         {
-            $reponse = $this->notificationService->error('User', NotificationEnum::DeleteError);
-            return back()->with($reponse);
+            $response = $this->notificationService->error('User', NotificationEnum::DeleteError);
+            return back()->with($response);
         }
     }
 

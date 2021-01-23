@@ -42,13 +42,13 @@ class ProfileController extends Controller
         {
             $user = Auth::user();
             $user->update($request->validated());
-            $reponse = $this->notificationService->success('Profile', NotificationEnum::Update);
-            return back()->with($reponse);
+            $response = $this->notificationService->success('Profile', NotificationEnum::Update);
+            return back()->with($response);
         }
         catch(\Exception $e)
         {
-            $reponse = $this->notificationService->error('Profile', NotificationEnum::UpdateError);
-            return back()->with($reponse);
+            $response = $this->notificationService->error('Profile', NotificationEnum::UpdateError);
+            return back()->with($response);
         }
         
     }
@@ -74,18 +74,18 @@ class ProfileController extends Controller
         try
         {
             Admin::updatePassword(Auth::user(), $request);
-            $reponse = $this->notificationService->success('Password', NotificationEnum::Update);
-            return back()->with($reponse);
+            $response = $this->notificationService->success('Password', NotificationEnum::Update);
+            return back()->with($response);
         }
         catch(InvalidCurrentPasswordException $e)
         {
-            $reponse = $this->notificationService->custom($e->getMessage(), NotificationEnum::Error);
-            return back()->with($reponse);
+            $response = $this->notificationService->custom($e->getMessage(), NotificationEnum::Error);
+            return back()->with($response);
         }
         catch(\Exception $e)
         {
-            $reponse = $this->notificationService->error('Password', NotificationEnum::UpdateError);
-            return back()->with($reponse);
+            $response = $this->notificationService->error('Password', NotificationEnum::UpdateError);
+            return back()->with($response);
         }
     }
 }

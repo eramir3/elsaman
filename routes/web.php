@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 //Panels
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\CouponController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\CategoryController;
 
@@ -83,6 +84,8 @@ Route::get('contact', function () {
 Route::post('contact', [ContactController::class, 'mail'])->name('contact.mail');
 
 Route::group(['prefix'=>'admin', 'middleware'=>'admin:admin'], function(){
+    // \Auth::logout();
+    // \Session::flush();
     Route::get('/login', [AuthenticatedAdminSessionController::class, 'loginForm'])->name('admin.login.form');
     Route::post('/login', [AuthenticatedAdminSessionController::class, 'store'])->middleware('admin');
 });
@@ -129,8 +132,8 @@ Route::middleware(['auth:admin','verified'])->group(function() {
 
     // Users
     Route::get('admin/users', [UserController::class, 'index'])->name('users.index');
-    Route::put('admin/users/{user}/update', [UserController::class, 'update'])->name('users.update');
-    Route::delete('admin/users/{user}/delete', [UserController::class, 'destroy'])->name('users.delete');
+    Route::put('admin/users/{id}/update', [UserController::class, 'update'])->name('users.update');
+    Route::delete('admin/users/{id}/delete', [UserController::class, 'destroy'])->name('users.delete');
     
     // Categories
     Route::get('admin/categories', [CategoryController::class, 'index'])->name('categories.index');
@@ -143,6 +146,19 @@ Route::middleware(['auth:admin','verified'])->group(function() {
     Route::post('admin/coupons/store', [CouponController::class, 'store'])->name('coupons.store');
     Route::put('admin/coupons/{id}/update', [CouponController::class, 'update'])->name('coupons.update');
     Route::delete('admin/coupons/{id}/delete', [CouponController::class, 'destroy'])->name('coupons.delete');
+
+    // Products
+    Route::get('admin/products', [ProductController::class, 'index'])->name('products.index');
+    Route::get('admin/products/create', [ProductController::class, 'create'])->name('products.create');
+    Route::post('admin/products/store', [ProductController::class, 'store'])->name('products.store');
+    Route::get('admin/products/{id}/edit', [ProductController::class, 'edit'])->name('products.edit');
+    Route::put('admin/products/{id}/update', [ProductController::class, 'update'])->name('products.update');
+    Route::delete('admin/products/{id}/delete', [ProductController::class, 'destroy'])->name('products.delete');
+    
+    Route::put('admin/products/{id}/images/store', [ProductController::class, 'storeImage'])->name('products.image.store');
+    Route::put('admin/products/{id}/images/{image_id}/update', [ProductController::class, 'updateImage'])->name('products.image.update');
+    Route::delete('admin/products/{id}/images/{image_id}/delete', [ProductController::class, 'destroyImage'])->name('products.image.delete');
+
 });
 
 // Hashids

@@ -41,13 +41,13 @@ class CouponController extends Controller
         {
             $coupon = new Coupon;
             $coupon->create($request->validated());
-            $reponse = $this->notificationService->success('Coupon', NotificationEnum::Create);
-            return back()->with($reponse);
+            $response = $this->notificationService->success('Coupon', NotificationEnum::Create);
+            return back()->with($response);
         }
         catch(\Exception $e)
         {
-            $reponse = $this->notificationService->error('Coupon', NotificationEnum::CreateError);
-            return back()->with($reponse);
+            $response = $this->notificationService->error('Coupon', NotificationEnum::CreateError);
+            return back()->with($response);
         }
     }
 
@@ -64,13 +64,13 @@ class CouponController extends Controller
         {
             $coupon = Coupon::findOrFail($id);
             $coupon->update($request->validated());
-            $reponse = $this->notificationService->success('Coupon', NotificationEnum::Update);
-            return back()->with($reponse);
+            $response = $this->notificationService->success('Coupon', NotificationEnum::Update);
+            return back()->with($response);
         }
         catch(\Exception $e)
         {
-            $reponse = $this->notificationService->error('Coupon', NotificationEnum::UpdateError);
-            return back()->with($reponse);
+            $response = $this->notificationService->error('Coupon', NotificationEnum::UpdateError);
+            return back()->with($response);
         }
     }
 
@@ -86,13 +86,13 @@ class CouponController extends Controller
         {
             $coupon = Coupon::findOrFail($id);
             $coupon->delete();
-            $reponse = $this->notificationService->success('Coupon', NotificationEnum::Delete);
-            return back()->with($reponse);
+            $response = $this->notificationService->success('Coupon', NotificationEnum::Delete);
+            return back()->with($response);
         }
         catch(\Exception $e)
         {
-            $reponse = $this->notificationService->error('Coupon', NotificationEnum::DeleteError);
-            return back()->with($reponse);
+            $response = $this->notificationService->error('Coupon', NotificationEnum::DeleteError);
+            return back()->with($response);
         }
     }
 }

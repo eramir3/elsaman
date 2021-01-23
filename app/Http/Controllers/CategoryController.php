@@ -40,13 +40,13 @@ class CategoryController extends Controller
         {
             $category = new Category;
             $category->create($request->validated());
-            $reponse = $this->notificationService->success('Category', NotificationEnum::Create);
-            return back()->with($reponse);
+            $response = $this->notificationService->success('Category', NotificationEnum::Create);
+            return back()->with($response);
         }
         catch(\Exception $e)
         {
-            $reponse = $this->notificationService->error('Category', NotificationEnum::CreateError);
-            return back()->with($reponse);
+            $response = $this->notificationService->error('Category', NotificationEnum::CreateError);
+            return back()->with($response);
         }
     }
 
@@ -63,13 +63,13 @@ class CategoryController extends Controller
         {
             $category = Category::findOrFail($id);
             $category->update($request->validated());
-            $reponse = $this->notificationService->success('Category', NotificationEnum::Update);
-            return back()->with($reponse);
+            $response = $this->notificationService->success('Category', NotificationEnum::Update);
+            return back()->with($response);
         }
         catch(\Exception $e)
         {
-            $reponse = $this->notificationService->error('Category', NotificationEnum::UpdateError);
-            return back()->with($reponse);
+            $response = $this->notificationService->error('Category', NotificationEnum::UpdateError);
+            return back()->with($response);
         }
     }
 
@@ -85,13 +85,13 @@ class CategoryController extends Controller
         {
             $category = Category::findOrFail($id);
             $category->delete();
-            $reponse = $this->notificationService->success('Category', NotificationEnum::Delete);
-            return back()->with($reponse);
+            $response = $this->notificationService->success('Category', NotificationEnum::Delete);
+            return back()->with($response);
         }
         catch(\Exception $e)
         {
-            $reponse = $this->notificationService->error('Category', NotificationEnum::DeleteError);
-            return back()->with($reponse);
+            $response = $this->notificationService->error('Category', NotificationEnum::DeleteError);
+            return back()->with($response);
         }
     }
 }
