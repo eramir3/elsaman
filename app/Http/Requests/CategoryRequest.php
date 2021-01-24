@@ -25,8 +25,8 @@ class CategoryRequest extends FormRequest
     {
         $rules = [
             'name'=>['required', 'string', 'max:255', 'unique:categories'],
-            'blog'=>['sometimes', 'accepted'],
-            'product'=>['sometimes', 'accepted'],
+            'posts_active'=>['sometimes', 'accepted'],
+            'products_active'=>['sometimes', 'accepted'],
         ];
 
         if (request("_method") == "PUT")

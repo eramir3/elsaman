@@ -22,16 +22,16 @@
                     <div class="form-group row">
                         <div class="col-md-12 offset-md-1">
                             <div class="form-check form-check-inline">
-                                <label class="form-check-label ml-3 mr-2" for="blog">
-                                    {{ __('Blog') }}
+                                <label class="form-check-label ml-3 mr-2" for="post">
+                                    {{ __('Post') }}
                                 </label>
-                                <input id="update-blog" class="form-check-input-reverse" type="checkbox" name="blog">
+                                <input id="update-post" class="form-check-input-reverse" type="checkbox" name="posts_active">
                             </div>
                             <div class="form-check form-check-inline">
                                 <label class="form-check-label mr-2" for="product">
                                     {{ __('Product') }}
                                 </label>
-                                <input id="update-product" class="form-check-input-reverse" type="checkbox" name="product">
+                                <input id="update-product" class="form-check-input-reverse" type="checkbox" name="products_active">
                             </div>
                         </div>
                     </div>

@@ -40,8 +40,8 @@ class CategoryController extends Controller
         {
             $category = new Category;
             $category->name = $request['name'];
-            $category->blog = $request['blog'] == null ? false : true;
-            $category->product = $request['product'] == null ? false : true;
+            $category->posts_active = $request['posts_active'] == null ? false : true;
+            $category->products_active = $request['products_active'] == null ? false : true;
             $category->save();
             $response = $this->notificationService->success('Category', NotificationEnum::Create);
             return back()->with($response);
@@ -66,8 +66,8 @@ class CategoryController extends Controller
         {
             $category = Category::findOrFail($id);
             $category->name = $request['name'];
-            $category->blog = $request['blog'] == null ? false : true;
-            $category->product = $request['product'] == null ? false : true;
+            $category->posts_active = $request['posts_active'] == null ? false : true;
+            $category->products_active = $request['products_active'] == null ? false : true;
             $category->save();
             $response = $this->notificationService->success('Category', NotificationEnum::Update);
             return back()->with($response);
