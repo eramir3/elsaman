@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 //Panels
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\CouponController;
 use App\Http\Controllers\ProductController;
@@ -142,6 +143,13 @@ Route::middleware(['auth:admin','verified'])->group(function() {
     Route::put('admin/products/{id}/images/{image_id}/update', [ProductController::class, 'updateImage'])->name('products.image.update');
     Route::delete('admin/products/{id}/images/{image_id}/delete', [ProductController::class, 'destroyImage'])->name('products.image.delete');
 
+    // Posts
+    Route::get('admin/posts', [PostController::class, 'index'])->name('posts.index');
+    Route::get('admin/posts/create', [PostController::class, 'create'])->name('posts.create');
+    Route::post('admin/posts/store', [PostController::class, 'store'])->name('posts.store');
+    Route::get('admin/posts/{id}/edit', [PostController::class, 'edit'])->name('posts.edit');
+    Route::put('admin/posts/{id}/update', [PostController::class, 'update'])->name('posts.update');
+    Route::delete('admin/posts/{id}/delete', [PostController::class, 'destroy'])->name('posts.delete');
 });
 
 // Hashids

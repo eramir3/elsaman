@@ -42,27 +42,29 @@ class ProductService
 
     public function storeImages(Product $product, Array $input) : void
     {
-        $inputImages = [];
+        $mainImage = null;
+        $images = [];
         $path = $this->getPath($product);
 
         if($input['main_image']) 
         { 
-            $newImageName = Utils::createImageName($newImage);
-            $inputImages['main_image'] = $input['main_image']->storeAs($path, $newImageName);
+            $name = Utils::createImageName($input['main_image']);
+            $mainImage = $input['main_image']->storeAs($path, $name);
         }
         
         if($input['images'])
         {
             foreach($input['images'] as $key => $image)
             {
-                $newImageName = Utils::createImageName($newImage);
-                $inputImages['images'][$key] = $input['images'][$key]->storeAs($path, $newImageName);   
+                $image = $input['images'][$key];
+                $name = Utils::createImageName($image);
+                $images[$key] = $image->storeAs($path, $name);   
             }
         }
 
-        $product->main_image = $inputImages['main_image'];
-        $product->images = $inputImages['images'];
-        $product->update($inputImages);
+        $product->main_image = $mainImage;
+        $product->images = $images;
+        $product->update();
     }
 
     public function update(Array $input, int $id) : void

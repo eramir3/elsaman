@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Models\Post;
 use App\Models\Product;
 use App\Traits\HashableId;
 use Illuminate\Database\Eloquent\Model;
@@ -24,5 +25,10 @@ class Category extends Model
     public function product() 
     {
         return $this->hasOne(Product::class);
+    }
+
+    public function post() 
+    {
+        return $this->hasOne(Post::class);
     }
 }

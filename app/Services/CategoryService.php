@@ -17,6 +17,11 @@ class CategoryService
         $this->hasherService = $hasherService;
     } 
 
+    public function all()
+    {
+        return Category::all();
+    }
+
     public function unhashId(String $hashId) : int
     {
         $id = $this->hasherService->decode($hashId);

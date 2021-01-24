@@ -4,15 +4,12 @@ namespace App\Http\Controllers;
 
 use App\Models\Product;
 use App\Models\Category;
-use Illuminate\Http\Request;
 use App\Enums\NotificationEnum;
-use App\Services\HasherService;
 use App\Services\ProductService;
 use Illuminate\Support\Facades\DB;
+use App\Http\Requests\ImageRequest;
 use App\Http\Requests\ProductRequest;
 use App\Services\NotificationService;
-use App\Http\Requests\ImageRequest;
-
 class ProductController extends Controller
 {
     private $productService; 
