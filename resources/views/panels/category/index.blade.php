@@ -17,6 +17,8 @@
 								<tr>
 									<th>Id</th>
 									<th>Name</th>
+									<th>Blog</th>
+									<th>Products</th>
 									<th>Action</th>
 								</tr>
 							</thead>
@@ -24,6 +26,8 @@
 								<tr>
 									<th>Id</th>
 									<th>Name</th>
+									<th>Blog</th>
+									<th>Products</th>
 									<th>Action</th>
 								</tr>
 							</tfoot>
@@ -32,12 +36,24 @@
 									<tr>
 										<td>{{$key + 1}}</td>
 										<td>{{$category->name}}</td>
+										<th>
+											@if($category->blog === true)
+												<i class="fas fa-check"></i>
+											@endif
+										</th>
+										<th>
+											@if($category->product === true)
+												<i class="fas fa-check"></i>
+											@endif
+										</th>
 										<td class="d-flex">
 											<a href="{{route('categories.update', $category->hashId)}}" 
 												data-name="{{$category->name}}"
 												class="btn btn-primary btn-sm mr-2 btn-update" 
 												data-toggle="modal" 
-												data-target="#updateCategoryModal">
+												data-target="#updateCategoryModal"
+												data-blog="{{$category->blog}}"
+												data-product="{{$category->product}}">
 												<i class="fas fa-edit"></i>
 											</a>
 											<a href="{{route('categories.delete', $category->hashId)}}" 
@@ -77,8 +93,12 @@
 			e.preventDefault();
 			let link = $(this).attr("href");
 			let categoryName = $(this).attr("data-name");
+			let blogCheckValue = $(this).attr("data-blog") == 1 ? true : false;
+			let productCheckValue = $(this).attr("data-product") == 1 ? true : false;
 			$('#update-category-form').attr('action', link);
 			$('#update-name').val(categoryName);
+			$('#update-blog').attr('checked', blogCheckValue);
+			$('#update-product').attr('checked', productCheckValue);
 		});
 
 		$(document).on("click", ".btn-delete", function(e) {

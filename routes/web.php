@@ -42,8 +42,8 @@ Route::group(['prefix' => '/{locale}'], function() {
         $emptyLocale
     ];
 
-    if (in_array($locale, $languages)) {
-        
+    if (in_array($locale, $languages)) 
+    {    
         Route::get('/', function () {
             return view('saman/welcome');
         })->name('saman.welcome');
@@ -62,8 +62,6 @@ Route::group(['prefix' => '/{locale}'], function() {
     
         Route::post('contact', [ContactController::class, 'mail'])->name('contact.mail');
     }
-
-    
 });
 
 

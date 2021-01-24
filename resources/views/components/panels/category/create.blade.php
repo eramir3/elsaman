@@ -17,6 +17,23 @@
 							<input id="name" type="text" class="form-control" name="name" required autofocus>
 						</div>
 					</div>
+					<br>
+                    <div class="form-group row">
+                        <div class="col-md-12 offset-md-1">
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label ml-3 mr-2" for="blog">
+                                    {{ __('Blog') }}
+                                </label>
+                                <input class="form-check-input-reverse" type="checkbox" name="blog">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label mr-2" for="product">
+                                    {{ __('Product') }}
+                                </label>
+                                <input class="form-check-input-reverse" type="checkbox" name="product">
+                            </div>
+                        </div>
+                    </div>
 				</div>
 				<div class="modal-footer">
 					<button class="btn btn-secondary btn-sm" type="button" data-dismiss="modal">Cancel</button>

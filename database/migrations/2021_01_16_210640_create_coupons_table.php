@@ -18,6 +18,7 @@ class CreateCouponsTable extends Migration
             $table->string('name')->unique();
             $table->string('discount');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

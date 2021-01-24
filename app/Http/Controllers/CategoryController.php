@@ -39,7 +39,10 @@ class CategoryController extends Controller
         try
         {
             $category = new Category;
-            $category->create($request->validated());
+            $category->name = $request['name'];
+            $category->blog = $request['blog'] == null ? false : true;
+            $category->product = $request['product'] == null ? false : true;
+            $category->save();
             $response = $this->notificationService->success('Category', NotificationEnum::Create);
             return back()->with($response);
         }
@@ -62,7 +65,10 @@ class CategoryController extends Controller
         try
         {
             $category = Category::findOrFail($id);
-            $category->update($request->validated());
+            $category->name = $request['name'];
+            $category->blog = $request['blog'] == null ? false : true;
+            $category->product = $request['product'] == null ? false : true;
+            $category->save();
             $response = $this->notificationService->success('Category', NotificationEnum::Update);
             return back()->with($response);
         }

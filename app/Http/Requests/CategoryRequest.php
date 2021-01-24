@@ -23,8 +23,17 @@ class CategoryRequest extends FormRequest
      */
     public function rules()
     {
-        return [
+        $rules = [
             'name'=>['required', 'string', 'max:255', 'unique:categories'],
+            'blog'=>['sometimes', 'accepted'],
+            'product'=>['sometimes', 'accepted'],
         ];
+
+        if (request("_method") == "PUT")
+        {
+            $rules['name'] = ['string', 'max:255', 'unique:categories,name,'.$this->id];
+        }
+
+        return $rules;
     }
 }
