@@ -3,22 +3,15 @@
 namespace App\Http\Controllers;
 
 use App\Models\Admin;
+use App\Utils\Notifier;
 use App\Enums\NotificationEnum;
 use App\Http\Requests\UserRequest;
 use Illuminate\Support\Facades\Auth;
-use App\Services\NotificationService;
 use App\Http\Requests\Auth\PasswordRequest;
 use App\Exceptions\InvalidCurrentPasswordException;
 
 class ProfileController extends Controller
 {
-    private $notificationService; 
-
-    public function __construct(NotificationService $notificationService)
-    {
-        $this->notificationService = $notificationService;
-    }
-
     /**
      * Show the form for editing the specified resource.
      *
@@ -42,12 +35,12 @@ class ProfileController extends Controller
         {
             $user = Auth::user();
             $user->update($request->validated());
-            $response = $this->notificationService->success('Profile', NotificationEnum::UPDATE);
+            $response = Notifier::success('Profile', NotificationEnum::UPDATE);
             return back()->with($response);
         }
         catch(\Exception $e)
         {
-            $response = $this->notificationService->error('Profile', NotificationEnum::UPDATE_ERROR);
+            $response = Notifier::error('Profile', NotificationEnum::UPDATE_ERROR);
             return back()->with($response);
         }
         
@@ -74,17 +67,17 @@ class ProfileController extends Controller
         try
         {
             Admin::updatePassword(Auth::user(), $request);
-            $response = $this->notificationService->success('Password', NotificationEnum::UPDATE);
+            $response = Notifier::success('Password', NotificationEnum::UPDATE);
             return back()->with($response);
         }
         catch(InvalidCurrentPasswordException $e)
         {
-            $response = $this->notificationService->custom($e->getMessage(), NotificationEnum::ERROR);
+            $response = Notifier::custom($e->getMessage(), NotificationEnum::ERROR);
             return back()->with($response);
         }
         catch(\Exception $e)
         {
-            $response = $this->notificationService->error('Password', NotificationEnum::UPDATE_ERROR);
+            $response = Notifier::error('Password', NotificationEnum::UPDATE_ERROR);
             return back()->with($response);
         }
     }

@@ -2,22 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use App\Services\CategoryService;
-use App\Http\Resources\CategoryResource;
+use App\Utils\Notifier;
 use App\Enums\NotificationEnum;
-use App\Services\NotificationService;
+use App\Services\CategoryService;
 use App\Http\Requests\CategoryRequest;
-
+use App\Http\Resources\CategoryResource;
 class CategoryController extends Controller
 {
-    private $categoryService;
+    private $categoryService; 
 
-    private $notificationService; 
-
-    public function __construct(CategoryService $categoryService, NotificationService $notificationService)
+    public function __construct(CategoryService $categoryService)
     {
         $this->categoryService = $categoryService;
-        $this->notificationService = $notificationService;
     }
 
     /**
@@ -42,12 +38,12 @@ class CategoryController extends Controller
         try
         {
             $this->categoryService->store($request->validated());
-            $response = $this->notificationService->success('Category', NotificationEnum::CREATE);
+            $response = Notifier::success('Category', NotificationEnum::CREATE);
             return back()->with($response);
         }
         catch(\Exception $e)
         {
-            $response = $this->notificationService->error('Category', NotificationEnum::CREATE_ERROR);
+            $response = Notifier::error('Category', NotificationEnum::CREATE_ERROR);
             return back()->with($response);
         }
     }
@@ -64,12 +60,12 @@ class CategoryController extends Controller
         try
         {
             $this->categoryService->update($request->validated(), $id);
-            $response = $this->notificationService->success('Category', NotificationEnum::UPDATE);
+            $response = Notifier::success('Category', NotificationEnum::UPDATE);
             return back()->with($response);
         }
         catch(\Exception $e)
         {
-            $response = $this->notificationService->error('Category', NotificationEnum::UPDATE_ERROR);
+            $response = Notifier::error('Category', NotificationEnum::UPDATE_ERROR);
             return back()->with($response);
         }
     }
@@ -85,12 +81,12 @@ class CategoryController extends Controller
         try
         {
             $this->categoryService->destroy($id);
-            $response = $this->notificationService->success('Category', NotificationEnum::DELETE);
+            $response = Notifier::success('Category', NotificationEnum::DELETE);
             return back()->with($response);
         }
         catch(\Exception $e)
         {
-            $response = $this->notificationService->error('Category', NotificationEnum::DELETE_ERROR);
+            $response = Notifier::error('Category', NotificationEnum::DELETE_ERROR);
             return back()->with($response);
         }
     }

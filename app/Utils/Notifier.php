@@ -1,13 +1,12 @@
 <?php
 
-namespace App\Services;
+namespace App\Utils;
 
 use App\Enums\NotificationEnum;
 
-
-class NotificationService
+class Notifier
 {
-    public function success($object, $alertType): array
+    public static function success($object, $alertType): array
     {
         $notification = [];
 
@@ -36,7 +35,7 @@ class NotificationService
         return $notification;
     }
 
-    public function error($object, $alertType): array
+    public static function error($object, $alertType): array
     {
         $notification = [];
 
@@ -65,7 +64,7 @@ class NotificationService
         return $notification;
     }
 
-    public function custom($message, $alertType): array
+    public static function custom($message, $alertType): array
     {
         $notification = [];
 

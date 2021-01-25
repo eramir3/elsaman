@@ -2,20 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use App\Utils\Notifier;
 use App\Services\UserService;
 use App\Enums\NotificationEnum;
 use App\Http\Requests\UserRequest;
-use App\Services\NotificationService;
 class UserController extends Controller
 {
     private $userService;
-    
-    private $notificationService; 
 
-    public function __construct(UserService $userService, NotificationService $notificationService)
+    public function __construct(UserService $userService)
     {
         $this->userService = $userService;
-        $this->notificationService = $notificationService;
     }
 
     /**
@@ -41,12 +38,12 @@ class UserController extends Controller
         try
         {
             $this->userService->update($request->validated(), $id);
-            $response = $this->notificationService->success('Profile', NotificationEnum::UPDATE);
+            $response = Notifier::success('Profile', NotificationEnum::UPDATE);
             return back()->with($response);
         }
         catch(\Exception $e)
         {
-            $response = $this->notificationService->error('Profile', NotificationEnum::UPDATE_ERROR);
+            $response = Notifier::error('Profile', NotificationEnum::UPDATE_ERROR);
             return back()->with($response);
         }
     }
@@ -62,12 +59,12 @@ class UserController extends Controller
         try
         {
             $this->userService->destroy($id);
-            $response = $this->notificationService->success('User', NotificationEnum::DELETE);
+            $response = Notifier::success('User', NotificationEnum::DELETE);
             return back()->with($response);
         }
         catch(\Exception $e)
         {
-            $response = $this->notificationService->error('User', NotificationEnum::DELETE_ERROR);
+            $response = Notifier::error('User', NotificationEnum::DELETE_ERROR);
             return back()->with($response);
         }
     }

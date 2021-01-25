@@ -2,27 +2,24 @@
 
 namespace App\Http\Controllers;
 
+use App\Utils\Notifier;
 use App\Enums\NotificationEnum;
 use App\Services\ProductService;
 use App\Services\CategoryService;
 use Illuminate\Support\Facades\DB;
 use App\Http\Requests\ImageRequest;
 use App\Http\Requests\ProductRequest;
-use App\Services\NotificationService;
+
 class ProductController extends Controller
 {
     private $productService;
     
     private $categoryService;
 
-    private $notificationService; 
-
-    public function __construct(ProductService $productService, CategoryService $categoryService,
-                                NotificationService $notificationService)
+    public function __construct(ProductService $productService, CategoryService $categoryService)
     {
         $this->productService = $productService;
         $this->categoryService = $categoryService;
-        $this->notificationService = $notificationService;
     }
 
     /**
@@ -58,12 +55,12 @@ class ProductController extends Controller
         try
         {
             $this->productService->store($request->validated());
-            $response = $this->notificationService->success('Product', NotificationEnum::CREATE);
+            $response = Notifier::success('Product', NotificationEnum::CREATE);
             return back()->with($response);
         }
         catch(\Exception $e)
         {
-            $response = $this->notificationService->error('Product', NotificationEnum::CREATE_ERROR);
+            $response = Notifier::error('Product', NotificationEnum::CREATE_ERROR);
             return back()->with($response);
         }
     }
@@ -73,7 +70,7 @@ class ProductController extends Controller
         try
         {
             $this->productService->storeImage($request['image'], $id);
-            $response = $this->notificationService->success('Image', NotificationEnum::CREATE);
+            $response = Notifier::success('Image', NotificationEnum::CREATE);
             return back()->with($response);
         }
         catch(\Exception $e)
@@ -108,12 +105,12 @@ class ProductController extends Controller
         try
         {
             $this->productService->update($request->validated(), $id);
-            $response = $this->notificationService->success('Product', NotificationEnum::UPDATE);
+            $response = Notifier::success('Product', NotificationEnum::UPDATE);
             return back()->with($response);
         }
         catch(\Exception $e)
         {
-            $response = $this->notificationService->error('Product', NotificationEnum::UPDATE_ERROR);
+            $response = Notifier::error('Product', NotificationEnum::UPDATE_ERROR);
             return back()->with($response);
         }
     }
@@ -123,12 +120,12 @@ class ProductController extends Controller
         try
         {
             $this->productService->updateImage($request['image'], $id, $imageId);
-            $response = $this->notificationService->success('Image', NotificationEnum::UPDATE);
+            $response = Notifier::success('Image', NotificationEnum::UPDATE);
             return back()->with($response);
         }
         catch(\Exception $e)
         {
-            $response = $this->notificationService->error('Image', NotificationEnum::UPDATE_ERROR);
+            $response = Notifier::error('Image', NotificationEnum::UPDATE_ERROR);
             return back()->with($response);
         }
     }
@@ -144,12 +141,12 @@ class ProductController extends Controller
         try
         {
             $this->productService->destroy($id);
-            $response = $this->notificationService->success('Product', NotificationEnum::DELETE);
+            $response = Notifier::success('Product', NotificationEnum::DELETE);
             return back()->with($response);
         }
         catch(\Exception $e)
         {
-            $response = $this->notificationService->error('Product', NotificationEnum::DELETE_ERROR);
+            $response = Notifier::error('Product', NotificationEnum::DELETE_ERROR);
             return back()->with($response);
         }
     }
@@ -159,12 +156,12 @@ class ProductController extends Controller
         try
         {
             $this->productService->destroyImage($id, $imageId);
-            $response = $this->notificationService->success('Image', NotificationEnum::DELETE);
+            $response = Notifier::success('Image', NotificationEnum::DELETE);
             return back()->with($response);
         }
         catch(\Exception $e)
         {
-            $response = $this->notificationService->error('Image', NotificationEnum::DELETE_ERROR);
+            $response = Notifier::error('Image', NotificationEnum::DELETE_ERROR);
             return back()->with($response);
         }
     }

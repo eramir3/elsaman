@@ -2,12 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Utils\Notifier;
 use Illuminate\Http\Request;
 use App\Services\PostService;
 use App\Enums\NotificationEnum;
 use App\Services\CategoryService;
 use App\Http\Requests\PostRequest;
-use App\Services\NotificationService;
 
 class PostController extends Controller
 {
@@ -15,14 +15,10 @@ class PostController extends Controller
 
     private $categoryService;
 
-    private $notificationService; 
-
-    public function __construct(PostService $postService, CategoryService $categoryService,
-                                NotificationService $notificationService)
+    public function __construct(PostService $postService, CategoryService $categoryService)
     {
         $this->postService = $postService;
         $this->categoryService = $categoryService;
-        $this->notificationService = $notificationService;
     }
     
     /**
@@ -58,12 +54,12 @@ class PostController extends Controller
         try
         {
             $this->postService->store($request->validated());
-            $response = $this->notificationService->success('Post', NotificationEnum::CREATE);
+            $response = Notifier::success('Post', NotificationEnum::CREATE);
             return back()->with($response);
         }
         catch(\Exception $e)
         {
-            $response = $this->notificationService->error('Post', NotificationEnum::CREATE_ERROR);
+            $response = Notifier::error('Post', NotificationEnum::CREATE_ERROR);
             return back()->with($response);
         }
     }
@@ -93,12 +89,12 @@ class PostController extends Controller
         try
         {
             $this->postService->update($request->validated(), $id);
-            $response = $this->notificationService->success('Post', NotificationEnum::UPDATE);
+            $response = Notifier::success('Post', NotificationEnum::UPDATE);
             return back()->with($response);
         }
         catch(\Exception $e)
         {
-            $response = $this->notificationService->error('Post', NotificationEnum::UPDATE_ERROR);
+            $response = Notifier::error('Post', NotificationEnum::UPDATE_ERROR);
             return back()->with($response);
         }
     }
@@ -114,12 +110,12 @@ class PostController extends Controller
         try
         {
             $this->postService->destroy($id);
-            $response = $this->notificationService->success('Post', NotificationEnum::DELETE);
+            $response = Notifier::success('Post', NotificationEnum::DELETE);
             return back()->with($response);
         }
         catch(\Exception $e)
         {
-            $response = $this->notificationService->error('Post', NotificationEnum::DELETE_ERROR);
+            $response = Notifier::error('Post', NotificationEnum::DELETE_ERROR);
             return back()->with($response);
         }
     }
