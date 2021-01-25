@@ -2,8 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Post;
-use App\Models\Category;
 use Illuminate\Http\Request;
 use App\Services\PostService;
 use App\Enums\NotificationEnum;
@@ -59,14 +57,13 @@ class PostController extends Controller
     {
         try
         {
-            $input = $request->validated();
-            $this->postService->store($input);
-            $response = $this->notificationService->success('Post', NotificationEnum::Create);
+            $this->postService->store($request->validated());
+            $response = $this->notificationService->success('Post', NotificationEnum::CREATE);
             return back()->with($response);
         }
         catch(\Exception $e)
         {
-            $response = $this->notificationService->error('Post', NotificationEnum::CreateError);
+            $response = $this->notificationService->error('Post', NotificationEnum::CREATE_ERROR);
             return back()->with($response);
         }
     }
@@ -95,15 +92,13 @@ class PostController extends Controller
     {
         try
         {
-            $input = $request->validated();
-            $this->postService->update($input, $id);
-            $response = $this->notificationService->success('Post', NotificationEnum::Update);
+            $this->postService->update($request->validated(), $id);
+            $response = $this->notificationService->success('Post', NotificationEnum::UPDATE);
             return back()->with($response);
         }
         catch(\Exception $e)
         {
-            dd($e->getMessage());
-            $response = $this->notificationService->error('Post', NotificationEnum::UpdateError);
+            $response = $this->notificationService->error('Post', NotificationEnum::UPDATE_ERROR);
             return back()->with($response);
         }
     }
@@ -119,12 +114,12 @@ class PostController extends Controller
         try
         {
             $this->postService->destroy($id);
-            $response = $this->notificationService->success('Post', NotificationEnum::Delete);
+            $response = $this->notificationService->success('Post', NotificationEnum::DELETE);
             return back()->with($response);
         }
         catch(\Exception $e)
         {
-            $response = $this->notificationService->error('Post', NotificationEnum::DeleteError);
+            $response = $this->notificationService->error('Post', NotificationEnum::DELETE_ERROR);
             return back()->with($response);
         }
     }

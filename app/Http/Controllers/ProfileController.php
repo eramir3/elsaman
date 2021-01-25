@@ -42,12 +42,12 @@ class ProfileController extends Controller
         {
             $user = Auth::user();
             $user->update($request->validated());
-            $response = $this->notificationService->success('Profile', NotificationEnum::Update);
+            $response = $this->notificationService->success('Profile', NotificationEnum::UPDATE);
             return back()->with($response);
         }
         catch(\Exception $e)
         {
-            $response = $this->notificationService->error('Profile', NotificationEnum::UpdateError);
+            $response = $this->notificationService->error('Profile', NotificationEnum::UPDATE_ERROR);
             return back()->with($response);
         }
         
@@ -74,17 +74,17 @@ class ProfileController extends Controller
         try
         {
             Admin::updatePassword(Auth::user(), $request);
-            $response = $this->notificationService->success('Password', NotificationEnum::Update);
+            $response = $this->notificationService->success('Password', NotificationEnum::UPDATE);
             return back()->with($response);
         }
         catch(InvalidCurrentPasswordException $e)
         {
-            $response = $this->notificationService->custom($e->getMessage(), NotificationEnum::Error);
+            $response = $this->notificationService->custom($e->getMessage(), NotificationEnum::ERROR);
             return back()->with($response);
         }
         catch(\Exception $e)
         {
-            $response = $this->notificationService->error('Password', NotificationEnum::UpdateError);
+            $response = $this->notificationService->error('Password', NotificationEnum::UPDATE_ERROR);
             return back()->with($response);
         }
     }

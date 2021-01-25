@@ -32,7 +32,7 @@ class ProductRequest extends FormRequest
             'price'=>['required', 'numeric', 'min:0'],
             'discount_price'=>['numeric', 'min:0'],
             'category_id'=>['required'],
-            'main_image' => ['sometimes', 'file', 'required', 'mimes:png'],
+            'main_image' => ['file', 'required', 'mimes:png'],
             'images.*'=> ['sometimes', 'file', 'mimes:png'],
             'status' => ['string'],
         ];        
@@ -41,6 +41,7 @@ class ProductRequest extends FormRequest
         {
             $rules['name'] = ['required', 'string', 'max:255', 'unique:products,name,'.$this->id];
             $rules['code'] = ['required', 'string', 'max:255', 'unique:products,code,'.$this->id];
+            $rules['main_image'] = ['file', 'mimes:png'];
         }
 
         return $rules;

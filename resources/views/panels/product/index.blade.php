@@ -17,6 +17,7 @@
                                     <th>Code</th>
                                     <th>Quantity</th>
                                     <th>Price</th>
+									<th>Discount Price</th>
                                     <th>Size</th>
                                     <th>Category</th>
 									<th>Action</th>
@@ -29,6 +30,7 @@
                                     <th>Code</th>
                                     <th>Quantity</th>
                                     <th>Price</th>
+									<th>Discount Price</th>
                                     <th>Size</th>
                                     <th>Category</th>
 									<th>Action</th>
@@ -42,6 +44,7 @@
                                         <td>{{$product->code}}</td>
                                         <td>{{$product->quantity}}</td>
                                         <td>{{$product->price}}</td>
+										<td>{{$product->discount_price}}</td>
                                         <td>{{$product->size}}</td>
                                         <td>{{$product->category->name}}</td>
 										<td class="d-flex">

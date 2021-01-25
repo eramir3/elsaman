@@ -2,22 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;
-use Illuminate\Http\Request;
+use App\Services\UserService;
 use App\Enums\NotificationEnum;
-use App\Services\HasherService;
 use App\Http\Requests\UserRequest;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Auth;
 use App\Services\NotificationService;
-use App\Http\Requests\Auth\PasswordRequest;
-
 class UserController extends Controller
 {
+    private $userService;
+    
     private $notificationService; 
 
-    public function __construct(NotificationService $notificationService)
+    public function __construct(UserService $userService, NotificationService $notificationService)
     {
+        $this->userService = $userService;
         $this->notificationService = $notificationService;
     }
 
@@ -28,7 +25,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        $users = User::all();
+        $users = $this->userService->all();
         return view('panels.user.index', compact('users'));
     }
 
@@ -43,14 +40,13 @@ class UserController extends Controller
     {
         try
         {
-            $user = User::findOrFail($id);
-            $user->update($request->validated());
-            $response = $this->notificationService->success('Profile', NotificationEnum::Update);
+            $this->userService->update($request->validated(), $id);
+            $response = $this->notificationService->success('Profile', NotificationEnum::UPDATE);
             return back()->with($response);
         }
         catch(\Exception $e)
         {
-            $response = $this->notificationService->error('Profile', NotificationEnum::UpdateError);
+            $response = $this->notificationService->error('Profile', NotificationEnum::UPDATE_ERROR);
             return back()->with($response);
         }
     }
@@ -65,14 +61,13 @@ class UserController extends Controller
     {
         try
         {
-            $user = User::findOrFail($id);
-            $user->delete();
-            $response = $this->notificationService->success('User', NotificationEnum::Delete);
+            $this->userService->destroy($id);
+            $response = $this->notificationService->success('User', NotificationEnum::DELETE);
             return back()->with($response);
         }
         catch(\Exception $e)
         {
-            $response = $this->notificationService->error('User', NotificationEnum::DeleteError);
+            $response = $this->notificationService->error('User', NotificationEnum::DELETE_ERROR);
             return back()->with($response);
         }
     }

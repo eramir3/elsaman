@@ -14,29 +14,54 @@
                         <div class="form-group row">
                             <div class="col-md-4">
                                 <label for="name" class="col-md-6 col-form-label">{{ __('Name') }}</label>
-                                <input id="name" type="text" class="form-control" name="name" value="{{$product->name}}" required autofocus>
+                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{$product->name}}" required>
+                                @error('name')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                             </div>
                             <div class="col-md-4">
                                 <label for="code" class="col-md-6 col-form-label">{{ __('Code') }}</label>
-                                <input id="code" type="text" class="form-control" name="code" value="{{$product->code}}" required autofocus>
+                                <input id="code" type="text" class="form-control @error('code') is-invalid @enderror" name="code" value="{{$product->code}}" required>
+                                @error('code')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                             </div>
                             <div class="col-md-4">
                                 <label for="quantity" class="col-md-6 col-form-label">{{ __('Quantity') }}</label>
-                                <input id="quantity" type="number" min="0" class="form-control" value="{{$product->quantity}}" name="quantity" required autofocus>
+                                <input id="quantity" type="number" min="0" class="form-control @error('quantity') is-invalid @enderror" value="{{$product->quantity}}" name="quantity" required>
+                                @error('quantity')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-md-4">
                                 <label for="price" class="col-md-6 col-form-label">{{ __('Price') }}</label>
-                                <input id="price" type="number" min="0" step="0.01" class="form-control" value="{{$product->price}}" name="price" required autofocus>
+                                <input id="price" type="number" min="0" step="0.01" class="form-control @error('price') is-invalid @enderror" value="{{$product->price}}" name="price" required>
+                                @error('price')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                             </div>
                             <div class="col-md-4">
                                 <label for="size" class="col-md-6 col-form-label">{{ __('Size') }}</label>
-                                <input id="size" type="text" class="form-control" name="size" value="{{$product->size}}" required autofocus>
+                                <input id="size" type="text" class="form-control @error('size') is-invalid @enderror" name="size" value="{{$product->size}}" required>
+                                @error('size')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                             </div>
                             <div class="col-md-4">
-                                <label for="category" class="col-md-6 col-form-label">{{ __('Category') }}</label>
-                                <select class="form-control" id="category" name="category_id">
+                                <label for="category_id" class="col-md-6 col-form-label">{{ __('Category') }}</label>
+                                <select class="form-control @error('category_id') is-invalid @enderror" id="category_id" name="category_id" required>
                                     @foreach($categories as $category)
                                         @if($category->id === $product->category_id)
                                             <option value="{{$category->hashId}}" selected>{{$category->name}}</option>
@@ -45,21 +70,36 @@
                                         @endif
                                     @endforeach
                                 </select>
+                                @error('category_id')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-md-4">
-                                <label for="size" class="col-md-6 col-form-label">{{ __('Discount Price') }}</label>
-                                <input id="size" type="number" min="0" step="0.01" class="form-control" name="size" value="{{$product->discount_price}}" autofocus>
+                                <label for="discount_price" class="col-md-6 col-form-label">{{ __('Discount Price') }}</label>
+                                <input id="discount_price" type="number" min="0" step="0.01" class="form-control @error('discount_price') is-invalid @enderror" name="discount_price" value="{{$product->discount_price}}">
+                                @error('discount_price')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                             </div>
                         </div>
                         <br>
                         <div class="form-group row">
                             <div class="col-md-12">
                                 <label for="description" class="col-md-6 col-form-label">Description</label>
-                                <textarea class="form-control" id="description"  name="description" rows="15">
+                                <textarea class="form-control @error('description') is-invalid @enderror" id="description"  name="description" rows="15" required>
                                     {{$product->description}}
                                 </textarea>
+                                @error('description')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                             </div>
                         </div>
                         <br>

@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Coupon;
 use App\Enums\NotificationEnum;
+use App\Services\CouponService;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\CouponRequest;
 use App\Services\NotificationService;
@@ -11,10 +11,13 @@ use App\Services\NotificationService;
 
 class CouponController extends Controller
 {
+    private $couponService;
+
     private $notificationService; 
 
-    public function __construct(NotificationService $notificationService)
+    public function __construct(CouponService $couponService, NotificationService $notificationService)
     {
+        $this->couponService = $couponService;
         $this->notificationService = $notificationService;
     }
 
@@ -25,7 +28,7 @@ class CouponController extends Controller
      */
     public function index()
     {
-        $coupons = Coupon::all();
+        $coupons = $this->couponService->all();
         return view('panels.coupon.index', compact('coupons'));
     }
 
@@ -39,14 +42,13 @@ class CouponController extends Controller
     {
         try
         {
-            $coupon = new Coupon;
-            $coupon->create($request->validated());
-            $response = $this->notificationService->success('Coupon', NotificationEnum::Create);
+            $this->couponService->store($request->validated());
+            $response = $this->notificationService->success('Coupon', NotificationEnum::CREATE);
             return back()->with($response);
         }
         catch(\Exception $e)
         {
-            $response = $this->notificationService->error('Coupon', NotificationEnum::CreateError);
+            $response = $this->notificationService->error('Coupon', NotificationEnum::CREATE_ERROR);
             return back()->with($response);
         }
     }
@@ -62,14 +64,13 @@ class CouponController extends Controller
     {
         try
         {
-            $coupon = Coupon::findOrFail($id);
-            $coupon->update($request->validated());
-            $response = $this->notificationService->success('Coupon', NotificationEnum::Update);
+            $this->couponService->update($request->validated(), $id);
+            $response = $this->notificationService->success('Coupon', NotificationEnum::UPDATE);
             return back()->with($response);
         }
         catch(\Exception $e)
         {
-            $response = $this->notificationService->error('Coupon', NotificationEnum::UpdateError);
+            $response = $this->notificationService->error('Coupon', NotificationEnum::UPDATE_ERROR);
             return back()->with($response);
         }
     }
@@ -84,14 +85,13 @@ class CouponController extends Controller
     {
         try
         {
-            $coupon = Coupon::findOrFail($id);
-            $coupon->delete();
-            $response = $this->notificationService->success('Coupon', NotificationEnum::Delete);
+            $this->couponService->destroy($id);
+            $response = $this->notificationService->success('Coupon', NotificationEnum::DELETE);
             return back()->with($response);
         }
         catch(\Exception $e)
         {
-            $response = $this->notificationService->error('Coupon', NotificationEnum::DeleteError);
+            $response = $this->notificationService->error('Coupon', NotificationEnum::DELETE_ERROR);
             return back()->with($response);
         }
     }

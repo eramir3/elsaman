@@ -12,7 +12,7 @@
                 @csrf
                 @method('DELETE')    
                 <div class="modal-body">
-                Do you want to delete the coupon <span></span>? 
+                Do you want to delete coupon <span></span>? 
                 </div>
                 <div class="modal-footer">
                 <button class="btn btn-secondary btn-sm" type="button" data-dismiss="modal">Cancel</button>

@@ -18,6 +18,11 @@ class ProductService
         $this->categoryService = $categoryService;
     } 
 
+    public function all()
+    {
+        return Product::with('category')->get();
+    }
+
     public function store(Array $input) : void
     {
         DB::beginTransaction();
@@ -42,17 +47,16 @@ class ProductService
 
     public function storeImages(Product $product, Array $input) : void
     {
-        $mainImage = null;
         $images = [];
         $path = $this->getPath($product);
 
         if($input['main_image']) 
         { 
             $name = Utils::createImageName($input['main_image']);
-            $mainImage = $input['main_image']->storeAs($path, $name);
+            $product->main_image = $input['main_image']->storeAs($path, $name);
         }
         
-        if($input['images'])
+        if(isset($input['images']))
         {
             foreach($input['images'] as $key => $image)
             {
@@ -62,9 +66,14 @@ class ProductService
             }
         }
 
-        $product->main_image = $mainImage;
         $product->images = $images;
         $product->update();
+    }
+
+    public function findById(int $id) : Product
+    {
+        $product = Product::findOrFail($id);
+        return $product;
     }
 
     public function update(Array $input, int $id) : void

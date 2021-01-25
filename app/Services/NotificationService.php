@@ -7,28 +7,28 @@ use App\Enums\NotificationEnum;
 
 class NotificationService
 {
-    public function success($object, $alertType)
+    public function success($object, $alertType): array
     {
         $notification = [];
 
         switch($alertType) 
         {
-            case NotificationEnum::Create:
+            case NotificationEnum::CREATE:
                 $notification = [
                     'message' => $object .' Created Successfully',
-                    'alert_type' => NotificationEnum::Success
+                    'alert_type' => NotificationEnum::SUCCESS
                 ];
                 break;
-            case NotificationEnum::Update:
+            case NotificationEnum::UPDATE:
                 $notification = [
                     'message' => $object .' Updated Successfully',
-                    'alert_type' => NotificationEnum::Success
+                    'alert_type' => NotificationEnum::SUCCESS
                 ];
                 break;
-            case NotificationEnum::Delete:
+            case NotificationEnum::DELETE:
                 $notification = [
                     'message' => $object .' Deleted Successfully',
-                    'alert_type' => NotificationEnum::Success
+                    'alert_type' => NotificationEnum::SUCCESS
                 ];
                 break;
         }
@@ -36,28 +36,28 @@ class NotificationService
         return $notification;
     }
 
-    public function error($object, $alertType)
+    public function error($object, $alertType): array
     {
         $notification = [];
 
         switch($alertType) 
         {
-            case NotificationEnum::CreateError:
+            case NotificationEnum::CREATE_ERROR:
                 $notification = [
                     'message' => $object .' Creation Failed',
-                    'alert_type' => NotificationEnum::Error
+                    'alert_type' => NotificationEnum::ERROR
                 ];
                 break;
-            case NotificationEnum::UpdateError:
+            case NotificationEnum::UPDATE_ERROR:
                 $notification = [
                     'message' => $object .' Update Failed',
-                    'alert_type' => NotificationEnum::Error
+                    'alert_type' => NotificationEnum::ERROR
                 ];
                 break;
-            case NotificationEnum::DeleteError:
+            case NotificationEnum::DELETE_ERROR:
                 $notification = [
                     'message' => $object .' Deletion Failed',
-                    'alert_type' => NotificationEnum::Error
+                    'alert_type' => NotificationEnum::ERROR
                 ];
                 break;
         }
@@ -65,22 +65,22 @@ class NotificationService
         return $notification;
     }
 
-    public function custom($message, $alertType)
+    public function custom($message, $alertType): array
     {
         $notification = [];
 
         switch($alertType) 
         {
-            case NotificationEnum::Success:
+            case NotificationEnum::SUCCESS:
                 $notification = [
                     'message' => $message,
-                    'alert_type' => NotificationEnum::Success
+                    'alert_type' => NotificationEnum::SUCCESS
                 ];
                 break;
-            case NotificationEnum::Error:
+            case NotificationEnum::ERROR:
                 $notification = [
                     'message' => $message,
-                    'alert_type' => NotificationEnum::Error
+                    'alert_type' => NotificationEnum::ERROR
                 ];
                 break;
             

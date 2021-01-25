@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Category;
+use App\Services\CategoryService;
 use App\Http\Resources\CategoryResource;
 use App\Enums\NotificationEnum;
 use App\Services\NotificationService;
@@ -10,10 +10,13 @@ use App\Http\Requests\CategoryRequest;
 
 class CategoryController extends Controller
 {
+    private $categoryService;
+
     private $notificationService; 
 
-    public function __construct(NotificationService $notificationService)
+    public function __construct(CategoryService $categoryService, NotificationService $notificationService)
     {
+        $this->categoryService = $categoryService;
         $this->notificationService = $notificationService;
     }
 
@@ -24,7 +27,7 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        $categories = Category::all();
+        $categories = $this->categoryService->all();
         return view('panels.category.index', compact('categories'));
     }
 
@@ -38,17 +41,13 @@ class CategoryController extends Controller
     {
         try
         {
-            $category = new Category;
-            $category->name = $request['name'];
-            $category->posts_active = $request['posts_active'] == null ? false : true;
-            $category->products_active = $request['products_active'] == null ? false : true;
-            $category->save();
-            $response = $this->notificationService->success('Category', NotificationEnum::Create);
+            $this->categoryService->store($request->validated());
+            $response = $this->notificationService->success('Category', NotificationEnum::CREATE);
             return back()->with($response);
         }
         catch(\Exception $e)
         {
-            $response = $this->notificationService->error('Category', NotificationEnum::CreateError);
+            $response = $this->notificationService->error('Category', NotificationEnum::CREATE_ERROR);
             return back()->with($response);
         }
     }
@@ -64,17 +63,13 @@ class CategoryController extends Controller
     {
         try
         {
-            $category = Category::findOrFail($id);
-            $category->name = $request['name'];
-            $category->posts_active = $request['posts_active'] == null ? false : true;
-            $category->products_active = $request['products_active'] == null ? false : true;
-            $category->save();
-            $response = $this->notificationService->success('Category', NotificationEnum::Update);
+            $this->categoryService->update($request->validated(), $id);
+            $response = $this->notificationService->success('Category', NotificationEnum::UPDATE);
             return back()->with($response);
         }
         catch(\Exception $e)
         {
-            $response = $this->notificationService->error('Category', NotificationEnum::UpdateError);
+            $response = $this->notificationService->error('Category', NotificationEnum::UPDATE_ERROR);
             return back()->with($response);
         }
     }
@@ -89,14 +84,13 @@ class CategoryController extends Controller
     {
         try
         {
-            $category = Category::findOrFail($id);
-            $category->delete();
-            $response = $this->notificationService->success('Category', NotificationEnum::Delete);
+            $this->categoryService->destroy($id);
+            $response = $this->notificationService->success('Category', NotificationEnum::DELETE);
             return back()->with($response);
         }
         catch(\Exception $e)
         {
-            $response = $this->notificationService->error('Category', NotificationEnum::DeleteError);
+            $response = $this->notificationService->error('Category', NotificationEnum::DELETE_ERROR);
             return back()->with($response);
         }
     }
