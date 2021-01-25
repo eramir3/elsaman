@@ -73,7 +73,7 @@
 
 
 @section('modal')
-	<x-panel.product.delete></x-panel.product.delete>
+	<x-panel.admin.product.delete></x-panel.admin.product.delete>
 @endsection
      
 

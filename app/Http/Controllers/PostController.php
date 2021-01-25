@@ -33,7 +33,7 @@ class PostController extends Controller
     public function index()
     {
         $posts = $this->postService->all();
-        return view('panel.post.index', compact('posts'));
+        return view('panel.admin.post.index', compact('posts'));
     }
 
     /**
@@ -44,7 +44,7 @@ class PostController extends Controller
     public function create()
     {
         $categories = $this->categoryService->all();
-        return view('panel.post.create', compact('categories'));
+        return view('panel.admin.post.create', compact('categories'));
     }
 
     /**
@@ -78,7 +78,7 @@ class PostController extends Controller
     {
         $post = $this->postService->findById($id);
         $categories = $this->categoryService->all();
-        return view('panel.post.edit', compact('post', 'categories'));
+        return view('panel.admin.post.edit', compact('post', 'categories'));
     }
 
     /**

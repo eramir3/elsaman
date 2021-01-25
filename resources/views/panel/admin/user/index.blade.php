@@ -61,8 +61,8 @@
 @endsection
 
 @section('modal')
-	<x-panel.user.edit></x-panel.user.edit>
-	<x-panel.user.delete></x-panel.user.delete>
+	<x-panel.admin.user.edit></x-panel.admin.user.edit>
+	<x-panel.admin.user.delete></x-panel.admin.user.delete>
 @endsection
      
 

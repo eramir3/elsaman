@@ -26,7 +26,7 @@ class UserController extends Controller
     public function index()
     {
         $users = $this->userService->all();
-        return view('panel.user.index', compact('users'));
+        return view('panel.admin.user.index', compact('users'));
     }
 
     /**

@@ -65,9 +65,9 @@
 
 
 @section('modal')
-	<x-panel.coupon.create></x-panel.coupon.create>
-	<x-panel.coupon.edit></x-panel.coupon.edit>
-	<x-panel.coupon.delete></x-panel.coupon.delete>
+	<x-panel.admin.coupon.create></x-panel.admin.coupon.create>
+	<x-panel.admin.coupon.edit></x-panel.admin.coupon.edit>
+	<x-panel.admin.coupon.delete></x-panel.admin.coupon.delete>
 @endsection
      
 

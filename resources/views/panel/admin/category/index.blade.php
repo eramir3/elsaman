@@ -77,9 +77,9 @@
 
 
 @section('modal')
-	<x-panel.category.create></x-panel.category.create>
-	<x-panel.category.edit></x-panel.category.edit>
-	<x-panel.category.delete></x-panel.category.delete>
+	<x-panel.admin.category.create></x-panel.admin.category.create>
+	<x-panel.admin.category.edit></x-panel.admin.category.edit>
+	<x-panel.admin.category.delete></x-panel.admin.category.delete>
 @endsection
      
 
