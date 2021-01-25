@@ -28,9 +28,9 @@
     <div id="wrapper">
 
         @if(Auth::guard('admin')->check())
-            <x-panels.admin.sidebar></x-panels.admin.sidebar>
+            <x-panel.admin.sidebar></x-panel.admin.sidebar>
         @else
-            <x-panels.user.sidebar></x-panels.user.sidebar>
+            <x-panel.user.sidebar></x-panel.user.sidebar>
         @endif
 
         <!-- Content Wrapper -->
@@ -39,7 +39,7 @@
             <!-- Main Content -->
             <div id="content">
 
-                <x-panels.header></x-panels.header>
+                <x-panel.header></x-panel.header>
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
@@ -53,9 +53,9 @@
             </div>
             <!-- End of Main Content -->
 
-            <x-panels.footer></x-panels.footer>
+            <x-panel.footer></x-panel.footer>
 
-            <x-panels.logout></x-panels.logout> 
+            <x-panel.logout></x-panel.logout> 
 
         </div>
         <!-- End of Content Wrapper -->

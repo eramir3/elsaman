@@ -1,4 +1,4 @@
-<x-panels.panel-master>
+<x-panel.panel-master>
 
 @section('content')
     <div class="row">
@@ -77,9 +77,9 @@
 
 
 @section('modal')
-	<x-panels.category.create></x-panels.category.create>
-	<x-panels.category.edit></x-panels.category.edit>
-	<x-panels.category.delete></x-panels.category.delete>
+	<x-panel.category.create></x-panel.category.create>
+	<x-panel.category.edit></x-panel.category.edit>
+	<x-panel.category.delete></x-panel.category.delete>
 @endsection
      
 
@@ -111,4 +111,4 @@
 	</script>
 @endsection
 
-</x-panels.panel-master>
+</x-panel.panel-master>

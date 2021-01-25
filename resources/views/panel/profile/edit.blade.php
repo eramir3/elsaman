@@ -1,4 +1,4 @@
-<x-panels.panel-master>
+<x-panel.panel-master>
 
     @section('content')
 
@@ -48,4 +48,4 @@
     </div>
 
     @endsection
-</x-panels.panel-master>
+</x-panel.panel-master>

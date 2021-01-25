@@ -1,4 +1,4 @@
-<x-panels.panel-master>
+<x-panel.panel-master>
 
 @section('content')
     <div class="row">
@@ -133,4 +133,4 @@
     <script>tinymce.init({selector:'textarea'});</script>
 @endsection
 
-</x-panels.panel-master>
+</x-panel.panel-master>

@@ -1,4 +1,4 @@
-<x-panels.panel-master>
+<x-panel.panel-master>
 
 @section('content')
     <div class="row">
@@ -58,7 +58,7 @@
 
 
 @section('modal')
-	<x-panels.admin.post.delete></x-panels.admin.post.delete>
+	<x-panel.admin.post.delete></x-panel.admin.post.delete>
 @endsection
 
 
@@ -80,4 +80,4 @@
 
 @endsection
 
-</x-panels.panel-master>
+</x-panel.panel-master>

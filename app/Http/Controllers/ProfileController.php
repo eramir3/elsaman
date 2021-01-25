@@ -27,7 +27,7 @@ class ProfileController extends Controller
     public function edit() 
     {
         $user = Auth::user();
-        return view('panels.profile.edit', ['user' => $user]);
+        return view('panel.profile.edit', ['user' => $user]);
     }
 
     /**
@@ -60,7 +60,7 @@ class ProfileController extends Controller
      */
     public function editPassword() 
     {
-        return view('panels.profile.edit-password');
+        return view('panel.profile.edit-password');
     }
 
     /**

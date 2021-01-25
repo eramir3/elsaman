@@ -29,7 +29,7 @@ class CouponController extends Controller
     public function index()
     {
         $coupons = $this->couponService->all();
-        return view('panels.coupon.index', compact('coupons'));
+        return view('panel.coupon.index', compact('coupons'));
     }
 
     /**
