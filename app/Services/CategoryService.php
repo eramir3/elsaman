@@ -2,19 +2,12 @@
 
 namespace App\Services;
 
+use App\Utils\Hasher;
 use App\Models\Category;
-use App\Services\HasherService;
 use Illuminate\Database\Eloquent\Collection;
 
 class CategoryService
 {   
-    private $hasherService;
-
-    public function __construct(HasherService $hasherService)
-    {
-        $this->hasherService = $hasherService;
-    } 
-
     public function all(): Collection
     {
         return Category::all();
@@ -46,7 +39,7 @@ class CategoryService
 
     public function unhashId(string $hashId): int
     {
-        $id = $this->hasherService->decode($hashId);
+        $id = Hasher::decode($hashId);
         Category::findOrFail($id);
         return $id;
     }    

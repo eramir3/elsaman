@@ -199,9 +199,9 @@
 
 @section('modal')
 	
-    <x-panel.product.image.create></x-panel.product.image.create>
-    <x-panel.product.image.edit></x-panel.product.image.edit>
-    <x-panel.product.image.delete></x-panel.product.image.delete>
+    <x-panel.admin.product.image.create></x-panel.admin.product.image.create>
+    <x-panel.admin.product.image.edit></x-panel.admin.product.image.edit>
+    <x-panel.admin.product.image.delete></x-panel.admin.product.image.delete>
 
 @endsection
 

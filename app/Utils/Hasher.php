@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Services;
+namespace App\Utils;
 
 use Hashids\Hashids;
 use Illuminate\Database\Eloquent\Model;
 
-class HasherService
+class Hasher
 {
     public static function encode($object)
     {

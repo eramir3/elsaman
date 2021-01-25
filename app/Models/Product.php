@@ -2,10 +2,8 @@
 
 namespace App\Models;
 
-use App\Casts\UserCode;
 use App\Models\Category;
 use App\Traits\HashableId;
-use App\Services\HasherService;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Factories\HasFactory;

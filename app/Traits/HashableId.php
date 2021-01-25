@@ -2,12 +2,12 @@
 
 namespace App\Traits;
 
-use App\Services\HasherService;
+use App\Utils\Hasher;
 
 trait HashableId 
 {
     public function gethashIdAttribute()
     {
-        return HasherService::encode($this->attributes['id']);
+        return Hasher::encode($this->attributes['id']);
     }
 }

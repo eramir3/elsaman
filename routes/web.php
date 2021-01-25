@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-//Panels
+//Panel
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\CouponController;
@@ -16,7 +16,7 @@ use App\Http\Controllers\ContactController;
 // Auth
 use App\Http\Controllers\Auth\AuthenticatedAdminSessionController;
 
-use App\Services\HasherService;
+use App\Utils\Hasher;
 
 /*
 |--------------------------------------------------------------------------
@@ -81,13 +81,13 @@ Route::group(['prefix'=>'admin'], function(){
 Route::middleware(['auth:admin','verified'])->get('/admin/dashboard', function() {
     // \Auth::logout();
     // \Session::flush();
-    return view('panels/admin/dashboard');
+    return view('panel/admin/dashboard');
 })->name('admin.dashboard');
 
 Route::middleware(['auth:web','verified'])->get('/dashboard', function() {
     // \Auth::logout();
     // \Session::flush();
-    return view('panels/user/dashboard');
+    return view('panel/user/dashboard');
 })->name('dashboard');
 
 
@@ -154,7 +154,7 @@ Route::middleware(['auth:admin','verified'])->group(function() {
 
 // Hashids
 Route::bind('id', function ($id) {
-    return HasherService::decode($id);
+    return Hasher::decode($id);
 });
 
 
