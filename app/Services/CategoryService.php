@@ -35,12 +35,5 @@ class CategoryService
     {
         $category = Category::findOrFail($id);
         $category->delete();
-    }
-
-    public function unhashId(string $hashId): int
-    {
-        $id = Hasher::decode($hashId);
-        Category::findOrFail($id);
-        return $id;
-    }    
+    } 
 }

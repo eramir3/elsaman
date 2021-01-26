@@ -3,6 +3,7 @@
 namespace App\Services;
 
 use App\Utils\Utils;
+use App\Utils\Hasher;
 use App\Models\Product;
 use App\Models\Category;
 use Illuminate\Http\UploadedFile;
@@ -11,13 +12,6 @@ use Illuminate\Support\Facades\Storage;
 
 class ProductService
 {   
-    private $categoryService;
-
-    public function __construct(CategoryService $categoryService)
-    {
-        $this->categoryService = $categoryService;
-    } 
-
     public function all()
     {
         return Product::with('category')->get();
@@ -26,7 +20,7 @@ class ProductService
     public function store(Array $input) : void
     {
         DB::beginTransaction();
-        $input['category_id'] = $this->categoryService->unhashId($input['category_id']);
+        $input['category_id'] = Hasher::findModelId(Category::class, $input['category_id']);
         $product = new Product;
         $product = $product->create($input);
         $this->storeImages($product, $input);
@@ -79,7 +73,7 @@ class ProductService
     public function update(Array $input, int $id) : void
     {
         $product = Product::findOrFail($id);
-        $input['category_id'] = $this->categoryService->unhashId($input['category_id']);
+        $input['category_id'] = Hasher::findModelId(Category::class, $input['category_id']);
         $product->update($input);
     }
 

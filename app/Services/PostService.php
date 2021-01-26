@@ -5,20 +5,12 @@ namespace App\Services;
 use App\Utils\Utils;
 use App\Models\Post;
 use App\Models\Category;
-use App\Services\CategoryService;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 
 class PostService
 {
-    private $categoryService;
-
-    public function __construct(CategoryService $categoryService)
-    {
-        $this->categoryService = $categoryService;
-    } 
-
     public function all() 
     {
         $posts = Post::with('category')->get();
@@ -28,7 +20,7 @@ class PostService
     public function store(Array $input) : void
     {
         DB::beginTransaction();
-        $input['category_id'] = $this->categoryService->unhashId($input['category_id']);
+        $input['category_id'] = Hasher::findModelId(Category::class, $input['category_id']);
         $post = new Post;
         $post = $post->create($input);
         $this->storeImage($post, $input);
@@ -58,7 +50,7 @@ class PostService
     public function update(Array $input, int $id) : void
     {
         $post = Post::findOrFail($id);
-        $input['category_id'] = $this->categoryService->unhashId($input['category_id']);
+        $input['category_id'] = Hasher::findModelId(Category::class, $input['category_id']);
         $path = $this->getPath($post);
 
         if (isset($input['image']))
