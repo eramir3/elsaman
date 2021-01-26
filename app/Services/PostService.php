@@ -42,7 +42,7 @@ class PostService
 
         if ($input['image'] != null)
         {
-            $name = Utils::createImageName($input['image']);
+            $name = Utils::generateImageName($input['image']);
             $image = $input['image']->storeAs($path, $name);
         }
         $post->image = $image;
@@ -63,7 +63,7 @@ class PostService
 
         if (isset($input['image']))
         {
-            $name = Utils::createImageName($input['image']);
+            $name = Utils::generateImageName($input['image']);
             $input['image'] = $input['image']->storeAs($path, $name);
         }
         

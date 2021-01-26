@@ -6,9 +6,9 @@ use Illuminate\Http\UploadedFile;
 
 class Utils 
 {
-    public static function createImageName(UploadedFile $image) : string
+    public static function generateImageName(UploadedFile $image) : string
     {
-        $imageName = hexdec(\uniqid()). '.' . $image->getClientOriginalExtension();
-        return $imageName;
+        $name = hexdec(\uniqid()). '.' . $image->getClientOriginalExtension();
+        return $name;
     }
 }

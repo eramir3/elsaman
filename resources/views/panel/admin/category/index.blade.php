@@ -1,4 +1,4 @@
-<x-panel.panel-master>
+@extends('layouts.panel-master')
 
 @section('content')
     <div class="row">
@@ -73,16 +73,14 @@
 			</div>
 		</div>
     </div>
+
+@include('panel.admin.category.create')
+@include('panel.admin.category.edit')
+@include('panel.admin.category.delete')
+
 @endsection
 
-
-@section('modal')
-	<x-panel.admin.category.create></x-panel.admin.category.create>
-	<x-panel.admin.category.edit></x-panel.admin.category.edit>
-	<x-panel.admin.category.delete></x-panel.admin.category.delete>
-@endsection
      
-
 @section('scripts')
 	<script src="{{asset('vendor/datatables/jquery.dataTables.min.js')}}"></script>
 	<script src="{{asset('vendor/datatables/dataTables.bootstrap4.min.js')}}"></script>
@@ -110,5 +108,3 @@
 		});
 	</script>
 @endsection
-
-</x-panel.panel-master>

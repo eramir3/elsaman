@@ -1,4 +1,4 @@
-<x-panel.panel-master>
+@extends('layouts.panel-master')
 
 @section('content')
     <div class="row">
@@ -58,11 +58,10 @@
 			</div>
 		</div>
     </div>
-@endsection
 
-@section('modal')
-	<x-panel.admin.user.edit></x-panel.admin.user.edit>
-	<x-panel.admin.user.delete></x-panel.admin.user.delete>
+@include('panel.admin.user.edit')
+@include('panel.admin.user.delete')
+
 @endsection
      
 
@@ -91,5 +90,3 @@
       });
     </script>
 @endsection
-
-</x-panel.panel-master>

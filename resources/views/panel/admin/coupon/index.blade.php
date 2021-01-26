@@ -1,4 +1,4 @@
-<x-panel.panel-master>
+@extends('layouts.panel-master')
 
 @section('content')
     <div class="row">
@@ -61,15 +61,13 @@
 			</div>
 		</div>
     </div>
+
+@include('panel.admin.coupon.create')
+@include('panel.admin.coupon.edit')
+@include('panel.admin.coupon.delete')
+
 @endsection
 
-
-@section('modal')
-	<x-panel.admin.coupon.create></x-panel.admin.coupon.create>
-	<x-panel.admin.coupon.edit></x-panel.admin.coupon.edit>
-	<x-panel.admin.coupon.delete></x-panel.admin.coupon.delete>
-@endsection
-     
 
 @section('scripts')
 	<script src="{{asset('vendor/datatables/jquery.dataTables.min.js')}}"></script>
@@ -96,5 +94,3 @@
 		});
 	</script>
 @endsection
-
-</x-panel.panel-master>

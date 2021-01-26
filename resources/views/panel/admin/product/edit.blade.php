@@ -1,4 +1,4 @@
-<x-panel.panel-master>
+@extends('layouts.panel-master')
 
 @section('content')
     <div class="row">
@@ -195,15 +195,16 @@
             </div>
         </div>
     </div>
-@endsection
 
-@section('modal')
-	
-    <x-panel.admin.product.image.create></x-panel.admin.product.image.create>
-    <x-panel.admin.product.image.edit></x-panel.admin.product.image.edit>
-    <x-panel.admin.product.image.delete></x-panel.admin.product.image.delete>
+@include('panel.admin.product.image.create')
+@include('panel.admin.product.image.edit')
+@include('panel.admin.product.image.delete')
 
 @endsection
+
+
+
+
 
 @section('scripts')
     <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
@@ -235,5 +236,3 @@
 
 
 @endsection
-
-</x-panel.panel-master>

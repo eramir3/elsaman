@@ -27,11 +27,7 @@
     <!-- Page Wrapper -->
     <div id="wrapper">
 
-        @if(Auth::guard('admin')->check())
-            <x-panel.admin.sidebar></x-panel.admin.sidebar>
-        @else
-            
-        @endif
+        <x-panel.sidebar></x-panel.sidebar>
 
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
@@ -67,8 +63,6 @@
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
     </a>
-
-    @yield('modal')
 
     <!-- Bootstrap core JavaScript-->
     <script src="{{ asset('js/app.js') }}"></script>

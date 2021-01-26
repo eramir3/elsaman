@@ -37,7 +37,7 @@ class ProductService
     {
         $product = Product::findOrFail($id);
         $path = $this->getPath($product);
-        $newImageName = Utils::createImageName($newImage);
+        $newImageName = Utils::generateImageName($newImage);
         $totalImages = is_null($product->images) ? 0 : count($product->images);
         $currentImages = $product->images;
         $currentImages[$totalImages] = $newImage->storeAs($path, $newImageName);
@@ -52,7 +52,7 @@ class ProductService
 
         if($input['main_image']) 
         { 
-            $name = Utils::createImageName($input['main_image']);
+            $name = Utils::generateImageName($input['main_image']);
             $product->main_image = $input['main_image']->storeAs($path, $name);
         }
         
@@ -61,7 +61,7 @@ class ProductService
             foreach($input['images'] as $key => $image)
             {
                 $image = $input['images'][$key];
-                $name = Utils::createImageName($image);
+                $name = Utils::generateImageName($image);
                 $images[$key] = $image->storeAs($path, $name);   
             }
         }
@@ -87,7 +87,7 @@ class ProductService
     {
         $product = Product::findOrFail($id);
         $path = $this->getPath($product);
-        $newImageName = Utils::createImageName($newImage);
+        $newImageName = Utils::generateImageName($newImage);
 
         if ($imageId == \Config::get('constants.main_image'))
         {

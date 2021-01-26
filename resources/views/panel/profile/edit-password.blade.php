@@ -1,7 +1,6 @@
-<x-panel.panel-master>
+@extends('layouts.panel-master')
 
-    @section('content')
-
+@section('content')
     <div class="row">
         <div class="col-sm-9">
             <div class="card shadow mb-4">
@@ -47,7 +46,4 @@
             </div>
         </div>
     </div>
-
-
-    @endsection
-</x-panel.panel-master>
+@endsection

@@ -1,4 +1,4 @@
-<x-panel.panel-master>
+@extends('layouts.panel-master')
 
 @section('content')
     <div class="row">
@@ -54,11 +54,9 @@
 			</div>
 		</div>
     </div>
-@endsection
 
+@include('panel.admin.post.delete')
 
-@section('modal')
-	<x-panel.admin.post.delete></x-panel.admin.post.delete>
 @endsection
 
 
@@ -79,5 +77,3 @@
 	</script>
 
 @endsection
-
-</x-panel.panel-master>
