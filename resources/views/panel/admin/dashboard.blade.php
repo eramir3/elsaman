@@ -1,7 +1,7 @@
-<x-panel.panel-master>
-    @section('content')
+@extends('layouts.panel-master')
 
-        <h4>Dashboard</h4>
+@section('content')
 
-    @endsection
-</x-panel.panel-master>
+    <h4>Dashboard</h4>
+
+@endsection

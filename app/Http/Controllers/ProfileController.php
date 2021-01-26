@@ -2,16 +2,24 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Admin;
+//use App\Models\Admin;
 use App\Utils\Notifier;
 use App\Enums\NotificationEnum;
+use App\Services\AuthUserService;
 use App\Http\Requests\UserRequest;
-use Illuminate\Support\Facades\Auth;
+//use Illuminate\Support\Facades\Auth;
 use App\Http\Requests\Auth\PasswordRequest;
 use App\Exceptions\InvalidCurrentPasswordException;
 
 class ProfileController extends Controller
 {
+    public $authUserService;
+
+    public function __construct(AuthUserService $authUserService)
+    {
+        $this->authUserService = $authUserService;
+    }
+
     /**
      * Show the form for editing the specified resource.
      *
@@ -19,7 +27,7 @@ class ProfileController extends Controller
      */
     public function edit() 
     {
-        $user = Auth::user();
+        $user = $this->authUserService->getAuthUser();
         return view('panel.profile.edit', ['user' => $user]);
     }
 
@@ -33,7 +41,7 @@ class ProfileController extends Controller
     {
         try
         {
-            $user = Auth::user();
+            $user = $this->authUserService->getAuthUser();
             $user->update($request->validated());
             $response = Notifier::success('Profile', NotificationEnum::UPDATE);
             return back()->with($response);
@@ -66,7 +74,8 @@ class ProfileController extends Controller
     {
         try
         {
-            Admin::updatePassword(Auth::user(), $request);
+            $user = $this->authUserService->getAuthUser();
+            $this->authUserService->updatePassword($user, $request);
             $response = Notifier::success('Password', NotificationEnum::UPDATE);
             return back()->with($response);
         }
