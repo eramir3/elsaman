@@ -17,8 +17,8 @@ class CategoryService
     {
         $category = new Category;
         $category->name = $input['name'];
-        $category->posts_active = $input['posts_active'] == null ? false : true;
-        $category->products_active = $input['products_active'] == null ? false : true;
+        $category->posts_active = isset($input['posts_active']);
+        $category->products_active = isset($input['products_active']);
         $category->save();
     }
 
@@ -26,8 +26,8 @@ class CategoryService
     {
         $category = Category::findOrFail($id);
         $category->name = $input['name'];
-        $category->posts_active = isset($input['posts_active']) ? true : false;
-        $category->products_active = isset($input['products_active']) ? true : false;
+        $category->posts_active = isset($input['posts_active']);
+        $category->products_active = isset($input['products_active']);
         $category->save();
     }
 

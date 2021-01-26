@@ -19,7 +19,9 @@
                                 <select class="form-control" id="category_id" name="category_id">
                                     <option hidden>Choose a Category</option>
                                     @foreach($categories as $category)
+                                        @if($category->posts_active)
                                         <option value="{{$category->hashid}}">{{$category->name}}</option>
+                                        @endif
                                     @endforeach
                                 </select>
                             </div>
