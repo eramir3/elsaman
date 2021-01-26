@@ -46,7 +46,7 @@ Route::group(['prefix' => '/{locale}'], function() {
     if (in_array($locale, $languages)) 
     {    
         Route::get('/', function () {
-            return view('saman/welcome');
+            return view('layouts/welcome');
         })->name('saman.welcome');
         
         Route::get('about', function () {
