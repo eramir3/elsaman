@@ -20,6 +20,6 @@ class ContactController extends Controller
 
         Mail::to($mail['email'])->send(new ContactMail($mail));
 
-        return view('saman.contact'); 
+        return view('home.contact'); 
     }
 }

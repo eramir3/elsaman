@@ -1,7 +1,7 @@
-@extends('layouts.saman-master')
+@extends('layouts.home-master')
 
 @section('styles')
-    <link rel="stylesheet" href="{{ asset('css/saman/learn.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/home/learn.css') }}">
 @endsection
 
 

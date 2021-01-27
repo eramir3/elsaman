@@ -1,8 +1,8 @@
 
-@extends('layouts.saman-master')
+@extends('layouts.home-master')
 
 @section('styles')
-    <link rel="stylesheet" href="{{ asset('css/saman/about.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/home/about.css') }}">
 @endsection
 
 
@@ -11,15 +11,15 @@
     <main id="slidable">
         <div class="elements__container">
             <div class="container__parent">
-                <img class="child-image" style="width: 200px; transform: rotate(42deg); top: -200px; left: 750px;" src="{{ asset('images/saman/about/grapefruit.png') }}" />
-                <img class="child-image" style="width: 200px; transform: rotate(180deg); top: -80px; left: -20px;" src="{{ asset('images/saman/about/grapefruit.png') }}" />
-                <img class="child-image" style="width: 100px; transform: rotate(42deg); top: -180px; left: 1000px;" src="{{ asset('images/saman/about/kiwi.png') }}" />
-                <img class="child-image" style="width: 200px; top: 200px; left: 1200px;" src="{{ asset('images/saman/about/grapefruit.png') }}" />
-                <img class="child-image" style="width: 200px; top: -250px; left: -200px;" src="{{ asset('images/saman/about/lemon.png') }}" />
-                <img class="child-image" style="width: 200px; top: 200px; left: -250px;" src="{{ asset('images/saman/about/lemon.png') }}" />
+                <img class="child-image" style="width: 200px; transform: rotate(42deg); top: -200px; left: 750px;" src="{{ asset('images/home/about/grapefruit.png') }}" />
+                <img class="child-image" style="width: 200px; transform: rotate(180deg); top: -80px; left: -20px;" src="{{ asset('images/home/about/grapefruit.png') }}" />
+                <img class="child-image" style="width: 100px; transform: rotate(42deg); top: -180px; left: 1000px;" src="{{ asset('images/home/about/kiwi.png') }}" />
+                <img class="child-image" style="width: 200px; top: 200px; left: 1200px;" src="{{ asset('images/home/about/grapefruit.png') }}" />
+                <img class="child-image" style="width: 200px; top: -250px; left: -200px;" src="{{ asset('images/home/about/lemon.png') }}" />
+                <img class="child-image" style="width: 200px; top: 200px; left: -250px;" src="{{ asset('images/home/about/lemon.png') }}" />
                 <section class="element element-right ">
                     <div class="element__image ">
-                        <img src="{{ asset('images/saman/shared/saman-logo.png') }}" alt="" >
+                        <img src="{{ asset('images/home/shared/saman-logo.png') }}" alt="" >
                     </div>
                     <div class="element-right__info">
                         <h1 class="title">{{ __('about.about') }}</h1>
@@ -48,7 +48,7 @@
                         </p>
                     </div>
                     <div class="element__image">
-                        <img src="{{ asset('images/saman/about/worker.png') }}" class="parent-image" alt="">
+                        <img src="{{ asset('images/home/about/worker.png') }}" class="parent-image" alt="">
                     </div>
                 </section>
             </div>

@@ -48,24 +48,24 @@ Route::group(['prefix' => '/{locale}'], function() {
     {    
         Route::get('/', function () {
             return view('layouts/welcome');
-        })->name('saman.welcome');
+        })->name('home.welcome');
         
         Route::get('about', function () {
-            return view('saman/about');
-        })->name('saman.about');
+            return view('home/about');
+        })->name('home.about');
         
         Route::get('products', function () {
-            return view('saman/products');
-        })->name('saman.products');
+            return view('home/products');
+        })->name('home.products');
 
         // Route::get('learn', function () {
-        //     return view('saman/learn');
-        // })->name('saman.learn');
-        Route::get('learn', [LearnController::class, 'index'])->name('saman.learn');
+        //     return view('home/learn');
+        // })->name('home.learn');
+        Route::get('learn', [LearnController::class, 'index'])->name('home.learn');
         
         Route::get('contact', function () {
-            return view('saman/contact');
-        })->name('saman.contact');
+            return view('home/contact');
+        })->name('home.contact');
     
         Route::post('contact', [ContactController::class, 'mail'])->name('contact.mail');
     }

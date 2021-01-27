@@ -14,7 +14,7 @@
 }
 
 body {
-    background: linear-gradient(rgba(255,255,255,.95), rgba(255,255,255,.95)), url('../../images/saman/shared/fruits-bg.png');
+    background: linear-gradient(rgba(255,255,255,.95), rgba(255,255,255,.95)), url('../../images/home/shared/fruits-bg.png');
     background-size: 65%;
 }
 
@@ -46,7 +46,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0)), url(../../images/saman/contact/tree.png);
+    background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0)), url(../../images/home/contact/tree.png);
     background-position: 0% 0%, bottom;
     background-repeat: repeat repeat;
     background-size: auto, cover;

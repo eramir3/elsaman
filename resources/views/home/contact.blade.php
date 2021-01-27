@@ -1,7 +1,7 @@
-@extends('layouts.saman-master')
+@extends('layouts.home-master')
 
 @section('styles')
-    <link rel="stylesheet" href="{{ asset('css/saman/contact.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/home/contact.css') }}">
 @endsection
 
 @section('content')
@@ -27,18 +27,18 @@
         <section class="container__main">
             <div id="contact">
                 <div class="card card__contact whatsapp">
-                    <img src="{{ asset('images/saman/contact/phone-call.svg') }}" class="" alt="">
+                    <img src="{{ asset('images/home/contact/phone-call.svg') }}" class="" alt="">
                     <div>
                         <div class="whatsapp__top">
-                            <img src="{{ asset('images/saman/flags/fr.svg') }}" class="card-flag" alt=""> +33 7 88 22 55 86
+                            <img src="{{ asset('images/home/flags/fr.svg') }}" class="card-flag" alt=""> +33 7 88 22 55 86
                         </div>
                         <div class="whatsapp__bottom">
-                            <img src="{{ asset('images/saman/flags/col.svg') }}" class="card-flag" alt=""> +57 1 305 3095120
+                            <img src="{{ asset('images/home/flags/col.svg') }}" class="card-flag" alt=""> +57 1 305 3095120
                         </div>
                     </div>
                 </div>
                 <div class="card card__contact envelope" >
-                    <img src="{{ asset('images/saman/contact/email.svg') }}" alt=""> radcofr@ciradco.com
+                    <img src="{{ asset('images/home/contact/email.svg') }}" alt=""> radcofr@ciradco.com
                 </div>
             </div>
         </section>
@@ -46,12 +46,12 @@
 
     <div class="container">
         <div class="parent-image leave">
-            <img class="child-image" src="{{ asset('images/saman/contact/leave.png') }}" alt="">
+            <img class="child-image" src="{{ asset('images/home/contact/leave.png') }}" alt="">
         </div>
     </div>
 
 @endsection
 
 @section('scripts')
-    <script src="{{ asset('js/saman/contact.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('js/home/contact.js') }}" type="text/javascript"></script>
 @endsection

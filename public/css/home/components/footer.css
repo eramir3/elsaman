@@ -14,7 +14,7 @@
 }
 
 .footer-top {
-    background-image: url('../../../images/saman/shared/color-line.png');
+    background-image: url('../../../images/home/shared/color-line.png');
     width: 100%;
     height: 0.6rem;
     background-position: 40% 40%;
@@ -29,7 +29,7 @@
 footer {    
     display: flex;
     justify-content: center;
-    background-image: linear-gradient(to top, rgba(0,0,0,0.341), rgba(0,0,0,0.341)), url(../../../images/saman/shared/footer.png);
+    background-image: linear-gradient(to top, rgba(0,0,0,0.341), rgba(0,0,0,0.341)), url(../../../images/home/shared/footer.png);
     background-size: 50%;
     /* background-position: 0%; */
     /* background-repeat: repeat repeat; */

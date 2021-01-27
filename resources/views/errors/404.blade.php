@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{config('app.name', 'El Saman')}}</title>
+    <title>{{config('app.name', 'El home')}}</title>
     <link rel="icon" type="image/png" href="{{ asset('images/shared/favicon.png') }}">
     <link rel="stylesheet" href="{{ asset('css/errors/404.css') }}">
 </head>

@@ -28,6 +28,6 @@ class LearnController extends Controller
     {
         $categories = $this->categoryService->all();
         $posts = $this->postService->all();
-        return view('saman.learn', compact('categories', 'posts'));
+        return view('home.learn', compact('categories', 'posts'));
     }
 }

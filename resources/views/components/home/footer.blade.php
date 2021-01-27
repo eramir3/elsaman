@@ -3,30 +3,30 @@
     <div class="footer__container">            
         <nav>
             <div class="main-footer__image-container">
-                <a href="{{ route('saman.welcome', app()->getLocale()) }}">
-                    <img src="../images/saman/shared/gray-logo.png" alt="">
+                <a href="{{ route('home.welcome', app()->getLocale()) }}">
+                    <img src="../images/home/shared/gray-logo.png" alt="">
                 </a>
             </div>
             <div class="main-footer__info">
                 <ul class="main-footer__links">
                     <li class="main-footer__link">
                         <a href="#">
-                            <img src="{{ asset('images/saman/shared/social/facebook-green.svg') }}" alt="" />
+                            <img src="{{ asset('images/home/shared/social/facebook-green.svg') }}" alt="" />
                         </a>
                     </li>
                     <li class="main-footer__link">
                         <a href="#">
-                            <img src="{{ asset('images/saman/shared/social/instagram-green.svg') }}" alt="" /></i>
+                            <img src="{{ asset('images/home/shared/social/instagram-green.svg') }}" alt="" /></i>
                         </a>
                     </li>
                     <li class="main-footer__link">
                         <a href="https://wa.me/33788225586">
-                            <img src="{{ asset('images/saman/shared/social/whatsapp-green.svg') }}" alt="" /></i>
+                            <img src="{{ asset('images/home/shared/social/whatsapp-green.svg') }}" alt="" /></i>
                         </a>
                     </li>
                     <li class="main-footer__link">
                         <a href="#">
-                            <img src="{{ asset('images/saman/shared/social/linkedin-green.svg') }}" alt="" /></i>
+                            <img src="{{ asset('images/home/shared/social/linkedin-green.svg') }}" alt="" /></i>
                         </a>
                     </li>
                 </ul>
