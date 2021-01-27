@@ -12,6 +12,9 @@
                 <li class="web-nav__item web-nav__items--pipe">
                     <a href="{{ route('saman.products', app()->getLocale()) }}" class="{{ (request()->segment(2) == 'products') ? 'active' : '' }}">{{ Str::upper(__('header.products')) }}</a>
                 </li>
+                <li class="web-nav__item web-nav__items--pipe">
+                    <a href="{{ route('saman.learn', app()->getLocale()) }}" class="{{ (request()->segment(2) == 'learn') ? 'active' : '' }}">{{ Str::upper(__('header.learn')) }}</a>
+                </li>
                 <li class="web-nav__item">
                     <a href="{{ route('saman.contact', app()->getLocale()) }}" class="{{ (request()->segment(2) == 'contact') ? 'active' : '' }}">{{ Str::upper(__('header.contact')) }}</a>
                 </li>
@@ -42,6 +45,7 @@
         <div id="mobile-nav__items--container">
             <a href="{{ route('saman.about', app()->getLocale()) }}" class="mobile-nav__item">{{ Str::upper(__('header.about')) }}</a>
             <a href="{{ route('saman.products', app()->getLocale()) }}" class="mobile-nav__item">{{ Str::upper(__('header.products')) }}</a>
+            <a href="{{ route('saman.learn', app()->getLocale()) }}" class="mobile-nav__item">{{ Str::upper(__('header.learn')) }}</a>
             <a href="{{ route('saman.contact', app()->getLocale()) }}">{{ Str::upper(__('header.contact')) }}</a>
         </div>
     </div>

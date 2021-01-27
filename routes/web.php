@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-//Panel
+// Panel
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\CouponController;
@@ -10,7 +10,8 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\CategoryController;
 
-//Saman 
+// Home
+use App\Http\Controllers\Home\LearnController;
 use App\Http\Controllers\ContactController;
 
 // Auth
@@ -56,6 +57,11 @@ Route::group(['prefix' => '/{locale}'], function() {
         Route::get('products', function () {
             return view('saman/products');
         })->name('saman.products');
+
+        // Route::get('learn', function () {
+        //     return view('saman/learn');
+        // })->name('saman.learn');
+        Route::get('learn', [LearnController::class, 'index'])->name('saman.learn');
         
         Route::get('contact', function () {
             return view('saman/contact');

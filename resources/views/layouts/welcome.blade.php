@@ -25,6 +25,11 @@
                             {{ Str::upper(__('header.products')) }}
                         </a>
                     </li>
+                    <li class="welcome-nav__item welcome-nav__item--pipe">
+                        <a href="{{ route('saman.learn', app()->getLocale()) }}" subject="{{ Str::upper(__('header.learn')) }}">
+                            {{ Str::upper(__('header.learn')) }}
+                        </a>
+                    </li>
                     <li class="welcome-nav__item">
                         <a href="{{ route('saman.contact', app()->getLocale()) }}" subject="{{ Str::upper(__('header.contact')) }}">
                             {{ Str::upper(__('header.contact')) }}

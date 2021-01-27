@@ -2,7 +2,7 @@
 
 return [
     'about' => 'Qui sommes-nous',
-    'our_fruits' => 'notre fruits',
     'products' => 'produits',
+    'learn' => 'learn more fr',
     'contact' => 'contact',
 ];
