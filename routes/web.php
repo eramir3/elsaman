@@ -8,7 +8,8 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\CouponController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\PostCategoryController;
+use App\Http\Controllers\ProductCategoryController;
 
 // Home
 use App\Http\Controllers\Home\LearnController;
@@ -20,7 +21,7 @@ use App\Http\Controllers\Auth\RegisteredCustomerController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\Auth\AuthenticatedCustomerSessionController;
 
-use App\Utils\Hasher;
+use Saman\Utils\Hasher;
 
 /*
 |--------------------------------------------------------------------------
@@ -144,11 +145,17 @@ Route::group(['prefix'=>'admin', 'middleware'=>['auth:web','verified']], functio
     Route::put('users/{id}/update', [UserController::class, 'update'])->name('users.update');
     Route::delete('users/{id}/delete', [UserController::class, 'destroy'])->name('users.delete');
     
-    // Categories
-    Route::get('categories', [CategoryController::class, 'index'])->name('categories.index');
-    Route::post('categories/store', [CategoryController::class, 'store'])->name('categories.store');
-    Route::put('categories/{id}/update', [CategoryController::class, 'update'])->name('categories.update');
-    Route::delete('categories/{id}/delete', [CategoryController::class, 'destroy'])->name('categories.delete');
+    // Post Categories
+    Route::get('posts/categories', [PostCategoryController::class, 'index'])->name('posts.categories.index');
+    Route::post('posts/categories/store', [PostCategoryController::class, 'store'])->name('posts.categories.store');
+    Route::put('posts/categories/{id}/update', [PostCategoryController::class, 'update'])->name('posts.categories.update');
+    Route::delete('posts/categories/{id}/delete', [PostCategoryController::class, 'destroy'])->name('posts.categories.delete');
+
+    // Product Categories
+    Route::get('products/categories', [ProductCategoryController::class, 'index'])->name('products.categories.index');
+    Route::post('products/categories/store', [ProductCategoryController::class, 'store'])->name('products.categories.store');
+    Route::put('products/categories/{id}/update', [ProductCategoryController::class, 'update'])->name('products.categories.update');
+    Route::delete('products/categories/{id}/delete', [ProductCategoryController::class, 'destroy'])->name('products.categories.delete');
 
     // Coupons
     Route::get('coupons', [CouponController::class, 'index'])->name('coupons.index');

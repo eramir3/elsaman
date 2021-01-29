@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Home;
 
 use Illuminate\Http\Request;
 use App\Services\PostService;
-use App\Services\CategoryService;
+use App\Services\PostCategoryService;
 use App\Http\Controllers\Controller;
 
 class LearnController extends Controller
@@ -13,7 +13,7 @@ class LearnController extends Controller
 
     private $categoryService;
 
-    public function __construct(PostService $postService, CategoryService $categoryService)
+    public function __construct(PostService $postService, PostCategoryService $categoryService)
     {
         $this->postService = $postService;
         $this->categoryService = $categoryService;

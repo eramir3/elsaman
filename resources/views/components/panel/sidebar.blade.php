@@ -24,7 +24,7 @@
 
     <!-- Heading -->
     <div class="sidebar-heading">
-        Blog
+        Users
     </div>
 
     <!-- Nav Item - Users -->
@@ -35,13 +35,45 @@
         </a>
     </li>
 
-    <!-- Nav Item - Category -->
-    <li class="nav-item {{ (request()->segment(2) == 'categories') ? 'active' : '' }}">
-        <a class="nav-link" href="{{ route('categories.index') }}">
-            <i class="fas fa-fw fa-list-alt"></i>
-            <span>Categories</span>
+    <!-- Nav Item - Users -->
+    <li class="nav-item {{ (request()->segment(2) == 'users') ? 'active' : '' }}">
+        <a class="nav-link" href="{{ route('users.index') }}">
+            <i class="fas fa-fw fa-users"></i>
+            <span>Customers</span>
         </a>
     </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+    <!-- Heading -->
+    <div class="sidebar-heading">
+        Categories
+    </div>
+
+    <!-- Nav Item - Post Category -->
+    <li class="nav-item {{ (request()->segment(2) == 'categories') ? 'active' : '' }}">
+        <a class="nav-link" href="{{ route('posts.categories.index') }}">
+            <i class="fas fa-fw fa-list-alt"></i>
+            <span>Post</span>
+        </a>
+    </li>
+
+    <!-- Nav Item - Product Category -->
+    <li class="nav-item {{ (request()->segment(2) == 'categories') ? 'active' : '' }}">
+        <a class="nav-link" href="{{ route('products.categories.index') }}">
+            <i class="fas fa-fw fa-list-alt"></i>
+            <span>Product</span>
+        </a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+    <!-- Heading -->
+    <div class="sidebar-heading">
+        Ecommerce
+    </div>
 
     <!-- Nav Item - Coupons -->
     <li class="nav-item">
@@ -82,6 +114,9 @@
             </div>
         </div>
     </li>
+
+     <!-- Divider -->
+     <hr class="sidebar-divider">
 
     <!-- Nav Item - Pages Collapse Menu -->
     <li class="nav-item">

@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Utils\Notifier;
+use Saman\Utils\Notifier;
 use App\Services\UserService;
-use App\Enums\NotificationEnum;
+use Saman\Enums\NotificationEnum;
 use App\Http\Requests\UserRequest;
 class UserController extends Controller
 {

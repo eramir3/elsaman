@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Utils\Notifier;
-use App\Enums\NotificationEnum;
+use Saman\Utils\Notifier;
+use Saman\Enums\NotificationEnum;
 use App\Services\CouponService;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\CouponRequest;

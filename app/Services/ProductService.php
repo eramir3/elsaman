@@ -2,10 +2,10 @@
 
 namespace App\Services;
 
-use App\Utils\Utils;
-use App\Utils\Hasher;
-use App\Models\Product;
-use App\Models\Category;
+use Saman\Utils\Utils;
+use Saman\Utils\Hasher;
+use Saman\Models\Product;
+use Saman\Models\Category;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;

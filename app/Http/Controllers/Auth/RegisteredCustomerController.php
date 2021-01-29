@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
-use App\Models\Customer;
+use Saman\Models\Customer;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;
@@ -34,7 +34,7 @@ class RegisteredCustomerController extends Controller
     {
         $request->validate([
             'name' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:ecom.customers',
+            'email' => 'required|string|email|max:255|unique:customers',
             'password' => 'required|string|confirmed|min:8',
         ]);
 

@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Utils\Notifier;
-use App\Enums\NotificationEnum;
+use Saman\Utils\Notifier;
+use Saman\Enums\NotificationEnum;
 use App\Services\ProductService;
-use App\Services\CategoryService;
+use App\Services\ProductCategoryService;
 use Illuminate\Support\Facades\DB;
 use App\Http\Requests\ImageRequest;
 use App\Http\Requests\ProductRequest;
@@ -16,7 +16,7 @@ class ProductController extends Controller
     
     private $categoryService;
 
-    public function __construct(ProductService $productService, CategoryService $categoryService)
+    public function __construct(ProductService $productService, ProductCategoryService $categoryService)
     {
         $this->productService = $productService;
         $this->categoryService = $categoryService;

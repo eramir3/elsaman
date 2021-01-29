@@ -2,16 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Utils\Notifier;
-use App\Enums\NotificationEnum;
-use App\Services\CategoryService;
+use Saman\Utils\Notifier;
+use Saman\Enums\NotificationEnum;
+use App\Services\PostCategoryService;
 use App\Http\Requests\CategoryRequest;
-use App\Http\Resources\CategoryResource;
-class CategoryController extends Controller
+
+class PostCategoryController extends Controller
 {
     private $categoryService; 
 
-    public function __construct(CategoryService $categoryService)
+    public function __construct(PostCategoryService $categoryService)
     {
         $this->categoryService = $categoryService;
     }
@@ -24,7 +24,7 @@ class CategoryController extends Controller
     public function index()
     {
         $categories = $this->categoryService->all();
-        return view('panel.admin.category.index', compact('categories'));
+        return view('panel.admin.post-category.index', compact('categories'));
     }
 
     /**

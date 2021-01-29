@@ -2,11 +2,11 @@
 
 namespace App\Services;
 
-use App\Utils\Hasher;
-use App\Models\Category;
+use Saman\Utils\Hasher;
+use Saman\Models\Category;
 use Illuminate\Database\Eloquent\Collection;
 
-class CategoryService
+class ProductCategoryService
 {   
     public function all(): Collection
     {

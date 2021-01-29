@@ -2,7 +2,7 @@
 
 namespace App\Services;
 
-use App\Utils\Utils;
+use Saman\Utils\Utils;
 use App\Models\Post;
 use App\Models\Category;
 use Illuminate\Http\UploadedFile;

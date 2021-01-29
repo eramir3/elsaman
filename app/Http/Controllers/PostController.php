@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Utils\Notifier;
+use Saman\Utils\Notifier;
 use Illuminate\Http\Request;
 use App\Services\PostService;
-use App\Enums\NotificationEnum;
-use App\Services\CategoryService;
+use Saman\Enums\NotificationEnum;
+use App\Services\PostCategoryService;
 use App\Http\Requests\PostRequest;
 
 class PostController extends Controller
@@ -15,7 +15,7 @@ class PostController extends Controller
 
     private $categoryService;
 
-    public function __construct(PostService $postService, CategoryService $categoryService)
+    public function __construct(PostService $postService, PostCategoryService $categoryService)
     {
         $this->postService = $postService;
         $this->categoryService = $categoryService;

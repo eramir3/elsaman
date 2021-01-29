@@ -8,7 +8,7 @@
 				<span aria-hidden="true">×</span>
 				</button>
 			</div>
-			<form action="{{route('categories.store')}}" method="post">
+			<form action="{{route('products.categories.store')}}" method="post">
 				<div class="modal-body">
 					@csrf
 					<div class="form-group row">

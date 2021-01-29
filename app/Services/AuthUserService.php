@@ -2,7 +2,7 @@
 
 namespace App\Services;
 
-use App\Utils\Hasher;
+use Saman\Utils\Hasher;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Requests\Auth\PasswordRequest;

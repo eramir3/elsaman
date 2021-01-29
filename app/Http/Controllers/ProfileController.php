@@ -2,12 +2,10 @@
 
 namespace App\Http\Controllers;
 
-//use App\Models\Admin;
-use App\Utils\Notifier;
-use App\Enums\NotificationEnum;
+use Saman\Utils\Notifier;
+use Saman\Enums\NotificationEnum;
 use App\Services\AuthUserService;
 use App\Http\Requests\UserRequest;
-//use Illuminate\Support\Facades\Auth;
 use App\Http\Requests\Auth\PasswordRequest;
 use App\Exceptions\InvalidCurrentPasswordException;
 

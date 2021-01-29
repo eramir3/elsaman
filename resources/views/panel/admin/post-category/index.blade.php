@@ -5,7 +5,7 @@
 		<div class="col-sm-6">
 			<div class="card shadow mb-4">
 				<div class="card-header py-3">
-					<h6 class="d-inline m-0 font-weight-bold text-primary">Categories List</h6>
+					<h6 class="d-inline m-0 font-weight-bold text-primary">Post Categories List</h6>
 					<a class="d-inline font-weight-bold btn btn-primary btn-sm float-right" href="#" data-toggle="modal" data-target="#createCategoryModal">
 						Create
 					</a>
@@ -74,9 +74,9 @@
 		</div>
     </div>
 
-@include('panel.admin.category.create')
-@include('panel.admin.category.edit')
-@include('panel.admin.category.delete')
+@include('panel.admin.post-category.create')
+@include('panel.admin.post-category.edit')
+@include('panel.admin.post-category.delete')
 
 @endsection
 
