@@ -63,9 +63,9 @@
                                 <label for="category_id" class="col-md-6 col-form-label">{{ __('Category') }}</label>
                                 <select class="form-control @error('category_id') is-invalid @enderror" id="category_id" name="category_id" required>
                                     @foreach($categories as $category)
-                                        @if($category->products_active && $category->id === $product->category_id)
+                                        @if($category->id === $product->category_id)
                                             <option value="{{$category->hashId}}" selected>{{$category->name}}</option>
-                                        @elseif($category->products_active)
+                                        @else
                                             <option value="{{$category->hashId}}">{{$category->name}}</option>
                                         @endif
                                     @endforeach

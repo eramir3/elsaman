@@ -63,9 +63,7 @@
                                 <select class="form-control @error('category_id') is-invalid @enderror" id="category_id" name="category_id" required>
                                     <option value hidden>Choose a Category</option>
                                     @foreach($categories as $category)
-                                        @if($category->products_active)
                                         <option value="{{$category->hashId}}">{{$category->name}}</option>
-                                        @endif
                                     @endforeach
                                 </select>
                                 @error('category_id')

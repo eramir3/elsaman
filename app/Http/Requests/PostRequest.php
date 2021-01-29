@@ -25,11 +25,11 @@ class PostRequest extends FormRequest
     {
         $rules =  [
             'category_id'=>['required'],
-            'image'=>['file', 'mimes:png'],
-            'video'=>['string'],
-            'title_en'=>['string', 'required', 'max:255', 'unique:posts'],
-            'title_fr'=>['string', 'required', 'max:255', 'unique:posts'],
-            'title_es'=>['string', 'required', 'max:255', 'unique:posts'],
+            'image'=>['sometimes', 'file', 'mimes:png'],
+            'video'=>['sometimes', 'string'],
+            'title_en'=>['string', 'required', 'max:255', 'unique:ecom.posts'],
+            'title_fr'=>['string', 'required', 'max:255', 'unique:ecom.posts'],
+            'title_es'=>['string', 'required', 'max:255', 'unique:ecom.posts'],
             'text_en'=>['string', 'required'],
             'text_fr'=>['string', 'required'],
             'text_es'=>['string', 'required'],
@@ -37,9 +37,9 @@ class PostRequest extends FormRequest
 
         if (request("_method") == "PUT")
         {
-            $rules['title_en'] = ['required', 'string', 'max:255', 'unique:posts,title_en,'.$this->id];
-            $rules['title_fr'] = ['required', 'string', 'max:255', 'unique:posts,title_fr,'.$this->id];
-            $rules['title_es'] = ['required', 'string', 'max:255', 'unique:posts,title_es,'.$this->id];
+            $rules['title_en'] = ['required', 'string', 'max:255', 'unique:ecom.posts,title_en,'.$this->id];
+            $rules['title_fr'] = ['required', 'string', 'max:255', 'unique:ecom.posts,title_fr,'.$this->id];
+            $rules['title_es'] = ['required', 'string', 'max:255', 'unique:ecom.posts,title_es,'.$this->id];
         }
 
         return $rules;
