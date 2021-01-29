@@ -91,17 +91,13 @@ Route::middleware(['auth:web,customer','verified'])->group(function() {
 
 
 /********** Customer Routes *****************/
-Route::middleware('guest')->group(function() {
-    
-    // login
-    Route::get('/login', [AuthenticatedCustomerSessionController::class, 'create'])->name('login.form');
-    Route::post('/login', [AuthenticatedCustomerSessionController::class, 'store'])->name('login');
+// login
+Route::get('/login', [AuthenticatedCustomerSessionController::class, 'create'])->name('login.form');
+Route::post('/login', [AuthenticatedCustomerSessionController::class, 'store'])->name('login');
 
-    // Register
-    Route::get('/register', [RegisteredCustomerController::class, 'create'])->name('register');
-    Route::post('/register', [RegisteredCustomerController::class, 'store']);
-});
-
+// Register
+Route::get('/register', [RegisteredCustomerController::class, 'create'])->name('register');
+Route::post('/register', [RegisteredCustomerController::class, 'store']);
 
 Route::middleware(['auth:customer','verified'])->group(function() {
     
