@@ -10,6 +10,7 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PostCategoryController;
 use App\Http\Controllers\ProductCategoryController;
+use App\Http\Controllers\Panel\Admin\CustomerController;
 
 // Home
 use App\Http\Controllers\Home\LearnController;
@@ -144,6 +145,11 @@ Route::group(['prefix'=>'admin', 'middleware'=>['auth:web','verified']], functio
     Route::get('users', [UserController::class, 'index'])->name('users.index');
     Route::put('users/{id}/update', [UserController::class, 'update'])->name('users.update');
     Route::delete('users/{id}/delete', [UserController::class, 'destroy'])->name('users.delete');
+
+    // Customers
+    Route::get('customers', [CustomerController::class, 'index'])->name('customers.index');
+    Route::put('customers/{id}/update', [CustomerController::class, 'update'])->name('customers.update');
+    Route::delete('customers/{id}/delete', [CustomerController::class, 'destroy'])->name('customers.delete');
     
     // Post Categories
     Route::get('posts/categories', [PostCategoryController::class, 'index'])->name('posts.categories.index');

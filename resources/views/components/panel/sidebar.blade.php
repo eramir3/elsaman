@@ -36,8 +36,8 @@
     </li>
 
     <!-- Nav Item - Users -->
-    <li class="nav-item {{ (request()->segment(2) == 'users') ? 'active' : '' }}">
-        <a class="nav-link" href="{{ route('users.index') }}">
+    <li class="nav-item {{ (request()->segment(2) == 'customers') ? 'active' : '' }}">
+        <a class="nav-link" href="{{ route('customers.index') }}">
             <i class="fas fa-fw fa-users"></i>
             <span>Customers</span>
         </a>

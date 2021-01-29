@@ -1,18 +1,20 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Panel\Admin;
 
 use Saman\Utils\Notifier;
-use App\Services\UserService;
+use App\Services\CustomerService;
 use Saman\Enums\NotificationEnum;
 use App\Http\Requests\UserRequest;
-class UserController extends Controller
-{
-    private $userService;
+use App\Http\Controllers\Controller;
 
-    public function __construct(UserService $userService)
+class CustomerController extends Controller
+{
+    private $customerService;
+
+    public function __construct(CustomerService $customerService)
     {
-        $this->userService = $userService;
+        $this->customerService = $customerService;
     }
 
     /**
@@ -22,8 +24,8 @@ class UserController extends Controller
      */
     public function index()
     {
-        $users = $this->userService->all();
-        return view('panel.admin.user.index', compact('users'));
+        $customers = $this->customerService->all();
+        return view('panel.admin.customer.index', compact('customers'));
     }
 
     /**
@@ -33,17 +35,17 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(UserRequest $request, $id) 
+    public function update(UserRequest $request, $id)
     {
         try
         {
-            $this->userService->update($request->validated(), $id);
-            $response = Notifier::success('User', NotificationEnum::UPDATE);
+            $this->customerService->update($request->validated(), $id);
+            $response = Notifier::success('Customer', NotificationEnum::UPDATE);
             return back()->with($response);
         }
         catch(\Exception $e)
         {
-            $response = Notifier::error('User', NotificationEnum::UPDATE_ERROR);
+            $response = Notifier::error('Customer', NotificationEnum::UPDATE_ERROR);
             return back()->with($response);
         }
     }
@@ -58,15 +60,14 @@ class UserController extends Controller
     {
         try
         {
-            $this->userService->destroy($id);
-            $response = Notifier::success('User', NotificationEnum::DELETE);
+            $this->customerService->destroy($id);
+            $response = Notifier::success('Customer', NotificationEnum::DELETE);
             return back()->with($response);
         }
         catch(\Exception $e)
         {
-            $response = Notifier::error('User', NotificationEnum::DELETE_ERROR);
+            $response = Notifier::error('Customer', NotificationEnum::DELETE_ERROR);
             return back()->with($response);
         }
     }
-
 }

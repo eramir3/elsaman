@@ -24,13 +24,13 @@ class CouponRequest extends FormRequest
     public function rules()
     {
         $rules =  [
-            'name'=>['required', 'string', 'max:255', 'unique:coupons'],
+            'name'=>['required', 'string', 'max:255', 'unique:ecom.coupons'],
             'discount'=> ['required', 'integer', 'min:0', 'max:100'],
         ];
 
         if (request("_method") == "PUT")
         {
-            $rules['name'] = ['required', 'string', 'max:255', 'unique:coupons,name,'.$this->id];
+            $rules['name'] = ['required', 'string', 'max:255', 'unique:ecom.coupons,name,'.$this->id];
         }
 
         return $rules;

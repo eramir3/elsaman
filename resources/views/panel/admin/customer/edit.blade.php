@@ -1,21 +1,27 @@
 <!-- Update Category Modal-->
-<div class="modal fade" id="updateCategoryModal" tabindex="-1" role="dialog" aria-labelledby="updateCategoryModalLabel" aria-hidden="true">
+<div class="modal fade" id="updateCustomerModal" tabindex="-1" role="dialog" aria-labelledby="updateCustomerModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="updateCategoryModalLabel">Update Category</h5>
+                <h5 class="modal-title" id="updateCustomerModalLabel">Update customer</h5>
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span>
                 </button>
             </div>
-            <form id="update-category-form" method="post">
+            <form id="update-customer-form" method="post">
                 @csrf
                 @method('PUT')
                 <div class="modal-body">
                     <div class="form-group row">
                         <label for="name" class="col-md-3 col-form-label text-md-right">{{ __('Name') }}</label>
-                        <div class="col-md-6">
+                        <div class="col-md-7">
                             <input id="update-name" type="text" class="form-control" name="name" required autofocus>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="name" class="col-md-3 col-form-label text-md-right">{{ __('Email') }}</label>
+                        <div class="col-md-7">
+                            <input id="update-email" type="text" class="form-control" name="email" required autofocus>
                         </div>
                     </div>
                 </div>

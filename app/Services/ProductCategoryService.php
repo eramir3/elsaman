@@ -17,8 +17,6 @@ class ProductCategoryService
     {
         $category = new Category;
         $category->name = $input['name'];
-        $category->posts_active = isset($input['posts_active']);
-        $category->products_active = isset($input['products_active']);
         $category->save();
     }
 
@@ -26,8 +24,6 @@ class ProductCategoryService
     {
         $category = Category::findOrFail($id);
         $category->name = $input['name'];
-        $category->posts_active = isset($input['posts_active']);
-        $category->products_active = isset($input['products_active']);
         $category->save();
     }
 

@@ -17,8 +17,6 @@
 								<tr>
 									<th>Id</th>
 									<th>Name</th>
-									<th>Posts</th>
-									<th>Products</th>
 									<th>Action</th>
 								</tr>
 							</thead>
@@ -26,8 +24,6 @@
 								<tr>
 									<th>Id</th>
 									<th>Name</th>
-									<th>Posts</th>
-									<th>Products</th>
 									<th>Action</th>
 								</tr>
 							</tfoot>
@@ -36,18 +32,8 @@
 									<tr>
 										<td>{{$key + 1}}</td>
 										<td>{{$category->name}}</td>
-										<th>
-											@if($category->posts_active === true)
-												<i class="fas fa-check"></i>
-											@endif
-										</th>
-										<th>
-											@if($category->products_active === true)
-												<i class="fas fa-check"></i>
-											@endif
-										</th>
 										<td class="d-flex">
-											<a href="{{route('categories.update', $category->hashId)}}" 
+											<a href="{{route('posts.categories.update', $category->hashId)}}" 
 												data-name="{{$category->name}}"
 												class="btn btn-primary btn-sm mr-2 btn-update" 
 												data-toggle="modal" 
@@ -56,7 +42,7 @@
 												data-product="{{$category->products_active}}">
 												<i class="fas fa-edit"></i>
 											</a>
-											<a href="{{route('categories.delete', $category->hashId)}}" 
+											<a href="{{route('posts.categories.delete', $category->hashId)}}" 
 												data-name="{{$category->name}}" 
 												class="btn btn-danger btn-sm btn-delete" 
 												data-toggle="modal" 
