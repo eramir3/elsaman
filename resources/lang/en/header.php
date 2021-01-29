@@ -1,8 +1,10 @@
 <?php
 
 return [
-    'about' => 'about us',
+    'about' => 'about',
+    'about_us' => 'about us',
     'products' => 'products',
-    'learn' => 'learn more',
+    'learn' => 'learn',
+    'learn_more' => 'learn more',
     'contact' => 'contact',
 ];

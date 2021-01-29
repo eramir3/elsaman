@@ -8,7 +8,7 @@
                 <div class="card-header">{{ __('Login') }}</div>
 
                 <div class="card-body">
-                    <form method="POST" action="{{ isset($guard) ? url($guard.'/login') : route('login') }}">
+                    <form method="POST" action="{{ isset($prefix) ? url($prefix.'/login') : route('login') }}">
                         @csrf
 
                         <div class="form-group row">

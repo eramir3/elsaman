@@ -12,7 +12,7 @@
     <hr class="sidebar-divider my-0">
 
   <!-- Nav Item - Dashboard -->
-    <li class="nav-item">
+    <li class="nav-item {{ (request()->segment(2) == 'dashboard') ? 'active' : '' }}">
         <a class="nav-link" href="">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span>
@@ -28,7 +28,7 @@
     </div>
 
     <!-- Nav Item - Users -->
-    <li class="nav-item">
+    <li class="nav-item {{ (request()->segment(2) == 'users') ? 'active' : '' }}">
         <a class="nav-link" href="{{ route('users.index') }}">
             <i class="fas fa-fw fa-users"></i>
             <span>Users</span>
@@ -36,7 +36,7 @@
     </li>
 
     <!-- Nav Item - Category -->
-    <li class="nav-item">
+    <li class="nav-item {{ (request()->segment(2) == 'categories') ? 'active' : '' }}">
         <a class="nav-link" href="{{ route('categories.index') }}">
             <i class="fas fa-fw fa-list-alt"></i>
             <span>Categories</span>

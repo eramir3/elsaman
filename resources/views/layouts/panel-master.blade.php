@@ -27,7 +27,11 @@
     <!-- Page Wrapper -->
     <div id="wrapper">
 
-        <x-panel.sidebar></x-panel.sidebar>
+        @if(Auth::guard('web')->check())
+            <x-panel.sidebar></x-panel.sidebar>
+        @elseif(Auth::guard('customer')->check())
+            <x-panel.sidebar-customer></x-panel.sidebar-customer>
+        @endif        
 
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">

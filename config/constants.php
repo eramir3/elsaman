@@ -7,7 +7,7 @@ return [
     'en' => 'en',
     'fr' => 'fr',
     'es' => 'es',
-    'main_image' => -1
+    'main_image' => -1,
 
     /*
     'language' => [
@@ -23,4 +23,11 @@ return [
         'main_image' => -1
     ]
     */
+
+    'admin' => [
+        'sidebar' => [
+            'users' => 'Users',
+            'categories' => 'categories',
+        ]
+    ]
 ];

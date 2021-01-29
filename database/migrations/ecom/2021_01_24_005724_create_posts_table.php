@@ -13,9 +13,9 @@ class CreatePostsTable extends Migration
      */
     public function up()
     {
-        Schema::create('posts', function (Blueprint $table) {
+        Schema::connection('ecom')->create('posts', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('category_id')->constrained();
+            $table->foreignId('category_id')->constrained()->on('ecom.categories');
             $table->text('image')->nullable();
             $table->text('video')->nullable();
             $table->string('title_en')->unique();

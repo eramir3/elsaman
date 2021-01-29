@@ -9,9 +9,11 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
-class Admin extends Authenticatable
+class Customer extends Authenticatable
 {
     use HasFactory, Notifiable, HashableId;
+
+    protected $connection = 'ecom';
 
     /**
      * The attributes that are mass assignable.

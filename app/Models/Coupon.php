@@ -12,6 +12,8 @@ class Coupon extends Model
 {
     use HasFactory, HashableId, SoftDeletes;
 
+    protected $connection = 'ecom';
+
     /**
      * The attributes that are mass assignable.
      *

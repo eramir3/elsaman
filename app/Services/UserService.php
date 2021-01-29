@@ -3,6 +3,7 @@
 namespace App\Services;
 
 use App\Models\User;
+//use Saman\SharedModels\User;
 use Illuminate\Database\Eloquent\Collection;
 
 class UserService

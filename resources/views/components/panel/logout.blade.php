@@ -16,7 +16,7 @@
                 <a class="btn btn-primary btn-sm" href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                     {{ __('Logout') }}
                 </a>
-                <form id="logout-form" action="{{ Auth::getDefaultDriver() === 'admin' ? url(Auth::getDefaultDriver().'/logout') : route('logout')}}" method="post" class="d-none">
+                <form id="logout-form" action="{{ Auth::getDefaultDriver() === 'web' ? url('admin/logout') : route('logout')}}" method="post" class="d-none">
                     @csrf
                 </form>
             </div>
