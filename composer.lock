@@ -465,12 +465,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/eramir3/saman-commons.git",
-                "reference": "d444e79ee039b2a42a43bde3328128eebfe717c1"
+                "reference": "1589d9e5fdff64061014df03d3b30327d2c1f4bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/eramir3/saman-commons/zipball/d444e79ee039b2a42a43bde3328128eebfe717c1",
-                "reference": "d444e79ee039b2a42a43bde3328128eebfe717c1",
+                "url": "https://api.github.com/repos/eramir3/saman-commons/zipball/1589d9e5fdff64061014df03d3b30327d2c1f4bd",
+                "reference": "1589d9e5fdff64061014df03d3b30327d2c1f4bd",
                 "shasum": ""
             },
             "default-branch": true,
@@ -480,7 +480,8 @@
                     "Saman\\Models\\": "src\\Models",
                     "Saman\\Enums\\": "src\\Enums",
                     "Saman\\Traits\\": "src\\Traits",
-                    "Saman\\Utils\\": "src\\Utils"
+                    "Saman\\Utils\\": "src\\Utils",
+                    "Saman\\migrations\\": "src\\migrations"
                 }
             },
             "authors": [
@@ -496,7 +497,7 @@
                 "source": "https://github.com/eramir3/saman-commons/tree/master",
                 "issues": "https://github.com/eramir3/saman-commons/issues"
             },
-            "time": "2021-01-29T17:09:07+00:00"
+            "time": "2021-01-30T02:28:52+00:00"
         },
         {
             "name": "fideloper/proxy",
