@@ -15,9 +15,6 @@
                 <li class="web-nav__item web-nav__items--pipe">
                     <a href="{{ route('home.learn', app()->getLocale()) }}" class="{{ Route::is('home.learn', app()->getLocale()) ? 'active' : '' }}">{{ Str::upper(__('header.learn_more')) }}</a>
                 </li>
-                <li class="web-nav__item web-nav__items--pipe">
-                    <a href="{{ route('home.shop', app()->getLocale()) }}" class="{{ Route::is('home.shop', app()->getLocale()) ? 'active' : '' }}">{{ Str::upper(__('header.shop')) }}</a>
-                </li>
                 <li class="web-nav__item">
                     <a href="{{ route('home.contact', app()->getLocale()) }}" class="{{ Route::is('home.contact', app()->getLocale()) ? 'active' : '' }}">{{ Str::upper(__('header.contact')) }}</a>
                 </li>

@@ -16,8 +16,8 @@
             <nav class="welcome-nav">
                 <ul class="welcome-nav__items">
                     <li class="welcome-nav__item welcome-nav__item--pipe">
-                        <a href="{{ route('home.about', app()->getLocale()) }}" subject="{{ Str::upper(__('header.about')) }}">
-                            {{ Str::upper(__('header.about')) }}
+                        <a href="{{ route('home.about', app()->getLocale()) }}" subject="{{ Str::upper(__('header.about_us')) }}">
+                            {{ Str::upper(__('header.about_us')) }}
                         </a>
                     </li>
                     <li class="welcome-nav__item welcome-nav__item--pipe">
@@ -26,8 +26,8 @@
                         </a>
                     </li>
                     <li class="welcome-nav__item welcome-nav__item--pipe">
-                        <a href="{{ route('home.learn', app()->getLocale()) }}" subject="{{ Str::upper(__('header.learn')) }}">
-                            {{ Str::upper(__('header.learn')) }}
+                        <a href="{{ route('home.learn', app()->getLocale()) }}" subject="{{ Str::upper(__('header.learn_more')) }}">
+                            {{ Str::upper(__('header.learn_more')) }}
                         </a>
                     </li>
                     <li class="welcome-nav__item">
