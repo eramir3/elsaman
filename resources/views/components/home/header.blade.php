@@ -7,16 +7,16 @@
             </a>
             <ul class="web-nav__items">
                 <li class="web-nav__item web-nav__items--pipe">
-                    <a href="{{ route('home.about', app()->getLocale()) }}" class="{{ (request()->segment(2) == __('header.about')) ? 'active' : '' }}">{{ Str::upper(__('header.about_us')) }}</a>
+                    <a href="{{ route('home.about', app()->getLocale()) }}" class="{{ Route::is('home.about', app()->getLocale()) ? 'active' : '' }}">{{ Str::upper(__('header.about_us')) }}</a>
                 </li>
                 <li class="web-nav__item web-nav__items--pipe">
-                    <a href="{{ route('home.products', app()->getLocale()) }}" class="{{ (request()->segment(2) == __('header.products')) ? 'active' : '' }}">{{ Str::upper(__('header.products')) }}</a>
+                    <a href="{{ route('home.products', app()->getLocale()) }}" class="{{ Route::is('home.products', app()->getLocale()) ? 'active' : '' }}">{{ Str::upper(__('header.products')) }}</a>
                 </li>
                 <li class="web-nav__item web-nav__items--pipe">
-                    <a href="{{ route('home.learn', app()->getLocale()) }}" class="{{ (request()->segment(2) == __('header.learn')) ? 'active' : '' }}">{{ Str::upper(__('header.learn_more')) }}</a>
+                    <a href="{{ route('home.learn', app()->getLocale()) }}" class="{{ Route::is('home.learn', app()->getLocale()) ? 'active' : '' }}">{{ Str::upper(__('header.learn_more')) }}</a>
                 </li>
                 <li class="web-nav__item">
-                    <a href="{{ route('home.contact', app()->getLocale()) }}" class="{{ (request()->segment(2) == __('header.contact')) ? 'active' : '' }}">{{ Str::upper(__('header.contact')) }}</a>
+                    <a href="{{ route('home.contact', app()->getLocale()) }}" class="{{ Route::is('home.contact', app()->getLocale()) ? 'active' : '' }}">{{ Str::upper(__('header.contact')) }}</a>
                 </li>
             </ul>
         </nav>

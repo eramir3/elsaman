@@ -465,23 +465,23 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/eramir3/saman-commons.git",
-                "reference": "1589d9e5fdff64061014df03d3b30327d2c1f4bd"
+                "reference": "2122acfe5b5f33bcb2ce65591efe29bd1fc7a3f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/eramir3/saman-commons/zipball/1589d9e5fdff64061014df03d3b30327d2c1f4bd",
-                "reference": "1589d9e5fdff64061014df03d3b30327d2c1f4bd",
+                "url": "https://api.github.com/repos/eramir3/saman-commons/zipball/2122acfe5b5f33bcb2ce65591efe29bd1fc7a3f3",
+                "reference": "2122acfe5b5f33bcb2ce65591efe29bd1fc7a3f3",
                 "shasum": ""
             },
             "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Saman\\Models\\": "src\\Models",
-                    "Saman\\Enums\\": "src\\Enums",
-                    "Saman\\Traits\\": "src\\Traits",
-                    "Saman\\Utils\\": "src\\Utils",
-                    "Saman\\migrations\\": "src\\migrations"
+                    "Saman\\Models\\": "app\\Models",
+                    "Saman\\Enums\\": "app\\Enums",
+                    "Saman\\Traits\\": "app\\Traits",
+                    "Saman\\Utils\\": "app\\Utils",
+                    "Saman\\migrations\\": "database\\migrations"
                 }
             },
             "authors": [
@@ -497,7 +497,7 @@
                 "source": "https://github.com/eramir3/saman-commons/tree/master",
                 "issues": "https://github.com/eramir3/saman-commons/issues"
             },
-            "time": "2021-01-30T02:28:52+00:00"
+            "time": "2021-01-30T02:44:30+00:00"
         },
         {
             "name": "fideloper/proxy",
