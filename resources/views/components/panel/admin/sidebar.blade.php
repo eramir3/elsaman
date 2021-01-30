@@ -53,7 +53,7 @@
 
     <!-- Nav Item - Products -->
     <li class="nav-item {{ Route::is('products.*') ? 'active' : '' }}">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProducts"
+        <a class="nav-link {{ Route::is('products.*') ? '' : 'collapsed' }}" href="#" data-toggle="collapse" data-target="#collapseProducts"
             aria-expanded="true" aria-controls="collapseProducts">
             <i class="fas fa-box"></i>
             <span>Products</span>
@@ -67,9 +67,9 @@
         </div>
     </li>
 
-    <!-- Posts -->
-    <li class="nav-item">
-        <a class="nav-link collapsed {{ Route::is('posts.*') ? 'active' : '' }}" href="#" data-toggle="collapse" data-target="#collapsePosts"
+    <!--  Nav Item - Posts -->
+    <li class="nav-item {{ Route::is('posts.*') ? 'active' : '' }}">
+        <a class="nav-link {{ Route::is('posts.*') ? '' : 'collapsed' }}" href="#" data-toggle="collapse" data-target="#collapsePosts"
             aria-expanded="true" aria-controls="collapsePosts">
             <i class="fas fa-fw fa-sticky-note"></i>
             <span>Posts</span>
@@ -85,7 +85,7 @@
 
     <!-- Nav Item - Categories -->
     <li class="nav-item {{ Route::is('categories.*') ? 'active' : '' }}">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCategories"
+        <a class="nav-link {{ Route::is('categories.*') ? '' : 'collapsed' }}" href="#" data-toggle="collapse" data-target="#collapseCategories"
             aria-expanded="true" aria-controls="collapseCategories">
             <i class="fas fa-fw fa-list-alt"></i>
             <span>Categories</span>
