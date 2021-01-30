@@ -28,9 +28,9 @@
     <div id="wrapper">
 
         @if(Auth::guard('web')->check())
-            <x-panel.sidebar></x-panel.sidebar>
+            <x-panel.admin.sidebar></x-panel.admin.sidebar>
         @elseif(Auth::guard('customer')->check())
-            <x-panel.sidebar-customer></x-panel.sidebar-customer>
+            <x-panel.customer.sidebar></x-panel.customer.sidebar>
         @endif        
 
         <!-- Content Wrapper -->

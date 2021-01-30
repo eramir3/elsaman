@@ -33,7 +33,7 @@
 										<td>{{$key + 1}}</td>
 										<td>{{$category->name}}</td>
 										<td class="d-flex">
-											<a href="{{route('products.categories.update', $category->hashId)}}" 
+											<a href="{{route('categories.products.update', $category->hashId)}}" 
 												data-name="{{$category->name}}"
 												class="btn btn-primary btn-sm mr-2 btn-update" 
 												data-toggle="modal" 
@@ -42,7 +42,7 @@
 												data-product="{{$category->products_active}}">
 												<i class="fas fa-edit"></i>
 											</a>
-											<a href="{{route('products.categories.delete', $category->hashId)}}" 
+											<a href="{{route('categories.products.delete', $category->hashId)}}" 
 												data-name="{{$category->name}}" 
 												class="btn btn-danger btn-sm btn-delete" 
 												data-toggle="modal" 

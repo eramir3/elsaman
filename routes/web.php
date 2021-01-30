@@ -152,16 +152,16 @@ Route::group(['prefix'=>'admin', 'middleware'=>['auth:web','verified']], functio
     Route::delete('customers/{id}/delete', [CustomerController::class, 'destroy'])->name('customers.delete');
     
     // Post Categories
-    Route::get('posts/categories', [PostCategoryController::class, 'index'])->name('posts.categories.index');
-    Route::post('posts/categories/store', [PostCategoryController::class, 'store'])->name('posts.categories.store');
-    Route::put('posts/categories/{id}/update', [PostCategoryController::class, 'update'])->name('posts.categories.update');
-    Route::delete('posts/categories/{id}/delete', [PostCategoryController::class, 'destroy'])->name('posts.categories.delete');
+    Route::get('categories/posts', [PostCategoryController::class, 'index'])->name('categories.posts.index');
+    Route::post('categories/posts/store', [PostCategoryController::class, 'store'])->name('categories.posts.store');
+    Route::put('categories/posts/{id}/update', [PostCategoryController::class, 'update'])->name('categories.posts.update');
+    Route::delete('categories/posts/{id}/delete', [PostCategoryController::class, 'destroy'])->name('categories.posts.delete');
 
     // Product Categories
-    Route::get('products/categories', [ProductCategoryController::class, 'index'])->name('products.categories.index');
-    Route::post('products/categories/store', [ProductCategoryController::class, 'store'])->name('products.categories.store');
-    Route::put('products/categories/{id}/update', [ProductCategoryController::class, 'update'])->name('products.categories.update');
-    Route::delete('products/categories/{id}/delete', [ProductCategoryController::class, 'destroy'])->name('products.categories.delete');
+    Route::get('categories/products', [ProductCategoryController::class, 'index'])->name('categories.products.index');
+    Route::post('categories/products/store', [ProductCategoryController::class, 'store'])->name('categories.products.store');
+    Route::put('categories/products/{id}/update', [ProductCategoryController::class, 'update'])->name('categories.products.update');
+    Route::delete('categories/products/{id}/delete', [ProductCategoryController::class, 'destroy'])->name('categories.products.delete');
 
     // Coupons
     Route::get('coupons', [CouponController::class, 'index'])->name('coupons.index');

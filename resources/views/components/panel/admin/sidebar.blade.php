@@ -12,8 +12,8 @@
     <hr class="sidebar-divider my-0">
 
   <!-- Nav Item - Dashboard -->
-    <li class="nav-item {{ (request()->segment(2) == 'dashboard') ? 'active' : '' }}">
-        <a class="nav-link" href="">
+    <li class="nav-item {{ Route::is('admin.dashboard') ? 'active' : '' }}">
+        <a class="nav-link" href="{{ route('admin.dashboard') }}">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span>
         </a>
@@ -28,7 +28,7 @@
     </div>
 
     <!-- Nav Item - Users -->
-    <li class="nav-item {{ (request()->segment(2) == 'users') ? 'active' : '' }}">
+    <li class="nav-item {{ Route::is('users.index') ? 'active' : '' }}">
         <a class="nav-link" href="{{ route('users.index') }}">
             <i class="fas fa-fw fa-users"></i>
             <span>Users</span>
@@ -36,7 +36,7 @@
     </li>
 
     <!-- Nav Item - Users -->
-    <li class="nav-item {{ (request()->segment(2) == 'customers') ? 'active' : '' }}">
+    <li class="nav-item {{ Route::is('customers.index') ? 'active' : '' }}">
         <a class="nav-link" href="{{ route('customers.index') }}">
             <i class="fas fa-fw fa-users"></i>
             <span>Customers</span>
@@ -52,16 +52,16 @@
     </div>
 
     <!-- Nav Item - Post Category -->
-    <li class="nav-item {{ (request()->segment(2) == 'categories') ? 'active' : '' }}">
-        <a class="nav-link" href="{{ route('posts.categories.index') }}">
+    <li class="nav-item {{ Route::is('categories.posts.index') ? 'active' : '' }}">
+        <a class="nav-link" href="{{ route('categories.posts.index') }}">
             <i class="fas fa-fw fa-list-alt"></i>
             <span>Post</span>
         </a>
     </li>
 
     <!-- Nav Item - Product Category -->
-    <li class="nav-item {{ (request()->segment(2) == 'categories') ? 'active' : '' }}">
-        <a class="nav-link" href="{{ route('products.categories.index') }}">
+    <li class="nav-item {{ Route::is('categories.products.index') ? 'active' : '' }}">
+        <a class="nav-link" href="{{ route('categories.products.index') }}">
             <i class="fas fa-fw fa-list-alt"></i>
             <span>Product</span>
         </a>
@@ -76,7 +76,7 @@
     </div>
 
     <!-- Nav Item - Coupons -->
-    <li class="nav-item">
+    <li class="nav-item {{ Route::is('coupons.index') ? 'active' : '' }}">
         <a class="nav-link" href="{{ route('coupons.index') }}">
             <i class="fas fa-tags"></i>
             <span>Coupons</span>
@@ -84,33 +84,33 @@
     </li>
 
     <!-- Nav Item - Products -->
-    <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProduct"
-            aria-expanded="true" aria-controls="collapseProduct">
+    <li class="nav-item {{ Route::is('products.*') ? 'active' : '' }}">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProducts"
+            aria-expanded="true" aria-controls="collapseProducts">
             <i class="fas fa-box"></i>
             <span>Products</span>
         </a>
-        <div id="collapseProduct" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div id="collapseProducts" class="collapse {{ Route::is('products.*') ? 'show' : '' }}" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Product Actions</h6>
-                <a class="collapse-item" href="{{route('products.create')}}">Create Product</a>
-                <a class="collapse-item" href="{{route('products.index')}}">All Products</a>
+                <a class="collapse-item {{ Route::is('products.create') ? 'active' : '' }}" href="{{route('products.create')}}">Create Product</a>
+                <a class="collapse-item {{ Route::is('products.index') ? 'active' : '' }}" href="{{route('products.index')}}">All Products</a>
             </div>
         </div>
     </li>
 
     <!-- Posts -->
     <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePost"
-            aria-expanded="true" aria-controls="collapsePost">
+        <a class="nav-link collapsed {{ Route::is('posts.*') ? 'active' : '' }}" href="#" data-toggle="collapse" data-target="#collapsePosts"
+            aria-expanded="true" aria-controls="collapsePosts">
             <i class="fas fa-fw fa-sticky-note"></i>
             <span>Posts</span>
         </a>
-        <div id="collapsePost" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div id="collapsePosts" class="collapse {{ Route::is('posts.*') ? 'show' : '' }}" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Post Actions</h6>
-                <a class="collapse-item" href="{{route('posts.create')}}">Create Post</a>
-                <a class="collapse-item" href="{{route('posts.index')}}">All Posts</a>
+                <a class="collapse-item {{ Route::is('posts.create') ? 'active' : '' }}" href="{{route('posts.create')}}">Create Post</a>
+                <a class="collapse-item {{ Route::is('posts.index') ? 'active' : '' }}" href="{{route('posts.index')}}">All Posts</a>
             </div>
         </div>
     </li>
@@ -162,6 +162,27 @@
     </div>
 
     <!-- Nav Item - Pages Collapse Menu -->
+    <!-- <li class="nav-item active">
+        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true"
+            aria-controls="collapsePages">
+            <i class="fas fa-fw fa-folder"></i>
+            <span>Pages</span>
+        </a>
+        <div id="collapsePages" class="collapse show" aria-labelledby="headingPages"
+            data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Login Screens:</h6>
+                <a class="collapse-item" href="login.html">Login</a>
+                <a class="collapse-item" href="register.html">Register</a>
+                <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
+                <div class="collapse-divider"></div>
+                <h6 class="collapse-header">Other Pages:</h6>
+                <a class="collapse-item" href="404.html">404 Page</a>
+                <a class="collapse-item active" href="blank.html">Blank Page</a>
+            </div>
+        </div>
+    </li> -->
+
     <li class="nav-item active">
         <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true"
             aria-controls="collapsePages">
