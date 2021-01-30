@@ -3,7 +3,7 @@
     <div class="web-header__container">
         <nav class="web-nav">
             <a href="{{ route('home.welcome', app()->getLocale()) }}" class="web-nav__brand">
-                <img src="../images/home/shared/saman-logo-bg-white.png" alt="">
+                <img src="{{ asset('images/home/shared/saman-logo-bg-white.png') }}" alt="">
             </a>
             <ul class="web-nav__items">
                 <li class="web-nav__item web-nav__items--pipe">
@@ -14,6 +14,9 @@
                 </li>
                 <li class="web-nav__item web-nav__items--pipe">
                     <a href="{{ route('home.learn', app()->getLocale()) }}" class="{{ Route::is('home.learn', app()->getLocale()) ? 'active' : '' }}">{{ Str::upper(__('header.learn_more')) }}</a>
+                </li>
+                <li class="web-nav__item web-nav__items--pipe">
+                    <a href="{{ route('home.shop', app()->getLocale()) }}" class="{{ Route::is('home.shop', app()->getLocale()) ? 'active' : '' }}">{{ Str::upper(__('header.shop')) }}</a>
                 </li>
                 <li class="web-nav__item">
                     <a href="{{ route('home.contact', app()->getLocale()) }}" class="{{ Route::is('home.contact', app()->getLocale()) ? 'active' : '' }}">{{ Str::upper(__('header.contact')) }}</a>
@@ -36,7 +39,7 @@
             <span class="toggle-button__bar"></span>
         </button>
         <a href="{{ route('home.welcome', app()->getLocale()) }}" class="mobile-header__brand">
-            <img src="../images/home/shared/saman-logo-bg-white.png" alt="">
+            <img src="{{ asset('images/home/shared/saman-logo-bg-white.png') }}" alt="">
         </a>
         <x-home.lang-dropdown></x-home.lang-dropdown>
     </nav>

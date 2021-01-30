@@ -6,5 +6,6 @@ return [
     'products' => 'products',
     'learn' => 'learn',
     'learn_more' => 'learn more',
+    'shop' => 'shop',
     'contact' => 'contact',
 ];

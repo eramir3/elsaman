@@ -18,13 +18,13 @@ class AuthUserService
     /**
      * Update password if current password is valid
      *
-     * @param  \Illuminate\Support\Facades\Auth  $user
      * @param  \App\Http\Requests\PasswordRequest  $request
      * 
      * @throws \App\Exceptions\InvalidCurrentPasswordException
      */
-    public static function updatePassword(Authenticatable $user, PasswordRequest $request)
+    public static function updatePassword(PasswordRequest $request)
     {
+        $user = Auth::user();
         $hashedPassword = $user->password;
 
         if (Hash::check($request->current_password, $hashedPassword)) 

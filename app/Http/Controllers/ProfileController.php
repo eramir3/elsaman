@@ -72,8 +72,7 @@ class ProfileController extends Controller
     {
         try
         {
-            $user = $this->authUserService->getAuthUser();
-            $this->authUserService->updatePassword($user, $request);
+            $this->authUserService->updatePassword($request);
             $response = Notifier::success('Password', NotificationEnum::UPDATE);
             return back()->with($response);
         }
