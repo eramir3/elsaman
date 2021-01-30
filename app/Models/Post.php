@@ -11,7 +11,7 @@ class Post extends Model
 {
     use HasFactory, HashableId;
 
-    protected $connection = 'ecom';
+    protected $connection = 'ecommerce';
 
     protected $guarded = [];
 

@@ -13,7 +13,7 @@ class CreateCouponsTable extends Migration
      */
     public function up()
     {
-        Schema::connection('ecom')->create('coupons', function (Blueprint $table) {
+        Schema::connection('ecommerce')->create('coupons', function (Blueprint $table) {
             $table->id();
             $table->string('name')->unique();
             $table->string('discount');
@@ -29,6 +29,6 @@ class CreateCouponsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('coupons');
+        Schema::connection('ecommerce')->dropIfExists('coupons');
     }
 }

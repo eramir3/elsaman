@@ -13,7 +13,7 @@ class CreatePostsTable extends Migration
      */
     public function up()
     {
-        Schema::connection('ecom')->create('posts', function (Blueprint $table) {
+        Schema::connection('ecommerce')->create('posts', function (Blueprint $table) {
             $table->id();
             $table->foreignId('category_id')->constrained()->on('ecom.categories');
             $table->text('image')->nullable();
@@ -35,6 +35,6 @@ class CreatePostsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('posts');
+        Schema::connection('ecommerce')->dropIfExists('posts');
     }
 }

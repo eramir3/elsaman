@@ -70,7 +70,7 @@ return [
             'sslmode' => 'prefer',
         ],
 
-        'ecom' => [
+        'ecommerce' => [
             'driver' => 'pgsql',
             'url' => env('DATABASE_URL'),
             'host' => env('DB_HOST', '127.0.0.1'),
@@ -81,7 +81,7 @@ return [
             'charset' => 'utf8',
             'prefix' => '',
             'prefix_indexes' => true,
-            'schema' => 'ecom',
+            'schema' => 'ecommerce',
             'sslmode' => 'prefer',
         ],
 
