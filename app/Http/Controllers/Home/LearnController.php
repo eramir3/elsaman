@@ -30,4 +30,16 @@ class LearnController extends Controller
         $posts = $this->postService->all();
         return view('home.learn', compact('categories', 'posts'));
     }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($locale, $id)
+    {
+        $post = $this->postService->findById($id);
+        return view('home.learn-post', compact('post'));
+    }
 }

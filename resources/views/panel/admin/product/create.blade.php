@@ -13,7 +13,7 @@
                         <div class="form-group row">
                             <div class="col-md-4">
                                 <label for="name" class="col-md-6 col-form-label">{{ __('Name') }}</label>
-                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" value="{{ old('name') }}" name="name" required>
+                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" value="{{ old('name') }}" name="name" >
                                 @error('name')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -22,7 +22,7 @@
                             </div>
                             <div class="col-md-4">
                                 <label for="code" class="col-md-6 col-form-label">{{ __('Code') }}</label>
-                                <input id="code" type="text" class="form-control @error('code') is-invalid @enderror" value="{{ old('code') }}" name="code" required>
+                                <input id="code" type="text" class="form-control @error('code') is-invalid @enderror" value="{{ old('code') }}" name="code" >
                                 @error('code')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -31,7 +31,7 @@
                             </div>
                             <div class="col-md-4">
                                 <label for="quantity" class="col-md-6 col-form-label">{{ __('Quantity') }}</label>
-                                <input id="quantity" type="number" min="0" class="form-control @error('quantity') is-invalid @enderror" value="{{ old('quantity') }}" name="quantity" required>
+                                <input id="quantity" type="number" min="0" class="form-control @error('quantity') is-invalid @enderror" value="{{ old('quantity') }}" name="quantity" >
                                 @error('quantity')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -42,7 +42,7 @@
                         <div class="form-group row">
                             <div class="col-md-4">
                                 <label for="price" class="col-md-6 col-form-label">{{ __('Price') }}</label>
-                                <input id="price" type="number" step="0.01" class="form-control @error('price') is-invalid @enderror" value="{{ old('price') }}" name="price" required>
+                                <input id="price" type="number" step="0.01" class="form-control @error('price') is-invalid @enderror" value="{{ old('price') }}" name="price" >
                                 @error('price')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -51,7 +51,7 @@
                             </div>
                             <div class="col-md-4">
                                 <label for="size" class="col-md-6 col-form-label">{{ __('Size') }}</label>
-                                <input id="size" type="text" class="form-control @error('size') is-invalid @enderror" value="{{ old('size') }}" name="size" required>
+                                <input id="size" type="text" class="form-control @error('size') is-invalid @enderror" value="{{ old('size') }}" name="size" >
                                 @error('size')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -60,7 +60,7 @@
                             </div>
                             <div class="col-md-4">
                                 <label for="category_id" class="col-md-6 col-form-label">{{ __('Category') }}</label>
-                                <select class="form-control @error('category_id') is-invalid @enderror" id="category_id" name="category_id" required>
+                                <select class="form-control @error('category_id') is-invalid @enderror" id="category_id" name="category_id" >
                                     <option value hidden>Choose a Category</option>
                                     @foreach($categories as $category)
                                         <option value="{{$category->hashId}}">{{$category->name}}</option>
@@ -89,7 +89,7 @@
                         <div class="form-group row">
                             <div class="col-md-4">
                                 <label for="main_image">Main Image</label>
-                                <input type="file" class="form-control-file @error('main_image') is-invalid @enderror" id="main_image" name="main_image" required>
+                                <input type="file" class="form-control-file @error('main_image') is-invalid @enderror" id="main_image" name="main_image" >
                                 @error('main_image')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>

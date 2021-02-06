@@ -1,13 +1,16 @@
 <?php
 
 return [
-    'our_products_origin' => "D'OÙ VIENENET NOS PRODUITS?",
+    'our_products_origin' => "D'OÙ VIENNENET NOS PRODUITS?",
     'tequendama' => 'tequendama',
-    'tequendama_description' => "Située dans le département de Cundinamarca, la région de Tequendama est
-                                célèbre pour son environnement propice à la production alimentaire en Colombie. Compte tenu du
-                                les conditions climatiques, les précipitations et la diversité des planchers thermiques, peuvent être
-                                cultiver une grande variété de fruits tropicaux à haute valeur nutritive et exquis
-                                saveur qui peuvent être utilisée dans diverses recettes gastronomiques.",
+    'tequendama_description' => "Située dans le département de Cundinamarca, 
+                                la région de Tequendama est composée de 10 communes, 
+                                avec une population d'environ 160 000 habitants. La 
+                                région est célèbre pour le Salto del Tequendama, 
+                                une cascade naturelle de 132 mètres de haut et située à 
+                                32 km au sud-ouest de Bogotá. Selon la mythologie de Muisca, 
+                                la cascade a été créée par Bochica, qui l'a créée d'un seul coup 
+                                pour évacuer les eaux qui ont inondé la savane de Bogotá.",
 
     'our_products' => 'nos produits',
     'fruit_pulpe' => 'pulpe de fruit',

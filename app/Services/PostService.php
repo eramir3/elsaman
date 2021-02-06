@@ -33,7 +33,7 @@ class PostService
         $image = null;
         $path = $this->getPath($post);
 
-        if ($input['image'] != null)
+        if (isset($input['image']))
         {
             $name = Utils::generateImageName($input['image']);
             $image = $input['image']->storeAs($path, $name);

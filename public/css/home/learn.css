@@ -1,4 +1,78 @@
+@font-face {
+    font-family: OrangeJuice;
+    src: url(../../fonts/OrangeJuice.otf);
+}
+
 body {
     background: linear-gradient(rgba(255,255,255,.95), rgba(255,255,255,.95)), url('../../images/home/shared/fruits-bg.png');
     background-size: 65%;
 }
+
+#learn {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0;
+    max-width: 40rem;
+    padding: 1rem;
+}
+
+.card-img {
+    display: flex;
+    justify-content: center;
+}
+
+.card-title {
+    margin: 1rem;
+    font-family: OrangeJuice;
+    font-size: 1.8rem;
+    font-weight: 100;
+    padding: 10px 20px 5px 20px;
+    border-radius: 40px;
+}
+
+.card-text {
+    margin-top: 3rem;
+}
+
+.card-text p {
+    text-align: left !important;
+}
+
+.card-footer {
+    margin-top: 2rem;
+}
+
+.btn {
+    font-family: OrangeJuice;
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px 5px 16px;
+    border: 1px solid #439C83;
+    border-radius: 35px;
+    font-weight: 100;
+  }
+
+  .btn-green {
+    background-color: #439C83;
+  }
+
+  article {
+      margin-bottom: 5rem;
+  }

@@ -4,7 +4,7 @@
         <nav>
             <div class="main-footer__image-container">
                 <a href="{{ route('home.welcome', app()->getLocale()) }}">
-                    <img src="../images/home/shared/gray-logo.png" alt="">
+                    <img src="{{asset('images/home/shared/gray-logo.png')}}" alt="">
                 </a>
             </div>
             <div class="main-footer__info">

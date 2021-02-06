@@ -8,18 +8,30 @@
 @section('content')
     <main id="slidable">
         <section id="learn" class="container">
-            <h2>Categories</h2>
-            @foreach($categories as $category)
-                <div><a href="#">{{$category->name}}</a></div>
-            @endforeach
-
             @foreach($posts as $post)
-                <div>{{$post->title_en}}</div>
-                <div>{{$post->text_en}}</div>
-                <div><img src="{{asset($post->image)}}" alt=""></div>
+                <article>
+                    <div class="card-img">
+                                <img height="231px" src="{{asset($post->image)}}" alt="">
+                            </div>
+                    <div class="card">
+                        <div class="card-body">
+                            @if(app()->getLocale() === Config::get('constants.fr'))
+                                <div class="card-title label label-pink">{!! $post->title_fr !!}</div>
+                                <div class="card-text">{!! Str::limit($post->text_fr, 500, '....')  !!}</div>
+                            @elseif(app()->getLocale() === Config::get('constants.es'))
+                                <div class="card-title label label-pink">{!! $post->title_es !!}</div>
+                                <div class="card-text">{!! Str::limit($post->text_es, 500, '....')  !!}</div>
+                            @else
+                                <div class="card-title label label-pink">{!! $post->title_en !!}</div>
+                                <div class="card-text">{!! Str::limit($post->text_en, 500, '....')  !!}</div>
+                            @endif
+                        </div>
+                        <div class="card-footer">
+                            <a href="{{route('home.learn.show', ['locale'=>app()->getLocale(), 'id'=>$post->hashId])}}" class="btn btn-green">Read More</a>
+                        </div>
+                    </div>
+                </article>
             @endforeach
         </section>
     </main>
-
 @endsection
-

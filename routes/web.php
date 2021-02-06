@@ -67,6 +67,7 @@ Route::group(['prefix' => '/{locale}'], function() {
         })->name('home.products');
 
         Route::get('learn', [LearnController::class, 'index'])->name('home.learn');
+        Route::get('/learn/{id}/post', [LearnController::class, 'show'])->name('home.learn.show');
         
         Route::get('contact', function () {
             return view('home/contact');

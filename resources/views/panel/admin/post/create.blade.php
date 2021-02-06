@@ -16,10 +16,10 @@
                         <div class="form-group row">
                             <div class="col-md-4">
                                 <label for="category_id" class="col-md-6 col-form-label">{{ __('Category') }}</label>
-                                <select class="form-control" id="category_id" name="category_id" required>
-                                    <option hidden>Choose a Category</option>
+                                <select class="form-control @error('category_id') is-invalid @enderror" id="category_id" name="category_id" >
+                                    <option value hidden>Choose a Category</option>
                                     @foreach($categories as $category)
-                                        <option value="{{$category->hashid}}">{{$category->name}}</option>
+                                        <option value="{{$category->hashId}}">{{$category->name}}</option>
                                     @endforeach
                                 </select>
                                 @error('category_id')
@@ -32,7 +32,12 @@
                         <div class="form-group row">
                             <div class="col-md-8">
                                 <label for="video" class="col-md-6 col-form-label">{{ __('Video') }}</label>
-                                <input type="text" class="form-control" id="video" name="video">
+                                <input type="text" class="form-control @error('video') is-invalid @enderror" id="video" value="{{ old('video') }}"  name="video">
+                                @error('video')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                             </div>
                         </div>
                         <div class="form-group row">
@@ -52,7 +57,7 @@
                         <div class="form-group row">
                             <div class="col-md-12">
                                 <label for="title_en" class="col-md-6 col-form-label">{{ __('Title') }}</label>
-                                <input id="title_en" type="text" class="form-control @error('title_en') is-invalid @enderror" value="{{ old('title_en') }}" name="title_en" required>
+                                <input id="title_en" type="text" class="form-control @error('title_en') is-invalid @enderror" value="{{ old('title_en') }}" name="title_en" >
                                 @error('title_en')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -78,7 +83,7 @@
                         <div class="form-group row">
                             <div class="col-md-12">
                                 <label for="title_fr" class="col-md-6 col-form-label">{{ __('Title') }}</label>
-                                <input id="title_fr" type="text" class="form-control @error('title_fr') is-invalid @enderror" value="{{ old('title_fr') }}" name="title_fr" required>
+                                <input id="title_fr" type="text" class="form-control @error('title_fr') is-invalid @enderror" value="{{ old('title_fr') }}" name="title_fr" >
                                 @error('title_fr')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -104,7 +109,7 @@
                         <div class="form-group row">
                             <div class="col-md-12">
                                 <label for="title_es" class="col-md-6 col-form-label">{{ __('Title') }}</label>
-                                <input id="title_es" type="text" class="form-control @error('title_es') is-invalid @enderror" value="{{ old('title_es') }}" name="title_es" required >
+                                <input id="title_es" type="text" class="form-control @error('title_es') is-invalid @enderror" value="{{ old('title_es') }}" name="title_es"  >
                                 @error('title_es')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
