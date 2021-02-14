@@ -22,11 +22,10 @@ return [
                             at your disposal 100% natural food products. So, we want to create ties 
                             of connection between Colombian farmers and European consumers.",
     'mission' => 'mission',
-    'mission_description' => 'Provide our consumers with the best 100% products
-                            natural made from the highest quality tropical fruits,
-                            by supporting the production of farmers in the Tequendama region, by
-                            Colombia.',
+    'mission_description' => 'Provide our consumers with the best 100% natural products made from 
+                            tropical fruits of the highest quality, while supporting the local production 
+                            of farmers in the Tequendama region, in Colombia.',
     'vision' => 'vision',
-    'vision_description' => 'Share the richness of Colombian tropical fruits with the world,
-                            creating ties of connection between farmers and our clients.'
+    'vision_description' => 'Share the richness of Colombian tropical fruits with the world, while 
+                            creating ties between the Colombian farmers and our clients abroad.'
 ];

@@ -33,7 +33,9 @@
                                 <label for="video" class="col-md-6 col-form-label">{{ __('Video') }}</label>
                                 <input type="text" class="form-control" id="video" name="video" value="{{ $post->video }}">
                                 <br>
-                                <iframe width="560" height="315" src="{{ $post->video }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                @if(!is_null($post->video))
+                                    <iframe width="560" height="315" src="{{ $post->video }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                @endif
                             </div>
                         </div>
                         <div class="form-group row">

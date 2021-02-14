@@ -48,24 +48,8 @@
 
     <!-- Heading -->
     <div class="sidebar-heading">
-        Ecommerce
+        Posts
     </div>
-
-    <!-- Nav Item - Products -->
-    <li class="nav-item {{ Route::is('products.*') ? 'active' : '' }}">
-        <a class="nav-link {{ Route::is('products.*') ? '' : 'collapsed' }}" href="#" data-toggle="collapse" data-target="#collapseProducts"
-            aria-expanded="true" aria-controls="collapseProducts">
-            <i class="fas fa-box"></i>
-            <span>Products</span>
-        </a>
-        <div id="collapseProducts" class="collapse {{ Route::is('products.*') ? 'show' : '' }}" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Product Actions</h6>
-                <a class="collapse-item {{ Route::is('products.create') ? 'active' : '' }}" href="{{route('products.create')}}">Create Product</a>
-                <a class="collapse-item {{ Route::is('products.index') ? 'active' : '' }}" href="{{route('products.index')}}">All Products</a>
-            </div>
-        </div>
-    </li>
 
     <!--  Nav Item - Posts -->
     <li class="nav-item {{ Route::is('posts.*') ? 'active' : '' }}">
@@ -83,8 +67,48 @@
         </div>
     </li>
 
+    <!--  Nav Item - Posts Categories -->
+    <li class="nav-item {{ Route::is('categories.posts.index') ? 'active' : '' }}">
+        <a class="nav-link" href="{{ route('categories.posts.index') }}">
+            <i class="fas fa-fw fa-list-alt"></i>
+            <span>Categories</span>
+        </a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+    <!-- Heading -->
+    <div class="sidebar-heading">
+        Ecommerce
+    </div>
+
+    <!-- Nav Item - Products -->
+    <li class="nav-item {{ Route::is('products.*') ? 'active' : '' }}">
+        <a class="nav-link {{ Route::is('products.*') ? '' : 'collapsed' }}" href="#" data-toggle="collapse" data-target="#collapseProducts"
+            aria-expanded="true" aria-controls="collapseProducts">
+            <i class="fas fa-fw fa-box"></i>
+            <span>Products</span>
+        </a>
+        <div id="collapseProducts" class="collapse {{ Route::is('products.*') ? 'show' : '' }}" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Product Actions</h6>
+                <a class="collapse-item {{ Route::is('products.create') ? 'active' : '' }}" href="{{route('products.create')}}">Create Product</a>
+                <a class="collapse-item {{ Route::is('products.index') ? 'active' : '' }}" href="{{route('products.index')}}">All Products</a>
+            </div>
+        </div>
+    </li>
+
+    <!--  Nav Item - Product Categories -->
+    <li class="nav-item {{ Route::is('categories.products.index') ? 'active' : '' }}">
+        <a class="nav-link" href="{{ route('categories.products.index') }}">
+            <i class="fas fa-fw fa-list-alt"></i>
+            <span>Categories</span>
+        </a>
+    </li>
+
     <!-- Nav Item - Categories -->
-    <li class="nav-item {{ Route::is('categories.*') ? 'active' : '' }}">
+    <!-- <li class="nav-item {{ Route::is('categories.*') ? 'active' : '' }}">
         <a class="nav-link {{ Route::is('categories.*') ? '' : 'collapsed' }}" href="#" data-toggle="collapse" data-target="#collapseCategories"
             aria-expanded="true" aria-controls="collapseCategories">
             <i class="fas fa-fw fa-list-alt"></i>
@@ -98,7 +122,7 @@
                 <a class="collapse-item {{ Route::is('categories.products.index') ? 'active' : '' }}" href="{{route('categories.products.index')}}">Product</a>
             </div>
         </div>
-    </li>
+    </li> -->
 
     <!-- Nav Item - Coupons -->
     <li class="nav-item {{ Route::is('coupons.index') ? 'active' : '' }}">

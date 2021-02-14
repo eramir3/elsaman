@@ -24,11 +24,12 @@ return [
                             queremos crear lazos de conexión entre los campesinos colombianos y 
                             los consumidores europeos.',
     'mission' => 'mision',
-    'mission_description' => 'Poner a disposición de nuestros clientes los mejores productos 100% naturales 
-                            hechos a partir de frutas tropicales de la más alta calidad, 
+    'mission_description' => 'Poner a disposición de nuestros clientes los mejores productos 100% 
+                            naturales hechos a partir de las frutas tropicales de la más alta calidad, 
                             al mismo tiempo que apoyamos la producción de los campesions de la región del 
-                            Tequendama en Colombia.',
+                            Tequendama en Colombia. ',
     'vision' => 'vision',
-    'vision_description' => 'Compartir la riqueza de las frutas tropicales colombianas con el mundo,
-                            creando lazos de conexión entre los campesinos y nuestros clientes.'
+    'vision_description' => 'Compartir la riqueza de las frutas tropicales colombianas con el mundo, 
+                            creando lazos de conexión entre los campesinos colombianos y nuestros clientes 
+                            extranjeros.'
 ];

@@ -21,20 +21,19 @@ return [
     'preparation_tips' => 'PREPARATION TIPS',
     
     'pineapple' => 'pineapple',
-    'pineapple_facts' => 'It is native to South America. Source of vitamin A, C and B6, potassium, 
-                        fiber, magnesium, manganese and folic acid. it is also rich in antioxidants.',
+    'pineapple_facts' => 'Native to South America the pineapple is a source of vitamin A,  B6, C,  
+                        potassium, fiber, magnesium, manganese and folic acid. It is also rich in antioxidants.',
     
     'passion_fruit' => 'passion fruit',
-    'passion_fruit_facts' => 'It is a tropical fruit that contains a large amount of vitamin A and 
-                            C, as well as potassium, phosphorus and magnesium, as well as a large 
-                            amount of iron. It also contains a high amount of fiber.',
+    'passion_fruit_facts' => 'It is a tropical fruit that contains a large amount of vitamin A and C, as well as 
+                            potassium, phosphorus and magnesium. It also contains a large amount of iron and high 
+                            amounts of fiber.',
 
     'strawberry' => 'strawberry',
     'strawberry_facts' => 'It is a fruit very rich in antioxidants, it has vitamins C, B2, B3, as 
                         well as magnesium, manganese and potassium. 90% of the strawberry is water 
                         and 7% carbohydrates. It is grown in Colombia in Cundinamarca, Antioquia 
                         and Caldas.',
-
 
     'mango' => 'mango',
     'mango_facts' => 'It is a tropical fruit of Asian origin. Its fruit is highly appreciated as 
@@ -47,10 +46,9 @@ return [
                         phosphorus and iron.',
 
     'guava' => 'guava',
-    'guava_facts' => 'Belonging to the myrtaceae family, this fruit is widely used in Colombia since 
-                    it is also used to prepare juices, jams, sorbets, nectars and sandwiches. 
-                    It is high in vitamin C as well as A, and B1. It also has high amounts of 
-                    protein, fiber, and folic acid.',
+    'guava_facts' => 'Belonging to the myrtaceae family, this fruit is widely used in Colombia to prepare 
+                    juices, jelly, sorbets and nectars. It has high quantities of vitamin C as well as A, 
+                    and B1. It also has high amounts of protein, fiber, and folic acid.',
 
     'lulo' => 'lulo',
     'lulo_facts' => 'Its fruit is very rich in vitamin A and C, as well as calcium, iron, and 
@@ -58,15 +56,14 @@ return [
                     looking for new flavors.',
 
     'tangerine' => 'tangerine',
-    'tangerine_facts' => 'This citrus comes from Asia, but is grown in large quantities in Colombia. This fruit is rich 
-                        in Vitamin C, B6, B12 and E, and contains antioxidant properties.',
+    'tangerine_facts' => 'This citrus comes from Asia, but is grown in large quantities in Colombia. This fruit 
+                        is rich in Vitamin B6, B12, C and E, and contains antioxidant properties.',
 
 
     'blackberry' => 'blackberry',
-    'blackberry_facts' => 'Its shrub belongs to the Rosaceae family. It is a source of vitamin C, 
-                        calcium, and iron. It is also very rich in vitamin A, as well as potassium, 
-                        and fiber. It is widely used in gastronomy because with it many sauces, 
-                        sweets and jams can be made.',
+    'blackberry_facts' => 'It\'s shrub belongs to the Rosaceae family. It is a source of vitamin C, calcium, and iron. It 
+                        is also very rich in vitamin A, as well as potassium, and fiber. It is widely used in gastronomy. 
+                        Many sauces, sweets and jams can be made with it.',
 
     'soursop' => 'soursop',
     'soursop_facts' => 'It is a tree native to South America belonging to the Annonacease family 
@@ -76,16 +73,15 @@ return [
                         A and B.',
 
     'curuba' => 'curuba',
-    'curuba_facts' => 'It is also known as patcha or taxo. Its fruit comes from climbing shrubs of 
-                    the genus Passiflora. They have been cultivated since pre-Columbian times in 
-                    Colombia, Peru, Bolivia, and Ecuador. In Colombia it is cultivated in the 
-                    eastern and western mountain ranges. Contains vitamin A, C and riboflavin, 
-                    potassium, magnesium, chlorine and iron among others.',
+    'curuba_facts' => 'It is also known as patcha or taxo. Its fruit comes from climbing shrubs of the 
+                    genus Passiflora. They have been cultivated since pre-Columbian times in Colombia, Peru, 
+                    Bolivia, and Ecuador. In Colombia it is cultivated in the eastern and western mountain 
+                    ranges. It contains vitamin A, C, riboflavin, potassium, magnesium, chlorine and iron among other minerals.',
 
     'feijoa' => 'feijoa',
-    'feijoa_facts' => 'This exotic fruit is native to southern Brazil, Argentina, and Uruguay. 
-                    It is cultivated in Colombia in the cold areas of Boyacá, Caldas, Cundinamarca 
-                    and Antioquia. Feijoa provides vitamins A, B1, B2, B3, B6, B9, C, E and K. 
-                    It has a pleasant semi-acid flavor.'
+    'feijoa_facts' => 'This exotic fruit is native to southern Brazil, Argentina, and Uruguay. It is 
+                    cultivated in Colombia in the cold areas of Boyacá, Caldas, Cundinamarca and Antioquia. 
+                    The feijoa provides vitamins A, B1, B2, B3, B6, B9, C, E and K. It has a pleasant semi-acid 
+                    flavor.'
 
 ];
