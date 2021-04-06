@@ -52,7 +52,7 @@
 .web-nav__brand img {
     width: 8rem;
     position: absolute; 
-    top: -0.5rem;
+    top: -0.1rem;
 }
 
 .web-header__container {
@@ -133,7 +133,6 @@
         position: absolute;
         z-index: 1;
         width: 6rem;
-        top: -0.7rem
     }
     
     .mobile-nav__items {

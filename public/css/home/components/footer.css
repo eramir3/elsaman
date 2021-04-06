@@ -31,9 +31,6 @@ footer {
     justify-content: center;
     background-image: linear-gradient(to top, rgba(0,0,0,0.341), rgba(0,0,0,0.341)), url(../../../images/home/shared/footer.png);
     background-size: 50%;
-    /* background-position: 0%; */
-    /* background-repeat: repeat repeat; */
-    /* background-size: cover;  */
 }
 
 .main-footer nav {
@@ -42,6 +39,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    margin-top: 2rem;
 }
 
 .main-footer__image-container img {
@@ -80,6 +78,14 @@ footer {
 
 .main-footer__legal > p:nth-child(1) {
     font-family: NexaBold, sans-serif;
+}
+
+@media(max-width: 1370px) {
+
+    .main-footer nav {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
 }
 
 @media(max-width: 750px) {

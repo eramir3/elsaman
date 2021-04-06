@@ -115,11 +115,13 @@ main {
     grid-template-rows: 1fr 1fr 1fr;
     width: 100%;
     max-width: 90rem;
-    margin-top: 7rem;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
 }
 
 .fruit {
     text-align: center;
+    padding-top: 3.5rem;
 }
 
 .fruit img:hover {
@@ -184,11 +186,12 @@ main {
     }
 
     .fruit img {
-        width: 100px;
+        width: 120px;
     }
 
     .fruit-badge {
-        font-size: 0.8rem;
+        font-size: 1.5rem;
+        width: 8rem;
     }
 
     #overview {
@@ -240,16 +243,15 @@ main {
     }
 
     #fruits {
-        /* grid-template-columns: 50% 50%;
-        grid-template-rows: 20% 20% 20% 20% 20% 20%; */
         grid-template-columns: 100%;
         grid-template-rows: 1fr;
         width: 20rem;
         max-width: 20rem;
+        margin-top: 1rem
     }
 
     .fruit img {
-        width: 100px;
+        width: 200px;
     }
 }
 

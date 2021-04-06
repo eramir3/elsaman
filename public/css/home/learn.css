@@ -28,13 +28,18 @@ body {
     background-clip: border-box;
     border: 1px solid rgba(0,0,0,.125);
     border-radius: 0;
-    max-width: 40rem;
     padding: 1rem;
 }
 
 .card-img {
     display: flex;
     justify-content: center;
+}
+
+.card-img img {
+    height: 100%; 
+    width: 100%; 
+    display:block;
 }
 
 .card-title {
@@ -75,4 +80,28 @@ body {
 
   article {
       margin-bottom: 5rem;
+      max-width: 50rem;
   }
+
+@media(max-width: 540px) {
+
+    article {
+        max-width: 20rem;
+    }
+    
+    .card-title {
+        max-width: 17rem;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 320px) {
+
+    article {
+        max-width: 16rem;
+    }
+    
+    .card-title {
+        max-width: 13rem;
+    }
+}

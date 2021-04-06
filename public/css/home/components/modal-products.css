@@ -3,10 +3,6 @@
     src: url(../../fonts/NexaLight.otf);
 }
 
-.modal-content {
-    padding-bottom: 2rem;
-}
-
 .modal-title {
     font-family: OrangeJuice;
     font-size: 3rem;
@@ -34,48 +30,7 @@
     width: 12rem;
 }
 
-.fruit-info {
-    display: flex;
-}
-
-.nutrition-facts {
-    width: 50%;
-    margin: 0 1rem 1rem 1rem;
-}
-
-.nutrition-facts__title {
-    font-family: OrangeJuice;
-    font-size: 2rem;
-    margin: 0 auto 1rem auto;
-    padding: 5px 30px 0 30px;
-    font-weight: 100;
-}
-
-.nutrition-facts__table {
-    width: 90%;
-    border-spacing: 0;
-}
-
-.nutrition-facts__table td {
-    vertical-align: bottom;
-    padding: 5px 10px 0 10px;
-}
-
-.nutrition-facts__table th, td {
-    font-family: 'Raleway';
-    font-weight: lighter;
-    font-size: 0.9rem;
-    color: #555555;
-    border-bottom: 1px solid #FE7E7E;
-    vertical-align: bottom;
-}
-
-.nutrition-facts__table tr :nth-child(2) {
-    text-align: right;
-}
-
 .fruit-preparation {
-    width: 50%;
     margin: 0 1rem 1rem 1rem;
 }
 
@@ -88,9 +43,7 @@
 }
 
 .fruit-preparation__tip {
-    display: flex;
-    align-items: end;
-
+    margin-bottom: 1rem;
 }
 
 .fruit-preparation__tip p {
@@ -99,20 +52,18 @@
     color: #555555;
 }
 
-.fruit-preparation__bullet {
+.fruit-preparation__tip-size {
     font-family: OrangeJuice;
-    background-color: #FE7E7E; 
-    color: white;
-    font-size: 1.2rem;
-    border-radius: 0.8rem;
-    -moz-border-radius: 0.8rem;
-    -webkit-border-radius: 0.8rem;
-    display: inline-block;
-    line-height: 1.4rem;
-    margin-right: 15px;
-    text-align: center;
-    width: 4.8rem; 
-    padding-top:4px;
+    color: #32B19F;
+    font-weight: 100;
+}
+
+.fruit-preparation__bullet {
+    list-style-position: outside;
+}
+
+.fruit-preparation__bullet li {
+    color: #32B19F;
 }
 
 @media(max-width: 750px) {
@@ -161,26 +112,18 @@
         flex-flow: column;
     }
 
-    .nutrition-facts {
-        width: 100%;
-        margin: 0;
-        margin-bottom: 3rem;
-    }
-
-    .nutrition-facts__table {
-        width: 100%;
-        border-spacing: 0;
-    }
-
     .fruit-preparation {
         width: 100%;
         margin: 0;
+    }
+
+    .fruit-preparation__bullet:before {
+        margin-left: 0;
     }
 }
 
 @media(max-width: 320px) {
     .modal-title,
-    .nutrition-facts__title,
     .fruit-preparation__title {
         font-size: 2rem;
         max-width: 15rem;
@@ -189,7 +132,6 @@
 
 @media(max-width: 280px) {
     .modal-title,
-    .nutrition-facts__title,
     .fruit-preparation__title {
         font-size: 2rem;
         max-width: 10rem;

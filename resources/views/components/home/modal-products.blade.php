@@ -14,58 +14,28 @@
             </div>
         </section>
         <section class="fruit-info">
-            <div class="nutrition-facts">
-                <h3 class="nutrition-facts__title badge badge--pink">{{ __('products.nutrition_facts') }}</h3>
-                    <table class="nutrition-facts__table">
-                        <tr>
-                            <td>ENERGY</td>
-                            <td>201kj/48 kcal</td>
-                        </tr>
-                        <tr>
-                            <td>FAT</td>
-                        home/    <td>0 g</td>
-                        </tr>
-                        <tr>
-                            <td>SATURATED FAT</td>
-                            <td>0 g</td>
-                        </tr>
-                        <tr>
-                            <td>CARBOHYDRATE</td>
-                            <td>13 g</td>
-                        </tr>
-                        <tr>
-                            <td>SUGAR</td>
-                            <td>0 g</td>
-                        </tr>
-                        <tr>
-                            <td>FIBRE</td>
-                            <td>1.1 g</td>
-                        </tr>
-                        <tr>
-                            <td>PROTEIN</td>
-                            <td>0.8 g</td>
-                        </tr>
-                        <tr>
-                            <td>SALT</td>
-                            <td>7 mg</td>
-                        </tr>
-                    </table>
-            </div>
             <div class="fruit-preparation">
                 <h3 class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</h3>
                 <div class="fruit-preparation__tip">
-                    <div class="fruit-preparation__bullet circle">1</div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Donec ornare leo ut mi consectetur pellentesque
-                    </p>
+                    <h2 class="fruit-preparation__tip-size">125 GR</h2>
+                    <p>{{ __('products.preparation_125')}}<p>
+                    <ul class="fruit-preparation__bullet">
+                        <li><p>{{ __('products.preparation_125_bullet')}}</p></li>
+                    </ul>
                 </div>
                 <div class="fruit-preparation__tip">
-                    <div class="fruit-preparation__bullet circle">2</div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Donec ornare leo ut mi consectetur pellentesque
-                    </p>
+                    <h2 class="fruit-preparation__tip-size">250 GR</h2>
+                    <p>{{ __('products.preparation_250')}}<p>
+                    <ul class="fruit-preparation__bullet">
+                        <li><p>{{ __('products.preparation_250_bullet')}}</p></li>
+                    </ul>
+                </div>
+                <div class="fruit-preparation__tip">
+                    <h2 class="fruit-preparation__tip-size">500 GR</h2>
+                    <p>{{ __('products.preparation_500')}}<p>
+                    <ul class="fruit-preparation__bullet">
+                        <li><p>{{ __('products.preparation_500_bullet')}}</p></li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -88,58 +58,28 @@
             </div>
         </section>
         <section class="fruit-info">
-            <div class="nutrition-facts">
-                <h3 class="nutrition-facts__title badge badge--pink">{{ __('products.nutrition_facts') }}</h3>
-                    <table class="nutrition-facts__table">
-                        <tr>
-                            <td>ENERGY</td>
-                            <td>201kj/48 kcal</td>
-                        </tr>
-                        <tr>
-                            <td>FAT</td>
-                            <td>0 g</td>
-                        </tr>
-                        <tr>
-                            <td>SATURATED FAT</td>
-                            <td>0 g</td>
-                        </tr>
-                        <tr>
-                            <td>CARBOHYDRATE</td>
-                            <td>13 g</td>
-                        </tr>
-                        <tr>
-                            <td>SUGAR</td>
-                            <td>0 g</td>
-                        </tr>
-                        <tr>
-                            <td>FIBRE</td>
-                            <td>1.1 g</td>
-                        </tr>
-                        <tr>
-                            <td>PROTEIN</td>
-                            <td>0.8 g</td>
-                        </tr>
-                        <tr>
-                            <td>SALT</td>
-                            <td>7 mg</td>
-                        </tr>
-                    </table>
-            </div>
             <div class="fruit-preparation">
                 <h3 class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</h3>
                 <div class="fruit-preparation__tip">
-                    <div class="fruit-preparation__bullet circle">1</div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Donec ornare leo ut mi consectetur pellentesque
-                    </p>
+                    <h2 class="fruit-preparation__tip-size">125 GR</h2>
+                    <p>{{ __('products.preparation_125')}}<p>
+                    <ul class="fruit-preparation__bullet">
+                        <li><p>{{ __('products.preparation_125_bullet')}}</p></li>
+                    </ul>
                 </div>
                 <div class="fruit-preparation__tip">
-                    <div class="fruit-preparation__bullet circle">2</div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Donec ornare leo ut mi consectetur pellentesque
-                    </p>
+                    <h2 class="fruit-preparation__tip-size">250 GR</h2>
+                    <p>{{ __('products.preparation_250')}}<p>
+                    <ul class="fruit-preparation__bullet">
+                        <li><p>{{ __('products.preparation_250_bullet')}}</p></li>
+                    </ul>
+                </div>
+                <div class="fruit-preparation__tip">
+                    <h2 class="fruit-preparation__tip-size">500 GR</h2>
+                    <p>{{ __('products.preparation_500')}}<p>
+                    <ul class="fruit-preparation__bullet">
+                        <li><p>{{ __('products.preparation_500_bullet')}}</p></li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -162,58 +102,28 @@
             </div>
         </section>
         <section class="fruit-info">
-            <div class="nutrition-facts">
-                <h3 class="nutrition-facts__title badge badge--pink">{{ __('products.nutrition_facts') }}</h3>
-                    <table class="nutrition-facts__table">
-                        <tr>
-                            <td>ENERGY</td>
-                            <td>201kj/48 kcal</td>
-                        </tr>
-                        <tr>
-                            <td>FAT</td>
-                            <td>0 g</td>
-                        </tr>
-                        <tr>
-                            <td>SATURATED FAT</td>
-                            <td>0 g</td>
-                        </tr>
-                        <tr>
-                            <td>CARBOHYDRATE</td>
-                            <td>13 g</td>
-                        </tr>
-                        <tr>
-                            <td>SUGAR</td>
-                            <td>0 g</td>
-                        </tr>
-                        <tr>
-                            <td>FIBRE</td>
-                            <td>1.1 g</td>
-                        </tr>
-                        <tr>
-                            <td>PROTEIN</td>
-                            <td>0.8 g</td>
-                        </tr>
-                        <tr>
-                            <td>SALT</td>
-                            <td>7 mg</td>
-                        </tr>
-                    </table>
-            </div>
             <div class="fruit-preparation">
                 <h3 class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</h3>
                 <div class="fruit-preparation__tip">
-                    <div class="fruit-preparation__bullet circle">1</div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Donec ornare leo ut mi consectetur pellentesque
-                    </p>
+                    <h2 class="fruit-preparation__tip-size">125 GR</h2>
+                    <p>{{ __('products.preparation_125')}}<p>
+                    <ul class="fruit-preparation__bullet">
+                        <li><p>{{ __('products.preparation_125_bullet')}}</p></li>
+                    </ul>
                 </div>
                 <div class="fruit-preparation__tip">
-                    <div class="fruit-preparation__bullet circle">2</div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Donec ornare leo ut mi consectetur pellentesque
-                    </p>
+                    <h2 class="fruit-preparation__tip-size">250 GR</h2>
+                    <p>{{ __('products.preparation_250')}}<p>
+                    <ul class="fruit-preparation__bullet">
+                        <li><p>{{ __('products.preparation_250_bullet')}}</p></li>
+                    </ul>
+                </div>
+                <div class="fruit-preparation__tip">
+                    <h2 class="fruit-preparation__tip-size">500 GR</h2>
+                    <p>{{ __('products.preparation_500')}}<p>
+                    <ul class="fruit-preparation__bullet">
+                        <li><p>{{ __('products.preparation_500_bullet')}}</p></li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -236,58 +146,28 @@
             </div>
         </section>
         <section class="fruit-info">
-            <div class="nutrition-facts">
-                <h3 class="nutrition-facts__title badge badge--pink">{{ __('products.nutrition_facts') }}</h3>
-                    <table class="nutrition-facts__table">
-                        <tr>
-                            <td>ENERGY</td>
-                            <td>201kj/48 kcal</td>
-                        </tr>
-                        <tr>
-                            <td>FAT</td>
-                            <td>0 g</td>
-                        </tr>
-                        <tr>
-                            <td>SATURATED FAT</td>
-                            <td>0 g</td>
-                        </tr>
-                        <tr>
-                            <td>CARBOHYDRATE</td>
-                            <td>13 g</td>
-                        </tr>
-                        <tr>
-                            <td>SUGAR</td>
-                            <td>0 g</td>
-                        </tr>
-                        <tr>
-                            <td>FIBRE</td>
-                            <td>1.1 g</td>
-                        </tr>
-                        <tr>
-                            <td>PROTEIN</td>
-                            <td>0.8 g</td>
-                        </tr>
-                        <tr>
-                            <td>SALT</td>
-                            <td>7 mg</td>
-                        </tr>
-                    </table>
-            </div>
             <div class="fruit-preparation">
                 <h3 class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</h3>
                 <div class="fruit-preparation__tip">
-                    <div class="fruit-preparation__bullet circle">1</div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Donec ornare leo ut mi consectetur pellentesque
-                    </p>
+                    <h2 class="fruit-preparation__tip-size">125 GR</h2>
+                    <p>{{ __('products.preparation_125')}}<p>
+                    <ul class="fruit-preparation__bullet">
+                        <li><p>{{ __('products.preparation_125_bullet')}}</p></li>
+                    </ul>
                 </div>
                 <div class="fruit-preparation__tip">
-                    <div class="fruit-preparation__bullet circle">2</div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Donec ornare leo ut mi consectetur pellentesque
-                    </p>
+                    <h2 class="fruit-preparation__tip-size">250 GR</h2>
+                    <p>{{ __('products.preparation_250')}}<p>
+                    <ul class="fruit-preparation__bullet">
+                        <li><p>{{ __('products.preparation_250_bullet')}}</p></li>
+                    </ul>
+                </div>
+                <div class="fruit-preparation__tip">
+                    <h2 class="fruit-preparation__tip-size">500 GR</h2>
+                    <p>{{ __('products.preparation_500')}}<p>
+                    <ul class="fruit-preparation__bullet">
+                        <li><p>{{ __('products.preparation_500_bullet')}}</p></li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -310,58 +190,28 @@
             </div>
         </section>
         <section class="fruit-info">
-            <div class="nutrition-facts">
-                <h3 class="nutrition-facts__title badge badge--pink">{{ __('products.nutrition_facts') }}</h3>
-                    <table class="nutrition-facts__table">
-                        <tr>
-                            <td>ENERGY</td>
-                            <td>201kj/48 kcal</td>
-                        </tr>
-                        <tr>
-                            <td>FAT</td>
-                            <td>0 g</td>
-                        </tr>
-                        <tr>
-                            <td>SATURATED FAT</td>
-                            <td>0 g</td>
-                        </tr>
-                        <tr>
-                            <td>CARBOHYDRATE</td>
-                            <td>13 g</td>
-                        </tr>
-                        <tr>
-                            <td>SUGAR</td>
-                            <td>0 g</td>
-                        </tr>
-                        <tr>
-                            <td>FIBRE</td>
-                            <td>1.1 g</td>
-                        </tr>
-                        <tr>
-                            <td>PROTEIN</td>
-                            <td>0.8 g</td>
-                        </tr>
-                        <tr>
-                            <td>SALT</td>
-                            <td>7 mg</td>
-                        </tr>
-                    </table>
-            </div>
             <div class="fruit-preparation">
                 <h3 class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</h3>
                 <div class="fruit-preparation__tip">
-                    <div class="fruit-preparation__bullet circle">1</div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Donec ornare leo ut mi consectetur pellentesque
-                    </p>
+                    <h2 class="fruit-preparation__tip-size">125 GR</h2>
+                    <p>{{ __('products.preparation_125')}}<p>
+                    <ul class="fruit-preparation__bullet">
+                        <li><p>{{ __('products.preparation_125_bullet')}}</p></li>
+                    </ul>
                 </div>
                 <div class="fruit-preparation__tip">
-                    <div class="fruit-preparation__bullet circle">2</div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Donec ornare leo ut mi consectetur pellentesque
-                    </p>
+                    <h2 class="fruit-preparation__tip-size">250 GR</h2>
+                    <p>{{ __('products.preparation_250')}}<p>
+                    <ul class="fruit-preparation__bullet">
+                        <li><p>{{ __('products.preparation_250_bullet')}}</p></li>
+                    </ul>
+                </div>
+                <div class="fruit-preparation__tip">
+                    <h2 class="fruit-preparation__tip-size">500 GR</h2>
+                    <p>{{ __('products.preparation_500')}}<p>
+                    <ul class="fruit-preparation__bullet">
+                        <li><p>{{ __('products.preparation_500_bullet')}}</p></li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -384,58 +234,28 @@
             </div>
         </section>
         <section class="fruit-info">
-            <div class="nutrition-facts">
-                <h3 class="nutrition-facts__title badge badge--pink">{{ __('products.nutrition_facts') }}</h3>
-                    <table class="nutrition-facts__table">
-                        <tr>
-                            <td>ENERGY</td>
-                            <td>201kj/48 kcal</td>
-                        </tr>
-                        <tr>
-                            <td>FAT</td>
-                            <td>0 g</td>
-                        </tr>
-                        <tr>
-                            <td>SATURATED FAT</td>
-                            <td>0 g</td>
-                        </tr>
-                        <tr>
-                            <td>CARBOHYDRATE</td>
-                            <td>13 g</td>
-                        </tr>
-                        <tr>
-                            <td>SUGAR</td>
-                            <td>0 g</td>
-                        </tr>
-                        <tr>
-                            <td>FIBRE</td>
-                            <td>1.1 g</td>
-                        </tr>
-                        <tr>
-                            <td>PROTEIN</td>
-                            <td>0.8 g</td>
-                        </tr>
-                        <tr>
-                            <td>SALT</td>
-                            <td>7 mg</td>
-                        </tr>
-                    </table>
-            </div>
             <div class="fruit-preparation">
                 <h3 class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</h3>
                 <div class="fruit-preparation__tip">
-                    <div class="fruit-preparation__bullet circle">1</div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Donec ornare leo ut mi consectetur pellentesque
-                    </p>
+                    <h2 class="fruit-preparation__tip-size">125 GR</h2>
+                    <p>{{ __('products.preparation_125')}}<p>
+                    <ul class="fruit-preparation__bullet">
+                        <li><p>{{ __('products.preparation_125_bullet')}}</p></li>
+                    </ul>
                 </div>
                 <div class="fruit-preparation__tip">
-                    <div class="fruit-preparation__bullet circle">2</div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Donec ornare leo ut mi consectetur pellentesque
-                    </p>
+                    <h2 class="fruit-preparation__tip-size">250 GR</h2>
+                    <p>{{ __('products.preparation_250')}}<p>
+                    <ul class="fruit-preparation__bullet">
+                        <li><p>{{ __('products.preparation_250_bullet')}}</p></li>
+                    </ul>
+                </div>
+                <div class="fruit-preparation__tip">
+                    <h2 class="fruit-preparation__tip-size">500 GR</h2>
+                    <p>{{ __('products.preparation_500')}}<p>
+                    <ul class="fruit-preparation__bullet">
+                        <li><p>{{ __('products.preparation_500_bullet')}}</p></li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -458,58 +278,28 @@
             </div>
         </section>
         <section class="fruit-info">
-            <div class="nutrition-facts">
-                <h3 class="nutrition-facts__title badge badge--pink">{{ __('products.nutrition_facts') }}</h3>
-                    <table class="nutrition-facts__table">
-                        <tr>
-                            <td>ENERGY</td>
-                            <td>201kj/48 kcal</td>
-                        </tr>
-                        <tr>
-                            <td>FAT</td>
-                            <td>0 g</td>
-                        </tr>
-                        <tr>
-                            <td>SATURATED FAT</td>
-                            <td>0 g</td>
-                        </tr>
-                        <tr>
-                            <td>CARBOHYDRATE</td>
-                            <td>13 g</td>
-                        </tr>
-                        <tr>
-                            <td>SUGAR</td>
-                            <td>0 g</td>
-                        </tr>
-                        <tr>
-                            <td>FIBRE</td>
-                            <td>1.1 g</td>
-                        </tr>
-                        <tr>
-                            <td>PROTEIN</td>
-                            <td>0.8 g</td>
-                        </tr>
-                        <tr>
-                            <td>SALT</td>
-                            <td>7 mg</td>
-                        </tr>
-                    </table>
-            </div>
             <div class="fruit-preparation">
                 <h3 class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</h3>
                 <div class="fruit-preparation__tip">
-                    <div class="fruit-preparation__bullet circle">1</div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Donec ornare leo ut mi consectetur pellentesque
-                    </p>
+                    <h2 class="fruit-preparation__tip-size">125 GR</h2>
+                    <p>{{ __('products.preparation_125')}}<p>
+                    <ul class="fruit-preparation__bullet">
+                        <li><p>{{ __('products.preparation_125_bullet')}}</p></li>
+                    </ul>
                 </div>
                 <div class="fruit-preparation__tip">
-                    <div class="fruit-preparation__bullet circle">2</div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Donec ornare leo ut mi consectetur pellentesque
-                    </p>
+                    <h2 class="fruit-preparation__tip-size">250 GR</h2>
+                    <p>{{ __('products.preparation_250')}}<p>
+                    <ul class="fruit-preparation__bullet">
+                        <li><p>{{ __('products.preparation_250_bullet')}}</p></li>
+                    </ul>
+                </div>
+                <div class="fruit-preparation__tip">
+                    <h2 class="fruit-preparation__tip-size">500 GR</h2>
+                    <p>{{ __('products.preparation_500')}}<p>
+                    <ul class="fruit-preparation__bullet">
+                        <li><p>{{ __('products.preparation_500_bullet')}}</p></li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -532,58 +322,28 @@
             </div>
         </section>
         <section class="fruit-info">
-            <div class="nutrition-facts">
-                <h3 class="nutrition-facts__title badge badge--pink">{{ __('products.nutrition_facts') }}</h3>
-                    <table class="nutrition-facts__table">
-                        <tr>
-                            <td>ENERGY</td>
-                            <td>201kj/48 kcal</td>
-                        </tr>
-                        <tr>
-                            <td>FAT</td>
-                            <td>0 g</td>
-                        </tr>
-                        <tr>
-                            <td>SATURATED FAT</td>
-                            <td>0 g</td>
-                        </tr>
-                        <tr>
-                            <td>CARBOHYDRATE</td>
-                            <td>13 g</td>
-                        </tr>
-                        <tr>
-                            <td>SUGAR</td>
-                            <td>0 g</td>
-                        </tr>
-                        <tr>
-                            <td>FIBRE</td>
-                            <td>1.1 g</td>
-                        </tr>
-                        <tr>
-                            <td>PROTEIN</td>
-                            <td>0.8 g</td>
-                        </tr>
-                        <tr>
-                            <td>SALT</td>
-                            <td>7 mg</td>
-                        </tr>
-                    </table>
-            </div>
             <div class="fruit-preparation">
                 <h3 class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</h3>
                 <div class="fruit-preparation__tip">
-                    <div class="fruit-preparation__bullet circle">1</div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Donec ornare leo ut mi consectetur pellentesque
-                    </p>
+                    <h2 class="fruit-preparation__tip-size">125 GR</h2>
+                    <p>{{ __('products.preparation_125')}}<p>
+                    <ul class="fruit-preparation__bullet">
+                        <li><p>{{ __('products.preparation_125_bullet')}}</p></li>
+                    </ul>
                 </div>
                 <div class="fruit-preparation__tip">
-                    <div class="fruit-preparation__bullet circle">2</div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Donec ornare leo ut mi consectetur pellentesque
-                    </p>
+                    <h2 class="fruit-preparation__tip-size">250 GR</h2>
+                    <p>{{ __('products.preparation_250')}}<p>
+                    <ul class="fruit-preparation__bullet">
+                        <li><p>{{ __('products.preparation_250_bullet')}}</p></li>
+                    </ul>
+                </div>
+                <div class="fruit-preparation__tip">
+                    <h2 class="fruit-preparation__tip-size">500 GR</h2>
+                    <p>{{ __('products.preparation_500')}}<p>
+                    <ul class="fruit-preparation__bullet">
+                        <li><p>{{ __('products.preparation_500_bullet')}}</p></li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -606,58 +366,28 @@
             </div>
         </section>
         <section class="fruit-info">
-            <div class="nutrition-facts">
-                <h3 class="nutrition-facts__title badge badge--pink">{{ __('products.nutrition_facts') }}</h3>
-                    <table class="nutrition-facts__table">
-                        <tr>
-                            <td>ENERGY</td>
-                            <td>201kj/48 kcal</td>
-                        </tr>
-                        <tr>
-                            <td>FAT</td>
-                            <td>0 g</td>
-                        </tr>
-                        <tr>
-                            <td>SATURATED FAT</td>
-                            <td>0 g</td>
-                        </tr>
-                        <tr>
-                            <td>CARBOHYDRATE</td>
-                            <td>13 g</td>
-                        </tr>
-                        <tr>
-                            <td>SUGAR</td>
-                            <td>0 g</td>
-                        </tr>
-                        <tr>
-                            <td>FIBRE</td>
-                            <td>1.1 g</td>
-                        </tr>
-                        <tr>
-                            <td>PROTEIN</td>
-                            <td>0.8 g</td>
-                        </tr>
-                        <tr>
-                            <td>SALT</td>
-                            <td>7 mg</td>
-                        </tr>
-                    </table>
-            </div>
             <div class="fruit-preparation">
                 <h3 class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</h3>
                 <div class="fruit-preparation__tip">
-                    <div class="fruit-preparation__bullet circle">1</div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Donec ornare leo ut mi consectetur pellentesque
-                    </p>
+                    <h2 class="fruit-preparation__tip-size">125 GR</h2>
+                    <p>{{ __('products.preparation_125')}}<p>
+                    <ul class="fruit-preparation__bullet">
+                        <li><p>{{ __('products.preparation_125_bullet')}}</p></li>
+                    </ul>
                 </div>
                 <div class="fruit-preparation__tip">
-                    <div class="fruit-preparation__bullet circle">2</div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Donec ornare leo ut mi consectetur pellentesque
-                    </p>
+                    <h2 class="fruit-preparation__tip-size">250 GR</h2>
+                    <p>{{ __('products.preparation_250')}}<p>
+                    <ul class="fruit-preparation__bullet">
+                        <li><p>{{ __('products.preparation_250_bullet')}}</p></li>
+                    </ul>
+                </div>
+                <div class="fruit-preparation__tip">
+                    <h2 class="fruit-preparation__tip-size">500 GR</h2>
+                    <p>{{ __('products.preparation_500')}}<p>
+                    <ul class="fruit-preparation__bullet">
+                        <li><p>{{ __('products.preparation_500_bullet')}}</p></li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -680,58 +410,28 @@
             </div>
         </section>
         <section class="fruit-info">
-            <div class="nutrition-facts">
-                <h3 class="nutrition-facts__title badge badge--pink">{{ __('products.nutrition_facts') }}</h3>
-                    <table class="nutrition-facts__table">
-                        <tr>
-                            <td>ENERGY</td>
-                            <td>201kj/48 kcal</td>
-                        </tr>
-                        <tr>
-                            <td>FAT</td>
-                            <td>0 g</td>
-                        </tr>
-                        <tr>
-                            <td>SATURATED FAT</td>
-                            <td>0 g</td>
-                        </tr>
-                        <tr>
-                            <td>CARBOHYDRATE</td>
-                            <td>13 g</td>
-                        </tr>
-                        <tr>
-                            <td>SUGAR</td>
-                            <td>0 g</td>
-                        </tr>
-                        <tr>
-                            <td>FIBRE</td>
-                            <td>1.1 g</td>
-                        </tr>
-                        <tr>
-                            <td>PROTEIN</td>
-                            <td>0.8 g</td>
-                        </tr>
-                        <tr>
-                            <td>SALT</td>
-                            <td>7 mg</td>
-                        </tr>
-                    </table>
-            </div>
             <div class="fruit-preparation">
                 <h3 class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</h3>
                 <div class="fruit-preparation__tip">
-                    <div class="fruit-preparation__bullet circle">1</div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Donec ornare leo ut mi consectetur pellentesque
-                    </p>
+                    <h2 class="fruit-preparation__tip-size">125 GR</h2>
+                    <p>{{ __('products.preparation_125')}}<p>
+                    <ul class="fruit-preparation__bullet">
+                        <li><p>{{ __('products.preparation_125_bullet')}}</p></li>
+                    </ul>
                 </div>
                 <div class="fruit-preparation__tip">
-                    <div class="fruit-preparation__bullet circle">2</div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Donec ornare leo ut mi consectetur pellentesque
-                    </p>
+                    <h2 class="fruit-preparation__tip-size">250 GR</h2>
+                    <p>{{ __('products.preparation_250')}}<p>
+                    <ul class="fruit-preparation__bullet">
+                        <li><p>{{ __('products.preparation_250_bullet')}}</p></li>
+                    </ul>
+                </div>
+                <div class="fruit-preparation__tip">
+                    <h2 class="fruit-preparation__tip-size">500 GR</h2>
+                    <p>{{ __('products.preparation_500')}}<p>
+                    <ul class="fruit-preparation__bullet">
+                        <li><p>{{ __('products.preparation_500_bullet')}}</p></li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -754,58 +454,28 @@
             </div>
         </section>
         <section class="fruit-info">
-            <div class="nutrition-facts">
-                <h3 class="nutrition-facts__title badge badge--pink">{{ __('products.nutrition_facts') }}</h3>
-                    <table class="nutrition-facts__table">
-                        <tr>
-                            <td>ENERGY</td>
-                            <td>201kj/48 kcal</td>
-                        </tr>
-                        <tr>
-                            <td>FAT</td>
-                            <td>0 g</td>
-                        </tr>
-                        <tr>
-                            <td>SATURATED FAT</td>
-                            <td>0 g</td>
-                        </tr>
-                        <tr>
-                            <td>CARBOHYDRATE</td>
-                            <td>13 g</td>
-                        </tr>
-                        <tr>
-                            <td>SUGAR</td>
-                            <td>0 g</td>
-                        </tr>
-                        <tr>
-                            <td>FIBRE</td>
-                            <td>1.1 g</td>
-                        </tr>
-                        <tr>
-                            <td>PROTEIN</td>
-                            <td>0.8 g</td>
-                        </tr>
-                        <tr>
-                            <td>SALT</td>
-                            <td>7 mg</td>
-                        </tr>
-                    </table>
-            </div>
             <div class="fruit-preparation">
                 <h3 class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</h3>
                 <div class="fruit-preparation__tip">
-                    <div class="fruit-preparation__bullet circle">1</div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Donec ornare leo ut mi consectetur pellentesque
-                    </p>
+                    <h2 class="fruit-preparation__tip-size">125 GR</h2>
+                    <p>{{ __('products.preparation_125')}}<p>
+                    <ul class="fruit-preparation__bullet">
+                        <li><p>{{ __('products.preparation_125_bullet')}}</p></li>
+                    </ul>
                 </div>
                 <div class="fruit-preparation__tip">
-                    <div class="fruit-preparation__bullet circle">2</div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Donec ornare leo ut mi consectetur pellentesque
-                    </p>
+                    <h2 class="fruit-preparation__tip-size">250 GR</h2>
+                    <p>{{ __('products.preparation_250')}}<p>
+                    <ul class="fruit-preparation__bullet">
+                        <li><p>{{ __('products.preparation_250_bullet')}}</p></li>
+                    </ul>
+                </div>
+                <div class="fruit-preparation__tip">
+                    <h2 class="fruit-preparation__tip-size">500 GR</h2>
+                    <p>{{ __('products.preparation_500')}}<p>
+                    <ul class="fruit-preparation__bullet">
+                        <li><p>{{ __('products.preparation_500_bullet')}}</p></li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -828,58 +498,28 @@
             </div>
         </section>
         <section class="fruit-info">
-            <div class="nutrition-facts">
-                <h3 class="nutrition-facts__title badge badge--pink">{{ __('products.nutrition_facts') }}</h3>
-                    <table class="nutrition-facts__table">
-                        <tr>
-                            <td>ENERGY</td>
-                            <td>201kj/48 kcal</td>
-                        </tr>
-                        <tr>
-                            <td>FAT</td>
-                            <td>0 g</td>
-                        </tr>
-                        <tr>
-                            <td>SATURATED FAT</td>
-                            <td>0 g</td>
-                        </tr>
-                        <tr>
-                            <td>CARBOHYDRATE</td>
-                            <td>13 g</td>
-                        </tr>
-                        <tr>
-                            <td>SUGAR</td>
-                            <td>0 g</td>
-                        </tr>
-                        <tr>
-                            <td>FIBRE</td>
-                            <td>1.1 g</td>
-                        </tr>
-                        <tr>
-                            <td>PROTEIN</td>
-                            <td>0.8 g</td>
-                        </tr>
-                        <tr>
-                            <td>SALT</td>
-                            <td>7 mg</td>
-                        </tr>
-                    </table>
-            </div>
             <div class="fruit-preparation">
                 <h3 class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</h3>
                 <div class="fruit-preparation__tip">
-                    <div class="fruit-preparation__bullet circle">1</div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Donec ornare leo ut mi consectetur pellentesque
-                    </p>
+                    <h2 class="fruit-preparation__tip-size">125 GR</h2>
+                    <p>{{ __('products.preparation_125')}}<p>
+                    <ul class="fruit-preparation__bullet">
+                        <li><p>{{ __('products.preparation_125_bullet')}}</p></li>
+                    </ul>
                 </div>
                 <div class="fruit-preparation__tip">
-                    <div class="fruit-preparation__bullet circle">2</div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Donec ornare leo ut mi consectetur pellentesque
-                    </p>
+                    <h2 class="fruit-preparation__tip-size">250 GR</h2>
+                    <p>{{ __('products.preparation_250')}}<p>
+                    <ul class="fruit-preparation__bullet">
+                        <li><p>{{ __('products.preparation_250_bullet')}}</p></li>
+                    </ul>
+                </div>
+                <div class="fruit-preparation__tip">
+                    <h2 class="fruit-preparation__tip-size">500 GR</h2>
+                    <p>{{ __('products.preparation_500')}}<p>
+                    <ul class="fruit-preparation__bullet">
+                        <li><p>{{ __('products.preparation_500_bullet')}}</p></li>
+                    </ul>
                 </div>
             </div>
         </section>

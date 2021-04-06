@@ -11,8 +11,8 @@
             @foreach($posts as $post)
                 <article>
                     <div class="card-img">
-                                <img height="231px" src="{{asset($post->image)}}" alt="">
-                            </div>
+                        <img src="{{asset($post->image)}}" alt="">
+                    </div>
                     <div class="card">
                         <div class="card-body">
                             @if(app()->getLocale() === Config::get('constants.fr'))

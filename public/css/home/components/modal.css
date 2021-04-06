@@ -2,7 +2,7 @@
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 3rem; /* Location of the box */
+    padding-top: 1rem; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -17,6 +17,7 @@
     background-color: #fefefe;
     margin: auto;
     padding: 1rem;
+    padding-bottom: 0;
     border: 1px solid #888;
     width: 50%;
     max-width: 50rem;

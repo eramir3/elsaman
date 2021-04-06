@@ -19,6 +19,13 @@ return [
                                 Click on the images to know more about our products.',
     'nutrition_facts' => 'nutrition facts',
     'preparation_tips' => 'PREPARATION TIPS',
+
+    'preparation_125' => "Of pulp + 270 ml of water (+ sugar to taste)",
+    'preparation_125_bullet' => "For the soursop and the curuba: 125 gr of pulp + 130 ml of water + 140 ml of milk",
+    'preparation_250' => "Of pulp + 540 ml of water (+ sugar to taste)",
+    'preparation_250_bullet' => "For the soursop and the curuba: 250 gr of pulp + 260 ml of water + 280 ml of milk",
+    'preparation_500' => "Of pulp + 1080 ml water (+ sugar to taste)",
+    'preparation_500_bullet' => "For the soursop and the curuba: 500 g of pulp + 420 ml of water + 560 ml of milk",
     
     'pineapple' => 'pineapple',
     'pineapple_facts' => 'Native to South America the pineapple is a source of vitamin A,  B6, C,  

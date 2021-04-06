@@ -20,6 +20,13 @@ return [
 
     'nutrition_facts' => 'aportes nutricionales',
     'preparation_tips' => 'CONSEJOS DE PREPARACION',
+
+    'preparation_125' => "Pulpa + 270 ml de agua (+ azúcar al gusto)",
+    'preparation_125_bullet' => "Para la guanábana y la curuba: 125 gr de pulpa + 130 ml de agua + 140 ml de leche",
+    'preparation_250' => "De pulpa + 540 ml de agua (+ azúcar al gusto)",
+    'preparation_250_bullet' => "Para la guanábana y la curuba: 250 gr de pulpa + 260 ml de agua + 280 ml de leche",
+    'preparation_500' => "Pulpa + 1080 ml de agua (+ azúcar al gusto)",
+    'preparation_500_bullet' => "Para la guanábana y la curuba: 500 g de pulpa + 420 ml de agua + 560 ml de leche",
     
     'pineapple' => 'PIÑA',
     'pineapple_facts' => 'Es originaria de América del Sur. Fuente de vitamina A, C y B6, potasio, 
