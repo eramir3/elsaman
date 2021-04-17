@@ -1,7 +1,6 @@
 <?php
 
 return [
-    'about' => 'about',
     'about_us' => 'about us',
     'products' => 'products',
     'learn' => 'learn',

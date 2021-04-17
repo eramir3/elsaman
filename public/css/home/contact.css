@@ -46,8 +46,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0)), url(../../images/home/contact/tree.png);
-    background-position: 0% 0%, bottom;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0)), url(../../images/home/contact/tree.jpg);
+    background-position: right 0% bottom 30%;
     background-repeat: repeat repeat;
     background-size: auto, cover;
     min-height: 30rem;

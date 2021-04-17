@@ -44,7 +44,7 @@
     <section class="nav-bottom__line"></section>
     <div class="mobile-nav__items" id="mobile-nav__menu">
         <div id="mobile-nav__items--container">
-            <a href="{{ route('home.about', app()->getLocale()) }}" class="mobile-nav__item">{{ Str::upper(__('header.about')) }}</a>
+            <a href="{{ route('home.about', app()->getLocale()) }}" class="mobile-nav__item">{{ Str::upper(__('header.about_us')) }}</a>
             <a href="{{ route('home.products', app()->getLocale()) }}" class="mobile-nav__item">{{ Str::upper(__('header.products')) }}</a>
             <a href="{{ route('home.learn', app()->getLocale()) }}" class="mobile-nav__item">{{ Str::upper(__('header.learn_more')) }}</a>
             <a href="{{ route('home.contact', app()->getLocale()) }}">{{ Str::upper(__('header.contact')) }}</a>

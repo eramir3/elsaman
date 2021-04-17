@@ -17,25 +17,13 @@
             <div class="fruit-preparation">
                 <h3 class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</h3>
                 <div class="fruit-preparation__tip">
-                    <h2 class="fruit-preparation__tip-size">125 GR</h2>
-                    <p>{{ __('products.preparation_125')}}<p>
-                    <ul class="fruit-preparation__bullet">
-                        <li><p>{{ __('products.preparation_125_bullet')}}</p></li>
-                    </ul>
+                    <p><span class="fruit-preparation__tip-size" style="font-size: 1.5rem">125 GR </span>{{ __('products.preparation_125')}}<p>                    
                 </div>
                 <div class="fruit-preparation__tip">
-                    <h2 class="fruit-preparation__tip-size">250 GR</h2>
-                    <p>{{ __('products.preparation_250')}}<p>
-                    <ul class="fruit-preparation__bullet">
-                        <li><p>{{ __('products.preparation_250_bullet')}}</p></li>
-                    </ul>
+                    <p><span class="fruit-preparation__tip-size" style="font-size: 1.5rem">250 GR </span>{{ __('products.preparation_250')}}<p>                    
                 </div>
                 <div class="fruit-preparation__tip">
-                    <h2 class="fruit-preparation__tip-size">500 GR</h2>
-                    <p>{{ __('products.preparation_500')}}<p>
-                    <ul class="fruit-preparation__bullet">
-                        <li><p>{{ __('products.preparation_500_bullet')}}</p></li>
-                    </ul>
+                    <p><span class="fruit-preparation__tip-size" style="font-size: 1.5rem">500 GR </span>{{ __('products.preparation_500')}}<p>                    
                 </div>
             </div>
         </section>
@@ -61,25 +49,13 @@
             <div class="fruit-preparation">
                 <h3 class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</h3>
                 <div class="fruit-preparation__tip">
-                    <h2 class="fruit-preparation__tip-size">125 GR</h2>
-                    <p>{{ __('products.preparation_125')}}<p>
-                    <ul class="fruit-preparation__bullet">
-                        <li><p>{{ __('products.preparation_125_bullet')}}</p></li>
-                    </ul>
+                    <p><span class="fruit-preparation__tip-size" style="font-size: 1.5rem">125 GR </span>{{ __('products.preparation_125')}}<p>                    
                 </div>
                 <div class="fruit-preparation__tip">
-                    <h2 class="fruit-preparation__tip-size">250 GR</h2>
-                    <p>{{ __('products.preparation_250')}}<p>
-                    <ul class="fruit-preparation__bullet">
-                        <li><p>{{ __('products.preparation_250_bullet')}}</p></li>
-                    </ul>
+                    <p><span class="fruit-preparation__tip-size" style="font-size: 1.5rem">250 GR </span>{{ __('products.preparation_250')}}<p>                    
                 </div>
                 <div class="fruit-preparation__tip">
-                    <h2 class="fruit-preparation__tip-size">500 GR</h2>
-                    <p>{{ __('products.preparation_500')}}<p>
-                    <ul class="fruit-preparation__bullet">
-                        <li><p>{{ __('products.preparation_500_bullet')}}</p></li>
-                    </ul>
+                    <p><span class="fruit-preparation__tip-size" style="font-size: 1.5rem">500 GR </span>{{ __('products.preparation_500')}}<p>                    
                 </div>
             </div>
         </section>
@@ -105,25 +81,13 @@
             <div class="fruit-preparation">
                 <h3 class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</h3>
                 <div class="fruit-preparation__tip">
-                    <h2 class="fruit-preparation__tip-size">125 GR</h2>
-                    <p>{{ __('products.preparation_125')}}<p>
-                    <ul class="fruit-preparation__bullet">
-                        <li><p>{{ __('products.preparation_125_bullet')}}</p></li>
-                    </ul>
+                    <p><span class="fruit-preparation__tip-size" style="font-size: 1.5rem">125 GR </span>{{ __('products.preparation_125')}}<p>                    
                 </div>
                 <div class="fruit-preparation__tip">
-                    <h2 class="fruit-preparation__tip-size">250 GR</h2>
-                    <p>{{ __('products.preparation_250')}}<p>
-                    <ul class="fruit-preparation__bullet">
-                        <li><p>{{ __('products.preparation_250_bullet')}}</p></li>
-                    </ul>
+                    <p><span class="fruit-preparation__tip-size" style="font-size: 1.5rem">250 GR </span>{{ __('products.preparation_250')}}<p>                    
                 </div>
                 <div class="fruit-preparation__tip">
-                    <h2 class="fruit-preparation__tip-size">500 GR</h2>
-                    <p>{{ __('products.preparation_500')}}<p>
-                    <ul class="fruit-preparation__bullet">
-                        <li><p>{{ __('products.preparation_500_bullet')}}</p></li>
-                    </ul>
+                    <p><span class="fruit-preparation__tip-size" style="font-size: 1.5rem">500 GR </span>{{ __('products.preparation_500')}}<p>                    
                 </div>
             </div>
         </section>
@@ -149,25 +113,13 @@
             <div class="fruit-preparation">
                 <h3 class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</h3>
                 <div class="fruit-preparation__tip">
-                    <h2 class="fruit-preparation__tip-size">125 GR</h2>
-                    <p>{{ __('products.preparation_125')}}<p>
-                    <ul class="fruit-preparation__bullet">
-                        <li><p>{{ __('products.preparation_125_bullet')}}</p></li>
-                    </ul>
+                    <p><span class="fruit-preparation__tip-size" style="font-size: 1.5rem">125 GR </span>{{ __('products.preparation_125')}}<p>                    
                 </div>
                 <div class="fruit-preparation__tip">
-                    <h2 class="fruit-preparation__tip-size">250 GR</h2>
-                    <p>{{ __('products.preparation_250')}}<p>
-                    <ul class="fruit-preparation__bullet">
-                        <li><p>{{ __('products.preparation_250_bullet')}}</p></li>
-                    </ul>
+                    <p><span class="fruit-preparation__tip-size" style="font-size: 1.5rem">250 GR </span>{{ __('products.preparation_250')}}<p>                    
                 </div>
                 <div class="fruit-preparation__tip">
-                    <h2 class="fruit-preparation__tip-size">500 GR</h2>
-                    <p>{{ __('products.preparation_500')}}<p>
-                    <ul class="fruit-preparation__bullet">
-                        <li><p>{{ __('products.preparation_500_bullet')}}</p></li>
-                    </ul>
+                    <p><span class="fruit-preparation__tip-size" style="font-size: 1.5rem">500 GR </span>{{ __('products.preparation_500')}}<p>                    
                 </div>
             </div>
         </section>
@@ -193,25 +145,13 @@
             <div class="fruit-preparation">
                 <h3 class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</h3>
                 <div class="fruit-preparation__tip">
-                    <h2 class="fruit-preparation__tip-size">125 GR</h2>
-                    <p>{{ __('products.preparation_125')}}<p>
-                    <ul class="fruit-preparation__bullet">
-                        <li><p>{{ __('products.preparation_125_bullet')}}</p></li>
-                    </ul>
+                    <p><span class="fruit-preparation__tip-size" style="font-size: 1.5rem">125 GR </span>{{ __('products.preparation_125')}}<p>                    
                 </div>
                 <div class="fruit-preparation__tip">
-                    <h2 class="fruit-preparation__tip-size">250 GR</h2>
-                    <p>{{ __('products.preparation_250')}}<p>
-                    <ul class="fruit-preparation__bullet">
-                        <li><p>{{ __('products.preparation_250_bullet')}}</p></li>
-                    </ul>
+                    <p><span class="fruit-preparation__tip-size" style="font-size: 1.5rem">250 GR </span>{{ __('products.preparation_250')}}<p>                    
                 </div>
                 <div class="fruit-preparation__tip">
-                    <h2 class="fruit-preparation__tip-size">500 GR</h2>
-                    <p>{{ __('products.preparation_500')}}<p>
-                    <ul class="fruit-preparation__bullet">
-                        <li><p>{{ __('products.preparation_500_bullet')}}</p></li>
-                    </ul>
+                    <p><span class="fruit-preparation__tip-size" style="font-size: 1.5rem">500 GR </span>{{ __('products.preparation_500')}}<p>                    
                 </div>
             </div>
         </section>
@@ -237,25 +177,13 @@
             <div class="fruit-preparation">
                 <h3 class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</h3>
                 <div class="fruit-preparation__tip">
-                    <h2 class="fruit-preparation__tip-size">125 GR</h2>
-                    <p>{{ __('products.preparation_125')}}<p>
-                    <ul class="fruit-preparation__bullet">
-                        <li><p>{{ __('products.preparation_125_bullet')}}</p></li>
-                    </ul>
+                    <p><span class="fruit-preparation__tip-size" style="font-size: 1.5rem">125 GR </span>{{ __('products.preparation_125')}}<p>                    
                 </div>
                 <div class="fruit-preparation__tip">
-                    <h2 class="fruit-preparation__tip-size">250 GR</h2>
-                    <p>{{ __('products.preparation_250')}}<p>
-                    <ul class="fruit-preparation__bullet">
-                        <li><p>{{ __('products.preparation_250_bullet')}}</p></li>
-                    </ul>
+                    <p><span class="fruit-preparation__tip-size" style="font-size: 1.5rem">250 GR </span>{{ __('products.preparation_250')}}<p>                    
                 </div>
                 <div class="fruit-preparation__tip">
-                    <h2 class="fruit-preparation__tip-size">500 GR</h2>
-                    <p>{{ __('products.preparation_500')}}<p>
-                    <ul class="fruit-preparation__bullet">
-                        <li><p>{{ __('products.preparation_500_bullet')}}</p></li>
-                    </ul>
+                    <p><span class="fruit-preparation__tip-size" style="font-size: 1.5rem">500 GR </span>{{ __('products.preparation_500')}}<p>                    
                 </div>
             </div>
         </section>
@@ -281,25 +209,13 @@
             <div class="fruit-preparation">
                 <h3 class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</h3>
                 <div class="fruit-preparation__tip">
-                    <h2 class="fruit-preparation__tip-size">125 GR</h2>
-                    <p>{{ __('products.preparation_125')}}<p>
-                    <ul class="fruit-preparation__bullet">
-                        <li><p>{{ __('products.preparation_125_bullet')}}</p></li>
-                    </ul>
+                    <p><span class="fruit-preparation__tip-size" style="font-size: 1.5rem">125 GR </span>{{ __('products.preparation_125')}}<p>                    
                 </div>
                 <div class="fruit-preparation__tip">
-                    <h2 class="fruit-preparation__tip-size">250 GR</h2>
-                    <p>{{ __('products.preparation_250')}}<p>
-                    <ul class="fruit-preparation__bullet">
-                        <li><p>{{ __('products.preparation_250_bullet')}}</p></li>
-                    </ul>
+                    <p><span class="fruit-preparation__tip-size" style="font-size: 1.5rem">250 GR </span>{{ __('products.preparation_250')}}<p>                    
                 </div>
                 <div class="fruit-preparation__tip">
-                    <h2 class="fruit-preparation__tip-size">500 GR</h2>
-                    <p>{{ __('products.preparation_500')}}<p>
-                    <ul class="fruit-preparation__bullet">
-                        <li><p>{{ __('products.preparation_500_bullet')}}</p></li>
-                    </ul>
+                    <p><span class="fruit-preparation__tip-size" style="font-size: 1.5rem">500 GR </span>{{ __('products.preparation_500')}}<p>                    
                 </div>
             </div>
         </section>
@@ -325,25 +241,13 @@
             <div class="fruit-preparation">
                 <h3 class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</h3>
                 <div class="fruit-preparation__tip">
-                    <h2 class="fruit-preparation__tip-size">125 GR</h2>
-                    <p>{{ __('products.preparation_125')}}<p>
-                    <ul class="fruit-preparation__bullet">
-                        <li><p>{{ __('products.preparation_125_bullet')}}</p></li>
-                    </ul>
+                    <p><span class="fruit-preparation__tip-size" style="font-size: 1.5rem">125 GR </span>{{ __('products.preparation_125')}}<p>                    
                 </div>
                 <div class="fruit-preparation__tip">
-                    <h2 class="fruit-preparation__tip-size">250 GR</h2>
-                    <p>{{ __('products.preparation_250')}}<p>
-                    <ul class="fruit-preparation__bullet">
-                        <li><p>{{ __('products.preparation_250_bullet')}}</p></li>
-                    </ul>
+                    <p><span class="fruit-preparation__tip-size" style="font-size: 1.5rem">250 GR </span>{{ __('products.preparation_250')}}<p>                    
                 </div>
                 <div class="fruit-preparation__tip">
-                    <h2 class="fruit-preparation__tip-size">500 GR</h2>
-                    <p>{{ __('products.preparation_500')}}<p>
-                    <ul class="fruit-preparation__bullet">
-                        <li><p>{{ __('products.preparation_500_bullet')}}</p></li>
-                    </ul>
+                    <p><span class="fruit-preparation__tip-size" style="font-size: 1.5rem">500 GR </span>{{ __('products.preparation_500')}}<p>                    
                 </div>
             </div>
         </section>
@@ -369,25 +273,13 @@
             <div class="fruit-preparation">
                 <h3 class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</h3>
                 <div class="fruit-preparation__tip">
-                    <h2 class="fruit-preparation__tip-size">125 GR</h2>
-                    <p>{{ __('products.preparation_125')}}<p>
-                    <ul class="fruit-preparation__bullet">
-                        <li><p>{{ __('products.preparation_125_bullet')}}</p></li>
-                    </ul>
+                    <p><span class="fruit-preparation__tip-size" style="font-size: 1.5rem">125 GR </span>{{ __('products.preparation_125')}}<p>                    
                 </div>
                 <div class="fruit-preparation__tip">
-                    <h2 class="fruit-preparation__tip-size">250 GR</h2>
-                    <p>{{ __('products.preparation_250')}}<p>
-                    <ul class="fruit-preparation__bullet">
-                        <li><p>{{ __('products.preparation_250_bullet')}}</p></li>
-                    </ul>
+                    <p><span class="fruit-preparation__tip-size" style="font-size: 1.5rem">250 GR </span>{{ __('products.preparation_250')}}<p>                    
                 </div>
                 <div class="fruit-preparation__tip">
-                    <h2 class="fruit-preparation__tip-size">500 GR</h2>
-                    <p>{{ __('products.preparation_500')}}<p>
-                    <ul class="fruit-preparation__bullet">
-                        <li><p>{{ __('products.preparation_500_bullet')}}</p></li>
-                    </ul>
+                    <p><span class="fruit-preparation__tip-size" style="font-size: 1.5rem">500 GR </span>{{ __('products.preparation_500')}}<p>                    
                 </div>
             </div>
         </section>
@@ -413,25 +305,13 @@
             <div class="fruit-preparation">
                 <h3 class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</h3>
                 <div class="fruit-preparation__tip">
-                    <h2 class="fruit-preparation__tip-size">125 GR</h2>
-                    <p>{{ __('products.preparation_125')}}<p>
-                    <ul class="fruit-preparation__bullet">
-                        <li><p>{{ __('products.preparation_125_bullet')}}</p></li>
-                    </ul>
+                    <p><span class="fruit-preparation__tip-size" style="font-size: 1.5rem">125 GR </span>{{ __('products.preparation_125_soursop_curuba')}}<p>                    
                 </div>
                 <div class="fruit-preparation__tip">
-                    <h2 class="fruit-preparation__tip-size">250 GR</h2>
-                    <p>{{ __('products.preparation_250')}}<p>
-                    <ul class="fruit-preparation__bullet">
-                        <li><p>{{ __('products.preparation_250_bullet')}}</p></li>
-                    </ul>
+                    <p><span class="fruit-preparation__tip-size" style="font-size: 1.5rem">250 GR </span>{{ __('products.preparation_250_soursop_curuba')}}<p>                    
                 </div>
                 <div class="fruit-preparation__tip">
-                    <h2 class="fruit-preparation__tip-size">500 GR</h2>
-                    <p>{{ __('products.preparation_500')}}<p>
-                    <ul class="fruit-preparation__bullet">
-                        <li><p>{{ __('products.preparation_500_bullet')}}</p></li>
-                    </ul>
+                    <p><span class="fruit-preparation__tip-size" style="font-size: 1.5rem">500 GR </span>{{ __('products.preparation_500_soursop_curuba')}}<p>                    
                 </div>
             </div>
         </section>
@@ -457,25 +337,13 @@
             <div class="fruit-preparation">
                 <h3 class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</h3>
                 <div class="fruit-preparation__tip">
-                    <h2 class="fruit-preparation__tip-size">125 GR</h2>
-                    <p>{{ __('products.preparation_125')}}<p>
-                    <ul class="fruit-preparation__bullet">
-                        <li><p>{{ __('products.preparation_125_bullet')}}</p></li>
-                    </ul>
+                    <p><span class="fruit-preparation__tip-size" style="font-size: 1.5rem">125 GR </span>{{ __('products.preparation_125_soursop_curuba')}}<p>                    
                 </div>
                 <div class="fruit-preparation__tip">
-                    <h2 class="fruit-preparation__tip-size">250 GR</h2>
-                    <p>{{ __('products.preparation_250')}}<p>
-                    <ul class="fruit-preparation__bullet">
-                        <li><p>{{ __('products.preparation_250_bullet')}}</p></li>
-                    </ul>
+                    <p><span class="fruit-preparation__tip-size" style="font-size: 1.5rem">250 GR </span>{{ __('products.preparation_250_soursop_curuba')}}<p>                    
                 </div>
                 <div class="fruit-preparation__tip">
-                    <h2 class="fruit-preparation__tip-size">500 GR</h2>
-                    <p>{{ __('products.preparation_500')}}<p>
-                    <ul class="fruit-preparation__bullet">
-                        <li><p>{{ __('products.preparation_500_bullet')}}</p></li>
-                    </ul>
+                    <p><span class="fruit-preparation__tip-size" style="font-size: 1.5rem">500 GR </span>{{ __('products.preparation_500_soursop_curuba')}}<p>                    
                 </div>
             </div>
         </section>
@@ -501,25 +369,13 @@
             <div class="fruit-preparation">
                 <h3 class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</h3>
                 <div class="fruit-preparation__tip">
-                    <h2 class="fruit-preparation__tip-size">125 GR</h2>
-                    <p>{{ __('products.preparation_125')}}<p>
-                    <ul class="fruit-preparation__bullet">
-                        <li><p>{{ __('products.preparation_125_bullet')}}</p></li>
-                    </ul>
+                    <p><span class="fruit-preparation__tip-size" style="font-size: 1.5rem">125 GR </span>{{ __('products.preparation_125')}}<p>                    
                 </div>
                 <div class="fruit-preparation__tip">
-                    <h2 class="fruit-preparation__tip-size">250 GR</h2>
-                    <p>{{ __('products.preparation_250')}}<p>
-                    <ul class="fruit-preparation__bullet">
-                        <li><p>{{ __('products.preparation_250_bullet')}}</p></li>
-                    </ul>
+                    <p><span class="fruit-preparation__tip-size" style="font-size: 1.5rem">250 GR </span>{{ __('products.preparation_250')}}<p>                    
                 </div>
                 <div class="fruit-preparation__tip">
-                    <h2 class="fruit-preparation__tip-size">500 GR</h2>
-                    <p>{{ __('products.preparation_500')}}<p>
-                    <ul class="fruit-preparation__bullet">
-                        <li><p>{{ __('products.preparation_500_bullet')}}</p></li>
-                    </ul>
+                    <p><span class="fruit-preparation__tip-size" style="font-size: 1.5rem">500 GR </span>{{ __('products.preparation_500')}}<p>                    
                 </div>
             </div>
         </section>

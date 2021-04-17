@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'about_us' => 'quines somos',
+    'about_us' => 'quienes somos',
     'products' => 'productos',
     'learn_more' => 'conoce mas',
     'shop' => 'compras',

@@ -9,9 +9,11 @@
     <main id="slidable">
         <section id="learn-post" class="container">
             <div class="post">
+                <!--
                 <div class="post-image">
                     <img src="{{asset($post->image)}}" alt="">
                 </div>
+                -->
                 @if(app()->getLocale() === Config::get('constants.fr'))
                     <div class="post-title label label-pink">{{ $post->title_fr }}</div>
                     <div class="post-body">

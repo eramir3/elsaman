@@ -9,6 +9,8 @@
     margin: 0 auto;
     padding-top: 10px;
     font-weight: 100;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
 }
 
 .fruit-description {
@@ -37,13 +39,13 @@
 .fruit-preparation__title {
     font-family: OrangeJuice;
     font-size: 1.75rem;
-    margin: 0 auto 1rem auto;
+    margin: 0 auto 2.5rem auto;
     padding: 7px 30px 2px 30px;
     font-weight: 100;
 }
 
 .fruit-preparation__tip {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .fruit-preparation__tip p {
@@ -58,13 +60,6 @@
     font-weight: 100;
 }
 
-.fruit-preparation__bullet {
-    list-style-position: outside;
-}
-
-.fruit-preparation__bullet li {
-    color: #32B19F;
-}
 
 @media(max-width: 750px) {
 
@@ -117,9 +112,6 @@
         margin: 0;
     }
 
-    .fruit-preparation__bullet:before {
-        margin-left: 0;
-    }
 }
 
 @media(max-width: 320px) {

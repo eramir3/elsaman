@@ -23,12 +23,12 @@ return [
     'nutrition_facts' => 'faits nutritionnels',
     'preparation_tips' => 'CONSEILS DE PRÉPARATION',
 
-    'preparation_125' => "De pulpe + 270 ml d'eau (+ sucre au goût)",
-    'preparation_125_bullet' => "Pour le corossol et la curuba: 125 gr de pulple + 130 ml d'eau + 140 ml de lait",
-    'preparation_250' => "De pulpe + 540 ml d'eau (+ sucre au goût)",
-    'preparation_250_bullet' => "Pour le corossol et la curuba: 250 gr de pulple + 260 ml d'eau + 280 ml de lait",
-    'preparation_500' => "De pulpe + 1080 ml d'eau (+ sucre au goût)",
-    'preparation_500_bullet' => "Pour le corossol et la curuba: 500 gr de pulple + 420 ml d'eau + 560 ml de lait",
+    'preparation_125' => "De pulpe + 270 ml d'eau (+ sucre au goût). Pour préparer environ 1 verre.",
+    'preparation_125_soursop_curuba' => "De pulple + 130 ml d'eau + 140 ml de lait. Pour préparer environ 1 verre.",
+    'preparation_250' => "De pulpe + 540 ml d'eau (+ sucre au goût). Pour préparer environ 2 verres.",
+    'preparation_250_soursop_curuba' => "De pulple + 260 ml d'eau + 280 ml de lait. Pour préparer environ 2 verres.",
+    'preparation_500' => "De pulpe + 1080 ml d'eau (+ sucre au goût). Pour préparer environ 4 verres.",
+    'preparation_500_soursop_curuba' => "De pulple + 420 ml d'eau + 560 ml de lait. Pour préparer environ 4 verres.",
 
     'pineapple' => 'ananas',
     'pineapple_facts' => "Originaire d'Amérique du Sud, l’ananas est source de vitamine A, B6, C, 
