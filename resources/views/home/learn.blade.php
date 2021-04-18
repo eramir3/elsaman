@@ -19,10 +19,10 @@
                         <div class="card-body">
                             @if(app()->getLocale() === Config::get('constants.fr'))
                                 <div class="card-title label label-pink">{!! $post->title_fr !!}</div>
-                                <div class="card-text">{!! Str::limit($post->text_fr, 550, '....')  !!}</div>
+                                <div class="card-text">{!! Str::limit($post->text_fr, 500, '....')  !!}</div>
                             @elseif(app()->getLocale() === Config::get('constants.es'))
                                 <div class="card-title label label-pink">{!! $post->title_es !!}</div>
-                                <div class="card-text">{!! Str::limit($post->text_es, 550, '....')  !!}</div>
+                                <div class="card-text">{!! Str::limit($post->text_es, 500, '....')  !!}</div>
                             @else
                                 <div class="card-title label label-pink">{!! $post->title_en !!}</div>
                                 <div class="card-text">{!! Str::limit($post->text_en, 500, '....')  !!}</div>
