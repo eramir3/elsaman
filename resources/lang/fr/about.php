@@ -12,7 +12,7 @@ return [
     'about_description_2' => "Vingt et un ans plus tard, Gran Samán est né d'une initiative visant à amener ces 
                             produits du cœur du Tequendama à Lyon et dans d'autres villes en France. D'une part, 
                             en travaillant avec les agriculteurs de la région colombienne, nous cherchons à leur 
-                            payer un juste prix pour leur récolte, quelle que soit la saison. De plus, nous cherchons 
+                            payer un juste prix pour leur récolte, quelque soit la saison. De plus, nous cherchons 
                             à réduire leurs coûts de transport et de stockage des fruits. De cette manière, les 
                             agriculteurs ne se préoccupent que de récolter les fruits de la plus haute qualité 
                             sans se soucier constamment de les vendre. D'autre part, nous cherchons à informer les 

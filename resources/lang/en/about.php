@@ -5,7 +5,7 @@ return [
     'our_history' => 'Our history',
     'about_description_1' => "In September 1999, the Association
                             de Fruteros de Anapoima (AFA) was created by four farmers
-                            that sought to give added value to fruit crops
+                            that sought to provide an added value to fruit crops
                             of the producers of the Tequendama region.
                             Thus, they devised different transformation processes to
                             produce 100% natural products such as frozen pulp fruit,

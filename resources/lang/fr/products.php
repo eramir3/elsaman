@@ -3,12 +3,11 @@
 return [
     'our_products_origin' => "D'OÙ VIENNENET NOS PRODUITS?",
     'tequendama' => 'tequendama',
-    'tequendama_description' => "Située dans le département de Cundinamarca, la région de Tequendama est
-                                célèbre pour son environnement propice à la production alimentaire en Colombie. 
-                                Compte tenu du les conditions climatiques, les précipitations et la diversité 
-                                des planchers thermiques, peuvent être cultiver une grande variété de fruits 
-                                tropicaux à haute valeur nutritive et exquis saveur, qui peut être utilisée dans 
-                                diverses recettes gastronomiques.",
+    'tequendama_description' => "Située dans le département de Cundinamarca, la région de Tequendama est 
+                                célèbre pour son environnement propice à la production de fruits tropicaux. 
+                                Compte tenu des conditions climatiques et la diversité des planchers thermiques, 
+                                une grande variété de fruits peuvent être cultivés. Ces fruits ont une haute 
+                                valeur nutritionnelle et peuvent être utilisés dans diverses recettes gastronomiques.",
 
     'our_products' => 'nos produits',
     'fruit_pulpe' => 'pulpe de fruit',
@@ -36,9 +35,9 @@ return [
                         riche en antioxydants.",
 
     'passion_fruit' => 'fruit de la passion',
-    'passion_fruit_facts' => "C'est un fruit tropical qui contient une grande quantité de vitamines A,
-                             C, ainsi que du potassium, du phosphore, du magnésium, et une grande 
-                             quantité de fer. Il est très riche en fibre.",
+    'passion_fruit_facts' => "C'est un fruit tropical qui contient une grande quantité de 
+                            vitamines A, C, ainsi que du potassium, du phosphore, du magnésium, et une grande 
+                            quantité de fer. Il est très riche en fibres.",
 
     'strawberry' => 'fraise',
     'strawberry_facts' => "C'est un fruit très riche en antioxydants. Elle contient des vitamines C, 
@@ -47,12 +46,12 @@ return [
                         dans les régions de Cundinamarca, d’Antioquia et du Caldas.",
 
     'mango' => 'mangue',
-    'mango_facts' => "C'est un fruit tropical d'origine asiatique. Son fruit est très apprécié car il 
-                    contient des minéraux tels que le magnésium, le phosphore, le calcium et le potassium 
+    'mango_facts' => "C'est un fruit tropical d'origine asiatique, très apprécié car il contient 
+                    des minéraux tels que le magnésium, le phosphore, le calcium et le potassium 
                     ainsi que les vitamines E, C et A.  Il contient également une grande quantité de fibres",
 
     'tamarillo' => 'tamarillo',
-    'tamarillo_facts' => "Il est cultivé dans les régions tropicales telles que la Colombie et le Brésil. 
+    'tamarillo_facts' => "Il est cultivé dans les régions tropicales des pays tels que la Colombie et le Brésil. 
                         C'est un fruit très riche en vitamines A, C, E et B6, ainsi qu'en calcium, magnésium, 
                         phosphore et fer.",
 
@@ -63,9 +62,9 @@ return [
                     et d'acide folique",
 
     'lulo' => 'lulo',
-    'lulo_facts' => "Fruit très riche en vitamines A et C, ainsi qu'en calcium, fer et sodium. C'est un fruit 
-                    exotique très courant en Amérique latine, idéal pour ceux qui sont à la recherche de nouvelles 
-                    saveurs",
+    'lulo_facts' => "Fruit très riche en vitamines A et C, ainsi qu'en calcium, fer et sodium. C'est un 
+                    fruit exotique très courant en Amérique latine, idéal pour ceux qui sont à la recherche 
+                    de nouvelles saveurs",
 
     'tangerine' => 'mandarine',
     'tangerine_facts' => " Cet agrume vient d'Asie, mais est cultivé en grande quantité en Colombie. Ce fruit 
@@ -75,25 +74,24 @@ return [
     'blackberry' => 'MÛR',
     'blackberry_facts' => "Son arbuste appartient à la famille des rosacées. C'est une source de vitamine C, 
                         de calcium et de fer. Il est également très riche en vitamine A, ainsi qu'en potassium 
-                        et en fibres. Il est largement utilisé en gastronomie car avec lui de nombreuses sauces, 
-                        bonbons et confitures peuvent être préparés.",
+                        et en fibres. Il est largement utilisé en gastronomie car avec lui des nombreuses sauces, 
+                        bonbons et confitures peuvent être préparés",
 
     'soursop' => 'corossol',
-    'soursop_facts' => "C'est un arbre originaire d'Amérique du Sud appartenant à la famille Annonacease et 
-                        cultivé dans les pays à climat tropical. En Colombie, il est cultivé principalement 
-                        dans la région centrale de Meta. Le corossol est un fruit riche en potassium, phosphore, 
-                        fer, calcium, lipides, glucides et vitamines C, A et B.",
+    'soursop_facts' => "Le corossol est un fruit riche en potassium, phosphore, fer, calcium, lipides, glucides et 
+                        vitamines C, A et B. Son arbre est originaire d'Amérique du Sud appartenant à la famille 
+                        Annonacease. En Colombie, il est cultivé principalement dans la région centrale de Meta. ",
 
     'curuba' => 'curuba',
     'curuba_facts' => "Il est également connu sous le nom de patcha ou taxo. Son fruit provient d'arbustes grimpants 
-                    du genre Passiflora. Ils sont cultivés depuis l'époque précolombienne en Colombie, au Pérou, 
-                    en Bolivie et en Équateur. En Colombie, il est cultivé dans les chaînes de montagnes de l'est 
-                    et de l'ouest. Il contient de la vitamine A, C et de la riboflavine, du potassium, du magnésium, d
-                    u chlore et du fer, entre autres.",
+                    du genre Passiflora. Ils sont cultivés depuis l'époque précolombienne en Colombie, au Pérou, en 
+                    Bolivie et en Équateur. En Colombie, il est cultivé dans les chaînes de montagnes de l'est et de l'ouest. 
+                    Il contient de la vitamine A, C et de la riboflavine, du potassium, du magnésium, du chlore et du fer, 
+                    entre autres.",
 
     'feijoa' => 'feijoa',
-    'feijoa_facts' => "Ce fruit exotique est originaire du sud du Brésil, d'Argentine et d'Uruguay. Il est cultivé 
-                    en Colombie dans les régions froides de Boyacá, Caldas, Cundinamarca et Antioquia. Feijoa fournit 
-                    des vitamines A, B1, B2, B3, B6, B9, C, E et K. Il a une agréable saveur semi-acide."
+    'feijoa_facts' => "Ce fruit exotique est originaire du sud du Brésil, d'Argentine et d'Uruguay. Il est cultivé en Colombie 
+                    dans les régions froides de Boyacá, Caldas, Cundinamarca et Antioquia. La feijoa fournit des vitamines 
+                    A, B1, B2, B3, B6, B9, C, E et K. Il a une saveur semi-acide."
 
 ];

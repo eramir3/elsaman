@@ -73,11 +73,9 @@ return [
                         Many sauces, sweets and jams can be made with it.',
 
     'soursop' => 'soursop',
-    'soursop_facts' => 'It is a tree native to South America belonging to the Annonacease family 
-                        and is cultivated in countries with a tropical climate. In Colombia it is 
-                        grown mainly in the central region of Meta. Soursop is a fruit rich in 
-                        potassium, phosphorus, iron, calcium, lipids, carbohydrates and vitamins C, 
-                        A and B.',
+    'soursop_facts' => 'Its tree is native to South America, belonging to the Annonacease family. In Colombia, the soursop 
+                        is grown mainly in the central region of Meta, and is a fruit rich in potassium, phosphorus, 
+                        iron, calcium, lipids, carbohydrates and vitamins C, A and B.',
 
     'curuba' => 'curuba',
     'curuba_facts' => 'It is also known as patcha or taxo. Its fruit comes from climbing shrubs of the 
