@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'our_products_origin' => "D'OÙ VIENNENET NOS PRODUITS?",
+    'our_products_origin' => "D'OÙ VIENNENT NOS PRODUITS?",
     'tequendama' => 'tequendama',
     'tequendama_description' => "Située dans le département de Cundinamarca, la région de Tequendama est 
                                 célèbre pour son environnement propice à la production de fruits tropicaux. 
