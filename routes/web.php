@@ -38,7 +38,7 @@ use Saman\Utils\Hasher;
 
 //   \Auth::logout(); \Session::flush();
 
-Route::redirect('/', '/en');
+Route::redirect('/', '/fr');
 
 Route::group(['prefix' => '/{locale}'], function() {
 
