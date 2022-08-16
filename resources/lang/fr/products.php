@@ -34,8 +34,8 @@ return [
                         potassium, fibres, magnésium, manganèse et acide folique. Il est également 
                         riche en antioxydants.",
 
-    'passion_fruit' => 'fruit de la passion',
-    'passion_fruit_facts' => "C'est un fruit tropical qui contient une grande quantité de 
+    'passion-fruit' => 'fruit de la passion',
+    'passion-fruit_facts' => "C'est un fruit tropical qui contient une grande quantité de 
                             vitamines A, C, ainsi que du potassium, du phosphore, du magnésium, et une grande 
                             quantité de fer. Il est très riche en fibres.",
 

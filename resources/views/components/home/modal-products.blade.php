@@ -31,17 +31,17 @@
 </div>
 
 <!-- passion fruit -->
-<div id="passion_fruit" class="modal">
+<div id="passion-fruit" class="modal">
     <div class="modal-content">
         <span class="modal-content__close">&times;</span>
-        <h2 class="badge badge--pink modal-title">{{ __('products.passion_fruit') }}</h2>
+        <h2 class="badge badge--pink modal-title">{{ __('products.passion-fruit') }}</h2>
         <section class="fruit-description card">
             <div class="fruit-modal-image">
-                <img id="passion_fruit-img" src="{{ asset('images/home/fruits/passion_fruit.png') }}" alt="">
+                <img id="passion-fruit-img" src="{{ asset('images/home/fruits/passion-fruit.png') }}" alt="">
             </div>
             <div class="fruit-description__text">
                 <p>
-                {{ __('products.passion_fruit_facts') }}
+                {{ __('products.passion-fruit_facts') }}
                 </p>
             </div>
         </section>

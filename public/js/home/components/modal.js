@@ -8,7 +8,7 @@ function fruitImageClick(fruit) {
         case 'pineapple':
             index = 0;
             break;
-        case 'passion_fruit':
+        case 'passion-fruit':
             index = 1;
             break;
         case 'strawberry':
@@ -66,3 +66,9 @@ function fruitImageClick(fruit) {
         }
     }
 }
+
+$(window).on('load', function() {
+    const url = window.location.href;
+    const fruit = url.split('#')[1];
+    fruitImageClick(fruit)
+});

@@ -31,8 +31,8 @@ return [
     'pineapple_facts' => 'Native to South America the pineapple is a source of vitamin A,  B6, C,  
                         potassium, fiber, magnesium, manganese and folic acid. It is also rich in antioxidants.',
     
-    'passion_fruit' => 'passion fruit',
-    'passion_fruit_facts' => 'It is a tropical fruit that contains a large amount of vitamin A and C, as well as 
+    'passion-fruit' => 'passion fruit',
+    'passion-fruit_facts' => 'It is a tropical fruit that contains a large amount of vitamin A and C, as well as 
                             potassium, phosphorus and magnesium. It also contains a large amount of iron and high 
                             amounts of fiber.',
 

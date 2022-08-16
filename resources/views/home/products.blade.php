@@ -33,8 +33,8 @@
                 <h3 class="fruit-badge badge--pink__dark">{{ Str::upper(__('products.pineapple')) }}</h3>
             </div>
             <div class="fruit">
-                <img src="{{ asset('images/home/fruits/passion_fruit.png') }}" alt="" onclick="fruitImageClick('passion_fruit')">
-                <h3 class="fruit-badge badge--pink__dark">{{ Str::upper(__('products.passion_fruit')) }}</h3>
+                <img src="{{ asset('images/home/fruits/passion-fruit.png') }}" alt="" onclick="fruitImageClick('passion-fruit')">
+                <h3 class="fruit-badge badge--pink__dark">{{ Str::upper(__('products.passion-fruit')) }}</h3>
             </div>
             <div class="fruit">
                 <img src="{{ asset('images/home/fruits/strawberry.png') }}" alt="" onclick="fruitImageClick('strawberry')">
