@@ -11,7 +11,7 @@ function fruitImageClick(fruit) {
         case 'passion-fruit':
             index = 1;
             break;
-        case 'strawberry':
+        case 'tamarindo':
             index = 2;
             break;
         case 'mango':
@@ -26,20 +26,17 @@ function fruitImageClick(fruit) {
         case 'lulo':
             index = 6;
             break;
-        case 'tangerine':
+        case 'blackberry':
             index = 7;
             break;
-        case 'blackberry':
+        case 'soursop':
             index = 8;
             break;
-        case 'soursop':
+        case 'curuba':
             index = 9;
             break;
-        case 'curuba':
-            index = 10;
-            break;
         case 'feijoa':
-            index = 11;
+            index = 10;
             break;
     }
 

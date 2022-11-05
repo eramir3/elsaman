@@ -124,6 +124,10 @@ main {
     padding-top: 3.5rem;
 }
 
+.fruit img {
+    max-width: 180px;
+}
+
 .fruit img:hover {
     cursor: pointer;
 }

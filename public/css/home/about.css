@@ -52,7 +52,7 @@ body {
 }
 
 .element__image > img {
-    width: 30rem;
+    width: 25rem;
 }
 
 .element__text {
@@ -64,7 +64,7 @@ body {
     line-height: 1.5;
     font-weight: 450;
     margin-bottom: 0;
-    text-align: justify;
+    text-align: start;
 }
 
 .footer-top {
@@ -90,7 +90,7 @@ body {
     }
 
     .element__image img {
-        width: 23rem;
+        width: 18rem;
         margin-top: 2rem
     }
     
@@ -110,7 +110,8 @@ body {
 
     .element__text {
         width: 100%;
-        padding: 1rem
+        padding: 1rem;
+        text-align: center
     }
 
     .main-footer__info > p {
@@ -121,14 +122,14 @@ body {
 @media(max-width: 520px) {
 
     .element__image img {
-        width: 18rem;
+        width: 13rem;
     }
 }
 
 @media(max-width: 320px) {
 
     .element__image img {
-        width: 15rem;
+        width: 10rem;
     }
 
     .main-footer__info > p {

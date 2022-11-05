@@ -62,18 +62,18 @@
     </div>
 </div>
 
-<!-- strawberry -->
-<div id="strawberry" class="modal">
+<!-- tamarindo -->
+<div id="tamarindo" class="modal">
     <div class="modal-content">
         <span class="modal-content__close">&times;</span>
-        <h2 class="badge badge--pink modal-title">{{ __('products.strawberry') }}</h2>
+        <h2 class="badge badge--pink modal-title">{{ __('products.tamarindo') }}</h2>
         <section class="fruit-description card">
             <div class="fruit-modal-image">
-                <img id="strawberry-img" src="{{ asset('images/home/fruits/strawberry.png') }}" alt="">
+                <img id="tamarindo-img" src="{{ asset('images/home/fruits/tamarindo.png') }}" alt="">
             </div>
             <div class="fruit-description__text">
                 <p>
-                {{ __('products.strawberry_facts') }}
+                {{ __('products.tamarindo_facts') }}
                 </p>
             </div>
         </section>
@@ -202,38 +202,6 @@
             <div class="fruit-description__text">
                 <p>
                 {{ __('products.lulo_facts') }}
-                </p>
-            </div>
-        </section>
-        <section class="fruit-info">
-            <div class="fruit-preparation">
-                <h3 class="fruit-preparation__title badge badge--pink">{{ __('products.preparation_tips') }}</h3>
-                <div class="fruit-preparation__tip">
-                    <p><span class="fruit-preparation__tip-size" style="font-size: 1.5rem">125 GR </span>{{ __('products.preparation_125')}}<p>                    
-                </div>
-                <div class="fruit-preparation__tip">
-                    <p><span class="fruit-preparation__tip-size" style="font-size: 1.5rem">250 GR </span>{{ __('products.preparation_250')}}<p>                    
-                </div>
-                <div class="fruit-preparation__tip">
-                    <p><span class="fruit-preparation__tip-size" style="font-size: 1.5rem">500 GR </span>{{ __('products.preparation_500')}}<p>                    
-                </div>
-            </div>
-        </section>
-    </div>
-</div>
-
-<!-- tangerine -->
-<div id="tangerine" class="modal">
-    <div class="modal-content">
-        <span class="modal-content__close">&times;</span>
-        <h2 class="badge badge--pink modal-title">{{ __('products.tangerine') }}</h2>
-        <section class="fruit-description card">
-            <div class="fruit-modal-image">
-                <img id="tangerine-img" src="{{ asset('images/home/fruits/tangerine.png') }}" alt="">
-            </div>
-            <div class="fruit-description__text">
-                <p>
-                {{ __('products.tangerine_facts') }}
                 </p>
             </div>
         </section>

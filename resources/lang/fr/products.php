@@ -39,8 +39,8 @@ return [
                             vitamines A, C, ainsi que du potassium, du phosphore, du magnésium, et une grande 
                             quantité de fer. Il est très riche en fibres.",
 
-    'strawberry' => 'fraise',
-    'strawberry_facts' => "C'est un fruit très riche en antioxydants. Elle contient des vitamines C, 
+    'tamarindo' => 'tamarindo',
+    'tamarindo_facts' => "C'est un fruit très riche en antioxydants. Elle contient des vitamines C, 
                         B2, B3, ainsi que du magnésium, du manganèse et du potassium. 90% de la 
                         fraise est de l'eau et 7% de glucides. En Colombie, la fraise est cultivée 
                         dans les régions de Cundinamarca, d’Antioquia et du Caldas.",

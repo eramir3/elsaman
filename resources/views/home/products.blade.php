@@ -37,8 +37,8 @@
                 <h3 class="fruit-badge badge--pink__dark">{{ Str::upper(__('products.passion-fruit')) }}</h3>
             </div>
             <div class="fruit">
-                <img src="{{ asset('images/home/fruits/strawberry.png') }}" alt="" onclick="fruitImageClick('strawberry')">
-                <h3 class="fruit-badge badge--pink__dark">{{ Str::upper(__('products.strawberry')) }}</h3>
+                <img src="{{ asset('images/home/fruits/tamarindo.png') }}" alt="" onclick="fruitImageClick('tamarindo')">
+                <h3 class="fruit-badge badge--pink__dark">{{ Str::upper(__('products.tamarindo')) }}</h3>
             </div>
             <div class="fruit">
                 <img src="{{ asset('images/home/fruits/mango.png') }}" alt="" onclick="fruitImageClick('mango')">
@@ -56,10 +56,6 @@
             <div class="fruit">
                 <img src="{{ asset('images/home/fruits/lulo.png') }}" alt="" onclick="fruitImageClick('lulo')">
                 <h3 class="fruit-badge badge--pink__dark">{{ Str::upper(__('products.lulo')) }}</h3>
-            </div>
-            <div class="fruit">
-                <img src="{{ asset('images/home/fruits/tangerine.png') }}" alt="" onclick="fruitImageClick('tangerine')">
-                <h3 class="fruit-badge badge--pink__dark">{{ Str::upper(__('products.tangerine')) }}</h3>
             </div>
 
             <div class="fruit">

@@ -36,8 +36,8 @@ return [
                             potassium, phosphorus and magnesium. It also contains a large amount of iron and high 
                             amounts of fiber.',
 
-    'strawberry' => 'strawberry',
-    'strawberry_facts' => 'It is a fruit very rich in antioxidants, it has vitamins C, B2, B3, as 
+    'tamarindo' => 'tamarindo',
+    'tamarindo_facts' => 'It is a fruit very rich in antioxidants, it has vitamins C, B2, B3, as 
                         well as magnesium, manganese and potassium. 90% of the strawberry is water 
                         and 7% carbohydrates. It is grown in Colombia in Cundinamarca, Antioquia 
                         and Caldas.',

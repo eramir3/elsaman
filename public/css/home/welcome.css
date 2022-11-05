@@ -29,7 +29,7 @@ html {
 
 body {
     font-size: 100%;
-    background-image: linear-gradient(to top, rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(../../images/home/welcome/landscape-bg.jpg);
+    background-image: linear-gradient(to top, rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(../../images/home/welcome/landscape-bg.png);
     background-position: right 50% bottom 50%;
     background-repeat: repeat repeat;
     background-size: auto, cover;
@@ -100,7 +100,7 @@ header {
 }
 
 .welcome-logo img {
-    width: 25rem;
+    width: 22rem;
     margin-bottom: 3rem;
 }
 
@@ -203,7 +203,7 @@ footer {
     }
 
     .welcome-logo img {
-        width: 20rem;
+        width: 17rem;
     }
     
 }
@@ -279,7 +279,7 @@ footer {
 
 @media(max-width: 320px) {
     .welcome-logo img {
-        width: 20rem;
+        width: 17rem;
     }
 
     main {
@@ -289,6 +289,6 @@ footer {
 
 @media(max-width: 290px) {
     .welcome-logo img {
-        width: 15rem;
+        width: 12rem;
     }
 }

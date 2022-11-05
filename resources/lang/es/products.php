@@ -37,8 +37,8 @@ return [
                             contiene gran cantidad de vitamina A y C, además de potasio, fósforo y 
                             magnesio. Es rica en fibra y hierro. ',
 
-    'strawberry' => 'fresa',
-    'strawberry_facts' => 'Es una fruta muy rica en antioxidantes, posee vitaminas C, B2, B3, 
+    'tamarindo' => 'tamarindo',
+    'tamarindo_facts' => 'Es una fruta muy rica en antioxidantes, posee vitaminas C, B2, B3, 
                         además de magnesio, manganeso y potasio. El 90% de la fresa es agua y 7% 
                         hidratos de carbono. Se cultiva en Colombia en Cundinamarca, Antioquia y 
                         Caldas.',
