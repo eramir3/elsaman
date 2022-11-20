@@ -11,7 +11,7 @@ class ContactMail extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $subject = 'El home Contact Mail';
+    public $subject = 'Aumaru Contact Mail';
 
     public $mail;
 

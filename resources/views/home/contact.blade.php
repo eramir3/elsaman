@@ -33,12 +33,12 @@
                             <img src="{{ asset('images/home/flags/fr.svg') }}" class="card-flag" alt=""> +33 7 88 22 55 86
                         </div>
                         <div class="whatsapp__bottom">
-                            <img src="{{ asset('images/home/flags/col.svg') }}" class="card-flag" alt=""> +57 1 305 3095120
+                            <img src="{{ asset('images/home/flags/col.svg') }}" class="card-flag" alt=""> +57 1 310 2121976
                         </div>
                     </div>
                 </div>
                 <div class="card card__contact envelope" >
-                    <img src="{{ asset('images/home/contact/email.svg') }}" alt=""> radcofr@ciradco.com
+                    <img src="{{ asset('images/home/contact/email.svg') }}" alt=""> aumaru@gransaman.com
                 </div>
             </div>
         </section>
