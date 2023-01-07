@@ -25,10 +25,12 @@
                             {{ Str::upper(__('header.products')) }}
                         </a>
                     </li>
-                    <li class="welcome-nav__item welcome-nav__item--pipe">
+                    <!-- 
+                        <li class="welcome-nav__item welcome-nav__item--pipe">
                         <a href="{{ route('home.learn', app()->getLocale()) }}" subject="{{ Str::upper(__('header.learn_more')) }}">
                             {{ Str::upper(__('header.learn_more')) }}
-                        </a>
+                        </a> 
+                    -->
                     </li>
                     <li class="welcome-nav__item">
                         <a href="{{ route('home.contact', app()->getLocale()) }}" subject="{{ Str::upper(__('header.contact')) }}">

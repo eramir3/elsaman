@@ -1,7 +1,7 @@
 // Hide or show mobile nav items
 function openNav() {
 
-    let mobileNavbarHeight = "14.5rem";
+    let mobileNavbarHeight = "11.5rem";
 
     if (document.getElementById("mobile-nav__menu").style.height == mobileNavbarHeight) {
         document.getElementById("mobile-nav__menu").style.height = "0";

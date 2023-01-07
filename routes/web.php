@@ -40,6 +40,8 @@ use Saman\Utils\Hasher;
 
 Route::redirect('/', '/fr');
 
+Route::get('/sitemap.xml', function() {include public_path().'/sitemap.xml';});
+
 Route::group(['prefix' => '/{locale}'], function() {
 
     $locale = Request::segment(1);
@@ -72,6 +74,10 @@ Route::group(['prefix' => '/{locale}'], function() {
         Route::get('contact', function () {
             return view('home/contact');
         })->name('home.contact');
+
+        Route::get('legal', function () {
+            return view('home/legal');
+        })->name('home.legal');
     
         Route::post('contact', [ContactController::class, 'mail'])->name('contact.mail');
     }

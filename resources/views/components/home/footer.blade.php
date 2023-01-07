@@ -37,6 +37,7 @@
             <p>{{ Str::upper(__('footer.ci_radco')) }}</p>
             <p>{{ Str::upper(__('footer.reserved_rights')) }}</p>
             <p>{{ now()->year }}</p>
+            <p><a href="{{ route('home.legal', app()->getLocale()) }}" style="text-decoration: none; color: #B8B8B8;">{{ __('footer.legal_notice') }}</a></p>
         </div>
         <br>
         <br>

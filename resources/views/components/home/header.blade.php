@@ -12,10 +12,10 @@
                 <li class="web-nav__item web-nav__items--pipe">
                     <a href="{{ route('home.products', app()->getLocale()) }}" class="{{ Route::is('home.products', app()->getLocale()) ? 'active' : '' }}">{{ Str::upper(__('header.products')) }}</a>
                 </li>
-                <li class="web-nav__item web-nav__items--pipe">
+                <!-- <li class="web-nav__item web-nav__items--pipe">
                     <a href="{{ route('home.learn', app()->getLocale()) }}" 
                         class="{{ Route::is('home.learn', app()->getLocale()) || Route::is('home.learn.show', app()->getLocale()) ? 'active' : '' }}">{{ Str::upper(__('header.learn_more')) }}</a>
-                </li>
+                </li> -->
                 <li class="web-nav__item">
                     <a href="{{ route('home.contact', app()->getLocale()) }}" class="{{ Route::is('home.contact', app()->getLocale()) ? 'active' : '' }}">{{ Str::upper(__('header.contact')) }}</a>
                 </li>
@@ -46,7 +46,7 @@
         <div id="mobile-nav__items--container">
             <a href="{{ route('home.about', app()->getLocale()) }}" class="mobile-nav__item">{{ Str::upper(__('header.about_us')) }}</a>
             <a href="{{ route('home.products', app()->getLocale()) }}" class="mobile-nav__item">{{ Str::upper(__('header.products')) }}</a>
-            <a href="{{ route('home.learn', app()->getLocale()) }}" class="mobile-nav__item">{{ Str::upper(__('header.learn_more')) }}</a>
+            <!-- <a href="{{ route('home.learn', app()->getLocale()) }}" class="mobile-nav__item">{{ Str::upper(__('header.learn_more')) }}</a> -->
             <a href="{{ route('home.contact', app()->getLocale()) }}">{{ Str::upper(__('header.contact')) }}</a>
         </div>
     </div>
