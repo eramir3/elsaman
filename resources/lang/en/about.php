@@ -10,7 +10,7 @@ return [
                             Thus, they devised different transformation processes to
                             produce 100% natural products such as frozen pulp fruit,
                             jams and sweets, all made from fruits of the region.",
-    'about_description_2' => "Twenty-one years later, Gran Samán was born as an initiative to
+    'about_description_2' => "Twenty-one years later, Amarú was born as an initiative to
                             take these products from the heart of Tequendama to Lyon and other
                             cities of France. On the one hand, we work hand in hand with the
                             farmers of the region to produce our products.
@@ -27,6 +27,5 @@ return [
                             the production of small and medium farmers in the Tequendama region in 
                             Colombia.',
     'vision' => 'vision',
-    'vision_description' => 'Share the richness of Colombian tropical fruits with the world, while 
-                            creating ties between the Colombian farmers and our clients abroad.'
+    'vision_description' => 'Share the richness of Colombian tropical fruits with the world.'
 ];

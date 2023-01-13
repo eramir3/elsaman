@@ -18,7 +18,7 @@ return [
     'telephone' => 'Telephone: +33 07 88 22 55 86',
     'email' => 'Email: aumaru@gransaman.com',
     'director_of_publication' => 'Directora de publicación: Milica SAVIC',
-    'vat' => 'Intra-community VAT: FR 02910736909',
+    'vat' => 'TVA intracommunautaire: FR 02910736909',
     'site_hosting' => 'Site Hosting:',
     'site_hosting_1' => 'The host of the Site is namecheap.com whose head office is located at
         4600 East Washington Street, Suite 305, Phoenix, AZ 85034, USA.',

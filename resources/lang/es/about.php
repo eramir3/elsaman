@@ -10,7 +10,7 @@ return [
                             Así, idearon diferentes procesos de transformación para 
                             producir productos 100% naturales como la fruta de pulpa congelada, 
                             mermeladas y dulces, todos hechos a partir de frutas de la región.',
-    'about_description_2' => 'Veintiún años después, Gran Samán nació como una iniciativa para 
+    'about_description_2' => 'Veintiún años después, Amarú nació como una iniciativa para 
                             llevar estos productos del corazón del Tequendama hasta Lyon y otras 
                             ciudades de Francia.  Por un lado, trabajamos mano a mano con los 
                             campesinos de la región para producir nuestros productos. 
@@ -29,7 +29,5 @@ return [
                             y al mismo tiempo apoyar la producción de pequeños y medianos campesinos de 
                             la región del Tequendama en Colombia. ',
     'vision' => 'vision',
-    'vision_description' => 'Compartir la riqueza de las frutas tropicales colombianas con el mundo, 
-                            creando lazos de conexión entre los campesinos colombianos y nuestros clientes 
-                            extranjeros.'
+    'vision_description' => 'Compartir la riqueza de las frutas tropicales colombianas con el mundo.'
 ];

@@ -1,13 +1,12 @@
 <?php
 
 return [
-    'our_products_origin' => '¿DE DONDE VIENEN NUESTROS PRODUCTOS?',
-    'tequendama' => 'tequendama',
-    'tequendama_description' => 'Situada en el departamento de Cundinamarca, la región del Tequendama es 
-                                famosa por su entorno propicio para la producción de alimentos en Colombia. Dadas las 
-                                condiciones climáticas, la pluviosidad y la diversidad de pisos térmicos, se pueden 
-                                cultivar una gran variedad de frutas tropicales con un alto valor nutricional y exquisito
-                                sabor, las cuales pueden ser utilizadas en diversas recetas gastronómicas.'
+    'our_products_origin' => 'NUESTROS PRODUCTOS',
+    'tequendama' => '¿DE DONDE VIENEN NUESTROS PRODUCTOS?',
+    'tequendama_description' => 'Gracias a su posición geográfica privilegiada, Colombia se beneficia de 
+                                una diversidad de zonas climáticas que le permiten cosechar una gran variedad de 
+                                frutas y verduras durante todo el año. Este es solo un pequeño ejemplo de la 
+                                riqueza natural que tiene para ofrecer y compartir con el mundo.'
                                 ,
     'our_products' => 'productos',
     'fruit_pulpe' => 'pulpa de fruta',

@@ -1,13 +1,12 @@
 <?php
 
 return [
-    'our_products_origin' => 'WHERE DO OUR PRODUCTS COME FROM?',
-    'tequendama' => 'tequendama',
-    'tequendama_description' => 'Located in the department of Cundinamarca, the Tequendama region is
-                                famous for its environment conducive to food production in Colombia. Given the
-                                climatic conditions, rainfall and the diversity of thermal floors, can be
-                                grow a wide variety of tropical fruits with high nutritional value and exquisite
-                                flavor which can be used in various gastronomic recipes.',
+    'our_products_origin' => 'OUR PRODUCTS',
+    'tequendama' => 'WHERE DO OUR PRODUCTS COME FROM?',
+    'tequendama_description' => 'Thanks to its privileged geographical position, Colombia benefits 
+    from a diversity of climatic zones that allow it to harvest a wide variety of fruits and vegetables 
+    throughout the year. Here is just a small example of the natural wealth it has to offer and share 
+    with the world.onal value and exquisite flavor which can be used in various gastronomic recipes.',
 
     'our_products' => 'our products',
     'fruit_pulpe' => 'fruit pulpe',

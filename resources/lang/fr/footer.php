@@ -19,7 +19,7 @@ return [
     'telephone' => 'Téléphone: +33 07 88 22 55 86',
     'email' => 'Email: aumaru@gransaman.com',
     'director_of_publication' => 'Directeur de la publication: Milica SAVIC',
-    'vat' => 'Intra-community VAT: FR 02910736909',
+    'vat' => 'TVA intracommunautaire: FR 02910736909',
     'site_hosting' => 'Hébergement du site:',
     'site_hosting_1' => 'L\'hébergeur du Site est namecheap.com dont le siège social est situé au
         4600 East Washington Street, Suite 305, Phoenix, AZ 85034, USA.',
