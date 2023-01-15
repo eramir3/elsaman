@@ -9,107 +9,77 @@
 
 <url>
   <loc>https://aumaru.com.co/fr</loc>
-  <lastmod>2023-01-07T17:53:01+00:00</lastmod>
+  <lastmod>2023-01-15T22:38:08+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://aumaru.com.co/fr/about</loc>
-  <lastmod>2023-01-07T17:53:01+00:00</lastmod>
+  <lastmod>2023-01-15T22:38:08+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://aumaru.com.co/fr/products</loc>
-  <lastmod>2023-01-07T17:53:01+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://aumaru.com.co/fr/learn</loc>
-  <lastmod>2023-01-07T17:53:01+00:00</lastmod>
+  <lastmod>2023-01-15T22:38:08+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://aumaru.com.co/fr/contact</loc>
-  <lastmod>2023-01-07T17:53:01+00:00</lastmod>
+  <lastmod>2023-01-15T22:38:08+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://aumaru.com.co/en</loc>
-  <lastmod>2023-01-07T17:53:01+00:00</lastmod>
+  <lastmod>2023-01-15T22:38:08+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://aumaru.com.co/es</loc>
-  <lastmod>2023-01-07T17:53:01+00:00</lastmod>
+  <lastmod>2023-01-15T22:38:08+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://aumaru.com.co/en/about</loc>
-  <lastmod>2023-01-07T17:53:01+00:00</lastmod>
+  <lastmod>2023-01-15T22:38:08+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://aumaru.com.co/es/about</loc>
-  <lastmod>2023-01-07T17:53:01+00:00</lastmod>
+  <lastmod>2023-01-15T22:38:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://aumaru.com.co/fr/legal</loc>
+  <lastmod>2023-01-15T22:38:08+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://aumaru.com.co/en/products</loc>
-  <lastmod>2023-01-07T17:53:01+00:00</lastmod>
+  <lastmod>2023-01-15T22:38:08+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://aumaru.com.co/es/products</loc>
-  <lastmod>2023-01-07T17:53:01+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://aumaru.com.co/en/learn</loc>
-  <lastmod>2023-01-07T17:53:01+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://aumaru.com.co/es/learn</loc>
-  <lastmod>2023-01-07T17:53:01+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://aumaru.com.co/fr/learn/w4R1Vxbqyz/post</loc>
-  <lastmod>2023-01-07T17:53:01+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://aumaru.com.co/fr/learn/D0W9rj9d4M/post</loc>
-  <lastmod>2023-01-07T17:53:01+00:00</lastmod>
+  <lastmod>2023-01-15T22:38:08+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://aumaru.com.co/en/contact</loc>
-  <lastmod>2023-01-07T17:53:01+00:00</lastmod>
+  <lastmod>2023-01-15T22:38:08+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://aumaru.com.co/es/contact</loc>
-  <lastmod>2023-01-07T17:53:01+00:00</lastmod>
+  <lastmod>2023-01-15T22:38:08+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://aumaru.com.co/en/learn/w4R1Vxbqyz/post</loc>
-  <lastmod>2023-01-07T17:53:01+00:00</lastmod>
+  <loc>https://aumaru.com.co/en/legal</loc>
+  <lastmod>2023-01-15T22:38:08+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://aumaru.com.co/en/learn/D0W9rj9d4M/post</loc>
-  <lastmod>2023-01-07T17:53:01+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://aumaru.com.co/es/learn/w4R1Vxbqyz/post</loc>
-  <lastmod>2023-01-07T17:53:01+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://aumaru.com.co/es/learn/D0W9rj9d4M/post</loc>
-  <lastmod>2023-01-07T17:53:01+00:00</lastmod>
+  <loc>https://aumaru.com.co/es/legal</loc>
+  <lastmod>2023-01-15T22:38:08+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 
