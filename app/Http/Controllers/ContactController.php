@@ -18,8 +18,8 @@ class ContactController extends Controller
             'message' => 'required|min:3',
         ]);
 
-        Mail::to($mail['email'])->send(new ContactMail($mail));
+        Mail::to('aumaru@gransaman.com')->send(new ContactMail($mail));
 
-        return view('contact'); 
+        return view('home.contact'); 
     }
 }

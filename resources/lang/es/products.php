@@ -1,13 +1,12 @@
 <?php
 
 return [
-    'our_products_origin' => '¿DE DONDE VIENEN NUESTROS PRODUCTOS?',
-    'tequendama' => 'tequendama',
-    'tequendama_description' => 'Situada en el departamento de Cundinamarca, la región del Tequendama es 
-                                famosa por su entorno propicio para la producción de alimentos en Colombia. Dadas las 
-                                condiciones climáticas, la pluviosidad y la diversidad de pisos térmicos, se pueden 
-                                cultivar una gran variedad de frutas tropicales con un alto valor nutricional y exquisito
-                                sabor, las cuales pueden ser utilizadas en diversas recetas gastronómicas.'
+    'our_products_origin' => 'NUESTROS PRODUCTOS',
+    'tequendama' => '¿DE DONDE VIENEN NUESTROS PRODUCTOS?',
+    'tequendama_description' => 'Gracias a su posición geográfica privilegiada, Colombia se beneficia de 
+                                una diversidad de zonas climáticas que le permiten cosechar una gran variedad de 
+                                frutas y verduras durante todo el año. Este es solo un pequeño ejemplo de la 
+                                riqueza natural que tiene para ofrecer y compartir con el mundo.'
                                 ,
     'our_products' => 'productos',
     'fruit_pulpe' => 'pulpa de fruta',
@@ -20,18 +19,25 @@ return [
 
     'nutrition_facts' => 'aportes nutricionales',
     'preparation_tips' => 'CONSEJOS DE PREPARACION',
+
+    'preparation_125' => "De pulpa + 270 ml de agua (+ azúcar al gusto). Rinde aprox 1 vaso.",
+    'preparation_125_soursop_curuba' => "De pulpa + 130 ml de agua (+ azúcar al gusto) + 140 ml de leche. Rinde aprox 1 vaso.",
+    'preparation_250' => "De pulpa + 540 ml de agua (+ azúcar al gusto). Rinde aprox 2 vasos.",
+    'preparation_250_soursop_curuba' => "De pulpa + 260 ml de agua (+ azúcar al gusto) + 280 ml de leche. Rinde aprox 2 vasos.",
+    'preparation_500' => "De pulpa + 1080 ml de agua (+ azúcar al gusto). Rinde aprox 4 vasos.",
+    'preparation_500_soursop_curuba' => "De pulpa + 420 ml de agua (+ azúcar al gusto) + 560 ml de leche. Rinde aprox 4 vasos.",
     
     'pineapple' => 'PIÑA',
     'pineapple_facts' => 'Es originaria de América del Sur. Fuente de vitamina A, C y B6, potasio, 
                         fibra, magnesio , manganeso  y ácido fólico. También es rica en antioxidantes.',
     
-    'passion_fruit' => 'maracuya',
-    'passion_fruit_facts' => 'También conocida como “fruta de la pasión”. Es una fruta tropical que 
+    'passion-fruit' => 'maracuya',
+    'passion-fruit_facts' => 'También conocida como “fruta de la pasión”. Es una fruta tropical que 
                             contiene gran cantidad de vitamina A y C, además de potasio, fósforo y 
                             magnesio. Es rica en fibra y hierro. ',
 
-    'strawberry' => 'fresa',
-    'strawberry_facts' => 'Es una fruta muy rica en antioxidantes, posee vitaminas C, B2, B3, 
+    'tamarindo' => 'tamarindo',
+    'tamarindo_facts' => 'Es una fruta muy rica en antioxidantes, posee vitaminas C, B2, B3, 
                         además de magnesio, manganeso y potasio. El 90% de la fresa es agua y 7% 
                         hidratos de carbono. Se cultiva en Colombia en Cundinamarca, Antioquia y 
                         Caldas.',

@@ -1,0 +1,138 @@
+@font-face {
+    font-family: OrangeJuice;
+    src: url(../../fonts/OrangeJuice.otf);
+}
+
+body {
+    background-color: rgb(238, 238, 238);
+}
+
+.elements__container {
+    width: 100%;
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+.container__parent {
+    position: relative;
+}
+
+.title {
+    color: #333333;
+    font-size: 4rem;
+    font-family: OrangeJuice;
+    text-align: left;
+    font-weight: 100;
+    margin: 0;
+}
+
+.element {
+    display: flex;
+    align-items: center;}
+
+.element-right {
+    margin-top: 7rem;
+}
+
+.element-right__info {
+    padding-left: 2rem;
+    text-align: left;
+}
+
+.element-left__info {
+    padding-right: 2rem;
+    text-align: left;
+}
+
+.element__title {
+    margin-top: 3rem;
+    font-size: 2rem;
+    font-family: OrangeJuice;
+    padding-top: 0.5rem;
+}
+
+.element__image > img {
+    width: 25rem;
+}
+
+.element__text {
+    color: #474747;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: -0.025rem;
+    width: 90%;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 450;
+    margin-bottom: 0;
+    text-align: start;
+}
+
+.footer-top {
+    margin-top: 5rem;
+}
+
+@media (max-width: 1280px) {
+
+    .element-right__info,
+    .element-left__info {
+        padding: 0rem 4rem; 
+    }    
+}
+
+@media(max-width: 750px) {
+
+    .title {
+        text-align: center;
+    }
+
+    .element {
+        flex-flow: column;
+    }
+
+    .element__image img {
+        width: 18rem;
+        margin-top: 2rem
+    }
+    
+    .element-left {
+        margin-top: 0;
+    }
+
+    .element__title {
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
+
+    .element-right__info,
+    .element-left__info {
+        padding: 0rem 1rem; 
+    }   
+
+    .element__text {
+        width: 100%;
+        padding: 1rem;
+        text-align: center
+    }
+
+    .main-footer__info > p {
+        text-align: center;
+    }
+}
+
+@media(max-width: 520px) {
+
+    .element__image img {
+        width: 13rem;
+    }
+}
+
+@media(max-width: 320px) {
+
+    .element__image img {
+        width: 10rem;
+    }
+
+    .main-footer__info > p {
+        font-size: 0.9em;
+    }
+}

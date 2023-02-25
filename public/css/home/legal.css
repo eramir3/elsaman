@@ -1,0 +1,14 @@
+@font-face {
+    font-family: NexaRegular;
+    src: url(../../fonts/NexaRegular.otf);
+}
+
+h1, h3, p {
+    font-family: NexaRegular;
+}
+
+.elements__container {
+    width: 100%;
+    max-width: 70rem;
+    margin: 0 auto;
+}

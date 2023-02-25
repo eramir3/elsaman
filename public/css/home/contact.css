@@ -1,0 +1,327 @@
+@font-face {
+    font-family: NexaRegular;
+    src: url(../../fonts/NexaRegular.otf);
+}
+
+@font-face {
+    font-family: OrangeJuice;
+    src: url(../../fonts/OrangeJuice.otf);
+}
+
+@font-face {
+    font-family: NexaLight;
+    src: url(../../fonts/NexaLight.otf);
+}
+
+body {
+    background: linear-gradient(rgba(255,255,255,.95), rgba(255,255,255,.95)), url('../../images/home/shared/fruits-bg.png');
+    background-size: 65%;
+}
+
+.container {
+    width: 100%;
+    max-width: 80rem;
+    box-sizing: padding-box;
+    -moz-box-sizing: padding-box;
+    -webkit-box-sizing: padding-box;
+    margin: 0 auto;
+}
+
+.container__main {
+    width: 100%;
+    max-width: 40rem;
+    box-sizing: padding-box;
+    -moz-box-sizing: padding-box;
+    -webkit-box-sizing: padding-box;
+    margin: 5rem auto;
+    padding: 0 1rem;
+}
+
+.container__main form {
+    text-align: center;
+}
+
+#overview {
+    font-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0)), url(../../images/home/contact/tree.jpg);
+    background-position: right 0% bottom 30%;
+    background-repeat: repeat repeat;
+    background-size: auto, cover;
+    min-height: 30rem;
+}
+
+.overview-bottom {
+    background-color: #FE7E7E; 
+    height: 5rem; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overview-bottom h1 {
+    margin: 0;
+    color: white;
+    font-family: OrangeJuice;
+    font-size: 4.5rem;
+    padding-top: 10px;
+    font-weight: 100;
+}
+
+.form h3 {
+    color: #555555;
+    font-family: NexaLight;
+    text-align: center;
+}
+
+input[type=text], 
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    box-sizing: border-box;
+    outline: none;
+    padding: 1rem 2rem;
+    -webkit-box-shadow: 0px 0px 4px 1px rgba(156,156,156,0.61);
+    -moz-box-shadow: 0px 0px 4px 1px rgba(156,156,156,0.61);
+    box-shadow: 0px 0px 4px 1px rgba(156,156,156,0.61);
+    font-family: 'Raleway', sans-serif;
+    resize: none;
+}
+  
+input[type=submit] {
+    width: 100%;
+    background-color: #FE7E7E;
+    width: max-content;
+    color: white;
+    padding: 14px 35px 10px 35px;
+    margin: 1rem auto;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1.7rem;
+    font-family: OrangeJuice;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+  
+input[type=submit]:hover {
+    background-color: #e97777;
+}
+
+input[type=submit]:focus {
+    outline: 0;
+}
+  
+#contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: white;
+}
+
+.whatsapp > img {
+    width: 60px; 
+    height: 60px;
+    margin-right: 2rem;
+}
+
+.whatsapp__top {
+    display: flex; 
+    align-items: center;
+    border-bottom: 1px solid gray; 
+    padding-bottom: 0.7rem; 
+    font-family: 'Raleway', sans-serif;
+}
+
+.whatsapp__bottom {
+    display: flex; 
+    align-items: center;
+    padding-top: 0.7rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.envelope {
+    font-family: 'Raleway', sans-serif;
+}
+
+.envelope > img {
+    width: 60px; 
+    height: 60px; 
+    margin-right: 0.8rem;
+}
+
+.leave > img {
+    width: 150px; 
+    top: -170px; 
+    left: 80px;
+}
+
+.card-flag {
+    width: 1.2rem; 
+    margin-right: 0.8rem;
+}
+
+.success {
+    border-radius: 20px;
+    text-align: center;
+    margin: 10px auto;
+    background: lightgreen;
+    border: 1px solid green;
+    padding: 15px;
+    color: green;
+    font-family: 'Raleway', sans-serif;
+}
+
+.failed {
+    border-radius: 20px;
+    text-align: center;
+    margin: 10px auto;
+    background: pink;
+    border: 1px solid red;
+    padding: 15px;
+    color: red;
+    font-family: 'Raleway', sans-serif;
+}
+
+.error {
+    text-align: left;
+    color: red;
+    font-size: 0.9rem;
+    margin-left: 35px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.loader {
+    display: none;
+    border: 10px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 10px solid pink;
+    border-bottom: 10px solid pink;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+  
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@media(max-width: 750px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    #contact {
+        flex-flow: column;
+    }
+
+    .whatsapp {
+        display: flex;
+        flex-flow: column;
+        margin-bottom: 3rem;
+    }
+    
+    .whatsapp > img {
+        margin: 0 0 1rem 0;
+    }
+
+    .whatsapp__top {
+        font-size: 1.4rem;
+    }
+
+    .whatsapp__bottom {
+        font-size: 1.4rem;
+    }
+
+    .card-flag {
+        width: 2rem; 
+    }
+
+    .envelope {
+        display: flex;
+        flex-flow: column;
+        margin-bottom: 10rem;
+        font-size: 1.4rem;
+    }
+
+    .envelope > img {
+        margin: 0 0 1rem 0;
+    }
+
+}
+
+@media(max-width: 320px) {
+
+    .whatsapp__top {
+        font-size: 1.2rem;
+    }
+
+    .whatsapp__bottom {
+        font-size: 1.2rem;
+    }
+
+    .envelope {
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width: 320px) {
+
+    .whatsapp__top {
+        font-size: 1.2rem;
+    }
+
+    .whatsapp__bottom {
+        font-size: 1.2rem;
+    }
+
+    .envelope {
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width: 300px) {
+
+    .overview-bottom h1 {
+        margin: 0;
+        color: white;
+        font-family: OrangeJuice;
+        font-size: 3.8rem;
+        padding-top: 10px;
+        font-weight: 100;
+    }
+
+    .whatsapp__top {
+        font-size: 1rem;
+    }
+
+    .whatsapp__bottom {
+        font-size: 1rem;
+    }
+
+    .envelope {
+        font-size: 1rem;
+    }
+}
